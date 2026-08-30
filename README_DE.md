@@ -21,7 +21,13 @@ OpenAI Codex und ChatGPT werden als Entwicklungs-, Prüf- und Dokumentationswerk
 
 ## Öffentliche Kommunikation
 
-GitHub ist die maßgebliche Quelle für technischen Status und Nachweise. Ein Telegram-Ankündigungskanal kann kurze Fortschrittsmeldungen spiegeln und auf den jeweiligen GitHub-Eintrag verlinken. Über dieses Repository werden keine Zahlungen, Investitionen oder Finanzierungen angeboten.
+GitHub ist die maßgebliche Quelle für technischen Status und Nachweise. Ein Telegram-Ankündigungskanal kann kurze Fortschrittsmeldungen spiegeln und auf den jeweiligen GitHub-Eintrag verlinken.
+
+## Unterstützung
+
+AlgoSphere wird derzeit selbst finanziert. Freiwillige Projektunterstützung über GitHub Sponsors ist geplant. Ein Unterstützungslink wird erst ergänzt, nachdem das Sponsorprofil freigegeben und die erforderliche Zahlungs- und Steuereinrichtung abgeschlossen wurde.
+
+Unterstützung ist keine Investition und vermittelt keinen Anspruch auf Eigentum, Gewinnbeteiligung, Rückzahlung, finanzielle Rendite, Handelssignale oder ein garantiertes Projektergebnis.
 
 ## Urheberrecht und Nutzung
 

@@ -47,7 +47,13 @@ Development uses OpenAI Codex and ChatGPT as development, review and documentati
 
 ## Public communication
 
-GitHub is the source of truth for technical status and evidence. A read-only Telegram announcement channel may mirror short progress updates and link back to the corresponding GitHub update. No payment, investment or fundraising offer is made through this repository.
+GitHub is the source of truth for technical status and evidence. A read-only Telegram announcement channel may mirror short progress updates and link back to the corresponding GitHub update.
+
+## Support
+
+AlgoSphere is currently self-funded. Voluntary project support through GitHub Sponsors is planned. A support link will be added only after the sponsor profile has been approved and the required payment and tax setup has been completed.
+
+Support is not an investment and provides no ownership, profit participation, repayment, financial return, trading signals or guaranteed project outcome.
 
 ## Project owner
 
