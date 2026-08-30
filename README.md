@@ -51,9 +51,9 @@ GitHub is the source of truth for technical status and evidence. A read-only Tel
 
 ## Support
 
-AlgoSphere is currently self-funded. Voluntary project support through GitHub Sponsors is planned. A support link will be added only after the sponsor profile has been approved and the required payment and tax setup has been completed.
+AlgoSphere is currently self-funded. [Voluntary project support is available through GitHub Sponsors](https://github.com/sponsors/1545Christian) and helps cover development time, testing infrastructure, market-data tooling, security reviews and public technical documentation.
 
-Support is not an investment and provides no ownership, profit participation, repayment, financial return, trading signals or guaranteed project outcome.
+Support is voluntary. It is not an investment and provides no ownership, profit participation, repayment, financial return, trading signals, investment advice, services, exclusive access or guaranteed project outcome.
 
 ## Project owner
 
