@@ -25,9 +25,9 @@ GitHub ist die maßgebliche Quelle für technischen Status und Nachweise. Ein Te
 
 ## Unterstützung
 
-AlgoSphere wird derzeit selbst finanziert. Freiwillige Projektunterstützung über GitHub Sponsors ist geplant. Ein Unterstützungslink wird erst ergänzt, nachdem das Sponsorprofil freigegeben und die erforderliche Zahlungs- und Steuereinrichtung abgeschlossen wurde.
+AlgoSphere wird derzeit selbst finanziert. [Freiwillige Projektunterstützung ist über GitHub Sponsors möglich](https://github.com/sponsors/1545Christian) und hilft bei der Finanzierung von Entwicklungszeit, Testinfrastruktur, Marktdaten-Werkzeugen, Sicherheitsprüfungen und öffentlicher technischer Dokumentation.
 
-Unterstützung ist keine Investition und vermittelt keinen Anspruch auf Eigentum, Gewinnbeteiligung, Rückzahlung, finanzielle Rendite, Handelssignale oder ein garantiertes Projektergebnis.
+Unterstützung ist freiwillig. Sie ist keine Investition und vermittelt keinen Anspruch auf Eigentum, Gewinnbeteiligung, Rückzahlung, finanzielle Rendite, Handelssignale, Anlageberatung, Dienstleistungen, exklusiven Zugang oder ein garantiertes Projektergebnis.
 
 ## Urheberrecht und Nutzung
 
