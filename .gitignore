@@ -1,0 +1,23 @@
+# Local/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Never publish local secrets or runtime material
+.env
+.env.*
+*.key
+*.pem
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.pkl
+*.joblib
+*.pt
+*.pth
+storage/
+data/
+logs/
+models/
