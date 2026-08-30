@@ -1,35 +1,35 @@
 # Current public project status
 
-Status timestamp: `2026-08-30T16:04:31Z`
+Status timestamp: `2026-08-30T18:47:52Z`
 
 ## Overall assessment
 
-AlgoSphere has recent, scoped QA evidence and remains inside a no-capital, no-automatic-promotion safety boundary. Current research activation is disabled. This status makes no claim of profitability, live-trading readiness or promotion readiness.
+AlgoSphere remains inside a no-capital, no-automatic-promotion safety boundary. Canonical-history integrity and the paper-watch guard report passing states, while the runtime context gate remains blocked by seven scoped incomplete-context cases. Research activation is disabled. This status does not establish profitability, live-trading readiness, promotion readiness or model success.
 
 ## Current state
 
 | Control | Reported state |
 |---|---|
 | Canonical-history integrity | **PASS** |
-| Runtime entry-snapshot coverage | **FAIL_INCOMPLETE_V3_CONTEXT** |
-| Closed-paper-trade snapshot presence | Reported as 100% |
-| Scoped v3 context failures | **7** |
+| Runtime context gate | **FAIL_INCOMPLETE_V3_CONTEXT** |
+| Remaining scoped context failures | **7** |
 | Paper-watch guard | **PASS** |
 | Research profile | `QUICK` |
 | Activation allowed | `False` |
-| Eligible experiments | `0` |
-
-Snapshot presence and snapshot-contract completeness are different checks. A record may exist while still lacking required v3 context. The seven scoped failures therefore keep the related gate closed.
+| Eligible experiments | **0** |
 
 ## Evidence inventory
 
-- Registered report artifacts: **1,487**
-- Paths reported unreadable during inventory: **10**
-- Export process reported origins: `DOKUMENTATION/` 193 and `reports/` 1,294
-- Categories: Build 159; Delivery 136; Other 886; QA 282; Test 24
+- Registered report artifacts: **1,529**
+- Available report hashes: **1,528**
+- Unavailable report hashes: **1**
+- Categories: Build 159; Delivery 146; Other 905; QA 295; Test 24
+- Register evidence window: 5–30 August 2026
+- Locally reviewed development-history window: 9 September 2025–30 August 2026
+- Twenty repeated hash groups account for 54 additional artifact records; the artifact count must not be interpreted as 1,529 unique report contents.
 
-Only aggregate inventory counts and the SHA-256 digest of the private sanitised register are published in [`evidence/EVIDENCE_SUMMARY.md`](evidence/EVIDENCE_SUMMARY.md). Filenames, paths, exact timestamps, file sizes and raw report contents remain private.
+The full local inventory reported 101,053 files and 38,461 directories, with 10,868 enumeration warnings. The history review is therefore substantial but not claimed to be exhaustive.
 
-## Verification boundary
+## Interpretation boundary
 
-The public export contains summaries and metadata, not the proprietary application or raw evidence. No tests were re-run during creation of the public export. Results are reported as discovered in the current PC project status on 30 August 2026.
+These are inspected artifact states, not independently reproduced application results. No project test suite was rerun for this public update, and no application code was changed while preparing it.
