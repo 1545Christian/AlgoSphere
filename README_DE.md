@@ -1,5 +1,7 @@
 # AlgoSphere
 
+Zur vollständigen englischen Einführung: [README.md](README.md).
+
 <!-- HUMAN_TEXT_START: von mir geprüft, überarbeitet und vor Veröffentlichung freigegeben -->
 
 ## Was AlgoSphere ist
@@ -37,6 +39,22 @@ Beginne mit dem aktuellen Status und lies danach die Testgrenzen sowie die offen
 | Sicherheitsgrenze und Meldeweg | [Sicherheit](SECURITY.md) |
 | Finanzielle und technische Abgrenzung | [Disclaimer](DISCLAIMER.md) |
 
+## Öffentlichen Export prüfen
+
+In einem öffentlichen Clone ausführen:
+
+```text
+python tools/verify_public_export.py
+```
+
+Dieses Skript prüft die Integrität des öffentlichen Exports. Es reproduziert keine privaten Anwendungstests und beweist weder Strategiequalität noch Profitabilität oder Live-Trading-Reife.
+
+## Vorschau der Oberfläche
+
+Bei dieser Prüfung wurden keine geeigneten aktuellen und bereinigten WebUI-Screenshots gefunden. Deshalb enthält diese Revision keine Produktbilder. Benötigt werden künftig eine bereinigte Dashboard-Übersicht, ein Research-Status und eine Runtime-Sicherheitsansicht. Vor Veröffentlichung müssen lokale URLs, interne Pfade, Kontoangaben, private Tabs, Taskleisteninhalte, Zugangsdaten, Kontostände, Strategieeinstellungen und sensible Laufzeitinformationen entfernt werden.
+
+Bei später freigegebenen Screenshots wird folgender Hinweis verwendet: „Die folgenden Bilder zeigen die aktuelle private AlgoSphere-Weboberfläche. Sie dokumentieren den Entwicklungsstand und das Betriebsmodell des Projekts. Die WebUI und die zugrunde liegende Anwendung sind nicht Bestandteil dieses öffentlichen Repositorys.“
+
 ## Was Besucher prüfen können
 
 Besucher können prüfen, ob der dokumentierte Export ein Integritätsmanifest besitzt, ob das Evidenzregister ein beschriebenes Schema und eine angegebene Anzahl hat, ob öffentliche Links funktionieren und ob beobachtete skalare Kontrollwerte mit Artefaktzeitpunkten angegeben sind. Außerdem ist die Git-Historie dieses Dokumentations-Repositorys einsehbar.
@@ -73,15 +91,15 @@ Derzeit wird keine Open-Source-Lizenz eingeräumt. Soweit nicht ausdrücklich an
 
 | Kontrolle | Beobachteter Wert | Quellartefakt (UTC) | Einordnung | Praktische Auswirkung |
 |---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-08-31T12:42:36Z` | im aktuellen Artefakt beobachtet | Integritätskontrolle meldet ihren Zustand |
+| Canonical-history integrity | `PASS` | `2026-08-31T13:21:57Z` | im aktuellen Artefakt beobachtet | Integritätskontrolle meldet ihren Zustand |
 | Paper-watch guard | `PASS` | `2026-08-31T10:15:28Z` | im aktuellen Artefakt beobachtet | die Guard-Beobachtung aktiviert kein Trading |
 | Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T10:15:28Z` | blockiert | Kontext wird nicht als vollständig behandelt |
 | Verbleibende Runtime-Kontextfälle | `7` | `2026-08-31T10:15:28Z` | blockiert | Remediation mit höchster Priorität bleibt offen |
-| Research-Profil | `QUICK` | `2026-08-31T12:45:44Z` | im aktuellen Artefakt beobachtet | nur Profilbezeichnung |
-| Aktivierung erlaubt | `False` | `2026-08-31T12:45:44Z` | im aktuellen Artefakt beobachtet | Aktivierung wird vom beobachteten Artefakt nicht erlaubt |
-| Geeignete Experimente | `0` | `2026-08-31T12:45:44Z` | im aktuellen Artefakt beobachtet | kein geeignetes Experiment wird gemeldet |
+| Research-Profil | `QUICK` | `2026-08-31T13:21:47Z` | im aktuellen Artefakt beobachtet | nur Profilbezeichnung |
+| Aktivierung erlaubt | `False` | `2026-08-31T13:21:47Z` | im aktuellen Artefakt beobachtet | Aktivierung wird vom beobachteten Artefakt nicht erlaubt |
+| Geeignete Experimente | `0` | `2026-08-31T13:21:47Z` | im aktuellen Artefakt beobachtet | kein geeignetes Experiment wird gemeldet |
 
-Beobachteter Artefakt-Snapshot: `2026-08-31T12:51:26Z UTC / 2026-08-31 13:51 Westeuropäische Sommerzeit Atlantic/Canary`. Hauptblocker ist `FAIL_INCOMPLETE_V3_CONTEXT` mit `7` verbleibenden abgegrenzten Fällen.
+Beobachteter Artefakt-Snapshot: `2026-08-31T13:22:11Z UTC / 2026-08-31 14:22 Westeuropäische Sommerzeit Atlantic/Canary`. Hauptblocker ist `FAIL_INCOMPLETE_V3_CONTEXT` mit `7` verbleibenden abgegrenzten Fällen.
 
 Exportintegrität: verifiziert. Anwendungstest-Suiten: während dieses Exports nicht erneut ausgeführt. Siehe [Aktueller Status](CURRENT_STATUS.md) und [Testergebnisse](TEST_RESULTS.md).
 <!-- AUTO_VALUES_END -->

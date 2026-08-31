@@ -1,5 +1,7 @@
 # AlgoSphere
 
+For the German introduction, see [README_DE.md](README_DE.md).
+
 <!-- HUMAN_TEXT_START: reviewed, revised and approved before publication -->
 
 ## What AlgoSphere is
@@ -37,6 +39,22 @@ Start with the current status, then read the test boundary and open blockers. Us
 | Security boundary and reporting route | [Security](SECURITY.md) |
 | Financial and technical boundary | [Disclaimer](DISCLAIMER.md) |
 
+## Verify the public export
+
+From a public clone, run:
+
+```text
+python tools/verify_public_export.py
+```
+
+This script verifies the integrity of the public export. It does not reproduce private application tests and does not prove strategy quality, profitability or live-trading readiness.
+
+## Interface preview
+
+No suitable current, sanitised WebUI screenshots were found during this review, so no product image is published in this revision. Required future images are a sanitised dashboard overview, research status and runtime-safety view. Before publication, each must remove local URLs, internal paths, account data, private tabs, taskbar material, credentials, balances, strategy settings and sensitive runtime information.
+
+When approved screenshots are available, their boundary notice will state: “The screenshots below show the current private AlgoSphere WebUI. They document the project’s development and operating model. The WebUI and the underlying application are not included in this public repository.”
+
 ## What visitors can verify
 
 Visitors can verify that the documented export has an integrity manifest, that the report register has a stated schema and count, that public links resolve, and that observed scalar control values are presented with an artifact timestamp. Visitors can also inspect the Git history of this documentation repository.
@@ -73,15 +91,15 @@ No open-source license is currently granted. Unless expressly stated otherwise, 
 
 | Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
 |---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-08-31T12:42:36Z` | observed in current artifact | integrity gate reports its state |
+| Canonical-history integrity | `PASS` | `2026-08-31T13:21:57Z` | observed in current artifact | integrity gate reports its state |
 | Paper-watch guard | `PASS` | `2026-08-31T10:15:28Z` | observed in current artifact | guard observation does not activate trading |
 | Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T10:15:28Z` | blocked | context is not treated as complete |
 | Remaining runtime context cases | `7` | `2026-08-31T10:15:28Z` | blocked | highest-priority remediation remains open |
-| Research profile | `QUICK` | `2026-08-31T12:45:44Z` | observed in current artifact | profile label only |
-| Activation allowed | `False` | `2026-08-31T12:45:44Z` | observed in current artifact | activation is not permitted by the observed artifact |
-| Eligible experiments | `0` | `2026-08-31T12:45:44Z` | observed in current artifact | no eligible experiment is reported |
+| Research profile | `QUICK` | `2026-08-31T13:21:47Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-08-31T13:21:47Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `0` | `2026-08-31T13:21:47Z` | observed in current artifact | no eligible experiment is reported |
 
-Observed artifact snapshot: `2026-08-31T12:51:26Z UTC / 2026-08-31 13:51 Westeuropäische Sommerzeit Atlantic/Canary`. The main blocker is `FAIL_INCOMPLETE_V3_CONTEXT` with `7` remaining scoped cases.
+Observed artifact snapshot: `2026-08-31T13:22:11Z UTC / 2026-08-31 14:22 Westeuropäische Sommerzeit Atlantic/Canary`. The main blocker is `FAIL_INCOMPLETE_V3_CONTEXT` with `7` remaining scoped cases.
 
 Export integrity: verified. Application test suites: not rerun during this export. See [Current status](CURRENT_STATUS.md) and [Test results](TEST_RESULTS.md).
 <!-- AUTO_VALUES_END -->

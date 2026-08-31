@@ -17,19 +17,19 @@ AlgoSphere remains within a fail-closed research boundary. The current observed 
 
 | Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
 |---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-08-31T12:42:36Z` | observed in current artifact | integrity gate reports its state |
+| Canonical-history integrity | `PASS` | `2026-08-31T13:21:57Z` | observed in current artifact | integrity gate reports its state |
 | Paper-watch guard | `PASS` | `2026-08-31T10:15:28Z` | observed in current artifact | guard observation does not activate trading |
 | Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T10:15:28Z` | blocked | context is not treated as complete |
 | Remaining runtime context cases | `7` | `2026-08-31T10:15:28Z` | blocked | highest-priority remediation remains open |
-| Research profile | `QUICK` | `2026-08-31T12:45:44Z` | observed in current artifact | profile label only |
-| Activation allowed | `False` | `2026-08-31T12:45:44Z` | observed in current artifact | activation is not permitted by the observed artifact |
-| Eligible experiments | `0` | `2026-08-31T12:45:44Z` | observed in current artifact | no eligible experiment is reported |
+| Research profile | `QUICK` | `2026-08-31T13:21:47Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-08-31T13:21:47Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `0` | `2026-08-31T13:21:47Z` | observed in current artifact | no eligible experiment is reported |
 
 ## What this export checked
 
 - **export verified:** fixed allowlist, ZIP readability, manifest hashes, internal Markdown links and privacy/secret-pattern scan passed.
 - **not applicable:** this export did not start trading, exchange, order, Telegram or other external API actions.
-- **observed in current artifact:** values in the table were read as scalars at `2026-08-31T12:51:26Z UTC / 2026-08-31 13:51 Westeuropäische Sommerzeit Atlantic/Canary`.
+- **observed in current artifact:** values in the table were read as scalars at `2026-08-31T13:22:11Z UTC / 2026-08-31 14:22 Westeuropäische Sommerzeit Atlantic/Canary`.
 
 ## What was not rerun
 
