@@ -2,7 +2,7 @@
 
 Dieses Repository ist die verbindliche öffentliche technische Dokumentation von AlgoSphere. Es enthält ausschließlich bereinigte Dokumentation. Proprietärer Quellcode, Konfigurationen, Zugangsdaten, Daten, Modelle, Datenbanken, Strategiematerialien und private Logs bleiben privat.
 
-**Klassifikation: verified.** Dieses Update wurde am 2026-08-31T11:32:32Z (UTC) erstellt; lokale Referenzzeit: 2026-08-31 12:32 Westeuropäische Sommerzeit (Atlantic/Canary).
+**Klassifikation: verified.** Dieses Update wurde am 2026-08-31T11:36:25Z (UTC) erstellt; lokale Referenzzeit: 2026-08-31 12:36 Westeuropäische Sommerzeit (Atlantic/Canary).
 
 ## Projektgeschichte
 

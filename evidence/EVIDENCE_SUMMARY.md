@@ -1,22 +1,16 @@
 # Public evidence summary
 
-Source export generated: `2026-08-30T18:47:52Z`
-
-The private, sanitised export contains 1,529 report-artifact records. Only aggregate counts are published here; filenames, paths, exact timestamps, file sizes and raw report contents remain private.
+**verified:** The sanitised report register contains `1742` current report-artifact records. `1741` records have a SHA-256 value and `1` do not have a hash available. The register publishes neutral IDs, category, UTC date, registration status and hash only; it contains no raw report content, paths or filenames.
 
 | Category | Count |
 |---|---:|
-| BUILD | 159 |
-| DELIVERY | 146 |
-| QA | 295 |
-| TEST | 24 |
-| OTHER | 905 |
-| **Total** | **1,529** |
+| BUILD | 1 |
+| DELIVERY | 92 |
+| QA | 198 |
+| TEST | 63 |
+| OTHER | 1388 |
+| **Total** | **1742** |
 
-Of these records, 1,528 have a SHA-256 value and one does not. Twenty repeated hash groups account for 54 additional artifact records, so the total is an artifact count rather than a count of unique report contents.
+**not verified:** A registered report artifact is not, by itself, proof that its underlying result was independently rerun for this export.
 
-The private sanitised register's SHA-256 digest is:
-
-`2d7f1dd2f63c7b2143e66044e4578ee53f0b31cf9cb0017ef49b15cda919f9a7`
-
-The report register covers 5–30 August 2026. The wider local history review found development records from 9 September 2025 to 30 August 2026, while the project owner reports that the broader effort began approximately three years ago. No raw report content is included in this public repository.
+AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
