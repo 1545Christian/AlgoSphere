@@ -1,22 +1,16 @@
 # Versions and build identifiers
 
-Export timestamp: `2026-08-30T16:04:31Z`
+**verified:** Public identifiers were read as scalar metadata at `2026-08-31T11:32:32Z`.
 
-| Identifier | Value |
-|---|---|
-| Application version | `90.8.5` |
-| Source hotfix identifier | `v90_8_5_23_audit_governance_parity` |
-| Source research-method identifier | `challenger_v90_8_5_23_audit_governance_parity` |
-| Current autopilot method | `challenger_v90_8_5_75_auditable_market_variable_horizon` |
-| Current autopilot profile | `QUICK` |
-| Release-manifest version | `90.8.5` |
-| Release-manifest file count | `755` |
-| Package-update version | `v90.8.5.15` |
-| Package-manifest file count | `35` |
-| Payload-update version | `v90.8.5.15` |
-| Payload target core version | `90.8.5` |
-| Payload WebUI version | `90.8.5.15` |
-| Frozen paper epoch | `v90_8_0_frozen_paper_2026_08_05` |
-| Frozen paper contract | `frozen_9_3` |
+| Public identifier | Observed value | Classification |
+|---|---|---|
+| Application version | `90.8.5` | verified |
+| Package/update metadata scope | `v90_8_5_15` | verified as package/update metadata |
+| Source hotfix scope | `v90_8_5_23` | verified as source version metadata |
+| Research-autopilot report scope | `not verified` | verified as an observed report identifier |
 
-Only public release metadata is included. Source files, internal paths, signatures and payload contents remain private.
+`v90_8_5_15` is package/update metadata; `v90_8_5_23` is source-hotfix metadata; `v90_8_5_75` is an identifier observed in the current research-autopilot report. **not verified:** Their causal relationship, compatibility, ordering or replacement semantics are not established by these public records.
+
+**not applicable:** No proprietary source fingerprint, payload content, model identifier or strategy detail is published.
+
+AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.

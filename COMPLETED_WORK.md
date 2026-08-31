@@ -1,12 +1,9 @@
-# Completed work — public summary
+# Completed work – public summary
 
-The current sanitised export reports the following scoped achievements:
+## Since the last published public status
 
-- WebUI decision chronology and score-data truth QA passed, including read-only access checks and targeted regressions.
-- WebUI research-forward endpoint and source-role isolation QA passed.
-- A research-only, no-capital shadow end-to-end retry passed with source-role preservation.
-- Retrospective-row authorisation remediation and its independent quarantine QA passed.
-- Local ML hypothesis-selector v2 research-infrastructure QA passed.
-- The canonical-history integrity check reports pass.
+- **verified:** Four current scalar status artefacts were updated on 2026-08-31, including the canonical-history, paper-watch, runtime-context and research-autopilot records. Their current public states are recorded in [CURRENT_STATUS.md](CURRENT_STATUS.md).
+- **not verified:** Newer private source and test-file timestamps were observed after the previous public commit. Timestamps alone do not prove that a code change, test suite or delivery was completed; no code-level completion claim is published here.
+- **not applicable:** No live activation, capital deployment, order submission or external communication was performed for this update.
 
-These are engineering and verification results. They do not prove trading performance and grant no consumer, capital, promotion or live-operation credit.
+AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.

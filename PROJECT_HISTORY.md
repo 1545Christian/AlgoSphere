@@ -1,27 +1,24 @@
 # AlgoSphere project history
 
-History review timestamp: `2026-08-30T18:47:52Z`
-
 ## Evidence boundary
 
-Available local development records reviewed for this update span from **9 September 2025 to 30 August 2026**. The project owner reports working on the broader problem for approximately three years, but the currently accessible Git and dated local evidence does not independently prove the entire three-year period.
+**verified:** Available dated development records reviewed for this export span from **9 September 2025 to 2026-08-31**.
 
-The recursive inventory reported 101,053 files and 38,461 directories, with 10,868 enumeration warnings. Environment files, credential-like files, virtual environments, caches, databases, market data, models and large binaries were excluded from content inspection. The review is not claimed to be exhaustive.
+I have been working on the underlying ideas and Python prototypes for approximately three years. I initially learned by rebuilding and adapting examples from YouTube videos and other educational material. Over time, I developed and repeatedly revised several of my own prototypes.
 
-## Development generations
+**not verified:** The available technical records do not independently establish the entire approximately three-year period or every relationship between the earlier prototypes.
 
-| Public group | Period | Interpretation | Evidence status |
+## Observed generations
+
+| Public group | Approximate period | Classification | Relationship to current codebase |
 |---|---|---|---|
-| Early prototype family | Sep–Oct 2025 | Five dated archive revisions with exact overlap indicating successive revisions rather than five independent projects | Verified as an observed revision family; relationship to the current codebase not established |
-| Automation-oriented predecessor | Jan–Apr 2026 | Separate predecessor codebase with dated documentation | Direct lineage not verified |
-| V2-oriented predecessor | Apr–May 2026 | Continuation candidate | Git repository was present but contained no usable commit history; lineage not verified |
-| Research and market-integration variant | Aug 2026 | Separate test or research project | Direct source continuity not verified |
-| Analysis snapshot | Aug 2026 | Snapshot or copy with substantial exact overlap with the current codebase | Verified as a derivative, not an independent generation |
-| Delivery packages | Aug 2026 | Update and delivery derivatives | Verified as derivatives, not independent generations |
-| Current AlgoSphere codebase | Aug 2026 | Current governing local codebase selected by recency and current report activity | Verified as the currently inspected codebase |
+| Early prototype revision family | Sep–Oct 2025 | verified as a dated revision family | not verified |
+| Automation-oriented predecessor records | Jan–Apr 2026 | verified as dated local records | not verified |
+| V2-oriented predecessor records | Apr–May 2026 | verified as a separate local codebase; Git history was not usable | not verified |
+| Research and integration variant | Aug 2026 | verified as a separate research/test variant | not verified |
+| Analysis snapshot and delivery derivatives | Aug 2026 | verified as derivatives/copies rather than independent generations | related by observed content overlap |
+| Current AlgoSphere codebase | Aug 2026–present reviewed window | verified as the currently inspected active local codebase | current governing local codebase |
 
-## Continuity
+**not applicable:** This public history omits proprietary implementation, model, market and strategy details.
 
-Safe text inspection shows recurring automated-market, research, testing and reporting concerns across later generations. The public evidence does not disclose algorithms, model architecture, thresholds, strategy parameters or trading logic.
-
-Because no meaningful Git commit history was available for the current codebase or identified predecessors, this history describes observed records and relationships rather than claiming a complete authorship or lineage proof.
+AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.

@@ -1,20 +1,14 @@
-# Current test and QA results
+# Test and QA results
 
-Evidence timestamp: `2026-08-30T16:04:31Z`
+**not verified:** Application test suites were **not rerun during this export**. The private project had active report-producing activity, so no potentially data-changing or long-running test was started.
 
-| Area | Latest reported result |
-|---|---|
-| WebUI chronology / score data | Scoped QA pass; targeted regressions `7/7` |
-| WebUI research-forward / role isolation | Scoped QA pass; targeted regressions `14/14` |
-| No-capital shadow E2E retry | Pass; pytest `36/36`, canonical-validator regressions `47/47` |
-| Retrospective-row authorisation quarantine | Scoped QA pass; owner-bound pytest `23/23`, validator regressions `47/47` |
-| Research-infrastructure selector v2 | Scoped QA pass; bound suite `47/47` |
-| Candidate terminal decisions | Scoped classifications passed; promotion remains blocked |
-| Runtime entry-snapshot coverage | **Fail:** incomplete v3 context; seven scoped contract failures remain |
-| Canonical-history integrity | **Pass** |
+| Observed current artifact | Reported scalar state | Classification | Artifact timestamp (UTC) |
+|---|---|---|---|
+| Canonical-history integrity | `PASS` | verified as an observed report artifact; not independently rerun | `2026-08-31T11:24:59Z` |
+| Paper-watch guard | `PASS` | verified as an observed report artifact; not independently rerun | `2026-08-31T10:15:28Z` |
+| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT`; failures `7` | blocked | `2026-08-31T10:15:28Z` |
+| Research autopilot | `QUICK`; activation `False`; eligible experiments `0` | verified as an observed report artifact; not independently rerun | `2026-08-31T11:26:39Z` |
 
-## Interpretation
+**verified:** Export-only checks were run locally: fixed allowlist, archive-open check, checksum verification, internal Markdown-link check and secret/privacy scan.
 
-Passing a scoped QA suite means the named contract passed within that scope. It does not establish profitable trading performance, complete system readiness or safe live activation.
-
-No new test run was started for the public export, and no application code was changed while creating it.
+AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.

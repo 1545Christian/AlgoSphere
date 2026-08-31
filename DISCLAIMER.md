@@ -1,9 +1,11 @@
 # Disclaimer
 
-AlgoSphere is an experimental research and software-engineering project. Information in this repository is provided for technical documentation and educational discussion.
+**verified:** AlgoSphere is an independent research and engineering project documented through this public repository.
 
-Nothing in this repository is financial, investment, legal or tax advice. No content is an invitation or recommendation to buy, sell or hold a financial instrument or crypto-asset. Historical, simulated, paper, shadow or scoped QA results do not predict future performance.
+**not applicable:** Nothing in this repository is investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome. It does not offer an investment product, token, fundraise, trading service or management of third-party capital.
 
-Crypto markets and automated trading involve substantial risk, including complete loss. AlgoSphere makes no promise of profitability, live readiness, continued development or project success.
+**not verified:** Historical, simulated, paper, shadow and scoped QA observations do not establish future performance, profitability or live-trading readiness.
 
-This repository and any linked announcement channel are project documentation only. They do not accept payments, manage third-party capital or offer access to trading services.
+Voluntary support is accepted through [GitHub Sponsors](https://github.com/sponsors/1545Christian) and helps fund research, development, testing infrastructure and public technical documentation. Sponsorship is not an investment and provides no ownership, repayment, profit participation, financial return, trading signals, investment advice, exclusive access or guaranteed project outcome.
+
+AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
