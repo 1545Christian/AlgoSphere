@@ -6,7 +6,7 @@ Dieses Update wird aus aktuellen skalaren Artefakten erzeugt. Die grundlegenden 
 
 ## Änderung seit der vorherigen veröffentlichten Momentaufnahme
 
-Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das aktuelle bereinigte Register enthält 2646 Einträge, eine Differenz von 904. Das Register veröffentlicht weder Rohdateinamen noch kausale Herkunft. Die Ursache des Anstiegs ist daher nicht verifiziert. Er darf nicht als 904 neue Tests, abgeschlossene Entwicklungsarbeiten oder Leistungsfortschritt gelesen werden. Die angefragte Zwischenzahl 1.841 ist in dieser aktuellen Re-Inventarisierung nicht der aktuelle Wert und wird nicht als aktueller Fakt ausgegeben.
+Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das aktuelle bereinigte Register enthält 2691 Einträge, eine Differenz von 949. Das Register veröffentlicht weder Rohdateinamen noch kausale Herkunft. Die Ursache des Anstiegs ist daher nicht verifiziert. Er darf nicht als 949 neue Tests, abgeschlossene Entwicklungsarbeiten oder Leistungsfortschritt gelesen werden. Die angefragte Zwischenzahl 1.841 ist in dieser aktuellen Re-Inventarisierung nicht der aktuelle Wert und wird nicht als aktueller Fakt ausgegeben.
 
 ## Heute geprüfte technische und betriebliche Artefakte
 

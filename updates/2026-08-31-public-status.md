@@ -6,7 +6,7 @@ This update is generated from current scalar artifacts; the repository guidance 
 
 ## Change since the previous published snapshot
 
-The previous public register snapshot contained 1,742 records. The current sanitised register contains 2646 records, a difference of 904. The register does not disclose raw filenames or causal provenance, so the cause of this increase is not verified. It must not be read as 904 new tests, completed development tasks or performance progress. The requested intermediate count of 1,841 is not current in this re-inventory and is not stated as a current value.
+The previous public register snapshot contained 1,742 records. The current sanitised register contains 2691 records, a difference of 949. The register does not disclose raw filenames or causal provenance, so the cause of this increase is not verified. It must not be read as 949 new tests, completed development tasks or performance progress. The requested intermediate count of 1,841 is not current in this re-inventory and is not stated as a current value.
 
 ## Verified engineering and operational artifacts reviewed today
 

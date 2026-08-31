@@ -99,7 +99,7 @@ Derzeit wird keine Open-Source-Lizenz eingeräumt. Soweit nicht ausdrücklich an
 | Aktivierung erlaubt | `False` | `2026-08-31T20:00:38Z` | im aktuellen Artefakt beobachtet | Aktivierung wird vom beobachteten Artefakt nicht erlaubt |
 | Geeignete Experimente | `0` | `2026-08-31T20:00:38Z` | im aktuellen Artefakt beobachtet | kein geeignetes Experiment wird gemeldet |
 
-Beobachteter Artefakt-Snapshot: `2026-08-31T22:10:28Z UTC / 2026-08-31 23:10 Westeuropäische Sommerzeit Atlantic/Canary`. Hauptblocker ist `FAIL_INCOMPLETE_V3_CONTEXT` mit `7` verbleibenden abgegrenzten Fällen.
+Beobachteter Artefakt-Snapshot: `2026-08-31T22:45:02Z UTC / 2026-08-31 23:45 Westeuropäische Sommerzeit Atlantic/Canary`. Hauptblocker ist `FAIL_INCOMPLETE_V3_CONTEXT` mit `7` verbleibenden abgegrenzten Fällen.
 
 Exportintegrität: verifiziert. Anwendungstest-Suiten: während dieses Exports nicht erneut ausgeführt. Siehe [Aktueller Status](CURRENT_STATUS.md) und [Testergebnisse](TEST_RESULTS.md).
 <!-- AUTO_VALUES_END -->

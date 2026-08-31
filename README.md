@@ -99,7 +99,7 @@ No open-source license is currently granted. Unless expressly stated otherwise, 
 | Activation allowed | `False` | `2026-08-31T20:00:38Z` | observed in current artifact | activation is not permitted by the observed artifact |
 | Eligible experiments | `0` | `2026-08-31T20:00:38Z` | observed in current artifact | no eligible experiment is reported |
 
-Observed artifact snapshot: `2026-08-31T22:10:28Z UTC / 2026-08-31 23:10 Westeuropäische Sommerzeit Atlantic/Canary`. The main blocker is `FAIL_INCOMPLETE_V3_CONTEXT` with `7` remaining scoped cases.
+Observed artifact snapshot: `2026-08-31T22:45:02Z UTC / 2026-08-31 23:45 Westeuropäische Sommerzeit Atlantic/Canary`. The main blocker is `FAIL_INCOMPLETE_V3_CONTEXT` with `7` remaining scoped cases.
 
 Export integrity: verified. Application test suites: not rerun during this export. See [Current status](CURRENT_STATUS.md) and [Test results](TEST_RESULTS.md).
 <!-- AUTO_VALUES_END -->
