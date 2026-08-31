@@ -1,12 +1,14 @@
 # Public history and evidence update — 30 August 2026
 
+> This is a historical snapshot and has been superseded by the [current status](../CURRENT_STATUS.md). Historical figures below describe the publication-time snapshot and are not current values.
+
 This update expands AlgoSphere's public record without publishing source code, raw reports, credentials, market data, models or proprietary strategy details.
 
 ## What changed
 
 - The public report-artifact inventory increased from 1,487 to 1,529 records.
 - The updated distribution is Build 159, Delivery 146, QA 295, Test 24 and Other 905.
-- A public project-history page now separates the owner-reported approximately three-year effort from the currently verifiable local evidence window of 9 September 2025 to 30 August 2026.
+- A public project-history page distinguishes my approximately three-year personal development history from the currently verifiable local evidence window of 9 September 2025 to 30 August 2026.
 - Backups, analysis snapshots and delivery packages are not counted as independent project generations.
 
 ## Current safety state

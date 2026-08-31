@@ -1,24 +1,36 @@
 # AlgoSphere project history
 
-## Evidence boundary
+<!-- HUMAN_TEXT_START -->
 
-**verified:** Available dated development records reviewed for this export span from **9 September 2025 to 2026-08-31**.
+## Personal learning and experimentation
 
-I have been working on the underlying ideas and Python prototypes for approximately three years. I initially learned by rebuilding and adapting examples from YouTube videos and other educational material. Over time, I developed and repeatedly revised several of my own prototypes.
+I began working on the underlying ideas and Python prototypes approximately three years ago. The personal history is stated in my own voice; it is not presented as though every early stage is completely proven by currently available files.
 
-**not verified:** The available technical records do not independently establish the entire approximately three-year period or every relationship between the earlier prototypes.
+## Learning examples and own prototypes
 
-## Observed generations
+I first rebuilt and adapted examples from YouTube videos and other educational material. That process led to several of my own Python prototypes, which I revised repeatedly.
 
-| Public group | Approximate period | Classification | Relationship to current codebase |
-|---|---|---|---|
-| Early prototype revision family | Sep–Oct 2025 | verified as a dated revision family | not verified |
-| Automation-oriented predecessor records | Jan–Apr 2026 | verified as dated local records | not verified |
-| V2-oriented predecessor records | Apr–May 2026 | verified as a separate local codebase; Git history was not usable | not verified |
-| Research and integration variant | Aug 2026 | verified as a separate research/test variant | not verified |
-| Analysis snapshot and delivery derivatives | Aug 2026 | verified as derivatives/copies rather than independent generations | related by observed content overlap |
-| Current AlgoSphere codebase | Aug 2026–present reviewed window | verified as the currently inspected active local codebase | current governing local codebase |
+## Automation, ML and walk-forward work
 
-**not applicable:** This public history omits proprietary implementation, model, market and strategy details.
+Later work broadened into automation, research pipelines, ML-oriented experiments and walk-forward-oriented evaluation. Public documentation deliberately omits implementation and strategy detail.
 
-AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
+## Paper, watch and shadow integration
+
+The development direction later included paper, watch and shadow boundaries. Their public purpose is to document gates and evidence boundaries, not to make an activation claim.
+
+## Current evidence and fail-closed orientation
+
+The current public focus is evidence, explicit blockers and fail-closed controls. Available local technical records establish only the dated window stated below.
+
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START -->
+**Local technical evidence window:** 9 September 2025 to 2026-08-31. **not verified:** this accessible evidence does not independently prove every part of the approximately three-year personal history.
+
+| Phase | Period | Public interpretation |
+|---|---|---|
+| Early learning and revision family | Sep–Oct 2025 records | dated prototype revision records |
+| Automation and ML / walk-forward work | 2026 records | observed local development records; detailed continuity not published |
+| Paper, watch and shadow integration | Aug 2026 records | observed gate-oriented work; no activation claim |
+| Evidence and fail-closed focus | current reviewed window | current public documentation orientation |
+<!-- AUTO_VALUES_END -->

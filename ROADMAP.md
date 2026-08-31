@@ -1,9 +1,16 @@
 # Roadmap and open blockers
 
-1. **blocked:** Resolve the `7` remaining scoped runtime-context failures before the runtime context gate can be treated as complete.
-2. **blocked:** Keep research activation disabled while the current gate remains incomplete.
-3. **not verified:** Revalidate any future promotion or live-readiness claim with fresh, independently scoped evidence; this export makes no such claim.
-4. **verified:** Continue publishing only sanitised status changes supported by current artifacts.
-5. **not applicable:** Public documentation will not expose algorithms, strategy parameters, market data, models, private source code or personal information.
+<!-- HUMAN_TEXT_START -->
 
-AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
+The roadmap lists concrete verification work, not performance promises. A task is only accepted when its stated evidence and acceptance criterion are met.
+
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START -->
+| Priority | Task | Current status | Dependency | Acceptance criterion | Required evidence | Next concrete step |
+|---|---|---|---|---|---|---|
+| P0 | Resolve `7` runtime-context cases | blocked | complete runtime context | gate has no remaining scoped failures | fresh gate artifact and independently rerun applicable check | isolate and resolve missing context |
+| P1 | Re-run applicable gate after remediation | not verified | P0 complete | current evidence is independently rerun | dated test/gate output | run only safe, scoped verification |
+| P1 | Keep activation disabled while evidence is incomplete | observed boundary | P0 unresolved | activation remains disallowed until evidence supports change | current scalar artifact | preserve fail-closed state |
+| P2 | Maintain sanitised public evidence documentation | ongoing documentation work | human review | public texts and generated values remain separated | validated export and manifest | review before publication |
+<!-- AUTO_VALUES_END -->

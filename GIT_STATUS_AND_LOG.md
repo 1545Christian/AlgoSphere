@@ -1,15 +1,13 @@
 # Git status and log
 
-## Private project
+<!-- HUMAN_TEXT_START -->
 
-**not applicable:** The inspected private AlgoSphere root is not a Git work tree; no private Git commit, branch, remote or source history is published.
+This page separates the non-Git private project root from the public documentation repository. It publishes no private remote, credentials, paths or source log.
 
-## Public repository baseline
+<!-- HUMAN_TEXT_END -->
 
-**verified:** Before this update, the public repository `main` baseline was commit `57a51268926e8239da108ece89f645e93b92dd73`, dated `2026-08-30T19:05:07Z`, with subject `Add public history and status update for August 2026`.
-
-**verified:** The separate public clone was clean before documentation changes and its remote matched the configured public repository URL.
-
-**not applicable:** This file contains no private repository path, remote, credentials or source log.
-
-AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
+<!-- AUTO_VALUES_START -->
+- **not applicable:** the private project root is not a Git work tree; no private Git history is published.
+- **export verified:** the public documentation clone is checked for a clean worktree and approved remote before publication.
+- **not applicable:** no private remote, credential or source log is included.
+<!-- AUTO_VALUES_END -->

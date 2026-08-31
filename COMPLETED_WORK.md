@@ -1,9 +1,30 @@
-# Completed work – public summary
+# Completed work and documentation boundary
 
-## Since the last published public status
+<!-- HUMAN_TEXT_START -->
 
-- **verified:** Four current scalar status artefacts were updated on 2026-08-31, including the canonical-history, paper-watch, runtime-context and research-autopilot records. Their current public states are recorded in [CURRENT_STATUS.md](CURRENT_STATUS.md).
-- **not verified:** Newer private source and test-file timestamps were observed after the previous public commit. Timestamps alone do not prove that a code change, test suite or delivery was completed; no code-level completion claim is published here.
-- **not applicable:** No live activation, capital deployment, order submission or external communication was performed for this update.
+## Completed development work
 
-AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
+Only development work with direct completion evidence belongs in this section. This public export does not infer completion from a source-file timestamp.
+
+## Reports generated or updated
+
+Generated or updated reports are evidence artifacts. They are recorded separately from completed development work because a new report alone does not prove a completed feature or independently rerun test.
+
+## Observed but not established as completed
+
+Newer private code and test-file timestamps may be visible in the local project. They are not published here as completed work unless a suitable public evidence basis exists.
+
+## Public communication and documentation work
+
+The public documentation, status table, evidence guide and dated update are maintained as communication work. They describe evidence boundaries; they do not disclose private implementation.
+
+See [Test results](TEST_RESULTS.md), [Evidence summary](evidence/EVIDENCE_SUMMARY.md) and [Disclaimer](DISCLAIMER.md).
+
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START -->
+- **Reports generated or updated:** current scalar artifacts were observed at `2026-08-31T12:51:26Z UTC / 2026-08-31 13:51 Westeuropäische Sommerzeit Atlantic/Canary`.
+- **Observed, not established as completed:** report registration count is `1946`; this is not presented as `1946` tests or completed changes.
+- **Public documentation work:** current guidance, tables, register and manifest were rendered from human-maintained templates.
+- **Not applicable:** no application code was changed by this documentation export.
+<!-- AUTO_VALUES_END -->

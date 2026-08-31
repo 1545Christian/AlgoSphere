@@ -1,33 +1,87 @@
-# AlgoSphere public technical status
+# AlgoSphere
 
-This repository is the authoritative public technical record for AlgoSphere. It contains sanitised documentation only; proprietary source code, configurations, credentials, data, models, databases, strategy materials and private logs remain private.
+<!-- HUMAN_TEXT_START: reviewed, revised and approved before publication -->
 
-**Classification: verified.** This update was generated on 2026-08-31T12:19:08Z (UTC), with local reference time 2026-08-31 13:19 Westeuropäische Sommerzeit (Atlantic/Canary).
+## What AlgoSphere is
 
-## Project background
+AlgoSphere is an independent research and engineering project for building an auditable trading-research workflow. Its purpose is not to promise market results. The practical aim is to make research, testing, paper observation, monitoring and any future activation decisions traceable, bounded and fail-closed.
 
-I have been working on the underlying ideas and Python prototypes for approximately three years. I initially learned by rebuilding and adapting examples from YouTube videos and other educational material. Over time, I developed and repeatedly revised several of my own prototypes.
+## How the project began
 
-Codex and ChatGPT support implementation, debugging, technical review and documentation. They are development tools and sparring partners within the project, not its sole authors. The architecture, experiments, decisions and responsibility remain human.
+I have been working on the underlying ideas and Python prototypes for approximately three years. I initially learned by rebuilding and adapting examples from YouTube videos and other educational material. From that learning phase, I developed several of my own Python prototypes and revised them repeatedly as I learned what needed stronger controls, clearer evidence and better separation between research and operation.
 
-## Current verified boundary
+## AI-assisted work and personal review
 
-- **verified:** Canonical-history integrity: `PASS`.
-- **verified:** Paper-watch guard: `PASS`.
-- **blocked:** Runtime context gate: `FAIL_INCOMPLETE_V3_CONTEXT`; remaining scoped context failures: `7`.
-- **verified:** Research profile: `QUICK`; activation allowed: `False`; eligible experiments: `0`.
-- **not verified:** Live-trading readiness, profitability, model success and promotion readiness are not established by this documentation.
+I use Codex and ChatGPT to support implementation, debugging, technical review and documentation. AI-assisted drafts are reviewed, revised and approved by me before publication. Project decisions and responsibility remain mine.
 
-Read [current status](CURRENT_STATUS.md), [test results](TEST_RESULTS.md), [roadmap](ROADMAP.md), [project history](PROJECT_HISTORY.md) and the dated [status update](updates/2026-08-31-public-status.md).
+## What this public repository is
 
-## Voluntary support
+This repository is the public technical documentation record for AlgoSphere. It is the place to review the current documented status, observed gates, known blockers, evidence register and dated public updates. GitHub is the binding public technical source. The [Telegram channel](https://t.me/AlgoSphereOfficial) may share short summaries that link back here.
 
-Voluntary support is accepted through [GitHub Sponsors](https://github.com/sponsors/1545Christian) and helps fund research, development, testing infrastructure and public technical documentation. Sponsorship is not an investment and provides no ownership, repayment, profit participation, financial return, trading signals, investment advice, exclusive access or guaranteed project outcome.
+The repository intentionally does not publish private source code, credentials, environment files, wallet or account details, raw reports, databases, market data, trained models, checkpoints, strategy parameters, proprietary trading logic, private logs, personal information or internal paths.
 
-GitHub is the binding source for public technical status. The [Telegram channel](https://t.me/AlgoSphereOfficial) may provide short summaries that link back to GitHub; it does not replace this record. LinkedIn is reserved for material milestones and periodic summaries, not automated daily posts.
+## How to use this repository
+
+Start with the current status, then read the test boundary and open blockers. Use the evidence register to confirm that an artifact was registered, not to infer that a result is independently reproduced. Historical updates retain their original numbers and are clearly labelled as snapshots.
+
+## Start here
+
+| If you want to review | Read |
+|---|---|
+| Current technical state and blocker | [Current status](CURRENT_STATUS.md) |
+| Gates, tests and what was not rerun | [Test results](TEST_RESULTS.md) |
+| Binding evidence summary and register guide | [Evidence summary](evidence/EVIDENCE_SUMMARY.md) |
+| Project development history | [Project history](PROJECT_HISTORY.md) |
+| Priorities and acceptance criteria | [Roadmap](ROADMAP.md) |
+| Dated public changes | [Updates](updates/) |
+| Security boundary and reporting route | [Security](SECURITY.md) |
+| Financial and technical boundary | [Disclaimer](DISCLAIMER.md) |
+
+## What visitors can verify
+
+Visitors can verify that the documented export has an integrity manifest, that the report register has a stated schema and count, that public links resolve, and that observed scalar control values are presented with an artifact timestamp. Visitors can also inspect the Git history of this documentation repository.
+
+## Limits of public verification
+
+Public documentation cannot independently reproduce private code, data, model, configuration or strategy results. A reported PASS is not automatically an independently rerun test, and an entry in the report register is not automatically a passed test or completed development task. No page here establishes profitability, live-trading readiness, model success or a guaranteed project outcome.
+
+## Control terms
+
+- **Canonical-history integrity** checks whether the maintained historical record satisfies its documented integrity contract. A PASS is an observed artifact state, not a performance result.
+- **Paper-watch guard** is a fail-closed control for the paper/watch boundary. A PASS means the observed guard artifact reported its passing state; it does not activate trading.
+- **Runtime context gate** checks whether required runtime context is complete. A blocked state prevents treating the context contract as complete.
+- **Research profile QUICK** is the observed research-autopilot profile label. It describes a report context, not a claim about quality or readiness.
+- **Activation allowed** records whether the observed research artifact permits activation. `False` means activation is not allowed by that artifact.
+- **Eligible experiments** records the observed count of experiments that meet that artifact's eligibility condition. It is not a count of profitable or live-ready systems.
+
+## Community and support
+
+- Public technical record: [GitHub](https://github.com/1545Christian/AlgoSphere)
+- Short public updates: [Telegram](https://t.me/AlgoSphereOfficial)
+- Voluntary support: [GitHub Sponsors](https://github.com/sponsors/1545Christian)
+
+Voluntary support helps fund research, development, testing infrastructure and public technical documentation. Sponsorship is not an investment and provides no ownership, repayment, profit participation, financial return, trading signals, investment advice, exclusive access or guaranteed project outcome. See the full [Disclaimer](DISCLAIMER.md).
 
 ## Copyright and reuse
 
 No open-source license is currently granted. Unless expressly stated otherwise, all rights are reserved. Publication of this repository does not grant permission to use proprietary source code, data, models, strategy materials or AlgoSphere branding.
 
-AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START: this section is generated from current scalar artifacts -->
+## Current observed controls
+
+| Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
+|---|---|---|---|---|
+| Canonical-history integrity | `PASS` | `2026-08-31T12:42:36Z` | observed in current artifact | integrity gate reports its state |
+| Paper-watch guard | `PASS` | `2026-08-31T10:15:28Z` | observed in current artifact | guard observation does not activate trading |
+| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T10:15:28Z` | blocked | context is not treated as complete |
+| Remaining runtime context cases | `7` | `2026-08-31T10:15:28Z` | blocked | highest-priority remediation remains open |
+| Research profile | `QUICK` | `2026-08-31T12:45:44Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-08-31T12:45:44Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `0` | `2026-08-31T12:45:44Z` | observed in current artifact | no eligible experiment is reported |
+
+Observed artifact snapshot: `2026-08-31T12:51:26Z UTC / 2026-08-31 13:51 Westeuropäische Sommerzeit Atlantic/Canary`. The main blocker is `FAIL_INCOMPLETE_V3_CONTEXT` with `7` remaining scoped cases.
+
+Export integrity: verified. Application test suites: not rerun during this export. See [Current status](CURRENT_STATUS.md) and [Test results](TEST_RESULTS.md).
+<!-- AUTO_VALUES_END -->

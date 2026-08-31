@@ -1,14 +1,35 @@
-# Test and QA results
+# Test and gate results
 
-**not verified:** Application test suites were **not rerun during this export**. The private project had active report-producing activity, so no potentially data-changing or long-running test was started.
+<!-- HUMAN_TEXT_START -->
 
-| Observed current artifact | Reported scalar state | Classification | Artifact timestamp (UTC) |
-|---|---|---|---|
-| Canonical-history integrity | `PASS` | verified as an observed report artifact; not independently rerun | `2026-08-31T12:15:43Z` |
-| Paper-watch guard | `PASS` | verified as an observed report artifact; not independently rerun | `2026-08-31T10:15:28Z` |
-| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT`; failures `7` | blocked | `2026-08-31T10:15:28Z` |
-| Research autopilot | `QUICK`; activation `False`; eligible experiments `0` | verified as an observed report artifact; not independently rerun | `2026-08-31T12:18:38Z` |
+## Reading the table
 
-**verified:** Export-only checks were run locally: fixed allowlist, archive-open check, checksum verification, internal Markdown-link check and secret/privacy scan.
+Each row identifies a control or gate, its purpose, its latest observed artifact timestamp, whether it was independently rerun in this export, the observed result, an evidence reference and a limitation. A passing observed artifact is not rewritten as a newly executed test.
 
-AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
+## Export checks
+
+Export checks validate the documentation package itself: allowlist, manifest hashes, archive readability, links and privacy scanning. They do not validate the private application.
+
+## Application tests
+
+Application test suites are only described as independently rerun when this export actually performs them. Otherwise the page says “not rerun during this export.”
+
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START -->
+| Gate or test | Purpose | Last observed artifact (UTC) | Independently rerun in this export | Observed result | Evidence reference | Limitation |
+|---|---|---|---|---|---|---|
+| Canonical-history integrity | historical-record integrity | `2026-08-31T12:42:36Z` | No | `PASS` | `canonical_history_integrity.json` | observed artifact only |
+| Paper-watch guard | paper/watch boundary guard | `2026-08-31T10:15:28Z` | No | `PASS` | `paper_watch_guard_last.json` | observed artifact only |
+| Runtime context gate | required runtime-context completeness | `2026-08-31T10:15:28Z` | No | `FAIL_INCOMPLETE_V3_CONTEXT`; `7` cases | `runtime_entry_snapshot_coverage.json` | blocked; not independently rerun |
+| Research autopilot | research eligibility boundary | `2026-08-31T12:45:44Z` | No | `QUICK`, activation `False`, eligible `0` | `research_autopilot_last.json` | observed artifact only |
+
+| Export check | Result |
+|---|---|
+| Fixed allowlist | PASS |
+| SHA-256 manifest | PASS |
+| ZIP readability | PASS |
+| Internal Markdown links | PASS |
+| Secret and privacy patterns | PASS |
+| Application test suites | Not rerun during this export |
+<!-- AUTO_VALUES_END -->

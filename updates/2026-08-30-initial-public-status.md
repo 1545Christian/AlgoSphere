@@ -1,5 +1,7 @@
 # Initial public status: fail-closed by design
 
+> This is a historical snapshot and has been superseded by the [current status](../CURRENT_STATUS.md). Historical figures below describe the publication-time snapshot and are not current values.
+
 Date: 30 August 2026
 
 AlgoSphere is opening its public engineering record with a blocked gate, not a profitability claim.

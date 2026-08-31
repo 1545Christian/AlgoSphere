@@ -1,19 +1,41 @@
-# Current public project status
+# Current public status
 
-**Classification: verified.** Status timestamp: `2026-08-31T12:19:08Z` (UTC); `2026-08-31 13:19 Westeuropäische Sommerzeit` (Atlantic/Canary).
+<!-- HUMAN_TEXT_START -->
 
-| Control | Current scalar state | Classification | Evidence artifact timestamp (UTC) |
-|---|---|---|---|
-| Canonical-history integrity | `PASS` | verified | `2026-08-31T12:15:43Z` |
-| Paper-watch guard | `PASS` | verified | `2026-08-31T10:15:28Z` |
-| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | blocked | `2026-08-31T10:15:28Z` |
-| Remaining scoped context failures | `7` | blocked | `2026-08-31T10:15:28Z` |
-| Research profile | `QUICK` | verified | `2026-08-31T12:18:38Z` |
-| Activation allowed | `False` | verified | `2026-08-31T12:18:38Z` |
-| Eligible experiments | `0` | verified | `2026-08-31T12:18:38Z` |
+## Plain-language summary
 
-**not verified:** The listed report states are current artefact observations. This export did not rerun the application test suites, and it does not establish profitability, live-trading readiness, model success, promotion readiness or a guaranteed outcome.
+AlgoSphere remains within a fail-closed research boundary. The current observed records show some controls in passing states, but the runtime context gate remains blocked. That means the project does not claim activation, promotion or live-trading readiness.
 
-**not applicable:** No live-trading, exchange, order, Telegram or other external API action was started by this export.
+## How to read this page
 
-AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
+`export verified` describes checks carried out on this documentation package. `observed in current artifact` describes a scalar value read from a current private artifact. `independently rerun` is used only when this export actually ran the relevant application test. `blocked`, `not verified` and `not applicable` retain their ordinary meanings.
+
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START -->
+## Technical status table
+
+| Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
+|---|---|---|---|---|
+| Canonical-history integrity | `PASS` | `2026-08-31T12:42:36Z` | observed in current artifact | integrity gate reports its state |
+| Paper-watch guard | `PASS` | `2026-08-31T10:15:28Z` | observed in current artifact | guard observation does not activate trading |
+| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T10:15:28Z` | blocked | context is not treated as complete |
+| Remaining runtime context cases | `7` | `2026-08-31T10:15:28Z` | blocked | highest-priority remediation remains open |
+| Research profile | `QUICK` | `2026-08-31T12:45:44Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-08-31T12:45:44Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `0` | `2026-08-31T12:45:44Z` | observed in current artifact | no eligible experiment is reported |
+
+## What this export checked
+
+- **export verified:** fixed allowlist, ZIP readability, manifest hashes, internal Markdown links and privacy/secret-pattern scan passed.
+- **not applicable:** this export did not start trading, exchange, order, Telegram or other external API actions.
+- **observed in current artifact:** values in the table were read as scalars at `2026-08-31T12:51:26Z UTC / 2026-08-31 13:51 Westeuropäische Sommerzeit Atlantic/Canary`.
+
+## What was not rerun
+
+Application test suites: not rerun during this export. Observed report values must not be read as independently rerun tests.
+
+## Current main blocker and next step
+
+**blocked:** `7` runtime-context cases remain under `FAIL_INCOMPLETE_V3_CONTEXT`. **Next required step:** resolve the missing context and then independently rerun the applicable gate before claiming completion.
+<!-- AUTO_VALUES_END -->

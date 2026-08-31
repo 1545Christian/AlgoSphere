@@ -1,9 +1,23 @@
 # Security and disclosure boundary
 
-**verified:** The export was built from a fixed positive allowlist of public documentation files. Raw reports, source code, data, databases, models, checkpoints, private configurations, environment files, credentials, wallet details, strategy materials and private logs were excluded.
+<!-- HUMAN_TEXT_START -->
 
-**verified:** The final staged files and ZIP entries were scanned for private-key material, credential assignments, email addresses, IP addresses, absolute paths, object-dump patterns and prohibited private metric labels. No matching prohibited content was found. Findings are not reproduced here.
+## Excluded material
 
-**not applicable:** No credential was read, added, stored or transmitted by the export process. No external API action was performed.
+Public documentation excludes private source code, credentials, environment files, private configuration, wallet or account information, databases, market data, models, checkpoints, strategy materials, internal paths, personal data and raw private logs.
 
-AlgoSphere is an independent research and engineering project. Nothing in this export constitutes investment advice, trading signals, an investment opportunity, a promise of returns, or a guaranteed project outcome.
+## Export checks and their limits
+
+The export uses a fixed allowlist and scans staged public files for common secret, personal-data, path and prohibited-metric patterns. These automated scans reduce risk; they cannot prove that every possible secret or sensitive inference is absent. Human review remains necessary.
+
+## Responsible reporting
+
+Do not post credentials, tokens, private keys or exploitable details in public issues. Use GitHub Private Vulnerability Reporting if it is enabled for this repository. If it is not enabled, a secure reporting route remains an open organisational item; no email address is invented here.
+
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START -->
+- **export verified:** fixed allowlist, ZIP inspection, hash manifest, link check and pattern scan passed.
+- **not verified:** automated scanning cannot establish the absence of every possible sensitive inference.
+- **not applicable:** no credential was read, stored or transmitted by this export.
+<!-- AUTO_VALUES_END -->
