@@ -91,15 +91,15 @@ No open-source license is currently granted. Unless expressly stated otherwise, 
 
 | Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
 |---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-08-31T13:21:57Z` | observed in current artifact | integrity gate reports its state |
-| Paper-watch guard | `PASS` | `2026-08-31T10:15:28Z` | observed in current artifact | guard observation does not activate trading |
-| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T10:15:28Z` | blocked | context is not treated as complete |
-| Remaining runtime context cases | `7` | `2026-08-31T10:15:28Z` | blocked | highest-priority remediation remains open |
-| Research profile | `QUICK` | `2026-08-31T13:21:47Z` | observed in current artifact | profile label only |
-| Activation allowed | `False` | `2026-08-31T13:21:47Z` | observed in current artifact | activation is not permitted by the observed artifact |
-| Eligible experiments | `0` | `2026-08-31T13:21:47Z` | observed in current artifact | no eligible experiment is reported |
+| Canonical-history integrity | `PASS` | `2026-08-31T18:14:41Z` | observed in current artifact | integrity gate reports its state |
+| Paper-watch guard | `PASS` | `2026-08-31T16:15:22Z` | observed in current artifact | guard observation does not activate trading |
+| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T16:15:22Z` | blocked | context is not treated as complete |
+| Remaining runtime context cases | `7` | `2026-08-31T16:15:22Z` | blocked | highest-priority remediation remains open |
+| Research profile | `QUICK` | `2026-08-31T20:00:38Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-08-31T20:00:38Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `0` | `2026-08-31T20:00:38Z` | observed in current artifact | no eligible experiment is reported |
 
-Observed artifact snapshot: `2026-08-31T13:22:11Z UTC / 2026-08-31 14:22 Westeuropäische Sommerzeit Atlantic/Canary`. The main blocker is `FAIL_INCOMPLETE_V3_CONTEXT` with `7` remaining scoped cases.
+Observed artifact snapshot: `2026-08-31T22:10:05Z UTC / 2026-08-31 23:10 Westeuropäische Sommerzeit Atlantic/Canary`. The main blocker is `FAIL_INCOMPLETE_V3_CONTEXT` with `7` remaining scoped cases.
 
 Export integrity: verified. Application test suites: not rerun during this export. See [Current status](CURRENT_STATUS.md) and [Test results](TEST_RESULTS.md).
 <!-- AUTO_VALUES_END -->

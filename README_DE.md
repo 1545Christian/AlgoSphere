@@ -91,15 +91,15 @@ Derzeit wird keine Open-Source-Lizenz eingeräumt. Soweit nicht ausdrücklich an
 
 | Kontrolle | Beobachteter Wert | Quellartefakt (UTC) | Einordnung | Praktische Auswirkung |
 |---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-08-31T13:21:57Z` | im aktuellen Artefakt beobachtet | Integritätskontrolle meldet ihren Zustand |
-| Paper-watch guard | `PASS` | `2026-08-31T10:15:28Z` | im aktuellen Artefakt beobachtet | die Guard-Beobachtung aktiviert kein Trading |
-| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T10:15:28Z` | blockiert | Kontext wird nicht als vollständig behandelt |
-| Verbleibende Runtime-Kontextfälle | `7` | `2026-08-31T10:15:28Z` | blockiert | Remediation mit höchster Priorität bleibt offen |
-| Research-Profil | `QUICK` | `2026-08-31T13:21:47Z` | im aktuellen Artefakt beobachtet | nur Profilbezeichnung |
-| Aktivierung erlaubt | `False` | `2026-08-31T13:21:47Z` | im aktuellen Artefakt beobachtet | Aktivierung wird vom beobachteten Artefakt nicht erlaubt |
-| Geeignete Experimente | `0` | `2026-08-31T13:21:47Z` | im aktuellen Artefakt beobachtet | kein geeignetes Experiment wird gemeldet |
+| Canonical-history integrity | `PASS` | `2026-08-31T18:14:41Z` | im aktuellen Artefakt beobachtet | Integritätskontrolle meldet ihren Zustand |
+| Paper-watch guard | `PASS` | `2026-08-31T16:15:22Z` | im aktuellen Artefakt beobachtet | die Guard-Beobachtung aktiviert kein Trading |
+| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T16:15:22Z` | blockiert | Kontext wird nicht als vollständig behandelt |
+| Verbleibende Runtime-Kontextfälle | `7` | `2026-08-31T16:15:22Z` | blockiert | Remediation mit höchster Priorität bleibt offen |
+| Research-Profil | `QUICK` | `2026-08-31T20:00:38Z` | im aktuellen Artefakt beobachtet | nur Profilbezeichnung |
+| Aktivierung erlaubt | `False` | `2026-08-31T20:00:38Z` | im aktuellen Artefakt beobachtet | Aktivierung wird vom beobachteten Artefakt nicht erlaubt |
+| Geeignete Experimente | `0` | `2026-08-31T20:00:38Z` | im aktuellen Artefakt beobachtet | kein geeignetes Experiment wird gemeldet |
 
-Beobachteter Artefakt-Snapshot: `2026-08-31T13:22:11Z UTC / 2026-08-31 14:22 Westeuropäische Sommerzeit Atlantic/Canary`. Hauptblocker ist `FAIL_INCOMPLETE_V3_CONTEXT` mit `7` verbleibenden abgegrenzten Fällen.
+Beobachteter Artefakt-Snapshot: `2026-08-31T22:10:05Z UTC / 2026-08-31 23:10 Westeuropäische Sommerzeit Atlantic/Canary`. Hauptblocker ist `FAIL_INCOMPLETE_V3_CONTEXT` mit `7` verbleibenden abgegrenzten Fällen.
 
 Exportintegrität: verifiziert. Anwendungstest-Suiten: während dieses Exports nicht erneut ausgeführt. Siehe [Aktueller Status](CURRENT_STATUS.md) und [Testergebnisse](TEST_RESULTS.md).
 <!-- AUTO_VALUES_END -->
