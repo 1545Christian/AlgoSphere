@@ -4,10 +4,10 @@
 
 | Observed current artifact | Reported scalar state | Classification | Artifact timestamp (UTC) |
 |---|---|---|---|
-| Canonical-history integrity | `PASS` | verified as an observed report artifact; not independently rerun | `2026-08-31T12:15:43Z` |
+| Canonical-history integrity | `PASS` | verified as an observed report artifact; not independently rerun | `2026-08-31T11:36:14Z` |
 | Paper-watch guard | `PASS` | verified as an observed report artifact; not independently rerun | `2026-08-31T10:15:28Z` |
 | Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT`; failures `7` | blocked | `2026-08-31T10:15:28Z` |
-| Research autopilot | `QUICK`; activation `False`; eligible experiments `0` | verified as an observed report artifact; not independently rerun | `2026-08-31T12:18:38Z` |
+| Research autopilot | `QUICK`; activation `False`; eligible experiments `0` | verified as an observed report artifact; not independently rerun | `2026-08-31T11:35:11Z` |
 
 **verified:** Export-only checks were run locally: fixed allowlist, archive-open check, checksum verification, internal Markdown-link check and secret/privacy scan.
 

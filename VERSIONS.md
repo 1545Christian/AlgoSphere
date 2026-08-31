@@ -1,6 +1,6 @@
 # Versions and build identifiers
 
-**verified:** Public identifiers were read as scalar metadata at `2026-08-31T12:19:08Z`.
+**verified:** Public identifiers were read as scalar metadata at `2026-08-31T11:36:25Z`.
 
 | Public identifier | Observed value | Classification |
 |---|---|---|
