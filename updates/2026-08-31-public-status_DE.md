@@ -1,12 +1,14 @@
 # Öffentliches Status-Update — 2026-08-31
 
+English: [Public status update](2026-08-31-public-status.md)
+
 <!-- AUTO_VALUES_START -->
 
 Dieses Update wird aus aktuellen skalaren Artefakten erzeugt. Die grundlegenden Erläuterungstexte werden getrennt in menschlich geprüften Vorlagen gepflegt.
 
 ## Änderung seit der vorherigen veröffentlichten Momentaufnahme
 
-Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das aktuelle bereinigte Register enthält 2725 Einträge, eine Differenz von 983. Das Register veröffentlicht weder Rohdateinamen noch kausale Herkunft. Die Ursache des Anstiegs ist daher nicht verifiziert. Er darf nicht als 983 neue Tests, abgeschlossene Entwicklungsarbeiten oder Leistungsfortschritt gelesen werden. Die angefragte Zwischenzahl 1.841 ist in dieser aktuellen Re-Inventarisierung nicht der aktuelle Wert und wird nicht als aktueller Fakt ausgegeben.
+Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das aktuelle bereinigte Register enthält 2752 Einträge, eine Differenz von 1010. Das Register veröffentlicht weder Rohdateinamen noch kausale Herkunft. Die Ursache des Anstiegs ist daher nicht verifiziert. Er darf nicht als 1010 neue Tests, abgeschlossene Entwicklungsarbeiten oder Leistungsfortschritt gelesen werden. Die angefragte Zwischenzahl 1.841 ist in dieser aktuellen Re-Inventarisierung nicht der aktuelle Wert und wird nicht als aktueller Fakt ausgegeben.
 
 ## Heute geprüfte technische und betriebliche Artefakte
 

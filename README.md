@@ -20,12 +20,14 @@ That learning work grew into several of my own Python prototypes, revised repeat
 
 | Area | Current state |
 |---|---|
+<!-- AUTO_VALUES_START:CURRENT_STATUS -->
 | Canonical-history integrity | PASS |
 | Paper-watch guard | PASS |
 | Runtime context gate | BLOCKED |
 | Remaining context cases | 7 |
 | Research activation | Disabled |
 | Live-trading readiness | Not claimed |
+<!-- AUTO_VALUES_END:CURRENT_STATUS -->
 
 The project remains fail-closed. No research result is promoted when required runtime evidence is incomplete.
 

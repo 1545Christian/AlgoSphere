@@ -27,16 +27,16 @@ Use a neutral ID to locate a row, inspect its category and date, and compare a p
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
-**Export integrity: verified.** Current sanitised register count: `2725`; published hashes: `2724`; `HASH_NOT_PUBLISHED` rows: `1`.
+**Export integrity: verified.** Current sanitised register count: `2752`; published hashes: `2751`; `HASH_NOT_PUBLISHED` rows: `1`.
 
 | Category | Count |
 |---|---:|
 | BUILD | 1 |
-| DELIVERY | 122 |
+| DELIVERY | 132 |
 | QA | 271 |
 | TEST | 88 |
-| OTHER | 2243 |
-| **Total** | **2725** |
+| OTHER | 2260 |
+| **Total** | **2752** |
 
-The previous public snapshot contained 1,742 records. This re-inventory differs by `983` records. The public register does not expose raw filenames or causal provenance, so the increase is **not verified** as `983` new tests, completed development tasks or performance progress. A requested intermediate figure of 1,841 is not the current count in this re-inventory and is not presented as a current fact.
+The previous public snapshot contained 1,742 records. This re-inventory differs by `1010` records. The public register does not expose raw filenames or causal provenance, so the increase is **not verified** as `1010` new tests, completed development tasks or performance progress. A requested intermediate figure of 1,841 is not the current count in this re-inventory and is not presented as a current fact.
 <!-- AUTO_VALUES_END -->

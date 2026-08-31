@@ -6,7 +6,7 @@ Aufbau, Test und Dokumentation eines Weges von Research und Backtesting zu Paper
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes Update: [englisches Statusupdate](updates/2026-08-31-public-status.md)<br>
+Neuestes Update: [deutsches Statusupdate](updates/2026-08-31-public-status_DE.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -20,14 +20,16 @@ Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wieder
 
 | Bereich | Aktueller Stand |
 |---|---|
+<!-- AUTO_VALUES_START:CURRENT_STATUS -->
 | Kanonische Historie | PASS |
 | Paper-Watch-Schutz | PASS |
 | Runtime-Kontext-Gate | BLOCKIERT |
 | Verbleibende Kontextfälle | 7 |
 | Research-Aktivierung | Deaktiviert |
 | Live-Trading-Reife | Nicht behauptet |
+<!-- AUTO_VALUES_END:CURRENT_STATUS -->
 
-Das Projekt bleibt fail-closed. Bei unvollständigen Runtime-Nachweisen wird kein Research-Ergebnis weiter aktiviert.
+Das Projekt bleibt im sicheren Sperrzustand (fail-closed). Bei unvollständigen Runtime-Nachweisen wird kein Research-Ergebnis weiter aktiviert.
 
 ## Was Besucher hier sehen können
 
