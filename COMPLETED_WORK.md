@@ -23,8 +23,8 @@ See [Test results](TEST_RESULTS.md), [Evidence summary](evidence/EVIDENCE_SUMMAR
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
-- **Reports generated or updated:** current scalar artifacts were observed at `2026-08-31T22:10:05Z UTC / 2026-08-31 23:10 Westeuropäische Sommerzeit Atlantic/Canary`.
-- **Observed, not established as completed:** report registration count is `2645`; this is not presented as `2645` tests or completed changes.
+- **Reports generated or updated:** current scalar artifacts were observed at `2026-08-31T22:10:28Z UTC / 2026-08-31 23:10 Westeuropäische Sommerzeit Atlantic/Canary`.
+- **Observed, not established as completed:** report registration count is `2646`; this is not presented as `2646` tests or completed changes.
 - **Public documentation work:** current guidance, tables, register and manifest were rendered from human-maintained templates.
 - **Not applicable:** no application code was changed by this documentation export.
 <!-- AUTO_VALUES_END -->
