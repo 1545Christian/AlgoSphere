@@ -31,7 +31,7 @@ def sha256(path: Path) -> str:
 
 def manifest_entries(root: Path) -> tuple[dict[str, str], list[str]]:
     errors: list[str] = []
-    manifest = root / "EXPORT_CONTENTS.md"
+    manifest = root / "evidence" / "EXPORT_CONTENTS.md"
     if not manifest.is_file():
         return {}, ["FAIL: EXPORT_CONTENTS.md is missing"]
     entries: dict[str, str] = {}
@@ -53,7 +53,7 @@ def manifest_entries(root: Path) -> tuple[dict[str, str], list[str]]:
 
 def verify_register(root: Path) -> list[str]:
     errors: list[str] = []
-    path = root / "REPORTS_PUBLIC_REGISTER.csv"
+    path = root / "evidence" / "REPORTS_PUBLIC_REGISTER.csv"
     if not path.is_file():
         return ["FAIL: REPORTS_PUBLIC_REGISTER.csv is missing"]
     with path.open("r", encoding="utf-8", newline="") as handle:

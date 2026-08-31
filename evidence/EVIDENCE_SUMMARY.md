@@ -4,7 +4,7 @@
 
 ## Purpose of the register
 
-[REPORTS_PUBLIC_REGISTER.csv](../REPORTS_PUBLIC_REGISTER.csv) is a sanitised inventory of discovered report artifacts. It lets visitors check register count, neutral IDs, category, UTC date, registration state and published hashes without disclosing report filenames, paths or raw contents.
+[REPORTS_PUBLIC_REGISTER.csv](REPORTS_PUBLIC_REGISTER.csv) is a sanitised inventory of discovered report artifacts. It lets visitors check register count, neutral IDs, category, UTC date, registration state and published hashes without disclosing report filenames, paths or raw contents.
 
 ## Categories and states
 
@@ -27,16 +27,16 @@ Use a neutral ID to locate a row, inspect its category and date, and compare a p
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
-**Export integrity: verified.** Current sanitised register count: `2691`; published hashes: `2690`; `HASH_NOT_PUBLISHED` rows: `1`.
+**Export integrity: verified.** Current sanitised register count: `2725`; published hashes: `2724`; `HASH_NOT_PUBLISHED` rows: `1`.
 
 | Category | Count |
 |---|---:|
 | BUILD | 1 |
 | DELIVERY | 122 |
-| QA | 269 |
+| QA | 271 |
 | TEST | 88 |
-| OTHER | 2211 |
-| **Total** | **2691** |
+| OTHER | 2243 |
+| **Total** | **2725** |
 
-The previous public snapshot contained 1,742 records. This re-inventory differs by `949` records. The public register does not expose raw filenames or causal provenance, so the increase is **not verified** as `949` new tests, completed development tasks or performance progress. A requested intermediate figure of 1,841 is not the current count in this re-inventory and is not presented as a current fact.
+The previous public snapshot contained 1,742 records. This re-inventory differs by `983` records. The public register does not expose raw filenames or causal provenance, so the increase is **not verified** as `983` new tests, completed development tasks or performance progress. A requested intermediate figure of 1,841 is not the current count in this re-inventory and is not presented as a current fact.
 <!-- AUTO_VALUES_END -->

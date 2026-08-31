@@ -29,7 +29,7 @@ AlgoSphere remains within a fail-closed research boundary. The current observed 
 
 - **export verified:** fixed allowlist, ZIP readability, manifest hashes, internal Markdown links and privacy/secret-pattern scan passed.
 - **not applicable:** this export did not start trading, exchange, order, Telegram or other external API actions.
-- **observed in current artifact:** values in the table were read as scalars at `2026-08-31T22:45:02Z UTC / 2026-08-31 23:45 Westeuropäische Sommerzeit Atlantic/Canary`.
+- **observed in current artifact:** values in the table were read as scalars at `2026-08-31T23:11:26Z UTC / 2026-09-01 00:11 Westeuropäische Sommerzeit Atlantic/Canary`.
 
 ## What was not rerun
 

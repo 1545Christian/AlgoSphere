@@ -2,7 +2,7 @@
 
 <!-- HUMAN_TEXT_START -->
 
-This is the binding public version reference. It distinguishes identifiers by scope rather than presenting them as one proven release chain. See [Current status](CURRENT_STATUS.md) for the observed controls.
+This is the binding public version reference. It distinguishes identifiers by scope rather than presenting them as one proven release chain. See [Current status](../../CURRENT_STATUS.md) for the observed controls.
 
 <!-- HUMAN_TEXT_END -->
 

@@ -23,7 +23,7 @@ class VerifyPublicExportTests(unittest.TestCase):
     def make_fixture(self) -> Path:
         root = Path(tempfile.mkdtemp())
         (root / "evidence").mkdir()
-        register = root / "REPORTS_PUBLIC_REGISTER.csv"
+        register = root / "evidence" / "REPORTS_PUBLIC_REGISTER.csv"
         with register.open("w", encoding="utf-8", newline="") as handle:
             writer = csv.writer(handle)
             writer.writerow(verify_public_export.EXPECTED_COLUMNS)
@@ -31,14 +31,14 @@ class VerifyPublicExportTests(unittest.TestCase):
             writer.writerow(("R00002", "OTHER", "2026-08-31", "HASH_NOT_PUBLISHED", ""))
         (root / "evidence" / "EVIDENCE_SUMMARY.md").write_text("Current sanitised register count: `2`\n", encoding="utf-8")
         entries = {
-            "REPORTS_PUBLIC_REGISTER.csv": digest(register),
+            "evidence/REPORTS_PUBLIC_REGISTER.csv": digest(register),
             "evidence/EVIDENCE_SUMMARY.md": digest(root / "evidence" / "EVIDENCE_SUMMARY.md"),
         }
         lines = ["# Export contents", "", "| Relative filename | Bytes | SHA-256 |", "|---|---:|---|"]
         for relative, value in entries.items():
             lines.append(f"| `{relative}` | 0 | `{value}` |")
         lines.append("| `EXPORT_CONTENTS.md` | self | intentionally omitted (self-referential) |")
-        (root / "EXPORT_CONTENTS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        (root / "evidence" / "EXPORT_CONTENTS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
         return root
 
     def test_valid_fixture_passes(self) -> None:
@@ -46,7 +46,7 @@ class VerifyPublicExportTests(unittest.TestCase):
 
     def test_duplicate_id_fails(self) -> None:
         root = self.make_fixture()
-        register = root / "REPORTS_PUBLIC_REGISTER.csv"
+        register = root / "evidence" / "REPORTS_PUBLIC_REGISTER.csv"
         with register.open("r", encoding="utf-8", newline="") as handle:
             rows = list(csv.reader(handle))
         rows[2][0] = "R00001"
