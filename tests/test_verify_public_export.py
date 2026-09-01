@@ -162,6 +162,18 @@ class VerifyPublicExportTests(unittest.TestCase):
     def test_realistic_fixture_passes(self) -> None:
         self.assertEqual(verify_public_export.verify(self.root), [])
 
+    def test_manifest_matches_final_lf_bytes(self) -> None:
+        manifest = (self.root / "evidence" / "EXPORT_CONTENTS.md").read_text(encoding="utf-8")
+        self.assertNotIn("\r", manifest)
+        entries, errors = verify_public_export.manifest_entries(self.root)
+        self.assertEqual(errors, [])
+        for relative, (size, expected_hash) in entries.items():
+            path = self.root / relative
+            raw = path.read_bytes()
+            self.assertNotIn(b"\r", raw, relative)
+            self.assertEqual(size, len(raw), relative)
+            self.assertEqual(expected_hash, hashlib.sha256(raw).hexdigest(), relative)
+
     def test_missing_manifest_fails(self) -> None:
         self.assert_error(lambda: (self.root / "evidence" / "EXPORT_CONTENTS.md").unlink(), "EXPORT_CONTENTS.md is missing")
 
