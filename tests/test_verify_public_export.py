@@ -31,14 +31,21 @@ class VerifyPublicExportTests(unittest.TestCase):
     def setUp(self) -> None:
         TMP_ROOT.mkdir(parents=True, exist_ok=True)
         self.root = TMP_ROOT / f"case_{uuid.uuid4().hex}"
+        self.update_date = "2026-09-01"
         self.root.mkdir()
         self.make_fixture()
 
     def tearDown(self) -> None:
         shutil.rmtree(self.root, ignore_errors=True)
 
+    def manifest_files(self) -> set[str]:
+        return set(verify_public_export.BASE_EXPORT_MANIFEST_FILES) | {
+            f"updates/{self.update_date}-public-status.md",
+            f"updates/{self.update_date}-public-status_DE.md",
+        }
+
     def make_fixture(self) -> None:
-        for relative in sorted(verify_public_export.EXPORT_MANIFEST_FILES):
+        for relative in sorted(self.manifest_files()):
             if relative == "README.md":
                 write_lf(
                     self.root / relative,
@@ -55,16 +62,16 @@ class VerifyPublicExportTests(unittest.TestCase):
                     "<!-- AUTO_VALUES_START:CURRENT_STATUS -->\n| Bereich | Stand |\n|---|---|\n| Runtime | BLOCKIERT |\n"
                     "<!-- AUTO_VALUES_END:CURRENT_STATUS -->\n",
                 )
-            elif relative == "updates/2026-08-31-public-status.md":
+            elif relative == f"updates/{self.update_date}-public-status.md":
                 write_lf(
                     self.root / relative,
-                    "# Public status update\n\nDeutsch: [Status](2026-08-31-public-status_DE.md)\n\n"
+                    f"# Public status update\n\nDeutsch: [Status]({self.update_date}-public-status_DE.md)\n\n"
                     "<!-- AUTO_VALUES_START -->\nExport integrity: verified.\n<!-- AUTO_VALUES_END -->\n",
                 )
-            elif relative == "updates/2026-08-31-public-status_DE.md":
+            elif relative == f"updates/{self.update_date}-public-status_DE.md":
                 write_lf(
                     self.root / relative,
-                    "# Oeffentliches Status-Update\n\nEnglish: [Status](2026-08-31-public-status.md)\n\n"
+                    f"# Oeffentliches Status-Update\n\nEnglish: [Status]({self.update_date}-public-status.md)\n\n"
                     "<!-- AUTO_VALUES_START -->\nExportintegritaet: verifiziert.\n<!-- AUTO_VALUES_END -->\n",
                 )
             elif relative == "evidence/REPORTS_PUBLIC_REGISTER.csv":
@@ -127,7 +134,7 @@ class VerifyPublicExportTests(unittest.TestCase):
             "| Relative filename | Bytes | SHA-256 |",
             "|---|---:|---|",
         ]
-        for relative in sorted(verify_public_export.EXPORT_MANIFEST_FILES):
+        for relative in sorted(self.manifest_files()):
             path = self.root / relative
             lines.append(f"| `{relative}` | {path.stat().st_size} | `{digest(path)}` |")
         lines.append("| `EXPORT_CONTENTS.md` | self | intentionally omitted (self-referential) |")
@@ -172,6 +179,33 @@ class VerifyPublicExportTests(unittest.TestCase):
             write_lf(manifest, text + "| `docs/unknown.md` | 1 | `" + "0" * 64 + "` |\n")
 
         self.assert_error(mutate, "manifest allowlist has unexpected entries")
+
+    def test_unmatched_manifest_update_pair_fails(self) -> None:
+        def mutate() -> None:
+            manifest = self.root / "evidence" / "EXPORT_CONTENTS.md"
+            lines = [
+                line
+                for line in manifest.read_text(encoding="utf-8").splitlines()
+                if not line.startswith(f"| `updates/{self.update_date}-public-status_DE.md`")
+            ]
+            write_lf(manifest, "\n".join(lines) + "\n")
+
+        self.assert_error(mutate, "exactly one matched EN/DE dated status update pair")
+
+    def test_export_only_rejects_historical_extra_update_file(self) -> None:
+        def mutate() -> None:
+            write_lf(
+                self.root / "updates/2026-08-31-public-status.md",
+                "# Historical update\n\nDeutsch: [Status](2026-08-31-public-status_DE.md)\n",
+            )
+            write_lf(
+                self.root / "updates/2026-08-31-public-status_DE.md",
+                "# Historisches Update\n\nEnglish: [Status](2026-08-31-public-status.md)\n",
+            )
+
+        mutate()
+        errors = verify_public_export.verify(self.root, export_only=True)
+        self.assertTrue(any("unexpected public repository file" in error for error in errors), errors)
 
     def test_missing_manifest_entry_fails(self) -> None:
         def mutate() -> None:
@@ -222,6 +256,15 @@ class VerifyPublicExportTests(unittest.TestCase):
 
     def test_missing_language_navigation_fails(self) -> None:
         self.assert_error(lambda: write_lf(self.root / "README.md", "# AlgoSphere\n\nNo language link.\n"), "missing language navigation")
+
+    def test_missing_update_counterlink_fails(self) -> None:
+        self.assert_error(
+            lambda: write_lf(
+                self.root / "updates" / f"{self.update_date}-public-status.md",
+                "# Public status update\n\nNo German counterpart.\n",
+            ),
+            "missing language navigation",
+        )
 
     def test_nested_human_and_auto_blocks_fail(self) -> None:
         def mutate() -> None:

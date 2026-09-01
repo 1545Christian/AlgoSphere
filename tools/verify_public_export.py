@@ -22,6 +22,8 @@ MANIFEST_RE = re.compile(r"^\| `([^`]+)` \| (\d+) \| `([0-9a-f]{64})` \|$", re.I
 SELF_MANIFEST_RE = re.compile(r"^\| `(?:evidence/)?EXPORT_CONTENTS\.md` \| self \| intentionally omitted ", re.I)
 MARKER_RE = re.compile(r"<!--\s*((?:HUMAN_TEXT|AUTO_VALUES)_(?:START|END)(?::[A-Z0-9_]+)?)\s*-->")
 LOCAL_LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+UPDATE_EN_RE = re.compile(r"^updates/(\d{4}-\d{2}-\d{2})-public-status\.md$")
+UPDATE_DE_RE = re.compile(r"^updates/(\d{4}-\d{2}-\d{2})-public-status_DE\.md$")
 SECRET_PATTERNS = {
     "private_key": re.compile(r"-----BEGIN(?: [A-Z]+)? PRIVATE KEY-----", re.I),
     "credential_assignment": re.compile(
@@ -36,7 +38,7 @@ SECRET_PATTERNS = {
     "proprietary_metrics": re.compile(r"\bPnL\b|profit factor|open_positions|research_code_fingerprint", re.I),
 }
 
-EXPORT_MANIFEST_FILES = {
+BASE_EXPORT_MANIFEST_FILES = {
     "README.md",
     "README_DE.md",
     "CURRENT_STATUS.md",
@@ -51,6 +53,8 @@ EXPORT_MANIFEST_FILES = {
     "evidence/EVIDENCE_SUMMARY.md",
     "evidence/REPORTS_PUBLIC_REGISTER.csv",
     "evidence/GIT_STATUS_AND_LOG.md",
+}
+EXPORT_MANIFEST_FILES = BASE_EXPORT_MANIFEST_FILES | {
     "updates/2026-08-31-public-status.md",
     "updates/2026-08-31-public-status_DE.md",
 }
@@ -64,12 +68,10 @@ SUPPORT_FILES = {
     "updates/2026-08-30-initial-public-status.md",
     "updates/2026-08-30-public-history-and-status.md",
 }
-REPOSITORY_ALLOWLIST = EXPORT_MANIFEST_FILES | SUPPORT_FILES
+REPOSITORY_ALLOWLIST = BASE_EXPORT_MANIFEST_FILES | SUPPORT_FILES
 LANGUAGE_COUNTERLINKS = {
     "README.md": "README_DE.md",
     "README_DE.md": "README.md",
-    "updates/2026-08-31-public-status.md": "2026-08-31-public-status_DE.md",
-    "updates/2026-08-31-public-status_DE.md": "2026-08-31-public-status.md",
 }
 
 
@@ -122,14 +124,47 @@ def manifest_entries(root: Path) -> tuple[dict[str, tuple[int, str]], list[str]]
     return entries, errors
 
 
+def manifest_update_files(entries: dict[str, tuple[int, str]]) -> tuple[set[str], list[str]]:
+    errors: list[str] = []
+    en_dates = {match.group(1) for relative in entries if (match := UPDATE_EN_RE.fullmatch(relative))}
+    de_dates = {match.group(1) for relative in entries if (match := UPDATE_DE_RE.fullmatch(relative))}
+    update_files = {
+        relative
+        for relative in entries
+        if UPDATE_EN_RE.fullmatch(relative) or UPDATE_DE_RE.fullmatch(relative)
+    }
+    unexpected_updates = sorted(
+        relative
+        for relative in entries
+        if relative.startswith("updates/")
+        and not (UPDATE_EN_RE.fullmatch(relative) or UPDATE_DE_RE.fullmatch(relative))
+    )
+    if unexpected_updates:
+        errors.append(f"FAIL: manifest has unexpected update entries: {', '.join(unexpected_updates)}")
+    if len(en_dates) != 1 or len(de_dates) != 1 or en_dates != de_dates:
+        errors.append("FAIL: manifest must contain exactly one matched EN/DE dated status update pair")
+    return update_files, errors
+
+
+def expected_manifest_files(entries: dict[str, tuple[int, str]]) -> tuple[set[str], list[str]]:
+    update_files, update_errors = manifest_update_files(entries)
+    return BASE_EXPORT_MANIFEST_FILES | update_files, update_errors
+
+
+def is_historical_update_file(relative: str) -> bool:
+    return bool(UPDATE_EN_RE.fullmatch(relative) or UPDATE_DE_RE.fullmatch(relative))
+
+
 def verify_manifest(root: Path) -> list[str]:
     errors: list[str] = []
     entries, manifest_errors = manifest_entries(root)
     errors.extend(manifest_errors)
+    expected_files, expected_errors = expected_manifest_files(entries)
+    errors.extend(expected_errors)
     actual_manifest_files = set(entries)
-    if actual_manifest_files != EXPORT_MANIFEST_FILES:
-        missing = sorted(EXPORT_MANIFEST_FILES - actual_manifest_files)
-        extra = sorted(actual_manifest_files - EXPORT_MANIFEST_FILES)
+    if actual_manifest_files != expected_files:
+        missing = sorted(expected_files - actual_manifest_files)
+        extra = sorted(actual_manifest_files - expected_files)
         if missing:
             errors.append(f"FAIL: manifest allowlist is missing entries: {', '.join(missing)}")
         if extra:
@@ -191,12 +226,16 @@ def verify_register(root: Path) -> list[str]:
 
 def verify_repository_allowlist(root: Path, *, export_only: bool = False) -> list[str]:
     errors: list[str] = []
-    allowed = EXPORT_MANIFEST_FILES | {"evidence/EXPORT_CONTENTS.md"} if export_only else REPOSITORY_ALLOWLIST
+    entries, manifest_errors = manifest_entries(root)
+    expected_files, expected_errors = expected_manifest_files(entries)
+    errors.extend(manifest_errors)
+    errors.extend(expected_errors)
+    allowed = expected_files | {"evidence/EXPORT_CONTENTS.md"} if export_only else expected_files | SUPPORT_FILES
     for path in _iter_files(root):
         relative = _relative(path, root)
         if "__pycache__" in path.parts or ".pytest_cache" in path.parts or path.suffix.lower() in {".pyc", ".pyo", ".pyd"}:
             errors.append(f"FAIL: cache artifact is forbidden: {relative}")
-        if relative not in allowed:
+        if relative not in allowed and not (not export_only and is_historical_update_file(relative)):
             errors.append(f"FAIL: unexpected public repository file: {relative}")
     present = {_relative(path, root) for path in _iter_files(root)}
     missing = allowed - present
@@ -253,6 +292,32 @@ def verify_language_counterlinks(root: Path) -> list[str]:
             continue
         if counterpart not in path.read_text(encoding="utf-8"):
             errors.append(f"FAIL: missing language navigation: {relative} -> {counterpart}")
+    dated_updates = {
+        _relative(path, root)
+        for path in _iter_files(root)
+        if path.suffix.lower() == ".md" and is_historical_update_file(_relative(path, root))
+    }
+    dates = {
+        match.group(1)
+        for relative in dated_updates
+        for match in (UPDATE_EN_RE.fullmatch(relative) or UPDATE_DE_RE.fullmatch(relative),)
+        if match
+    }
+    for date in sorted(dates):
+        en_relative = f"updates/{date}-public-status.md"
+        de_relative = f"updates/{date}-public-status_DE.md"
+        en_path = root / en_relative
+        de_path = root / de_relative
+        if not en_path.is_file():
+            errors.append(f"FAIL: language navigation source is missing: {en_relative}")
+            continue
+        if not de_path.is_file():
+            errors.append(f"FAIL: language navigation source is missing: {de_relative}")
+            continue
+        if f"{date}-public-status_DE.md" not in en_path.read_text(encoding="utf-8"):
+            errors.append(f"FAIL: missing language navigation: {en_relative} -> {date}-public-status_DE.md")
+        if f"{date}-public-status.md" not in de_path.read_text(encoding="utf-8"):
+            errors.append(f"FAIL: missing language navigation: {de_relative} -> {date}-public-status.md")
     return errors
 
 
