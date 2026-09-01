@@ -27,19 +27,19 @@ The fail-closed blocker remains unchanged: the runtime-entry snapshot still requ
 
 | Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
 |---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-09-01T00:00:56Z` | observed in current artifact | integrity gate reports its state |
-| Paper-watch guard | `PASS` | `2026-08-31T16:15:22Z` | observed in current artifact | guard observation does not activate trading |
-| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T16:15:22Z` | blocked | context is not treated as complete |
-| Remaining runtime context cases | `7` | `2026-08-31T16:15:22Z` | blocked | highest-priority remediation remains open |
-| Research profile | `QUICK` | `2026-09-01T00:42:46Z` | observed in current artifact | profile label only |
-| Activation allowed | `False` | `2026-09-01T00:42:46Z` | observed in current artifact | activation is not permitted by the observed artifact |
-| Eligible experiments | `0` | `2026-09-01T00:42:46Z` | observed in current artifact | no eligible experiment is reported |
+| Canonical-history integrity | `PASS` | `2026-09-01T02:55:58Z` | observed in current artifact | integrity gate reports its state |
+| Paper-watch guard | `PASS` | `2026-09-01T02:20:29Z` | observed in current artifact | guard observation does not activate trading |
+| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-09-01T02:20:29Z` | blocked | context is not treated as complete |
+| Remaining runtime context cases | `7` | `2026-09-01T02:20:29Z` | blocked | highest-priority remediation remains open |
+| Research profile | `QUICK` | `2026-09-01T02:57:22Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-09-01T02:57:22Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `0` | `2026-09-01T02:57:22Z` | observed in current artifact | no eligible experiment is reported |
 
 ## What this export checked
 
 - **export verified:** fixed allowlist, ZIP readability, manifest hashes, internal Markdown links and privacy/secret-pattern scan passed.
 - **not applicable:** this export did not start trading, exchange, order, Telegram or other external API actions.
-- **observed in current artifact:** values in the table were read as scalars at `2026-09-01T00:44:44Z UTC / 2026-09-01 01:44 Westeuropäische Sommerzeit Atlantic/Canary`.
+- **observed in current artifact:** values in the table were read as scalars at `2026-09-01T02:58:23Z UTC / 2026-09-01 03:58 Westeuropäische Sommerzeit Atlantic/Canary`.
 
 ## What was not rerun
 
