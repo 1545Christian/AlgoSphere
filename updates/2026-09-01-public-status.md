@@ -31,10 +31,10 @@ The previous public register snapshot contained 1,742 records. The current sanit
 
 ## Controls with current artifacts
 
-- Canonical-history integrity: `PASS` observed at `2026-09-01T18:05:40Z`.
+- Canonical-history integrity: `PASS` observed at `2026-09-01T18:20:55Z`.
 - Paper-watch guard: `PASS` observed at `2026-09-01T18:10:25Z`.
 - Runtime context gate: `FAIL_INCOMPLETE_V3_CONTEXT` observed at `2026-09-01T18:10:25Z`; `7` scoped cases remain.
-- Research profile: `QUICK`; activation allowed: `False`; eligible experiments: `0` observed at `2026-09-01T18:16:32Z`.
+- Research profile: `QUICK`; activation allowed: `False`; eligible experiments: `0` observed at `2026-09-01T18:21:42Z`.
 
 ## Test boundary and next step
 

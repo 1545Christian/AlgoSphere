@@ -31,10 +31,10 @@ Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das
 
 ## Aktuelle Kontrollen
 
-- Canonical-history integrity: `PASS` beobachtet am `2026-09-01T18:05:40Z`.
+- Canonical-history integrity: `PASS` beobachtet am `2026-09-01T18:20:55Z`.
 - Paper-watch guard: `PASS` beobachtet am `2026-09-01T18:10:25Z`.
 - Runtime context gate: `FAIL_INCOMPLETE_V3_CONTEXT` beobachtet am `2026-09-01T18:10:25Z`; `7` abgegrenzte Fälle bleiben.
-- Research-Profil: `QUICK`; Aktivierung erlaubt: `False`; geeignete Experimente: `0` beobachtet am `2026-09-01T18:16:32Z`.
+- Research-Profil: `QUICK`; Aktivierung erlaubt: `False`; geeignete Experimente: `0` beobachtet am `2026-09-01T18:21:42Z`.
 
 ## Testgrenze und nächster Schritt
 

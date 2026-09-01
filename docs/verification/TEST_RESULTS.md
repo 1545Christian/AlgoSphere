@@ -23,10 +23,10 @@ Application test suites are only described as independently rerun when this expo
 <!-- AUTO_VALUES_START -->
 | Gate or test | Purpose | Last observed artifact (UTC) | Independently rerun in this export | Observed result | Evidence reference | Limitation |
 |---|---|---|---|---|---|---|
-| Canonical-history integrity | historical-record integrity | `2026-09-01T18:05:40Z` | No | `PASS` | `canonical_history_integrity.json` | observed artifact only |
+| Canonical-history integrity | historical-record integrity | `2026-09-01T18:20:55Z` | No | `PASS` | `canonical_history_integrity.json` | observed artifact only |
 | Paper-watch guard | paper/watch boundary guard | `2026-09-01T18:10:25Z` | No | `PASS` | `paper_watch_guard_last.json` | observed artifact only |
 | Runtime context gate | required runtime-context completeness | `2026-09-01T18:10:25Z` | No | `FAIL_INCOMPLETE_V3_CONTEXT`; `7` cases | `runtime_entry_snapshot_coverage.json` | blocked; not independently rerun |
-| Research autopilot | research eligibility boundary | `2026-09-01T18:16:32Z` | No | `QUICK`, activation `False`, eligible `0` | `research_autopilot_last.json` | observed artifact only |
+| Research autopilot | research eligibility boundary | `2026-09-01T18:21:42Z` | No | `QUICK`, activation `False`, eligible `0` | `research_autopilot_last.json` | observed artifact only |
 
 | Export check | Result |
 |---|---|
