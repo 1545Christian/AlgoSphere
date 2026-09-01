@@ -76,7 +76,13 @@ I have worked on the underlying ideas and Python prototypes for approximately th
 
 Codex and ChatGPT now support implementation, debugging, technical review and documentation. Their output is reviewed and revised before publication. The architecture, project decisions and responsibility remain human.
 
+## Sponsorship purpose
+
+Voluntary sponsorship supports the public side of AlgoSphere: documentation, verification work, status exports, evidence summaries, public build logs and the time needed to keep the research process auditable.
+
+Sponsorship does not fund a promised trading product. It does not provide trading signals, investment advice, private source code, market data, model files, strategy parameters, ownership, repayment, financial return, exclusive access or a guaranteed project outcome.
+
 ## Support and disclaimer
 
-Short updates: [Telegram](https://t.me/AlgoSphereOfficial). Voluntary support: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Sponsorship is not an investment and provides no trading signals, investment advice, ownership, return or guaranteed outcome. See the full [Disclaimer](docs/legal/DISCLAIMER.md).
+Short updates: [Telegram](https://t.me/AlgoSphereOfficial). Voluntary support: [GitHub Sponsors](https://github.com/sponsors/1545Christian). See the full [Disclaimer](docs/legal/DISCLAIMER.md).
 <!-- HUMAN_TEXT_END -->
