@@ -25,7 +25,7 @@ The current public focus is evidence, explicit blockers and fail-closed controls
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
-**Local technical evidence window:** 9 September 2025 to 2026-08-31. **not verified:** this accessible evidence does not independently prove every part of the approximately three-year personal history.
+**Local technical evidence window:** 9 September 2025 to 2026-09-01. **not verified:** this accessible evidence does not independently prove every part of the approximately three-year personal history.
 
 | Phase | Period | Public interpretation |
 |---|---|---|
