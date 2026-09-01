@@ -27,6 +27,12 @@ def write_lf(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
+def link_from(relative: str, target: str, label: str | None = None) -> str:
+    source_dir = Path(relative).parent
+    prefix = "" if str(source_dir) == "." else "../" * len(source_dir.parts)
+    return f"[{label or target}]({prefix}{target})"
+
+
 class VerifyPublicExportTests(unittest.TestCase):
     def setUp(self) -> None:
         TMP_ROOT.mkdir(parents=True, exist_ok=True)
@@ -91,11 +97,16 @@ class VerifyPublicExportTests(unittest.TestCase):
                     "See [REPORTS_PUBLIC_REGISTER.csv](REPORTS_PUBLIC_REGISTER.csv).\n",
                 )
             else:
+                current_status = link_from(relative, "CURRENT_STATUS.md", "Current status")
+                test_results = link_from(relative, "docs/verification/TEST_RESULTS.md", "Test results")
+                roadmap = link_from(relative, "docs/progress/ROADMAP.md", "Roadmap")
+                evidence = link_from(relative, "evidence/EVIDENCE_SUMMARY.md", "Evidence summary")
                 write_lf(
                     self.root / relative,
                     f"# {Path(relative).stem.replace('_', ' ')}\n\n"
                     "<!-- HUMAN_TEXT_START -->\nPublic documentation fixture.\n<!-- HUMAN_TEXT_END -->\n\n"
-                    "<!-- AUTO_VALUES_START -->\nNo live trading action.\n<!-- AUTO_VALUES_END -->\n",
+                    "<!-- AUTO_VALUES_START -->\nNo live trading action.\n<!-- AUTO_VALUES_END -->\n"
+                    f"\nSee also: {current_status}, {test_results}, {roadmap}, {evidence}.\n",
                 )
         self.write_support_files()
         self.rewrite_manifest()
@@ -163,6 +174,18 @@ class VerifyPublicExportTests(unittest.TestCase):
 
         self.assert_error(mutate, "self-referential manifest entry must be omitted")
 
+    def test_missing_self_referential_manifest_omission_note_fails(self) -> None:
+        def mutate() -> None:
+            manifest = self.root / "evidence" / "EXPORT_CONTENTS.md"
+            lines = [
+                line
+                for line in manifest.read_text(encoding="utf-8").splitlines()
+                if "intentionally omitted (self-referential)" not in line
+            ]
+            write_lf(manifest, "\n".join(lines) + "\n")
+
+        self.assert_error(mutate, "self-referential manifest omission note is missing")
+
     def test_duplicate_manifest_entry_fails(self) -> None:
         def mutate() -> None:
             manifest = self.root / "evidence" / "EXPORT_CONTENTS.md"
@@ -192,6 +215,20 @@ class VerifyPublicExportTests(unittest.TestCase):
 
         self.assert_error(mutate, "exactly one matched EN/DE dated status update pair")
 
+    def test_multiple_current_manifest_update_pairs_fail(self) -> None:
+        def mutate() -> None:
+            extra_en = "updates/2026-09-02-public-status.md"
+            extra_de = "updates/2026-09-02-public-status_DE.md"
+            write_lf(self.root / extra_en, "# Later public status\n\nDeutsch: [Status](2026-09-02-public-status_DE.md)\n")
+            write_lf(self.root / extra_de, "# Spaeteres Status-Update\n\nEnglish: [Status](2026-09-02-public-status.md)\n")
+            manifest = self.root / "evidence" / "EXPORT_CONTENTS.md"
+            text = manifest.read_text(encoding="utf-8")
+            text += f"| `{extra_en}` | {(self.root / extra_en).stat().st_size} | `{digest(self.root / extra_en)}` |\n"
+            text += f"| `{extra_de}` | {(self.root / extra_de).stat().st_size} | `{digest(self.root / extra_de)}` |\n"
+            write_lf(manifest, text)
+
+        self.assert_error(mutate, "exactly one matched EN/DE dated status update pair")
+
     def test_export_only_rejects_historical_extra_update_file(self) -> None:
         def mutate() -> None:
             write_lf(
@@ -206,6 +243,18 @@ class VerifyPublicExportTests(unittest.TestCase):
         mutate()
         errors = verify_public_export.verify(self.root, export_only=True)
         self.assertTrue(any("unexpected public repository file" in error for error in errors), errors)
+
+    def test_repository_mode_allows_historical_extra_update_file(self) -> None:
+        write_lf(
+            self.root / "updates/2026-08-31-public-status.md",
+            "# Historical update\n\nDeutsch: [Status](2026-08-31-public-status_DE.md)\n",
+        )
+        write_lf(
+            self.root / "updates/2026-08-31-public-status_DE.md",
+            "# Historisches Update\n\nEnglish: [Status](2026-08-31-public-status.md)\n",
+        )
+
+        self.assertEqual(verify_public_export.verify(self.root), [])
 
     def test_missing_manifest_entry_fails(self) -> None:
         def mutate() -> None:
@@ -254,6 +303,9 @@ class VerifyPublicExportTests(unittest.TestCase):
     def test_broken_markdown_link_fails(self) -> None:
         self.assert_error(lambda: write_lf(self.root / "README.md", "[missing](docs/nope.md)\n"), "broken local markdown link")
 
+    def test_markdown_link_escaping_repository_fails(self) -> None:
+        self.assert_error(lambda: write_lf(self.root / "README.md", "[escape](../private.md)\n"), "markdown link escapes repository")
+
     def test_missing_language_navigation_fails(self) -> None:
         self.assert_error(lambda: write_lf(self.root / "README.md", "# AlgoSphere\n\nNo language link.\n"), "missing language navigation")
 
@@ -275,6 +327,21 @@ class VerifyPublicExportTests(unittest.TestCase):
             )
 
         self.assert_error(mutate, "must not be nested")
+
+    def test_mismatched_human_and_auto_blocks_fail(self) -> None:
+        def mutate() -> None:
+            write_lf(
+                self.root / "README.md",
+                "<!-- HUMAN_TEXT_START -->\ntext\n<!-- AUTO_VALUES_END -->\nREADME_DE.md\n",
+            )
+
+        self.assert_error(mutate, "mismatched marker block")
+
+    def test_unclosed_marker_block_fails(self) -> None:
+        self.assert_error(
+            lambda: write_lf(self.root / "README.md", "<!-- AUTO_VALUES_START -->\nvalue\nREADME_DE.md\n"),
+            "unclosed AUTO_VALUES block",
+        )
 
     def test_register_schema_fails(self) -> None:
         def mutate() -> None:
@@ -362,6 +429,22 @@ class VerifyPublicExportTests(unittest.TestCase):
             self.rewrite_manifest()
 
         self.assert_error(mutate, "must use LF line endings")
+
+    def test_crlf_markdown_bytes_fail(self) -> None:
+        def mutate() -> None:
+            (self.root / "README.md").write_bytes(b"# AlgoSphere\r\n\r\nREADME_DE.md\r\n")
+            self.rewrite_manifest()
+
+        self.assert_error(mutate, "file must use LF line endings")
+
+    def test_private_email_fails(self) -> None:
+        self.assert_error(lambda: write_lf(self.root / "SECURITY.md", "contact test@example.com\n"), "email")
+
+    def test_private_ipv4_fails(self) -> None:
+        self.assert_error(lambda: write_lf(self.root / "SECURITY.md", "internal host 192.168.1.10\n"), "ipv4")
+
+    def test_proprietary_metric_phrase_fails(self) -> None:
+        self.assert_error(lambda: write_lf(self.root / "CURRENT_STATUS.md", "profit factor was high\n"), "proprietary_metrics")
 
 
 if __name__ == "__main__":
