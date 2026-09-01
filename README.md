@@ -16,20 +16,24 @@ AlgoSphere is an independent research and engineering project. I have worked on 
 
 That learning work grew into several of my own Python prototypes, revised repeatedly. The current aim is a consistent, auditable path from research and backtesting to paper and shadow execution.
 
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START:CURRENT_STATUS -->
 ## Current public status
 
 | Area | Current state |
 |---|---|
-<!-- AUTO_VALUES_START:CURRENT_STATUS -->
 | Canonical-history integrity | PASS |
 | Paper-watch guard | PASS |
-| Runtime context gate | BLOCKED |
+| Runtime context gate | FAIL_INCOMPLETE_V3_CONTEXT |
 | Remaining context cases | 7 |
 | Research activation | Disabled |
 | Live-trading readiness | Not claimed |
 <!-- AUTO_VALUES_END:CURRENT_STATUS -->
 
 The project remains fail-closed. No research result is promoted when required runtime evidence is incomplete.
+
+<!-- HUMAN_TEXT_START -->
 
 ## What visitors can do here
 

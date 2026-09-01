@@ -16,20 +16,24 @@ AlgoSphere ist ein unabhängiges Forschungs- und Entwicklungsprojekt. Ich arbeit
 
 Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wiederholt überarbeitete. Heute geht es um einen konsistenten und nachvollziehbaren Weg von Research und Backtesting bis Paper- und Shadow-Ausführung.
 
+<!-- HUMAN_TEXT_END -->
+
+<!-- AUTO_VALUES_START:CURRENT_STATUS -->
 ## Aktueller öffentlicher Stand
 
 | Bereich | Aktueller Stand |
 |---|---|
-<!-- AUTO_VALUES_START:CURRENT_STATUS -->
 | Kanonische Historie | PASS |
 | Paper-Watch-Schutz | PASS |
-| Runtime-Kontext-Gate | BLOCKIERT |
+| Runtime-Kontext-Gate | FAIL_INCOMPLETE_V3_CONTEXT |
 | Verbleibende Kontextfälle | 7 |
 | Research-Aktivierung | Deaktiviert |
-| Live-Trading-Reife | Nicht behauptet |
+| Freigabe für Live-Trading | Nein |
 <!-- AUTO_VALUES_END:CURRENT_STATUS -->
 
 Das Projekt bleibt im sicheren Sperrzustand (fail-closed). Bei unvollständigen Runtime-Nachweisen wird kein Research-Ergebnis weiter aktiviert.
+
+<!-- HUMAN_TEXT_START -->
 
 ## Was Besucher hier sehen können
 
