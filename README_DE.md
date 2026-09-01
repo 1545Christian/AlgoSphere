@@ -76,7 +76,13 @@ Ich arbeite seit ungefähr drei Jahren an den zugrunde liegenden Ideen und Pytho
 
 Codex und ChatGPT unterstützen heute Implementierung, Fehlersuche, technische Prüfung und Dokumentation. Ihre Entwürfe prüfe und überarbeite ich vor der Veröffentlichung. Architektur, Projektentscheidungen und Verantwortung bleiben menschlich.
 
+## Zweck der Unterstützung
+
+Freiwillige Unterstützung hilft bei der öffentlichen Seite von AlgoSphere: Dokumentation, Prüfungen, Status-Exports, Evidenzübersichten, öffentlichen Build-Logs und der Zeit, die nötig ist, um den Forschungsprozess nachvollziehbar zu halten.
+
+Sponsoring finanziert kein versprochenes Trading-Produkt. Es vermittelt keine Trading-Signale, keine Anlageberatung, keinen privaten Quellcode, keine Marktdaten, keine Modelldateien, keine Strategieparameter, keine Eigentumsrechte, keine Rückzahlung, keine Rendite, keinen exklusiven Zugang und keine Garantie auf einen erfolgreichen Projektabschluss.
+
 ## Unterstützung und Disclaimer
 
-Kurze Hinweise: [Telegram](https://t.me/AlgoSphereOfficial). Freiwillige Unterstützung: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Sponsoring ist keine Investition und vermittelt keine Trading-Signale, Anlageberatung, Eigentumsrechte, Rendite oder Ergebnisgarantie. Siehe den vollständigen [Disclaimer](docs/legal/DISCLAIMER.md).
+Kurze Hinweise: [Telegram](https://t.me/AlgoSphereOfficial). Freiwillige Unterstützung: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Siehe den vollständigen [Disclaimer](docs/legal/DISCLAIMER.md).
 <!-- HUMAN_TEXT_END -->
