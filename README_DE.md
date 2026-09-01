@@ -70,12 +70,6 @@ Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es 
 
 Alle datierten [Updates](updates/) durchsuchen.
 
-## Geplante spätere Nutzung
-
-Das langfristige Ziel ist ein kontrolliertes System vom Research bis zur Ausführung für meine eigene Nutzung. Dazu kann später auch eigener Handel gehören, aber erst nachdem die erforderlichen Daten-, Runtime-, Risiko- und Betriebsnachweise abgeschlossen und geprüft wurden. Jede spätere Live-Nutzung bliebe an eine ausdrückliche menschliche Freigabe und unabhängige Schutzmechanismen gebunden.
-
-Derzeit ist Live-Trading nicht aktiviert, eine Live-Bereitschaft wird nicht behauptet und es wird keine Handelsleistung oder Rentabilität versprochen.
-
 ## Projektgeschichte und KI-Unterstützung
 
 Ich arbeite seit ungefähr drei Jahren an den zugrunde liegenden Ideen und Python-Prototypen. Das Projekt begann mit dem Nachbauen und Anpassen von Lernmaterial, auch aus YouTube-Videos. Daraus entwickelte ich mehrere eigene Prototypen und überarbeitete sie wiederholt.
