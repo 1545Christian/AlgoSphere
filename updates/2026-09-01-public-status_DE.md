@@ -19,7 +19,7 @@ Dieses Update wird aus aktuellen skalaren Artefakten erzeugt. Die grundlegenden 
 
 ## Änderung seit der vorherigen veröffentlichten Momentaufnahme
 
-Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das aktuelle bereinigte Register enthält 2962 Einträge, eine Differenz von 1220. Das Register veröffentlicht weder Rohdateinamen noch kausale Herkunft. Die Ursache des Anstiegs ist daher nicht verifiziert. Er darf nicht als 1220 neue Tests, abgeschlossene Entwicklungsarbeiten oder Leistungsfortschritt gelesen werden. Die angefragte Zwischenzahl 1.841 ist in dieser aktuellen Re-Inventarisierung nicht der aktuelle Wert und wird nicht als aktueller Fakt ausgegeben.
+Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das aktuelle bereinigte Register enthält 3187 Einträge, eine Differenz von 1445. Das Register veröffentlicht weder Rohdateinamen noch kausale Herkunft. Die Ursache des Anstiegs ist daher nicht verifiziert. Er darf nicht als 1445 neue Tests, abgeschlossene Entwicklungsarbeiten oder Leistungsfortschritt gelesen werden. Die angefragte Zwischenzahl 1.841 ist in dieser aktuellen Re-Inventarisierung nicht der aktuelle Wert und wird nicht als aktueller Fakt ausgegeben.
 
 ## Heute geprüfte technische und betriebliche Artefakte
 
@@ -31,10 +31,10 @@ Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das
 
 ## Aktuelle Kontrollen
 
-- Canonical-history integrity: `PASS` beobachtet am `2026-09-01T02:55:58Z`.
-- Paper-watch guard: `PASS` beobachtet am `2026-09-01T02:20:29Z`.
-- Runtime context gate: `FAIL_INCOMPLETE_V3_CONTEXT` beobachtet am `2026-09-01T02:20:29Z`; `7` abgegrenzte Fälle bleiben.
-- Research-Profil: `QUICK`; Aktivierung erlaubt: `False`; geeignete Experimente: `0` beobachtet am `2026-09-01T02:57:22Z`.
+- Canonical-history integrity: `PASS` beobachtet am `2026-09-01T18:05:40Z`.
+- Paper-watch guard: `PASS` beobachtet am `2026-09-01T18:10:25Z`.
+- Runtime context gate: `FAIL_INCOMPLETE_V3_CONTEXT` beobachtet am `2026-09-01T18:10:25Z`; `7` abgegrenzte Fälle bleiben.
+- Research-Profil: `QUICK`; Aktivierung erlaubt: `False`; geeignete Experimente: `0` beobachtet am `2026-09-01T18:16:32Z`.
 
 ## Testgrenze und nächster Schritt
 

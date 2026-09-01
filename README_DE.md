@@ -76,13 +76,17 @@ Ich arbeite seit ungefähr drei Jahren an den zugrunde liegenden Ideen und Pytho
 
 Codex und ChatGPT unterstützen heute Implementierung, Fehlersuche, technische Prüfung und Dokumentation. Ihre Entwürfe prüfe und überarbeite ich vor der Veröffentlichung. Architektur, Projektentscheidungen und Verantwortung bleiben menschlich.
 
+## Künftige Nutzung
+
+Langfristig soll AlgoSphere ein kontrolliertes Research-to-Execution-System für meine eigene Nutzung werden. Eigener Handel kommt erst infrage, wenn Daten, Runtime, Risiko und Betrieb vollständig geprüft sind. Jede spätere Live-Nutzung erfordert meine ausdrückliche menschliche Freigabe und unabhängige Schutzmechanismen. Aktuell ist Live-Trading nicht aktiviert. Es wird keine Handelsleistung, Rentabilität oder erfolgreiche Fertigstellung des Projekts versprochen.
+
 ## Zweck der Unterstützung
 
-Freiwillige Unterstützung hilft bei der öffentlichen Seite von AlgoSphere: Dokumentation, Prüfungen, Status-Exports, Evidenzübersichten, öffentlichen Build-Logs und der Zeit, die nötig ist, um den Forschungsprozess nachvollziehbar zu halten.
+Freiwilliges Sponsoring unterstützt die öffentliche Seite von AlgoSphere: Dokumentation, Prüfungen, Status-Exports, Evidenzübersichten, öffentliche Build-Logs und die Aufrechterhaltung der Nachvollziehbarkeit des Forschungsprozesses.
 
-Sponsoring finanziert kein versprochenes Trading-Produkt. Es vermittelt keine Trading-Signale, keine Anlageberatung, keinen privaten Quellcode, keine Marktdaten, keine Modelldateien, keine Strategieparameter, keine Eigentumsrechte, keine Rückzahlung, keine Rendite, keinen exklusiven Zugang und keine Garantie auf einen erfolgreichen Projektabschluss.
+Sponsoring finanziert kein versprochenes Trading-Produkt. Es gewährt keine Signale, Anlageberatung, keinen privaten Code, keine Marktdaten, Modelle oder Strategieparameter, kein Eigentum, keine Rückzahlung, keine Rendite und keinen exklusiven Zugang.
 
 ## Unterstützung und Disclaimer
 
-Kurze Hinweise: [Telegram](https://t.me/AlgoSphereOfficial). Freiwillige Unterstützung: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Siehe den vollständigen [Disclaimer](docs/legal/DISCLAIMER.md).
+Kurze Hinweise: [Telegram](https://t.me/AlgoSphereOfficial). Freiwillige Unterstützung: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Sponsoring ist keine Investition und vermittelt keine Trading-Signale, Anlageberatung, Eigentumsrechte, Rendite oder Ergebnisgarantie. Siehe den vollständigen [Disclaimer](docs/legal/DISCLAIMER.md).
 <!-- HUMAN_TEXT_END -->
