@@ -70,6 +70,12 @@ This repository is a public documentation and evidence record. It is not a downl
 
 Browse all dated [updates](updates/).
 
+## Intended future use
+
+The long-term goal is to make AlgoSphere a controlled research-to-execution system for my own use, including the possibility of personal trading only after the required data, runtime, risk and operational evidence has been completed and reviewed. Any future live use would remain subject to explicit human approval and independent safeguards.
+
+At present, live trading is not enabled, no live readiness is claimed, and no trading performance or profitability is promised.
+
 ## Development history and AI support
 
 I have worked on the underlying ideas and Python prototypes for approximately three years. The project began by rebuilding and adapting examples from educational material, including YouTube videos. Over time, I developed and repeatedly revised several of my own prototypes.
