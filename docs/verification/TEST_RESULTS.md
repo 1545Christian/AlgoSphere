@@ -14,6 +14,10 @@ Export checks validate the documentation package itself: allowlist, manifest has
 
 Application test suites are only described as independently rerun when this export actually performs them. Otherwise the page says “not rerun during this export.”
 
+## Research feature-contract evidence — 1 September
+
+**observed in reviewed internal evidence:** the relevant research feature-contract regression tests and runtime-delivery tests passed after the composition regression was corrected. A time-clean contract run confirmed agreement across training, holdout and runtime availability. These observations do not establish performance, profitability or live-trading readiness, and they were not rerun by this public export.
+
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
@@ -22,7 +26,7 @@ Application test suites are only described as independently rerun when this expo
 | Canonical-history integrity | historical-record integrity | `2026-09-01T00:00:56Z` | No | `PASS` | `canonical_history_integrity.json` | observed artifact only |
 | Paper-watch guard | paper/watch boundary guard | `2026-08-31T16:15:22Z` | No | `PASS` | `paper_watch_guard_last.json` | observed artifact only |
 | Runtime context gate | required runtime-context completeness | `2026-08-31T16:15:22Z` | No | `FAIL_INCOMPLETE_V3_CONTEXT`; `7` cases | `runtime_entry_snapshot_coverage.json` | blocked; not independently rerun |
-| Research autopilot | research eligibility boundary | `2026-09-01T00:25:51Z` | No | `QUICK`, activation `False`, eligible `0` | `research_autopilot_last.json` | observed artifact only |
+| Research autopilot | research eligibility boundary | `2026-09-01T00:42:46Z` | No | `QUICK`, activation `False`, eligible `0` | `research_autopilot_last.json` | observed artifact only |
 
 | Export check | Result |
 |---|---|

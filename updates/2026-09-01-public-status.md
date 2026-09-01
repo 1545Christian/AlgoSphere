@@ -6,9 +6,20 @@ Deutsch: [Öffentliches Status-Update](2026-09-01-public-status_DE.md)
 
 This update is generated from current scalar artifacts; the repository guidance is maintained separately in human-reviewed templates.
 
+## Research feature-contract addendum
+
+- **observed in reviewed internal evidence:** a regression in research feature-contract composition was corrected and an immutable research core was checked.
+- **observed in reviewed internal evidence:** a time-clean feature-contract run confirmed consistency between training, holdout and runtime. This is a contract and data-availability result, not a performance or profitability result.
+- **observed in reviewed internal evidence:** the relevant regression tests and runtime-delivery tests passed. They were not rerun by this public export.
+- **not applicable:** no live trades, orders, exchange actions, capital actions, paper activation or candidate promotions were performed.
+- **observed in reviewed internal evidence:** the research core is prepared for the next natural research start. That start has not been claimed as completed.
+
+**blocked:** the runtime-entry snapshot still lacks provenance-bound trade-window candles. Capture them immutably, then repeat exact-hash QA and a fresh trade review.
+
+
 ## Change since the previous published snapshot
 
-The previous public register snapshot contained 1,742 records. The current sanitised register contains 2821 records, a difference of 1079. The register does not disclose raw filenames or causal provenance, so the cause of this increase is not verified. It must not be read as 1079 new tests, completed development tasks or performance progress. The requested intermediate count of 1,841 is not current in this re-inventory and is not stated as a current value.
+The previous public register snapshot contained 1,742 records. The current sanitised register contains 2854 records, a difference of 1112. The register does not disclose raw filenames or causal provenance, so the cause of this increase is not verified. It must not be read as 1112 new tests, completed development tasks or performance progress. The requested intermediate count of 1,841 is not current in this re-inventory and is not stated as a current value.
 
 ## Verified engineering and operational artifacts reviewed today
 
@@ -23,7 +34,7 @@ The previous public register snapshot contained 1,742 records. The current sanit
 - Canonical-history integrity: `PASS` observed at `2026-09-01T00:00:56Z`.
 - Paper-watch guard: `PASS` observed at `2026-08-31T16:15:22Z`.
 - Runtime context gate: `FAIL_INCOMPLETE_V3_CONTEXT` observed at `2026-08-31T16:15:22Z`; `7` scoped cases remain.
-- Research profile: `QUICK`; activation allowed: `False`; eligible experiments: `0` observed at `2026-09-01T00:25:51Z`.
+- Research profile: `QUICK`; activation allowed: `False`; eligible experiments: `0` observed at `2026-09-01T00:42:46Z`.
 
 ## Test boundary and next step
 
