@@ -22,7 +22,7 @@ Application test suites are only described as independently rerun when this expo
 | Canonical-history integrity | historical-record integrity | `2026-09-01T00:00:56Z` | No | `PASS` | `canonical_history_integrity.json` | observed artifact only |
 | Paper-watch guard | paper/watch boundary guard | `2026-08-31T16:15:22Z` | No | `PASS` | `paper_watch_guard_last.json` | observed artifact only |
 | Runtime context gate | required runtime-context completeness | `2026-08-31T16:15:22Z` | No | `FAIL_INCOMPLETE_V3_CONTEXT`; `7` cases | `runtime_entry_snapshot_coverage.json` | blocked; not independently rerun |
-| Research autopilot | research eligibility boundary | `2026-09-01T00:20:26Z` | No | `QUICK`, activation `False`, eligible `0` | `research_autopilot_last.json` | observed artifact only |
+| Research autopilot | research eligibility boundary | `2026-09-01T00:25:51Z` | No | `QUICK`, activation `False`, eligible `0` | `research_autopilot_last.json` | observed artifact only |
 
 | Export check | Result |
 |---|---|

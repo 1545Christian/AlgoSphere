@@ -8,7 +8,7 @@ This update is generated from current scalar artifacts; the repository guidance 
 
 ## Change since the previous published snapshot
 
-The previous public register snapshot contained 1,742 records. The current sanitised register contains 2815 records, a difference of 1073. The register does not disclose raw filenames or causal provenance, so the cause of this increase is not verified. It must not be read as 1073 new tests, completed development tasks or performance progress. The requested intermediate count of 1,841 is not current in this re-inventory and is not stated as a current value.
+The previous public register snapshot contained 1,742 records. The current sanitised register contains 2821 records, a difference of 1079. The register does not disclose raw filenames or causal provenance, so the cause of this increase is not verified. It must not be read as 1079 new tests, completed development tasks or performance progress. The requested intermediate count of 1,841 is not current in this re-inventory and is not stated as a current value.
 
 ## Verified engineering and operational artifacts reviewed today
 
@@ -23,7 +23,7 @@ The previous public register snapshot contained 1,742 records. The current sanit
 - Canonical-history integrity: `PASS` observed at `2026-09-01T00:00:56Z`.
 - Paper-watch guard: `PASS` observed at `2026-08-31T16:15:22Z`.
 - Runtime context gate: `FAIL_INCOMPLETE_V3_CONTEXT` observed at `2026-08-31T16:15:22Z`; `7` scoped cases remain.
-- Research profile: `QUICK`; activation allowed: `False`; eligible experiments: `0` observed at `2026-09-01T00:20:26Z`.
+- Research profile: `QUICK`; activation allowed: `False`; eligible experiments: `0` observed at `2026-09-01T00:25:51Z`.
 
 ## Test boundary and next step
 

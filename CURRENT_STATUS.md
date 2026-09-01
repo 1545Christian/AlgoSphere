@@ -21,15 +21,15 @@ AlgoSphere remains within a fail-closed research boundary. The current observed 
 | Paper-watch guard | `PASS` | `2026-08-31T16:15:22Z` | observed in current artifact | guard observation does not activate trading |
 | Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-08-31T16:15:22Z` | blocked | context is not treated as complete |
 | Remaining runtime context cases | `7` | `2026-08-31T16:15:22Z` | blocked | highest-priority remediation remains open |
-| Research profile | `QUICK` | `2026-09-01T00:20:26Z` | observed in current artifact | profile label only |
-| Activation allowed | `False` | `2026-09-01T00:20:26Z` | observed in current artifact | activation is not permitted by the observed artifact |
-| Eligible experiments | `0` | `2026-09-01T00:20:26Z` | observed in current artifact | no eligible experiment is reported |
+| Research profile | `QUICK` | `2026-09-01T00:25:51Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-09-01T00:25:51Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `0` | `2026-09-01T00:25:51Z` | observed in current artifact | no eligible experiment is reported |
 
 ## What this export checked
 
 - **export verified:** fixed allowlist, ZIP readability, manifest hashes, internal Markdown links and privacy/secret-pattern scan passed.
 - **not applicable:** this export did not start trading, exchange, order, Telegram or other external API actions.
-- **observed in current artifact:** values in the table were read as scalars at `2026-09-01T00:22:35Z UTC / 2026-09-01 01:22 Westeuropäische Sommerzeit Atlantic/Canary`.
+- **observed in current artifact:** values in the table were read as scalars at `2026-09-01T00:26:12Z UTC / 2026-09-01 01:26 Westeuropäische Sommerzeit Atlantic/Canary`.
 
 ## What was not rerun
 
