@@ -6,7 +6,7 @@ Aufbau, Test und Dokumentation eines Weges von Research und Backtesting zu Paper
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes Update: [deutsches Statusupdate](updates/2026-09-01-public-status_DE.md)<br>
+Neuestes Update: [deutsches Statusupdate](updates/2026-09-03-public-status_DE.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -62,7 +62,7 @@ Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es 
 | Zweck | Dokument |
 |---|---|
 | Aktueller Stand und Hauptblocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Neuestes datiertes Update | [englisches Update](updates/2026-09-01-public-status.md) |
+| Neuestes datiertes Update | [englisches Update](updates/2026-09-03-public-status.md) |
 | Tests und Prüfgrenzen | [Testergebnisse](docs/verification/TEST_RESULTS.md) |
 | Offene Arbeit und Prioritäten | [Roadmap](docs/progress/ROADMAP.md) |
 | Projektgeschichte | [Projektgeschichte](docs/project/PROJECT_HISTORY.md) |

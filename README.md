@@ -6,7 +6,7 @@ Building, testing and documenting the path from research and backtesting to pape
 
 Deutsch: [README_DE.md](README_DE.md)<br>
 Latest status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Latest update: [English status update](updates/2026-09-01-public-status.md)<br>
+Latest update: [English status update](updates/2026-09-03-public-status.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -62,7 +62,7 @@ This repository is a public documentation and evidence record. It is not a downl
 | Purpose | Document |
 |---|---|
 | Current state and main blocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Latest dated update | [English update](updates/2026-09-01-public-status.md) |
+| Latest dated update | [English update](updates/2026-09-03-public-status.md) |
 | Tests and verification limits | [Test results](docs/verification/TEST_RESULTS.md) |
 | Open work and priorities | [Roadmap](docs/progress/ROADMAP.md) |
 | Project history | [Project history](docs/project/PROJECT_HISTORY.md) |
