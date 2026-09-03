@@ -27,16 +27,16 @@ Use a neutral ID to locate a row, inspect its category and date, and compare a p
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
-**Export integrity: verified.** Current sanitised register count: `3977`; published hashes: `3976`; `HASH_NOT_PUBLISHED` rows: `1`.
+**Export integrity: verified.** Current sanitised register count: `7796`; published hashes: `7795`; `HASH_NOT_PUBLISHED` rows: `1`.
 
 | Category | Count |
 |---|---:|
-| BUILD | 22 |
-| DELIVERY | 241 |
-| QA | 345 |
-| TEST | 318 |
-| OTHER | 3051 |
-| **Total** | **3977** |
+| BUILD | 128 |
+| DELIVERY | 246 |
+| QA | 482 |
+| TEST | 1745 |
+| OTHER | 5195 |
+| **Total** | **7796** |
 
 The register count is not a count of passed tests, completed features or performance improvements.
 <!-- AUTO_VALUES_END -->

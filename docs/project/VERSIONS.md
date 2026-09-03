@@ -10,7 +10,7 @@ This is the binding public version reference. It distinguishes identifiers by sc
 | Identifier scope | Observed identifier | Classification |
 |---|---|---|
 | Application version | `90.8.5` | observed metadata |
-| Package/update metadata | `v90_8_5_80` | observed metadata |
+| Package/update metadata | `v90_8_10_116` | observed metadata |
 | Source-hotfix metadata | `v90_8_5_23` | observed metadata |
 | Research-autopilot report | `v90_8_5_75` | observed report identifier; relationship not verified |
 

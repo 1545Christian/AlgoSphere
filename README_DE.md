@@ -6,7 +6,7 @@ Aufbau, Test und Dokumentation eines Weges von Research und Backtesting zu Paper
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes Update: [deutsches Statusupdate](updates/2026-09-03-public-status_DE.md)<br>
+Neuestes Update: [deutsches Statusupdate](updates/2026-09-04-public-status_DE.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -23,12 +23,12 @@ Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wieder
 
 | Bereich | Aktueller Stand |
 |---|---|
-| Kanonische Historie | PASS |
-| Paper-Watch-Schutz | PASS |
-| Runtime-Kontext-Gate | FAIL_INCOMPLETE_V3_CONTEXT |
-| Verbleibende Kontextfälle | 7 |
-| Research-Aktivierung | Deaktiviert |
-| Freigabe für Live-Trading | Nein |
+| Runtime-Release | v90_8_10_116 |
+| ML-Autopilot | QUICK_RUNNING |
+| Training | CONTEXT_LOAD · BTCUSDT · Coins 0/5 |
+| Stage-Wahrheit | LIVE_STAGE_HEARTBEAT |
+| Automatische Promotion | Deaktiviert |
+| Live-Trading | Nein |
 <!-- AUTO_VALUES_END:CURRENT_STATUS -->
 
 Das Projekt bleibt im sicheren Sperrzustand (fail-closed). Bei unvollständigen Runtime-Nachweisen wird kein Research-Ergebnis weiter aktiviert.
@@ -62,7 +62,7 @@ Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es 
 | Zweck | Dokument |
 |---|---|
 | Aktueller Stand und Hauptblocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Neuestes datiertes Update | [englisches Update](updates/2026-09-03-public-status.md) |
+| Neuestes datiertes Update | [englisches Update](updates/2026-09-04-public-status.md) |
 | Tests und Prüfgrenzen | [Testergebnisse](docs/verification/TEST_RESULTS.md) |
 | Offene Arbeit und Prioritäten | [Roadmap](docs/progress/ROADMAP.md) |
 | Projektgeschichte | [Projektgeschichte](docs/project/PROJECT_HISTORY.md) |
@@ -74,7 +74,7 @@ Alle datierten [Updates](updates/) durchsuchen.
 
 Ich arbeite seit ungefähr drei Jahren an den zugrunde liegenden Ideen und Python-Prototypen. Das Projekt begann mit dem Nachbauen und Anpassen von Lernmaterial, auch aus YouTube-Videos. Daraus entwickelte ich mehrere eigene Prototypen und überarbeitete sie wiederholt.
 
-Codex und ChatGPT unterstützen heute Implementierung, Fehlersuche, technische Prüfung und Dokumentation. Ihre Entwürfe prüfe und überarbeite ich vor der Veröffentlichung. Architektur, Projektentscheidungen und Verantwortung bleiben menschlich.
+ChatGPT unterstützt derzeit Implementierung, Fehlersuche, technische Prüfung und Dokumentation. Frühere Codex-unterstützte Arbeiten bleiben Teil der Projektgeschichte; die aktuelle Runtime und der GitHub-Nachtlauf hängen jedoch nicht von Codex ab. KI-unterstützte Entwürfe prüfe und überarbeite ich vor der Veröffentlichung. Architektur, Projektentscheidungen und Verantwortung bleiben menschlich.
 
 Da wiederholte Übergaben mit Codex zu Unsicherheit über den tatsächlichen Projektstand geführt haben, prüfe ich die offenen Anforderungen derzeit erneut mit ChatGPT anhand des Codes, datierter Artefakte und Tests. Auch das Gedächtnis beziehungsweise Memory gehört dazu: Strukturen und frühere Nachweise zum Schreiben und Lesen von Experimentwissen sind vorhanden, ein vollständiger und nachweisbar wirksamer Lernkreislauf ist jedoch noch nicht bestätigt. Sobald die offenen Prüfungen abgeschlossen sind, arbeite ich an Training, tradingbezogener Forschung und der weiteren Research-to-Execution-Kette weiter.
 

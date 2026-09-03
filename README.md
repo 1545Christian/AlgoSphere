@@ -6,7 +6,7 @@ Building, testing and documenting the path from research and backtesting to pape
 
 Deutsch: [README_DE.md](README_DE.md)<br>
 Latest status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Latest update: [English status update](updates/2026-09-03-public-status.md)<br>
+Latest update: [English status update](updates/2026-09-04-public-status.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -23,12 +23,12 @@ That learning work grew into several of my own Python prototypes, revised repeat
 
 | Area | Current state |
 |---|---|
-| Canonical-history integrity | PASS |
-| Paper-watch guard | PASS |
-| Runtime context gate | FAIL_INCOMPLETE_V3_CONTEXT |
-| Remaining context cases | 7 |
-| Research activation | Disabled |
-| Live-trading readiness | Not claimed |
+| Runtime release | v90_8_10_116 |
+| ML autopilot | QUICK_RUNNING |
+| Training | CONTEXT_LOAD · BTCUSDT · coins 0/5 |
+| Stage truth | LIVE_STAGE_HEARTBEAT |
+| Automatic promotion | Disabled |
+| Live trading | No |
 <!-- AUTO_VALUES_END:CURRENT_STATUS -->
 
 The project remains fail-closed. No research result is promoted when required runtime evidence is incomplete.
@@ -62,7 +62,7 @@ This repository is a public documentation and evidence record. It is not a downl
 | Purpose | Document |
 |---|---|
 | Current state and main blocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Latest dated update | [English update](updates/2026-09-03-public-status.md) |
+| Latest dated update | [English update](updates/2026-09-04-public-status.md) |
 | Tests and verification limits | [Test results](docs/verification/TEST_RESULTS.md) |
 | Open work and priorities | [Roadmap](docs/progress/ROADMAP.md) |
 | Project history | [Project history](docs/project/PROJECT_HISTORY.md) |
@@ -74,7 +74,7 @@ Browse all dated [updates](updates/).
 
 I have worked on the underlying ideas and Python prototypes for approximately three years. The project began by rebuilding and adapting examples from educational material, including YouTube videos. Over time, I developed and repeatedly revised several of my own prototypes.
 
-Codex and ChatGPT now support implementation, debugging, technical review and documentation. Their output is reviewed and revised before publication. The architecture, project decisions and responsibility remain human.
+ChatGPT currently supports implementation, debugging, technical review and documentation. Earlier Codex-assisted work remains part of the project history, but the current runtime and GitHub-nightly publication path do not depend on Codex. AI-assisted output is reviewed and revised before publication. The architecture, project decisions and responsibility remain human.
 
 Because repeated Codex handoffs caused uncertainty about the actual project state, I am currently rechecking the open requirements with ChatGPT against the code, dated artifacts and tests. Memory is part of that review: the project has structures and earlier evidence for writing and reading experiment knowledge, but a complete, demonstrably effective learning loop is not yet confirmed. After the open checks are completed, I will continue with training, trading-related research and the wider research-to-execution chain.
 
