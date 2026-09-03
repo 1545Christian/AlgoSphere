@@ -76,6 +76,8 @@ Ich arbeite seit ungefähr drei Jahren an den zugrunde liegenden Ideen und Pytho
 
 Codex und ChatGPT unterstützen heute Implementierung, Fehlersuche, technische Prüfung und Dokumentation. Ihre Entwürfe prüfe und überarbeite ich vor der Veröffentlichung. Architektur, Projektentscheidungen und Verantwortung bleiben menschlich.
 
+Da wiederholte Übergaben mit Codex zu Unsicherheit über den tatsächlichen Projektstand geführt haben, prüfe ich die offenen Anforderungen derzeit erneut mit ChatGPT anhand des Codes, datierter Artefakte und Tests. Auch das Gedächtnis beziehungsweise Memory gehört dazu: Strukturen und frühere Nachweise zum Schreiben und Lesen von Experimentwissen sind vorhanden, ein vollständiger und nachweisbar wirksamer Lernkreislauf ist jedoch noch nicht bestätigt. Sobald die offenen Prüfungen abgeschlossen sind, arbeite ich an Training, tradingbezogener Forschung und der weiteren Research-to-Execution-Kette weiter.
+
 ## Künftige Nutzung
 
 Langfristig soll AlgoSphere ein kontrolliertes Research-to-Execution-System für meine eigene Nutzung werden. Eigener Handel kommt erst infrage, wenn Daten, Runtime, Risiko und Betrieb vollständig geprüft sind. Jede spätere Live-Nutzung erfordert meine ausdrückliche menschliche Freigabe und unabhängige Schutzmechanismen. Aktuell ist Live-Trading nicht aktiviert. Es wird keine Handelsleistung, Rentabilität oder erfolgreiche Fertigstellung des Projekts versprochen.

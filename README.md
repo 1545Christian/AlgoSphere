@@ -76,6 +76,8 @@ I have worked on the underlying ideas and Python prototypes for approximately th
 
 Codex and ChatGPT now support implementation, debugging, technical review and documentation. Their output is reviewed and revised before publication. The architecture, project decisions and responsibility remain human.
 
+Because repeated Codex handoffs caused uncertainty about the actual project state, I am currently rechecking the open requirements with ChatGPT against the code, dated artifacts and tests. Memory is part of that review: the project has structures and earlier evidence for writing and reading experiment knowledge, but a complete, demonstrably effective learning loop is not yet confirmed. After the open checks are completed, I will continue with training, trading-related research and the wider research-to-execution chain.
+
 ## Future use
 
 In the long term, AlgoSphere is intended to become a controlled research-to-execution system for my own use. Own trading can only be considered after complete checks of data, runtime, risk and operations. Any later live use requires explicit human approval and independent safeguards. Live trading is not enabled now. No trading performance, profitability or successful project completion is promised.
