@@ -1,46 +1,62 @@
 # Öffentliches Status-Update — 2026-09-04
 
-English: [Public status update](2026-09-04-public-status.md)
+English: [Public status update](./2026-09-04-public-status.md)
 
 <!-- AUTO_VALUES_START -->
+## Kurzfassung
 
-Dieses Update wird aus aktuellen skalaren Artefakten erzeugt. Die grundlegenden Erläuterungstexte werden getrennt in menschlich geprüften Vorlagen gepflegt.
+v117 trennt Trainingsautorität, Evaluation, History/Cache und OpenAI-Kostenkontrolle klarer. Der Nachtlauf veröffentlicht künftig verständlich, was umgesetzt wurde, was tatsächlich verifiziert ist und was noch offen bleibt.
 
+## Was AlgoSphere fachlich leisten soll
 
-## Änderung seit der vorherigen veröffentlichten Momentaufnahme
+- Lokales ML-Training soll selbständig laufen, neue Strategien finden und identische Experimente semantisch deduplizieren.
+- Paper, Research Forward, Watch, Challenger, Champion und OpenAI bleiben fachlich getrennte Rollen mit gemeinsamer nachvollziehbarer Decision-/Risk-/Exit-Kette.
+- Memory soll Trainings- und Outcome-Wissen standardisiert schreiben und später nachweislich für neue Hypothesen und Auswahlentscheidungen lesen.
+- WebUI soll pro Kachel eine vertrauenswürdige Datenquelle zeigen, Rollen nicht vermischen und Training/Markt/OpenAI verständlich darstellen.
+- Kein Live-Trading oder Real-Capital-Pfad wird automatisch freigegeben; Promotion bleibt fail-closed bis zum erforderlichen Betriebsnachweis.
 
-Die vorherige öffentliche Register-Momentaufnahme enthielt 1.742 Einträge. Das aktuelle bereinigte Register enthält 7796 Einträge, eine Differenz von 6054. Das Register veröffentlicht weder Rohdateinamen noch kausale Herkunft. Die Ursache des Anstiegs ist daher nicht verifiziert. Er darf nicht als 6054 neue Tests, abgeschlossene Entwicklungsarbeiten oder Leistungsfortschritt gelesen werden. Die angefragte Zwischenzahl 1.841 ist in dieser aktuellen Re-Inventarisierung nicht der aktuelle Wert und wird nicht als aktueller Fakt ausgegeben.
+## In v90_8_10_117 umgesetzt
 
-## Heute geprüfte technische und betriebliche Artefakte
+- `LOCAL_ML_AUTOPILOT` ist die einzige normale Trainings-Startautorität; Research Forward wird als `--evaluate-only`-Evaluator geführt und soll keinen zweiten Trainingsstart erzeugen.
+- `training_forensic_hold` wurde aus dem Normalbetrieb entfernt; Ressourcen- und Crash-Schutz bleiben getrennt bestehen.
+- QUICK → BALANCED bleibt als autonomer Folgepfad im Local-ML-Autopilot erhalten.
+- History-Sync wurde auf einen Vollscan pro Lauf plus gezielte neue Archive und gebündelte Ledger-Lookups umgestellt.
+- Der gemeinsame FeatureCache-Identitätsvertrag lautet `v90_8_5_117_unified_feature_cache_contract_1`; alte Cache-Namensräume werden getrennt behandelt.
+- Codex-/Candidate-Builder-/Dispatcher-Lineage wird als historische Evidence archiviert und vom normalen Runtime-Pfad nicht verwendet.
+- Der v84-Vertrag für versionsunabhängiges semantisches Memory bleibt erhalten.
+- OpenAI wurde auf das Standardmodell `gpt-5.6-luna`, niedrige Reasoning-Stufe und maximal 2200 Output-Tokens begrenzt; Standard-Cadence 120 Minuten, Web-News 360 Minuten, Tageslimits 12/4 Calls.
+- Unveränderter OpenAI-Kontext soll keinen neuen API-Call erzeugen (`UNCHANGED_CONTEXT_SKIPPED`).
+- Ein neuer immutable v117 Research-Core wird aus dem korrigierten aktuellen Source gebaut.
+- Der GitHub-Nachtlauf arbeitet ohne Codex-Abhängigkeit und veröffentlicht Runtime-Status sowie menschlich geprüfte Release-Notizen getrennt.
 
-- **Veralteter Slot-B-Guard:** Ein Artefakt mit dem Ergebnis `CLEARED_STALE_RESOURCE_GUARD` dokumentiert die Freigabe erst nach fehlender aufgezeichneter PID und Lease. Die zugehörige Validierung nennt `13 passed` und Compile-Prüfungen. Paper-, Live-, Kapital- und Datenlöschaktionen sind darin als nicht erfolgt dokumentiert.
-- **QUICK-Versuch:** Ein echter QUICK-Versuch wurde als durch Ressourcenschutz unterbrochen beobachtet (`ExitCode 15`), nachdem ungefähr `3.63 GiB` privater Speicher gegenüber einem Limit von `2.50 GiB` erfasst wurden. Der Selektor betrachtete 69 Kandidaten in 12 Familien; geeignet und ausgewählt waren jeweils null. Das ist ein Ressourcen-/Betriebsergebnis, kein QUICK PASS und keine Widerlegung der Hypothese. Aktivierung und Promotion blieben deaktiviert.
-- **Runtime-Health-Projektion:** Das geprüfte Artefakt nennt Active Paper und Research Forward als nachgewiesen; Watch Scanner und Watch Exit Evaluator bleiben nicht nachgewiesen. Die verknüpfte Validierung nennt `108 passed` und Compile PASS. Das sind historische Artefaktangaben, keine in diesem Export erneut ausgeführten Tests.
-- **Storage und Retention:** Das jüngste geprüfte Kapazitätsprofil meldete ungefähr `136.60 GiB` frei gegenüber einer erforderlichen Schwelle von `9.25 GiB` und null bereinigte Bytes. Es gab keine destruktive Bereinigung. Referenzierte Lineage-Backups bleiben geschützt; eine ausdrückliche Retention-Policy bleibt offen.
-- **F_META:** Das geprüfte Readiness-Artefakt bleibt `PREPARED_WAITING_CURRENT_INDEPENDENT_RUNTIME_QA_TERMINAL`; eine unabhängige QA-Bestätigung und eine neue terminale Active-Paper-Entscheidung sind weiterhin nicht nachgewiesen.
+## Für dieses Release verifiziert
 
-## Aktuelle Kontrollen
+- Python-Compile der geänderten/neuen Python-Dateien: PASS.
+- Kern-Regressionsatz: 149 Tests PASS; exakte Installer-Testliste: 194 Tests PASS.
+- Archivierungs-Probelauf: PASS; 214 Lineage-Dateien hash-verifiziert, v84-Memory erhalten, keine Quelldatei gelöscht.
+- Research-Core-Probelauf: PASS.
+- v117 Acceptance-Probelauf: `PASS_CODE_CONTRACT_AWAITING_RUNTIME_PROOF` — ausdrücklich noch kein vollständiger Windows-/Betriebsbeweis.
 
-- Canonical-history integrity: `PASS` beobachtet am `2026-09-03T23:56:50Z`.
-- Paper-watch guard: `PASS` beobachtet am `2026-09-03T23:45:14Z`.
-- Runtime context gate: `FAIL_INCOMPLETE_V3_CONTEXT` beobachtet am `2026-09-03T23:45:14Z`; `7` abgegrenzte Fälle bleiben.
-- Research-Profil: `QUICK`; Aktivierung erlaubt: `False`; geeignete Experimente: `0` beobachtet am `2026-09-03T23:53:46Z`.
+## Aktueller Betriebszustand
 
-## Testgrenze und nächster Schritt
-
-Anwendungstest-Suiten wurden während dieses Exports nicht erneut ausgeführt. Das ältere Runtime-Kontext-Gate bleibt als historische Evidenz sichtbar. Der aktuelle Betriebszustand wird aus dem jüngsten Runtime-Acceptance- und autonomen Trainings-Snapshot unten abgeleitet.
-
-Exportintegrität: verifiziert. Siehe [Aktueller Status](../CURRENT_STATUS.md), [Testergebnisse](../docs/verification/TEST_RESULTS.md) und die verbindliche [Evidenzübersicht](../evidence/EVIDENCE_SUMMARY.md).
-
-<!-- GITHUB_NIGHTLY_V3_START -->
-## Aktueller Runtime- und autonomer Trainingsstand
-
-- Aktuell beobachteter Runtime-Release: `v90_8_10_116`.
+- Beobachteter Runtime-Release: `v90_8_10_116`.
 - ML-Autopilot: `QUICK_RUNNING` · Profil `quick` · Phase `CONTEXT_LOAD` · Symbol `BTCUSDT` · Coins `0/5`.
-- Quelle des aktuellen Stage-Zustands: `LIVE_STAGE_HEARTBEAT`.
+- Quelle des Stage-Zustands: `LIVE_STAGE_HEARTBEAT`.
 - Live-Trading: `Nein` · Real-Capital-Flag: `0` · automatische Promotion: `deaktiviert`.
-- Beobachteter Snapshot: `2026-09-03T23:59:12.592763Z`.
+- Beobachteter Snapshot: `2026-09-04T00:43:25.149915Z`.
 
-Dieser Runtime-/Trainingsstand ist die aktuelle übergeordnete Betriebsansicht. Ältere Gate-Artefakte bleiben im historischen öffentlichen Register erhalten, werden aber nicht als neuerer Runtime-Release-Zustand ausgegeben.
-<!-- GITHUB_NIGHTLY_V3_END -->
+## Noch offen / noch nicht bewiesen
+
+- P0 offen: bestehende FeatureCaches werden noch nicht inkrementell nur um neue Kerzen erweitert; dieser Punkt bleibt ausdrücklich ungelöst.
+- Windows-Langlauf muss beweisen, dass QUICK ausschließlich über Local ML startet und Research Forward keinen zweiten Trainingsstart erzeugt.
+- Ein echter QUICK-Abschluss mit anschließendem BALANCED-Start muss prospektiv beobachtet werden.
+- History-Sync-Laufzeit und Importmengen müssen auf Windows gegen den früheren Doppelscan gemessen werden.
+- OpenAI-Tageszählung, Reset, Web-Fälligkeit und `UNCHANGED_CONTEXT_SKIPPED` müssen in echten Scheduler-Läufen bestätigt werden.
+- Code-PASS allein schließt keinen Punkt: `PROVEN_CLOSED` erfordert aktuellen Runtime-/Browser-/Ledger-Beweis.
+
+## Technische Evidenz
+
+Hashes, öffentliches Register, Prüfgrenzen und historische Artefakte bleiben separat verfügbar. Sie sind Belege und ersetzen nicht die Entwicklungszusammenfassung oben.
+
+Siehe [Aktueller Status](../CURRENT_STATUS.md), [Testergebnisse](../docs/verification/TEST_RESULTS.md), [Roadmap](../docs/progress/ROADMAP.md) und die [Evidenzübersicht](../evidence/EVIDENCE_SUMMARY.md).
 <!-- AUTO_VALUES_END -->

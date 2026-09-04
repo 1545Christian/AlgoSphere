@@ -27,19 +27,19 @@ The fail-closed blocker remains unchanged: the runtime-entry snapshot still requ
 
 | Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
 |---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-09-03T23:56:50Z` | observed in current artifact | integrity gate reports its state |
-| Paper-watch guard | `PASS` | `2026-09-03T23:45:14Z` | observed in current artifact | guard observation does not activate trading |
-| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-09-03T23:45:14Z` | blocked | context is not treated as complete |
-| Remaining runtime context cases | `7` | `2026-09-03T23:45:14Z` | blocked | highest-priority remediation remains open |
-| Research profile | `QUICK` | `2026-09-03T23:53:46Z` | observed in current artifact | profile label only |
-| Activation allowed | `False` | `2026-09-03T23:53:46Z` | observed in current artifact | activation is not permitted by the observed artifact |
-| Eligible experiments | `0` | `2026-09-03T23:53:46Z` | observed in current artifact | no eligible experiment is reported |
+| Canonical-history integrity | `PASS` | `2026-09-04T00:40:55Z` | observed in current artifact | integrity gate reports its state |
+| Paper-watch guard | `PASS` | `2026-09-04T00:07:44Z` | observed in current artifact | guard observation does not activate trading |
+| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-09-04T00:07:44Z` | blocked | context is not treated as complete |
+| Remaining runtime context cases | `7` | `2026-09-04T00:07:44Z` | blocked | highest-priority remediation remains open |
+| Research profile | `QUICK` | `2026-09-04T00:40:42Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-09-04T00:40:42Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `0` | `2026-09-04T00:40:42Z` | observed in current artifact | no eligible experiment is reported |
 
 ## What this export checked
 
 - **export verified:** fixed allowlist, ZIP readability, manifest hashes, internal Markdown links and privacy/secret-pattern scan passed.
 - **not applicable:** this export did not start trading, exchange, order, Telegram or other external API actions.
-- **observed in current artifact:** values in the table were read as scalars at `2026-09-03T23:59:40Z UTC / 2026-09-04 00:59 Westeuropäische Sommerzeit Atlantic/Canary`.
+- **observed in current artifact:** values in the table were read as scalars at `2026-09-04T00:43:30Z UTC / 2026-09-04 01:43 Westeuropäische Sommerzeit Atlantic/Canary`.
 
 ## What was not rerun
 
@@ -56,7 +56,7 @@ The older runtime-context gate remains visible in the public evidence history. C
 - ML autopilot: `QUICK_RUNNING` · profile `quick` · phase `CONTEXT_LOAD` · symbol `BTCUSDT` · coins `0/5`.
 - Current-stage truth source: `LIVE_STAGE_HEARTBEAT`.
 - Live trading: `No` · real-capital flag: `0` · automatic promotion: `disabled`.
-- Snapshot observed: `2026-09-03T23:59:12.592763Z`.
+- Snapshot observed: `2026-09-04T00:43:25.149915Z`.
 
 This runtime/training snapshot is the current top-level operational view. Older gate artifacts remain part of the historical public register but are not treated as a newer runtime release state.
 <!-- GITHUB_NIGHTLY_V3_END -->
