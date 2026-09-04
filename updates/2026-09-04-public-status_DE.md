@@ -39,11 +39,11 @@ v117 trennt Trainingsautorität, Evaluation, History/Cache und OpenAI-Kostenkont
 
 ## Aktueller Betriebszustand
 
-- Beobachteter Runtime-Release: `v90_8_10_116`.
-- ML-Autopilot: `QUICK_RUNNING` · Profil `quick` · Phase `CONTEXT_LOAD` · Symbol `BTCUSDT` · Coins `0/5`.
+- Beobachteter Runtime-Release: `v90_8_10_125`.
+- ML-Autopilot: `QUICK_RUNNING` · Profil `quick` · Phase `CHECKPOINT` · Symbol `MYXUSDT` · Coins `3/5`.
 - Quelle des Stage-Zustands: `LIVE_STAGE_HEARTBEAT`.
 - Live-Trading: `Nein` · Real-Capital-Flag: `0` · automatische Promotion: `deaktiviert`.
-- Beobachteter Snapshot: `2026-09-04T00:43:25.149915Z`.
+- Beobachteter Snapshot: `2026-09-04T22:45:00.015712Z`.
 
 ## Noch offen / noch nicht bewiesen
 

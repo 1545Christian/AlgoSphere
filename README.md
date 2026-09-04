@@ -23,9 +23,9 @@ That learning work grew into several of my own Python prototypes, revised repeat
 
 | Area | Current state |
 |---|---|
-| Runtime release | v90_8_10_116 |
+| Runtime release | v90_8_10_125 |
 | ML autopilot | QUICK_RUNNING |
-| Training | CONTEXT_LOAD · BTCUSDT · coins 0/5 |
+| Training | CHECKPOINT · MYXUSDT · coins 3/5 |
 | Stage truth | LIVE_STAGE_HEARTBEAT |
 | Automatic promotion | Disabled |
 | Live trading | No |

@@ -23,9 +23,9 @@ Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wieder
 
 | Bereich | Aktueller Stand |
 |---|---|
-| Runtime-Release | v90_8_10_116 |
+| Runtime-Release | v90_8_10_125 |
 | ML-Autopilot | QUICK_RUNNING |
-| Training | CONTEXT_LOAD · BTCUSDT · Coins 0/5 |
+| Training | CHECKPOINT · MYXUSDT · Coins 3/5 |
 | Stage-Wahrheit | LIVE_STAGE_HEARTBEAT |
 | Automatische Promotion | Deaktiviert |
 | Live-Trading | Nein |

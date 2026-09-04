@@ -39,11 +39,11 @@ v117 separates training authority, evaluation, history/cache handling and OpenAI
 
 ## Current runtime state
 
-- Runtime release observed: `v90_8_10_116`.
-- ML autopilot: `QUICK_RUNNING` · profile `quick` · phase `CONTEXT_LOAD` · symbol `BTCUSDT` · coins `0/5`.
+- Runtime release observed: `v90_8_10_125`.
+- ML autopilot: `QUICK_RUNNING` · profile `quick` · phase `CHECKPOINT` · symbol `MYXUSDT` · coins `3/5`.
 - Stage truth source: `LIVE_STAGE_HEARTBEAT`.
 - Live trading: `No` · real-capital flag: `0` · automatic promotion: `disabled`.
-- Snapshot observed: `2026-09-04T00:43:25.149915Z`.
+- Snapshot observed: `2026-09-04T22:45:00.015712Z`.
 
 ## Still open / not yet proven
 
