@@ -27,19 +27,19 @@ The fail-closed blocker remains unchanged: the runtime-entry snapshot still requ
 
 | Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
 |---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-09-05T22:38:18Z` | observed in current artifact | integrity gate reports its state |
+| Canonical-history integrity | `PASS` | `2026-09-06T00:26:22Z` | observed in current artifact | integrity gate reports its state |
 | Paper-watch guard | `PASS` | `2026-09-05T22:32:53Z` | observed in current artifact | guard observation does not activate trading |
 | Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-09-05T22:32:53Z` | blocked | context is not treated as complete |
 | Remaining runtime context cases | `7` | `2026-09-05T22:32:53Z` | blocked | highest-priority remediation remains open |
-| Research profile | `QUICK` | `2026-09-05T22:39:55Z` | observed in current artifact | profile label only |
-| Activation allowed | `False` | `2026-09-05T22:39:55Z` | observed in current artifact | activation is not permitted by the observed artifact |
-| Eligible experiments | `43` | `2026-09-05T22:39:55Z` | observed in current artifact | 43 eligible experiments are reported; activation remains disabled |
+| Research profile | `QUICK` | `2026-09-06T00:34:37Z` | observed in current artifact | profile label only |
+| Activation allowed | `False` | `2026-09-06T00:34:37Z` | observed in current artifact | activation is not permitted by the observed artifact |
+| Eligible experiments | `43` | `2026-09-06T00:34:37Z` | observed in current artifact | no eligible experiment is reported |
 
 ## What this export checked
 
 - **export verified:** fixed allowlist, ZIP readability, manifest hashes, internal Markdown links and privacy/secret-pattern scan passed.
 - **not applicable:** this export did not start trading, exchange, order, Telegram or other external API actions.
-- **observed in current artifact:** values in the table were read as scalars at `2026-09-05T22:45:02Z UTC / 2026-09-05 23:45 Westeuropäische Sommerzeit Atlantic/Canary`.
+- **observed in current artifact:** values in the table were read as scalars at `2026-09-06T00:38:12Z UTC / 2026-09-06 01:38 Westeuropäische Sommerzeit Atlantic/Canary`.
 
 ## What was not rerun
 
@@ -53,11 +53,10 @@ The older runtime-context gate remains visible in the public evidence history. C
 ## Current runtime and autonomous-training snapshot
 
 - Current runtime release observed: `v125`.
-- Package/update metadata observed separately: `v90_8_10_127` (different scope from the runtime observation).
 - ML autopilot: `QUICK_FAILED` · profile `quick` · phase `ERROR` · symbol `not verified` · coins `0/0`.
 - Current-stage truth source: `LAST_COMPLETED_STAGE`.
 - Live trading: `No` · real-capital flag: `0` · automatic promotion: `disabled`.
-- Snapshot observed: `2026-09-05T22:44:59.312634Z`.
+- Snapshot observed: `2026-09-06T00:38:11.132434Z`.
 
 This runtime/training snapshot is the current top-level operational view. Older gate artifacts remain part of the historical public register but are not treated as a newer runtime release state.
 <!-- GITHUB_NIGHTLY_V3_END -->
