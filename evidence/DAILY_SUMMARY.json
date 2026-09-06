@@ -1,0 +1,1691 @@
+{
+  "coverage": "CURRENT_DAY_SOURCES",
+  "facts": [
+    {
+      "as_of": "2026-09-05",
+      "de": "Die angehängte V2-Basis dokumentiert einen technischen BALANCED-Abbruch am GPU-Watchdog / BLOCKED_PREFLIGHT. Das ist kein wissenschaftlicher Reject; ein erfolgreicher neuer Nachweis liegt in dieser Quelle nicht vor.",
+      "en": "The attached V2 baseline records a technical BALANCED failure at the GPU watchdog / BLOCKED_PREFLIGHT. This is not a scientific rejection; that source does not provide a successful replacement proof.",
+      "evidence_level": "reported",
+      "id": "balanced_preflight",
+      "kind": "failure",
+      "scope": "historical_review"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Die V2-Basis führt Windows-Checkpoint-Schreibfehler, Wiederaufnahme fertiger Phasen und die Vermeidung doppelter Research-Worker als repariert. Das bleibt dokumentierte Teilprüfung, kein Gesamt-PASS.",
+      "en": "The V2 baseline records fixes for Windows checkpoint writes, reuse of completed phases and duplicate research-worker prevention. These remain scoped reported checks, not a global PASS.",
+      "evidence_level": "reported",
+      "id": "checkpoint_resume",
+      "kind": "change",
+      "scope": "historical_review"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Der breitere Runtime-Liveness-Reparaturauftrag wurde laut Tagesabgleich durch ein Nutzungslimit unterbrochen. Unbekannte Teiländerungen gelten nicht als abgeschlossen.",
+      "en": "The daily review records a usage-limit interruption of the broader runtime-liveness repair task. Unknown partial changes are not considered complete.",
+      "evidence_level": "reported",
+      "id": "codex_task_interrupted",
+      "kind": "failure",
+      "scope": "development"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Der Abgleich meldet den konkreten Fehler queue_id statt factory_queue_id als technisch repariert. Ein neuer Research-Core wurde laut Abgleich aktiviert; der reale Factory-QUICK-End-to-End-Nachweis bleibt offen.",
+      "en": "The review reports a technical fix for queue_id being written where factory_queue_id was required. A new research core was reported activated; real Factory–QUICK end-to-end proof remains open.",
+      "evidence_level": "reported",
+      "id": "factory_identity",
+      "kind": "change",
+      "scope": "development"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Für den Factory-Identity-Fix sind 15 bestandene Tests dokumentiert. Diese Tests wurden beim öffentlichen Export nicht erneut ausgeführt und beweisen keinen vollständigen Betrieb.",
+      "en": "The Factory identity fix has 15 passing tests documented. They are not rerun by the public export and do not establish full operational proof.",
+      "evidence_level": "code_test",
+      "id": "factory_identity_tests",
+      "kind": "verification",
+      "scope": "development"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Der anschließende Startversuch stoppte mit FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW vor teurer Berechnung. Die vorherige Queue-Zeile war bereits selected statt eligible; der gültige nächste Start bleibt offen.",
+      "en": "The subsequent launch stopped with FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW before expensive computation. The earlier queue row was selected rather than eligible; a valid next launch remains pending.",
+      "evidence_level": "reported",
+      "id": "factory_queue_block",
+      "kind": "failure",
+      "scope": "development"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Ein neuer OpenAI-Auswertungseintrag wurde am späten Abend gemeldet. Seine Settlement-Preisquelle ist noch nicht vollständig belegt; er wird nicht als bestätigter Leistungsnachweis ausgegeben.",
+      "en": "A new OpenAI evaluation row was reported late in the evening. Its settlement-price source is not fully evidenced and it is not presented as verified performance.",
+      "evidence_level": "reported",
+      "id": "openai_new_outcome",
+      "kind": "observation",
+      "scope": "development"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Der Abgleich dokumentiert fehlerverdächtige historische OpenAI-Settlements mit entry_price == exit_price. Die Preisquelle muss geprüft und die betroffenen Outcomes lokal aus historischen Preisen korrigiert werden; der Abschluss ist offen.",
+      "en": "The review documents faulty historical OpenAI settlements with entry_price == exit_price. Price provenance must be checked and affected outcomes rebuilt locally from historical prices; completion remains open.",
+      "evidence_level": "reported",
+      "id": "openai_settlement",
+      "kind": "failure",
+      "scope": "development"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Paper/Watch guard: Reportstatus PASS um 2026-09-05T22:32:53.666893+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
+      "en": "Paper/Watch guard: report status PASS at 2026-09-05T22:32:53.666893+00:00. Observed artifact only; the gate was not rerun by this publication.",
+      "evidence_level": "reported",
+      "id": "report_paper_watch_guard_last",
+      "kind": "observation",
+      "scope": "report"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Runtime context gate: Reportstatus FAIL_INCOMPLETE_V3_CONTEXT um 2026-09-05T22:32:53.653994+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
+      "en": "Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-05T22:32:53.653994+00:00. Observed artifact only; the gate was not rerun by this publication.",
+      "evidence_level": "reported",
+      "id": "report_runtime_entry_snapshot_coverage",
+      "kind": "failure",
+      "scope": "report"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Die angehängte V2-Basis dokumentiert einen eigenständigen QUICK mit 120 von 120 Ergebnissen (2 nested_pass, 46 nested_rejected, 72 fast_rejected). Die Factory-Bindung ab Start fehlte: kein kanonischer B-Abschluss.",
+      "en": "The attached V2 baseline documents a standalone QUICK with 120 of 120 results (2 nested_pass, 46 nested_rejected, 72 fast_rejected). Factory binding at launch was missing: this is not canonical B completion.",
+      "evidence_level": "reported",
+      "id": "standalone_quick",
+      "kind": "observation",
+      "scope": "historical_review"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Neue geschlossene Watch-Outcomes waren im Abgleich seit etwa 18:59 nicht sichtbar. Weiterlaufende Entscheidungen beweisen nicht automatisch einen gesunden Outcome-Writer.",
+      "en": "The review showed no new visible closed Watch outcomes after approximately 18:59. Continuing decisions do not automatically prove a healthy outcome writer.",
+      "evidence_level": "reported",
+      "id": "watch_closed_outcomes",
+      "kind": "failure",
+      "scope": "development"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Am 05.09. bis etwa 23:35 Ortszeit wurden frische Research-Watch-Entscheidungen dokumentiert. NO TRADE wegen nicht erfüllter Setup-Regeln ist nicht mit einem toten Prozess gleichzusetzen.",
+      "en": "Fresh Research Watch decisions were documented through approximately 23:35 local time on September 5. NO TRADE due to setup gates is not the same as a dead process.",
+      "evidence_level": "runtime_observation",
+      "id": "watch_decision_liveness",
+      "kind": "observation",
+      "scope": "development"
+    },
+    {
+      "as_of": "2026-09-06",
+      "de": "Der lokale Installer hat GitHub Nightly v5.4.1 installiert. Windows-Zeilenumbrüche werden vor der Prüfsummenbildung nur in den Exportkopien vereinheitlicht; Tageswechsel, offene Aufgaben und Versionsbereiche bleiben getrennt. Der geplante Nachtlauf ist damit noch nicht nachgewiesen.",
+      "en": "The local installer installed GitHub Nightly v5.4.1. Windows line endings are canonicalized only in staged export copies before hashing; day rollover, open tasks and version scopes remain separate. This does not yet prove the scheduled nightly run.",
+      "evidence_level": "local_install",
+      "id": "publisher_v541_install",
+      "kind": "change",
+      "scope": "public_publisher"
+    },
+    {
+      "as_of": "2026-09-06",
+      "de": "Die mitgelieferte Offline-Regression des installierten Publisher-Moduls wurde lokal erfolgreich ausgeführt. Keine ML-/Trading-Abnahme und keine GitHub-Veröffentlichung durch diesen Test.",
+      "en": "The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.",
+      "evidence_level": "code_test",
+      "id": "publisher_v541_selftest",
+      "kind": "verification",
+      "scope": "public_publisher"
+    },
+    {
+      "as_of": "2026-09-06",
+      "de": "Der lokale Installer hat GitHub Nightly v5.4.3 installiert. Große Berichte werden speicherbegrenzt nur für Statusfelder eingelesen; nicht verwendbare Quellen bleiben als Warnung sichtbar; Tageswechsel, offene Aufgaben und Versionsbereiche bleiben getrennt. Der geplante Nachtlauf ist damit noch nicht nachgewiesen.",
+      "en": "The local installer installed GitHub Nightly v5.4.3. Large reports are read as memory-bounded status projections; unusable sources remain visible as coverage warnings; day rollover, open tasks and version scopes remain separate. This does not yet prove the scheduled nightly run.",
+      "evidence_level": "local_install",
+      "id": "publisher_v543_install",
+      "kind": "change",
+      "scope": "public_publisher"
+    },
+    {
+      "as_of": "2026-09-06",
+      "de": "Die mitgelieferte Offline-Regression des installierten Publisher-Moduls wurde lokal erfolgreich ausgeführt. Keine ML-/Trading-Abnahme und keine GitHub-Veröffentlichung durch diesen Test.",
+      "en": "The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.",
+      "evidence_level": "code_test",
+      "id": "publisher_v543_selftest",
+      "kind": "verification",
+      "scope": "public_publisher"
+    }
+  ],
+  "publication_date": "2026-09-06",
+  "requirement_audit": [
+    {
+      "as_of": "2026-09-06",
+      "id": "A_RUNTIME_ENTRY_LINEAGE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "A immutable entry/decision/position/event lineage"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "B_FEATURE_CONTRACT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "B feature reduction and versioned parity contract"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "C_STATE_MODEL",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "C deterministic state model parity and drift"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "C_CROSS_COIN_EVENT_MODEL",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "C cross-coin event identity and best-one/two counterfactual"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "D_EXPERIMENT_REGISTRY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "D durable experiment registry and lineage"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "D_NEGATIVE_MEMORY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "D negative-memory repeat prevention"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "E_EXPERIMENT_FACTORY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "E bounded automatic experiment factory"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "E_DECAY_FRESHNESS",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "E current decay and freshness windows"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "F_META_PORTFOLIO",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "F meta decision and portfolio selection"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "G_CHAMPION_CHALLENGER",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "G champion/challenger/shadow gating"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "G_POSITIVE_CANDIDATES",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "G v141/v143/v145/v149/v150 candidate terminal lifecycle"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "ML_AUTOPILOT_LOCAL_LOOP",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "Local ML autonomous memory-to-next-experiment loop"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "ML_PROGRESS_LIVENESS_TRUTH",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "ML progress/liveness truth"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "ADAPTIVE_STORAGE_CAPACITY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Adaptive storage capacity guard"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "STORAGE_RETENTION_CLASSIFICATION",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Safe storage cleanup and retention classification"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "ACTIVE_PAPER_RUNTIME",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "Fresh ACTIVE_PAPER runtime decisions"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "RESEARCH_FORWARD_RUNTIME",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_RESEARCH_FORWARD_OUTCOMES_PROVEN",
+      "title": "Fresh RESEARCH_FORWARD cycles and outcomes"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WATCH_SCANNER_RUNTIME",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "Fresh embedded or standalone Watch scanner"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WATCH_EXIT_RUNTIME",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_WATCH_EXIT_OUTCOMES_PROVEN",
+      "title": "Fresh Watch exit evaluator"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "SOURCE_ROLE_ISOLATION",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Paper/Forward/Watch/Codex source-role isolation"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "OUTCOME_CAPTURE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_OUTCOMES_PROVEN",
+      "title": "Role-separated outcome capture"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "MYX_WATCH_TERMINAL_COVERAGE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "MYX terminal coverage and breakeven semantics"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "ONDO_ADA_OPEN_CLOSED_LIFECYCLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "ONDO/ADA open-to-closed lifecycle truth"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "UNIFIED_MEMORY_WRITE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Unified learning-memory writes"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "UNIFIED_MEMORY_READ",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Memory reads before ML/router selection"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "UNIFIED_MEMORY_PROVEN_EFFECT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Measured without/with-memory effect"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "MEMORY_MACHINE_READABLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Versioned machine-readable knowledge"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "MEMORY_HUMAN_READABLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Human-readable learning summaries"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "PORTABLE_KNOWLEDGE_EXPORT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "WAITING_PUBLIC_STATUS_EXPORT_PROOF",
+      "title": "Portable knowledge export and provenance"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT8_LOCAL_TRACKER",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "Local same-ID 5m prediction tracker"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT8_SCHEDULED_MARKET_INTELLIGENCE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "Scheduled material market-intelligence cycle"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CODEX_RESEARCH_ONLY_BRANCH",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_RESEARCH_PREDICTION_PROVEN",
+      "title": "Complete no-capital Codex prediction-to-memory branch"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CODEX_BASELINE_OPTIMIZED",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "WAITING_BASELINE_OPTIMIZED_PAIR",
+      "title": "Baseline versus optimized outcome separation"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT8_MEMORY_STRATEGY_EFFECT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "WAITING_MEMORY_READ_EFFECT",
+      "title": "Chat8 memory later changes strategy/ML"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "NEWS_MACRO_CONTEXT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "WAITING_CONTEXT_CAPTURE",
+      "title": "News/macro as non-binding context"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "VISIBLE_WINDOWS_TERMINALS",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "Real visible Windows Terminal runtime contract"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "LOCAL_RUNTIME_INDEPENDENT_OF_CODEX",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "Local runtime independent of Codex automation"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "RUNTIME_SELF_HEALING",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Self-healing preserves approved visible runtime"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "RUNTIME_EXACT_IDENTITY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "title": "Declared and actual executable composition identity"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "POST_START_RUNTIME_QA",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "title": "Independent multi-cycle post-start runtime QA"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WEBUI_CANONICAL_CURRENT_TRUTH",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "WebUI canonical current truth hierarchy"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "DASHBOARD_TRUTH_COCKPIT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Dashboard truth cockpit"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WEBUI_COMPLETE_PAGE_SET",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Complete browser page set"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WEBUI_LAYOUT_RESPONSIVE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "WebUI responsive layout and no browser errors"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WEBUI_USER_DATA_QUALITY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "User-facing N/A/current/historical semantics"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WEBUI_DECISIONS_PAGE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Current decisions page chronology"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WEBUI_TRADE_TABLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Complete trade table"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WEBUI_TRADE_CHART",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Trade chart entry/exit truth page"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "WEBUI_PERFORMANCE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Measured WebUI overview performance"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT1_ROLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Chat1 ML/factory/memory role liveness"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT2_ROLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Chat2 strategy/risk/challenger role liveness"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT3_ROLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Chat3 forward/watch/outcome role liveness"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT4_ROLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Chat4 independent non-duplicate QA"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT5_ROLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Chat5 integrate/reconcile/failure-control role"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT6_ROLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Chat6 runtime/storage/visible-terminal role"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT7_ROLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Chat7 read-only completeness audit role"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CHAT8_ROLE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Chat8 prospective intelligence role"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "EVENT_DRIVEN_ORCHESTRATION",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Event-driven dispatch over scheduled message-bus use"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "SUPERVISOR_RETURN_CHAIN",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Worker terminal to Chat5 return to next child"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "REQUIREMENT_TASK_MATERIALIZATION",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "OPEN/PARTIAL code-fixable has exactly one task"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "STATUS_EVENT_CONSUMPTION",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Incremental status/event evidence consumption"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "TERMINAL_COVERAGE_DEDUPLICATION",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Terminal evidence prevents duplicate work"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "NON_STARVATION_PARALLELISM",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Independent owner work must not starve"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "AUTONOMOUS_CHAIN_ACCEPTANCE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Multiple-owner autonomous chain acceptance"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "LAUNCHER_CWD_INDEPENDENCE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Launcher CWD independence"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "USER_SESSION_TRANSPORT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Project outbox user-session bridge"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "RESERVED_CLAIM_STATE_MACHINE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Shared reservation claimability predicate"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "DEFENDER_SAFE_OPERATIONS",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "title": "Defender-safe fail-closed operations"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "DB_SAFETY_CONCURRENCY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "SQLite/WAL/atomic concurrency safety"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "DATA_QUALITY_CAUSAL_PATH",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "WAITING_CAUSAL_SOURCE_PROOF",
+      "title": "Prospective data causal-path quality"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "BACKWARD_COMPATIBILITY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Readable legacy models/evidence/memory"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "REPORTING_STEP_VALIDATION",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Before/reproduce/fix/test/evidence reporting"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "SAFETY_SCOPE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_SAFETY_PROVEN",
+      "title": "LIVE=false, no direct action/consumer/real capital"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "COMPLETE_VISIBLE_RUNTIME_RECOVERY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "title": "Complete visible Paper/Forward/Watch runtime recovery"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CODEX_TRADE_BRANCH_E2E",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "WAITING_E2E_VARIANTS",
+      "title": "Codex prediction-to-outcome trade branch is current and prospective"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CODEFIX_DELIVERY_QA_VISIBLE_RESTART_CHAIN",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Codefix to exact delivery, QA, visible restart and fresh evidence"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "GLOBAL_DB_READ_WRITE_CONTRACT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Canonical runtime database read/write preflight and single-writer contract"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "LIVE_RUNTIME_DATA_SOURCE_CONTRACT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Current runtime price and context data is live, causal and freshness-bound"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "RUNTIME_SINGLETON_PROCESS_CONTROL",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "title": "One owned runtime process and visible terminal per component"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "SINGLE_RUNTIME_SUPERVISOR_START_AUTHORITY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "title": "Single supervisor owns all runtime starts, replacement and recovery"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "GPU_CUDA_SYSTEM_RESOURCE_GOVERNOR",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_RESOURCE_OBSERVATION",
+      "title": "GPU/CUDA and system headroom guard with owned-process control"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CRASH_SAFE_TASK_RECOVERY",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Crash-safe recovery of durable requirements, tasks and approved runtimes"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "NO_DIRECT_CODEX_STATE_SQLITE_WRITE",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "REPLACED_BY_LOCAL_SERVICE",
+      "title": "Project outbox user-session dispatch without Codex-state SQLite writes"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "TRADE_OUTCOME_PIPELINE_LIVENESS",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
+      "title": "Timestamp-bound Paper/Watch/Forward candidate-to-outcome liveness truth"
+    },
+    {
+      "as_of": "2026-09-06",
+      "id": "CODEX_IMMUTABLE_PORTFOLIO_DRIFT",
+      "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
+      "status": "CURRENT_PREDICTION_ONLY_AWAITING_DRIFT_PROOF",
+      "title": "Fail-closed immutable Codex shadow portfolio drift repair and bounded prediction backlog"
+    }
+  ],
+  "schema": "algosphere_public_notes_v54",
+  "snapshot": {
+    "acceptance_label": "v125",
+    "active_stage_source": "LAST_COMPLETED_STAGE",
+    "application": "v90_8_5",
+    "coins": "0/0",
+    "eligible_experiments": 43,
+    "eligible_source_utc": "2026-09-06T01:44:18.304162Z",
+    "exported_utc": "2026-09-06T01:44:52.176662Z",
+    "freshness": "HISTORICAL_STAGE_NOT_LIVE_PROGRESS",
+    "input_read_receipts": [
+      {
+        "bytes_on_disk": 8766,
+        "characters_scanned": 8766,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 817,
+        "characters_scanned": 817,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 922,
+        "characters_scanned": 922,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 812,
+        "characters_scanned": 812,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 894,
+        "characters_scanned": 894,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 979,
+        "characters_scanned": 979,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 1604,
+        "characters_scanned": 1604,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 2900,
+        "characters_scanned": 2900,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 3622,
+        "characters_scanned": 3622,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 2418,
+        "characters_scanned": 2418,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 2739,
+        "characters_scanned": 2739,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 2933,
+        "characters_scanned": 2933,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 3404,
+        "characters_scanned": 3404,
+        "kind": "REPORT_INPUT",
+        "label": "Runtime acceptance",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 26843,
+        "characters_scanned": 26838,
+        "kind": "REPORT_INPUT",
+        "label": "Local ML current truth",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 794,
+        "characters_scanned": 792,
+        "kind": "REPORT_INPUT",
+        "label": "Training events",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      },
+      {
+        "bytes_on_disk": 11130,
+        "characters_scanned": 11130,
+        "kind": "REPORT_INPUT",
+        "label": "Research eligibility",
+        "omitted_items": 0,
+        "read_mode": "STREAM_PROJECTED",
+        "status": "READ_PROJECTED",
+        "warnings": []
+      }
+    ],
+    "live": false,
+    "observed_utc": "2026-09-06T01:44:49.187926Z",
+    "package_basis": "NOT_AVAILABLE",
+    "package_release": "not verified",
+    "promotion_allowed": false,
+    "real_capital": 0,
+    "release": "not verified",
+    "runtime_identity_basis": "SCHEMA_LABEL_IS_NOT_EXECUTABLE_VERSION",
+    "safety_observed_utc": "2026-09-04T20:09:10.404736Z",
+    "source_hotfix": "v90_8_5_23",
+    "training_phase": "FACTORY_HYPOTHESIS_READY_LAUNCH_DUE",
+    "training_profile": "not verified",
+    "training_source": "LOCAL_ML_CURRENT_TRUTH",
+    "training_status": "ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY",
+    "training_symbol": "not verified",
+    "webui": "v90_8_10_127"
+  },
+  "sources": [
+    {
+      "bytes_on_disk": 8766,
+      "characters_scanned": 8766,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 817,
+      "characters_scanned": 817,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 922,
+      "characters_scanned": 922,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 812,
+      "characters_scanned": 812,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 894,
+      "characters_scanned": 894,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 979,
+      "characters_scanned": 979,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 1604,
+      "characters_scanned": 1604,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 2900,
+      "characters_scanned": 2900,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 3622,
+      "characters_scanned": 3622,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 2418,
+      "characters_scanned": 2418,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 2739,
+      "characters_scanned": 2739,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 2933,
+      "characters_scanned": 2933,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 3404,
+      "characters_scanned": 3404,
+      "kind": "REPORT_INPUT",
+      "label": "Runtime acceptance",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 26843,
+      "characters_scanned": 26838,
+      "kind": "REPORT_INPUT",
+      "label": "Local ML current truth",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 794,
+      "characters_scanned": 792,
+      "kind": "REPORT_INPUT",
+      "label": "Training events",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 11130,
+      "characters_scanned": 11130,
+      "kind": "REPORT_INPUT",
+      "label": "Research eligibility",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "as_of": "2026-09-05",
+      "kind": "REVIEWED_MASTER_SUMMARY",
+      "source_sha256": "73a82c019341a4d4e9a114ed2f516f35c8a885bc69fc325e00baf652513e3458",
+      "status": "DATED_BASELINE"
+    },
+    {
+      "as_of": "2026-09-06",
+      "bytes_on_disk": 192698,
+      "characters_scanned": 192645,
+      "kind": "REQUIREMENT_AUDIT",
+      "label": "Requirement audit",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 196229331,
+      "characters_scanned": 196228958,
+      "kind": "LOCAL_REPORT",
+      "label": "QUICK",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "UNDATED_NOT_USED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 163440292,
+      "characters_scanned": 163439694,
+      "kind": "LOCAL_REPORT",
+      "label": "BALANCED",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "UNDATED_NOT_USED",
+      "warnings": []
+    },
+    {
+      "as_of": "2026-09-05",
+      "bytes_on_disk": 848,
+      "characters_scanned": 848,
+      "kind": "LOCAL_REPORT",
+      "label": "Paper/Watch guard",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "as_of": "2026-09-05",
+      "bytes_on_disk": 6819,
+      "characters_scanned": 6819,
+      "kind": "LOCAL_REPORT",
+      "label": "Runtime context gate",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "READ_PROJECTED",
+      "warnings": []
+    },
+    {
+      "bytes_on_disk": 733,
+      "characters_scanned": 733,
+      "kind": "LOCAL_REPORT",
+      "label": "Canonical-history integrity",
+      "omitted_items": 0,
+      "read_mode": "STREAM_PROJECTED",
+      "status": "UNDATED_NOT_USED",
+      "warnings": []
+    },
+    {
+      "as_of": "2026-09-06",
+      "kind": "STRUCTURED_EVENT",
+      "source_sha256": "130d9ecafa568e99914ca7162d3e2e3420909b0c3d261f8f85993426a5594a60",
+      "status": "READ"
+    },
+    {
+      "as_of": "2026-09-06",
+      "kind": "STRUCTURED_EVENT",
+      "source_sha256": "b5760a20a76798372468c8f20d8b8ba1f7be8e09011ce6ceb134502c4184ec56",
+      "status": "READ"
+    }
+  ],
+  "todos": [
+    {
+      "as_of": "2026-09-05",
+      "de": "B wissenschaftlich terminalisieren",
+      "en": "Scientific terminalization of B",
+      "evidence_level": "plan",
+      "id": "b_wissenschaftlich_terminalisieren",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "BALANCED/OOS nur auf Gewinnern",
+      "en": "BALANCED/OOS only for qualified candidates",
+      "evidence_level": "plan",
+      "id": "balanced_oos_nur_auf_gewinnern",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Candidate Freeze",
+      "en": "Candidate Freeze",
+      "evidence_level": "plan",
+      "id": "candidate_freeze",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Challenger Lifecycle",
+      "en": "Challenger Lifecycle",
+      "evidence_level": "plan",
+      "id": "challenger_lifecycle",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Current Truth / stale detection",
+      "en": "Current Truth / stale detection",
+      "evidence_level": "plan",
+      "id": "current_truth_stale_detection",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Elite Canary",
+      "en": "Elite Canary",
+      "evidence_level": "plan",
+      "id": "elite_canary",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Factory/QUICK echter E2E-Beweis",
+      "en": "Real Factory/QUICK end-to-end proof",
+      "evidence_level": "plan",
+      "id": "factory_quick_echter_e2e_beweis",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "GPU-Watchdog-/Preflight-Ursache abschließend klären",
+      "en": "Resolve the GPU watchdog / preflight root cause",
+      "evidence_level": "plan",
+      "id": "gpu_preflight_root_cause",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "LIVE_READINESS_GATE",
+      "en": "LIVE_READINESS_GATE",
+      "evidence_level": "plan",
+      "id": "live_readiness_gate",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "OpenAI historische Outcome-Reparatur",
+      "en": "Historical OpenAI outcome repair",
+      "evidence_level": "plan",
+      "id": "openai_historische_outcome_reparatur",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "OpenAI laufende Settlement-Kette beweisen",
+      "en": "Verify the ongoing OpenAI settlement chain",
+      "evidence_level": "plan",
+      "id": "openai_laufende_settlement_kette_beweisen",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Paper Execution Parity",
+      "en": "Paper Execution Parity",
+      "evidence_level": "plan",
+      "id": "paper_execution_parity",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Paper Outcome Memory E2E",
+      "en": "Paper Outcome Memory E2E",
+      "evidence_level": "plan",
+      "id": "paper_outcome_memory_e2e",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Reference Benchmark Contract V1",
+      "en": "Reference Benchmark Contract V1",
+      "evidence_level": "plan",
+      "id": "reference_benchmark_contract_v1",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Role Separation",
+      "en": "Role Separation",
+      "evidence_level": "plan",
+      "id": "role_separation",
+      "priority": "P0",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Cleanup konkurrierender Launcher/Wrapper/Statuspfade",
+      "en": "Remove competing launchers, wrappers and status paths",
+      "evidence_level": "plan",
+      "id": "cleanup_konkurrierender_launcher_wrapper_statuspfade",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Context Alignment Writer / External Writer Reload",
+      "en": "Context Alignment Writer / External Writer Reload",
+      "evidence_level": "plan",
+      "id": "context_alignment_writer_external_writer_reload",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Cost Efficient Governance im Repo verankern",
+      "en": "Cost-efficient development governance",
+      "evidence_level": "plan",
+      "id": "cost_efficient_governance_im_repo_verankern",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Ein kanonischer Start-/Status-/Restart-Pfad je Runtime-Komponente",
+      "en": "One canonical start, status and restart path per component",
+      "evidence_level": "plan",
+      "id": "ein_kanonischer_start_status_restart_pfad_je_runtime_komponente",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Entry-Timing getrennt von übergeordnetem Markt-Bias",
+      "en": "Entry timing separated from higher-timeframe market bias",
+      "evidence_level": "plan",
+      "id": "entry_timing_getrennt_von_übergeordnetem_markt_bias",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Frozen Champion Protection",
+      "en": "Frozen Champion Protection",
+      "evidence_level": "plan",
+      "id": "frozen_champion_protection",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Globale Filter überall verbinden",
+      "en": "Connect global filters everywhere",
+      "evidence_level": "plan",
+      "id": "globale_filter_überall_verbinden",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "GPU/CPU Audit + Training Speedup Proof",
+      "en": "GPU/CPU audit and training speedup proof",
+      "evidence_level": "plan",
+      "id": "gpu_cpu_audit_training_speedup_proof",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Historische Memory-Migration v23–v141+ nachweisbar machen",
+      "en": "Evidence for historical memory migration v23–v141+",
+      "evidence_level": "plan",
+      "id": "historische_memory_migration_v23_v141_nachweisbar_machen",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "FeatureCaches inkrementell erweitern",
+      "en": "Incremental FeatureCache extension",
+      "evidence_level": "plan",
+      "id": "incremental_feature_cache",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Marktweite Schocks + Post-Shock-Rebound erkennen",
+      "en": "Market-wide shock and post-shock rebound detection",
+      "evidence_level": "plan",
+      "id": "marktweite_schocks_post_shock_rebound_erkennen",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Metriken/Definitionen verständlich",
+      "en": "Understandable metrics and definitions",
+      "evidence_level": "plan",
+      "id": "metriken_definitionen_verständlich",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "News/OpenAI/Local-ML Consensus sinnvoll erklären",
+      "en": "Explain News / OpenAI / Local ML consensus",
+      "evidence_level": "plan",
+      "id": "news_openai_local_ml_consensus_sinnvoll_erklären",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "OpenAI AI-only Outcome Loop: MFE/MAE/target_hit/invalidation_hit/exit_reason/error_class/counterfactual/memory_lesson_id",
+      "en": "Complete the OpenAI AI-only outcome loop and error attribution",
+      "evidence_level": "plan",
+      "id": "openai_ai_only_outcome_loop_mfe_mae_target_hit_invalidation_hit_exit_reason_error_class_counterfactual_memory_lesson_id",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "OpenAI Live Input Receipt Contract",
+      "en": "OpenAI Live Input Receipt Contract",
+      "evidence_level": "plan",
+      "id": "openai_live_input_receipt_contract",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Research-Forward Outcome Visibility",
+      "en": "Research Forward Outcome Visibility",
+      "evidence_level": "plan",
+      "id": "research_forward_outcome_visibility",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Resource Policy hardware-aware / Memory Guard vollständig",
+      "en": "Hardware-aware resource policy and memory guard",
+      "evidence_level": "plan",
+      "id": "resource_policy_hardware_aware_memory_guard_vollständig",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Ridge Numerical Stability",
+      "en": "Ridge Numerical Stability",
+      "evidence_level": "plan",
+      "id": "ridge_numerical_stability",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Role-aware Decision Panel",
+      "en": "Role-aware Decision Panel",
+      "evidence_level": "plan",
+      "id": "role_aware_decision_panel",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Runtime Core ↔ Source Parity",
+      "en": "Runtime Core / Source Parity",
+      "evidence_level": "plan",
+      "id": "runtime_core_source_parity",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Strategy × Coin × Side × Regime × Volatilität × Outcome Meta-Learning",
+      "en": "Strategy / Coin / Side / Regime / Volatility / Outcome meta-learning",
+      "evidence_level": "plan",
+      "id": "strategy_coin_side_regime_volatilität_outcome_meta_learning",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Training Terminal / reale Progress-Sichtbarkeit",
+      "en": "Visible training terminal and real progress",
+      "evidence_level": "plan",
+      "id": "training_terminal_reale_progress_sichtbarkeit",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Watch Closed-Outcome Writer weiter beobachten",
+      "en": "Continue observing the Watch closed-outcome writer",
+      "evidence_level": "plan",
+      "id": "watch_closed_outcome_writer_weiter_beobachten",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "WebUI Current Truth",
+      "en": "WebUI Current Truth",
+      "evidence_level": "plan",
+      "id": "webui_current_truth",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "WebUI Watch/Reference/OpenAI klare Rollendarstellung",
+      "en": "Clear Watch, Reference and OpenAI role presentation",
+      "evidence_level": "plan",
+      "id": "webui_watch_reference_openai_klare_rollendarstellung",
+      "priority": "P1",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Approved Model Bundle Loader",
+      "en": "Approved Model Bundle Loader",
+      "evidence_level": "plan",
+      "id": "approved_model_bundle_loader",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Bitget Read-only Permission Enforcement",
+      "en": "Bitget read-only permission enforcement",
+      "evidence_level": "plan",
+      "id": "bitget_read_only_permission_enforcement",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Client Preview",
+      "en": "Client Preview",
+      "evidence_level": "plan",
+      "id": "client_preview",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Copyright / License / Terms / Disclaimer",
+      "en": "Copyright / License / Terms / Disclaimer",
+      "evidence_level": "plan",
+      "id": "copyright_license_terms_disclaimer",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Demo Connected Backend",
+      "en": "Demo Connected Backend",
+      "evidence_level": "plan",
+      "id": "demo_connected_backend",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Demo Offline Backend",
+      "en": "Demo Offline Backend",
+      "evidence_level": "plan",
+      "id": "demo_offline_backend",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Distribution Profile Isolation",
+      "en": "Distribution Profile Isolation",
+      "evidence_level": "plan",
+      "id": "distribution_profile_isolation",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Memory Tier Separation",
+      "en": "Memory Tier Separation",
+      "evidence_level": "plan",
+      "id": "memory_tier_separation",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "One-click Installer",
+      "en": "One-click Installer",
+      "evidence_level": "plan",
+      "id": "one_click_installer",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Orphaned Launcher Cleanup / Archive Release Payload",
+      "en": "Orphaned Launcher Cleanup / Archive Release Payload",
+      "evidence_level": "plan",
+      "id": "orphaned_launcher_cleanup_archive_release_payload",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Reports-Code-Migration",
+      "en": "Reports-Code-Migration",
+      "evidence_level": "plan",
+      "id": "reports_code_migration",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Research Knowledge Bundle",
+      "en": "Research Knowledge Bundle",
+      "evidence_level": "plan",
+      "id": "research_knowledge_bundle",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Root Cleanup",
+      "en": "Root Cleanup",
+      "evidence_level": "plan",
+      "id": "root_cleanup",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "Secure Credential Store",
+      "en": "Secure Credential Store",
+      "evidence_level": "plan",
+      "id": "secure_credential_store",
+      "priority": "P2",
+      "status": "OPEN"
+    },
+    {
+      "as_of": "2026-09-05",
+      "de": "SQLite Retention",
+      "en": "SQLite Retention",
+      "evidence_level": "plan",
+      "id": "sqlite_retention",
+      "priority": "P2",
+      "status": "OPEN"
+    }
+  ],
+  "warnings": [
+    "NO_LOCAL_MASTER_USING_DATED_REVIEW_AND_LOCAL_REPORTS",
+    "QUICK:UNDATED_NOT_USED",
+    "BALANCED:UNDATED_NOT_USED",
+    "CANONICAL_HISTORY_INTEGRITY:UNDATED_NOT_USED"
+  ]
+}

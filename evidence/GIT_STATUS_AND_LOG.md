@@ -1,13 +1,7 @@
-# Git status and log
+# Publication transport and history
 
-<!-- HUMAN_TEXT_START -->
+The publisher reads and writes the approved repository using the GitHub Git Data API. It does not create a local clone, run a trading process or publish private Git history.
 
-This page separates the non-Git private project root from the public documentation repository. It publishes no private remote, credentials, paths or source log.
+The commit is based on the current remote tree and uses a non-forced branch update. The authenticated account, before/after commit IDs and changed paths are recorded in the local run receipt. Dry runs do not contact GitHub. No future commit ID is guessed inside this pre-commit artifact.
 
-<!-- HUMAN_TEXT_END -->
-
-<!-- AUTO_VALUES_START -->
-- **not applicable:** the private project root is not a Git work tree; no private Git history is published.
-- **export verified:** the public documentation clone is checked for a clean worktree and approved remote before publication.
-- **not applicable:** no private remote, credential or source log is included.
-<!-- AUTO_VALUES_END -->
+The generated manifest covers the current staged publication, not every historical page already in the repository.

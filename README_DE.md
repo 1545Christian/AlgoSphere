@@ -19,16 +19,21 @@ Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wieder
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START:CURRENT_STATUS -->
-## Aktueller öffentlicher Stand
+## Aktueller Stand
 
-| Bereich | Aktueller Stand |
+| Scope | Observed |
 |---|---|
-| Runtime-Release | v125 |
-| ML-Autopilot | QUICK_FAILED |
-| Training | ERROR · not verified · Coins 0/0 |
-| Stage-Wahrheit | LAST_COMPLETED_STAGE |
-| Automatische Promotion | Deaktiviert |
-| Live-Trading | Nein |
+| Runtime-Release laut explizitem Berichtsfeld | `not verified` |
+| Acceptance-Berichtskennung (keine Laufzeitversion) | `v125` |
+| WebUI-Quellversion | `v90_8_10_127` |
+| Paket-/Update-Manifest | `not verified` |
+| Anwendungs-Quellversion | `v90_8_5` |
+| Historische Source-Hotfix-Kennung | `v90_8_5_23` |
+| ML | `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` |
+| Stage source | `LAST_COMPLETED_STAGE` |
+| Freshness | `HISTORICAL_STAGE_NOT_LIVE_PROGRESS` |
+| Live | `Nein` |
+| Promotion | `Nein` |
 <!-- AUTO_VALUES_END:CURRENT_STATUS -->
 
 Das Projekt bleibt im sicheren Sperrzustand (fail-closed). Bei unvollständigen Runtime-Nachweisen wird kein Research-Ergebnis weiter aktiviert.
@@ -74,7 +79,7 @@ Alle datierten [Updates](updates/) durchsuchen.
 
 Ich arbeite seit ungefähr drei Jahren an den zugrunde liegenden Ideen und Python-Prototypen. Das Projekt begann mit dem Nachbauen und Anpassen von Lernmaterial, auch aus YouTube-Videos. Daraus entwickelte ich mehrere eigene Prototypen und überarbeitete sie wiederholt.
 
-ChatGPT unterstützt derzeit Implementierung, Fehlersuche, technische Prüfung und Dokumentation. Frühere Codex-unterstützte Arbeiten bleiben Teil der Projektgeschichte; die aktuelle Runtime und der GitHub-Nachtlauf hängen jedoch nicht von Codex ab. KI-unterstützte Entwürfe prüfe und überarbeite ich vor der Veröffentlichung. Architektur, Projektentscheidungen und Verantwortung bleiben menschlich.
+Codex und ChatGPT unterstützen heute Implementierung, Fehlersuche, technische Prüfung und Dokumentation. Ihre Entwürfe prüfe und überarbeite ich vor der Veröffentlichung. Architektur, Projektentscheidungen und Verantwortung bleiben menschlich.
 
 Da wiederholte Übergaben mit Codex zu Unsicherheit über den tatsächlichen Projektstand geführt haben, prüfe ich die offenen Anforderungen derzeit erneut mit ChatGPT anhand des Codes, datierter Artefakte und Tests. Auch das Gedächtnis beziehungsweise Memory gehört dazu: Strukturen und frühere Nachweise zum Schreiben und Lesen von Experimentwissen sind vorhanden, ein vollständiger und nachweisbar wirksamer Lernkreislauf ist jedoch noch nicht bestätigt. Sobald die offenen Prüfungen abgeschlossen sind, arbeite ich an Training, tradingbezogener Forschung und der weiteren Research-to-Execution-Kette weiter.
 

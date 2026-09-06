@@ -19,16 +19,21 @@ That learning work grew into several of my own Python prototypes, revised repeat
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START:CURRENT_STATUS -->
-## Current public status
+## Current status
 
-| Area | Current state |
+| Scope | Observed |
 |---|---|
-| Runtime release | v125 |
-| ML autopilot | QUICK_FAILED |
-| Training | ERROR · not verified · coins 0/0 |
-| Stage truth | LAST_COMPLETED_STAGE |
-| Automatic promotion | Disabled |
-| Live trading | No |
+| Runtime release reported in explicit field | `not verified` |
+| Acceptance report label (not executable version) | `v125` |
+| WebUI source version | `v90_8_10_127` |
+| Explicit package/update manifest | `not verified` |
+| Application source version | `v90_8_5` |
+| Historical source-hotfix identifier | `v90_8_5_23` |
+| ML | `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` |
+| Stage source | `LAST_COMPLETED_STAGE` |
+| Freshness | `HISTORICAL_STAGE_NOT_LIVE_PROGRESS` |
+| Live | `No` |
+| Promotion | `No` |
 <!-- AUTO_VALUES_END:CURRENT_STATUS -->
 
 The project remains fail-closed. No research result is promoted when required runtime evidence is incomplete.
@@ -74,7 +79,7 @@ Browse all dated [updates](updates/).
 
 I have worked on the underlying ideas and Python prototypes for approximately three years. The project began by rebuilding and adapting examples from educational material, including YouTube videos. Over time, I developed and repeatedly revised several of my own prototypes.
 
-ChatGPT currently supports implementation, debugging, technical review and documentation. Earlier Codex-assisted work remains part of the project history, but the current runtime and GitHub-nightly publication path do not depend on Codex. AI-assisted output is reviewed and revised before publication. The architecture, project decisions and responsibility remain human.
+Codex and ChatGPT now support implementation, debugging, technical review and documentation. Their output is reviewed and revised before publication. The architecture, project decisions and responsibility remain human.
 
 Because repeated Codex handoffs caused uncertainty about the actual project state, I am currently rechecking the open requirements with ChatGPT against the code, dated artifacts and tests. Memory is part of that review: the project has structures and earlier evidence for writing and reading experiment knowledge, but a complete, demonstrably effective learning loop is not yet confirmed. After the open checks are completed, I will continue with training, trading-related research and the wider research-to-execution chain.
 

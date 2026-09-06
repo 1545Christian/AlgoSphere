@@ -1,39 +1,18 @@
-# Test and gate results
+# Test results and verification limits
 
-<!-- HUMAN_TEXT_START -->
+## Documented checks — not rerun by this export
 
-## Reading the table
+- **2026-09-05 · Documented verification:** The Factory identity fix has 15 passing tests documented. They are not rerun by the public export and do not establish full operational proof.
+- **2026-09-06 · Documented verification:** The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.
+- **2026-09-06 · Documented verification:** The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.
 
-Each row identifies a control or gate, its purpose, its latest observed artifact timestamp, whether it was independently rerun in this export, the observed result, an evidence reference and a limitation. A passing observed artifact is not rewritten as a newly executed test.
+## Observed gate reports — not independently rerun
 
-## Export checks
+- **2026-09-05 · Observation:** Paper/Watch guard: report status PASS at 2026-09-05T22:32:53.666893+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-05 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-05T22:32:53.653994+00:00. Observed artifact only; the gate was not rerun by this publication.
 
-Export checks validate the documentation package itself: allowlist, manifest hashes, archive readability, links and privacy scanning. They do not validate the private application.
+## What publication validates
 
-## Application tests
+Allowlist, public-safe text, internal file links, exact per-path manifest byte counts and SHA-256, and equality of final staged bytes with ZIP members. A code-test PASS is not runtime acceptance.
 
-Application test suites are only described as independently rerun when this export actually performs them. Otherwise the page says “not rerun during this export.”
-
-## Research feature-contract evidence — 1 September
-
-**observed in reviewed internal evidence:** the relevant research feature-contract regression tests and runtime-delivery tests passed after the composition regression was corrected. A time-clean contract run confirmed agreement across training, holdout and runtime availability. These observations do not establish performance, profitability or live-trading readiness, and they were not rerun by this public export.
-
-<!-- HUMAN_TEXT_END -->
-
-<!-- AUTO_VALUES_START -->
-| Gate or test | Purpose | Last observed artifact (UTC) | Independently rerun in this export | Observed result | Evidence reference | Limitation |
-|---|---|---|---|---|---|---|
-| Canonical-history integrity | historical-record integrity | `2026-09-06T00:26:22Z` | No | `PASS` | `canonical_history_integrity.json` | observed artifact only |
-| Paper-watch guard | paper/watch boundary guard | `2026-09-05T22:32:53Z` | No | `PASS` | `paper_watch_guard_last.json` | observed artifact only |
-| Runtime context gate | required runtime-context completeness | `2026-09-05T22:32:53Z` | No | `FAIL_INCOMPLETE_V3_CONTEXT`; `7` cases | `runtime_entry_snapshot_coverage.json` | blocked; not independently rerun |
-| Research autopilot | research eligibility boundary | `2026-09-06T00:34:37Z` | No | `QUICK`, activation `False`, eligible `43` | `research_autopilot_last.json` | observed artifact only |
-
-| Export check | Result |
-|---|---|
-| Fixed allowlist | PASS |
-| SHA-256 manifest | PASS |
-| ZIP readability | PASS |
-| Internal Markdown links | PASS |
-| Secret and privacy patterns | PASS |
-| Application test suites | Not rerun during this export |
-<!-- AUTO_VALUES_END -->
+[Source projection](../../evidence/DAILY_SUMMARY.json)

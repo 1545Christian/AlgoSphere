@@ -1,63 +1,55 @@
 # Current public status
 
-<!-- HUMAN_TEXT_START -->
+Publication date: **2026-09-06**. Runtime observations, implementation reports and acceptance proofs remain separate.
 
-## Plain-language summary
+## Operational state from local reports
 
-AlgoSphere remains within a fail-closed research boundary. The newest runtime and autonomous-training snapshot is published below. Older gate artifacts remain registered as historical evidence and do not override a newer runtime-acceptance state. Live-trading readiness is not claimed.
+- Runtime release reported in explicit field: `not verified`.
+- Acceptance report label (not executable version): `v125`.
+- WebUI source version: `v90_8_10_127`.
+- Explicit package/update manifest: `not verified`.
+- Application source version: `v90_8_5`.
+- Historical source-hotfix identifier: `v90_8_5_23`.
+- ML: `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` · not verified · FACTORY_HYPOTHESIS_READY_LAUNCH_DUE · not verified · 0/0.
+- State source: `LAST_COMPLETED_STAGE`.
+- Freshness classification: `HISTORICAL_STAGE_NOT_LIVE_PROGRESS`.
+- Source timestamp: `2026-09-06T01:44:49.187926Z`.
+- Live trading reported by source: `No`; Real Capital: `0`; Promotion reported by source: `No`.
 
-## How to read this page
+A current report timestamp is not proof of a fresh worker. LAST_COMPLETED_STAGE remains historical stage information. A schema label or WebUI source version does not prove the version of executing code.
 
-`export verified` describes checks carried out on this documentation package. `observed in current artifact` describes a scalar value read from a current private artifact. `independently rerun` is used only when this export actually ran the relevant application test. `blocked`, `not verified` and `not applicable` retain their ordinary meanings.
+This publisher only reads reports. It starts no training, orders, promotions or capital actions.
 
-## Research feature-contract addendum — 1 September
+## Research eligibility
 
-- **observed in reviewed internal evidence:** a regression in research feature-contract composition was corrected and an immutable research core was checked.
-- **observed in reviewed internal evidence:** a time-clean feature-contract run confirmed consistency between training, holdout and runtime. This is a contract and data-availability result, not a performance or profitability result.
-- **observed in reviewed internal evidence:** the relevant regression tests and runtime-delivery tests passed. They were not rerun by this public export.
-- **not applicable:** the reviewed work did not perform live trades, orders, exchange actions, capital actions, paper activation or candidate promotion.
-- **observed in reviewed internal evidence:** the research core is prepared for the next natural research start. That start has not yet been claimed as completed.
+43 eligible experiments are reported; this count does not prove a launchable Factory queue row.
+Source timestamp: `2026-09-06T01:44:18.304162Z`.
 
-The fail-closed blocker remains unchanged: the runtime-entry snapshot still requires provenance-bound trade-window candles. They must be captured immutably and then checked again with exact-hash QA and a fresh trade review.
+## Most recent documented development
 
-<!-- HUMAN_TEXT_END -->
+- **2026-09-06 · Implementation reported by source:** The local installer installed GitHub Nightly v5.4.1. Windows line endings are canonicalized only in staged export copies before hashing; day rollover, open tasks and version scopes remain separate. This does not yet prove the scheduled nightly run.
+- **2026-09-06 · Documented verification:** The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.
+- **2026-09-06 · Implementation reported by source:** The local installer installed GitHub Nightly v5.4.3. Large reports are read as memory-bounded status projections; unusable sources remain visible as coverage warnings; day rollover, open tasks and version scopes remain separate. This does not yet prove the scheduled nightly run.
+- **2026-09-06 · Documented verification:** The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.
 
-<!-- AUTO_VALUES_START -->
-## Technical status table
+## Last documented failures and blockers
 
-| Control | Observed value | Source artifact (UTC) | Status meaning | Practical effect |
-|---|---|---|---|---|
-| Canonical-history integrity | `PASS` | `2026-09-06T00:26:22Z` | observed in current artifact | integrity gate reports its state |
-| Paper-watch guard | `PASS` | `2026-09-05T22:32:53Z` | observed in current artifact | guard observation does not activate trading |
-| Runtime context gate | `FAIL_INCOMPLETE_V3_CONTEXT` | `2026-09-05T22:32:53Z` | blocked | context is not treated as complete |
-| Remaining runtime context cases | `7` | `2026-09-05T22:32:53Z` | blocked | highest-priority remediation remains open |
-| Research profile | `QUICK` | `2026-09-06T00:34:37Z` | observed in current artifact | profile label only |
-| Activation allowed | `False` | `2026-09-06T00:34:37Z` | observed in current artifact | activation is not permitted by the observed artifact |
-| Eligible experiments | `43` | `2026-09-06T00:34:37Z` | observed in current artifact | no eligible experiment is reported |
+- **2026-09-05 · Failure / blocker:** The attached V2 baseline records a technical BALANCED failure at the GPU watchdog / BLOCKED_PREFLIGHT. This is not a scientific rejection; that source does not provide a successful replacement proof.
+- **2026-09-05 · Failure / blocker:** The daily review records a usage-limit interruption of the broader runtime-liveness repair task. Unknown partial changes are not considered complete.
+- **2026-09-05 · Failure / blocker:** The subsequent launch stopped with FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW before expensive computation. The earlier queue row was selected rather than eligible; a valid next launch remains pending.
+- **2026-09-05 · Failure / blocker:** The review documents faulty historical OpenAI settlements with entry_price == exit_price. Price provenance must be checked and affected outcomes rebuilt locally from historical prices; completion remains open.
+- **2026-09-05 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-05T22:32:53.653994+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-05 · Failure / blocker:** The review showed no new visible closed Watch outcomes after approximately 18:59. Continuing decisions do not automatically prove a healthy outcome writer.
 
-## What this export checked
+## Remaining work
 
-- **export verified:** fixed allowlist, ZIP readability, manifest hashes, internal Markdown links and privacy/secret-pattern scan passed.
-- **not applicable:** this export did not start trading, exchange, order, Telegram or other external API actions.
-- **observed in current artifact:** values in the table were read as scalars at `2026-09-06T00:38:12Z UTC / 2026-09-06 01:38 Westeuropäische Sommerzeit Atlantic/Canary`.
+Open items are carried forward without a calendar-day reset. See the [complete roadmap](docs/progress/ROADMAP.md) and [dated update](updates/2026-09-06-public-status.md).
 
-## What was not rerun
+## Publication verification boundary
 
-Application test suites: not rerun during this export. Observed report values must not be read as independently rerun tests.
+The publisher verifies the final allowlist, privacy rules, internal file links, manifest bytes and ZIP content before upload. It does not rerun application tests or attest that a trading component is healthy. The observations above must not be interpreted as live-readiness.
 
-## Historical gate note
+## Input coverage
 
-The older runtime-context gate remains visible in the public evidence history. Current operational status is taken from the latest runtime-acceptance and autonomous-training snapshot below.
-
-<!-- GITHUB_NIGHTLY_V3_START -->
-## Current runtime and autonomous-training snapshot
-
-- Current runtime release observed: `v125`.
-- ML autopilot: `QUICK_FAILED` · profile `quick` · phase `ERROR` · symbol `not verified` · coins `0/0`.
-- Current-stage truth source: `LAST_COMPLETED_STAGE`.
-- Live trading: `No` · real-capital flag: `0` · automatic promotion: `disabled`.
-- Snapshot observed: `2026-09-06T00:38:11.132434Z`.
-
-This runtime/training snapshot is the current top-level operational view. Older gate artifacts remain part of the historical public register but are not treated as a newer runtime release state.
-<!-- GITHUB_NIGHTLY_V3_END -->
-<!-- AUTO_VALUES_END -->
+Coverage warnings: NO_LOCAL_MASTER_USING_DATED_REVIEW_AND_LOCAL_REPORTS, QUICK:UNDATED_NOT_USED, BALANCED:UNDATED_NOT_USED, CANONICAL_HISTORY_INTEGRITY:UNDATED_NOT_USED
+Large reports are streamed for selected status fields. A NOT_USED source contributes no fresh claim; previously documented work remains dated and is not reverified.
