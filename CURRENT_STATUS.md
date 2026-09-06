@@ -13,7 +13,7 @@ Publication date: **2026-09-06**. Runtime observations, implementation reports a
 - ML: `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` · not verified · FACTORY_HYPOTHESIS_READY_LAUNCH_DUE · not verified · 0/0.
 - State source: `LAST_COMPLETED_STAGE`.
 - Freshness classification: `HISTORICAL_STAGE_NOT_LIVE_PROGRESS`.
-- Source timestamp: `2026-09-06T01:44:49.187926Z`.
+- Source timestamp: `2026-09-06T22:44:59.701265Z`.
 - Live trading reported by source: `No`; Real Capital: `0`; Promotion reported by source: `No`.
 
 A current report timestamp is not proof of a fresh worker. LAST_COMPLETED_STAGE remains historical stage information. A schema label or WebUI source version does not prove the version of executing code.
@@ -22,8 +22,8 @@ This publisher only reads reports. It starts no training, orders, promotions or 
 
 ## Research eligibility
 
-43 eligible experiments are reported; this count does not prove a launchable Factory queue row.
-Source timestamp: `2026-09-06T01:44:18.304162Z`.
+No eligible experiment is reported; this is not launch authorization.
+Source timestamp: `2026-09-06T22:41:03.612988Z`.
 
 ## Most recent documented development
 
@@ -31,6 +31,8 @@ Source timestamp: `2026-09-06T01:44:18.304162Z`.
 - **2026-09-06 · Documented verification:** The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.
 - **2026-09-06 · Implementation reported by source:** The local installer installed GitHub Nightly v5.4.3. Large reports are read as memory-bounded status projections; unusable sources remain visible as coverage warnings; day rollover, open tasks and version scopes remain separate. This does not yet prove the scheduled nightly run.
 - **2026-09-06 · Documented verification:** The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.
+- **2026-09-06 · Observation:** Paper/Watch guard: report status PASS at 2026-09-06T22:27:38.498349+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-06 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-06T22:27:38.431034+00:00. Observed artifact only; the gate was not rerun by this publication.
 
 ## Last documented failures and blockers
 
@@ -38,8 +40,8 @@ Source timestamp: `2026-09-06T01:44:18.304162Z`.
 - **2026-09-05 · Failure / blocker:** The daily review records a usage-limit interruption of the broader runtime-liveness repair task. Unknown partial changes are not considered complete.
 - **2026-09-05 · Failure / blocker:** The subsequent launch stopped with FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW before expensive computation. The earlier queue row was selected rather than eligible; a valid next launch remains pending.
 - **2026-09-05 · Failure / blocker:** The review documents faulty historical OpenAI settlements with entry_price == exit_price. Price provenance must be checked and affected outcomes rebuilt locally from historical prices; completion remains open.
-- **2026-09-05 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-05T22:32:53.653994+00:00. Observed artifact only; the gate was not rerun by this publication.
 - **2026-09-05 · Failure / blocker:** The review showed no new visible closed Watch outcomes after approximately 18:59. Continuing decisions do not automatically prove a healthy outcome writer.
+- **2026-09-06 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-06T22:27:38.431034+00:00. Observed artifact only; the gate was not rerun by this publication.
 
 ## Remaining work
 

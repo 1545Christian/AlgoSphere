@@ -13,6 +13,8 @@ Der Export trennt neu datierte Belege, den letzten dokumentierten Entwicklungsst
 - **2026-09-06 · Dokumentierte Prüfung:** Die mitgelieferte Offline-Regression des installierten Publisher-Moduls wurde lokal erfolgreich ausgeführt. Keine ML-/Trading-Abnahme und keine GitHub-Veröffentlichung durch diesen Test.
 - **2026-09-06 · Umsetzung laut Quelle:** Der lokale Installer hat GitHub Nightly v5.4.3 installiert. Große Berichte werden speicherbegrenzt nur für Statusfelder eingelesen; nicht verwendbare Quellen bleiben als Warnung sichtbar; Tageswechsel, offene Aufgaben und Versionsbereiche bleiben getrennt. Der geplante Nachtlauf ist damit noch nicht nachgewiesen.
 - **2026-09-06 · Dokumentierte Prüfung:** Die mitgelieferte Offline-Regression des installierten Publisher-Moduls wurde lokal erfolgreich ausgeführt. Keine ML-/Trading-Abnahme und keine GitHub-Veröffentlichung durch diesen Test.
+- **2026-09-06 · Beobachtung:** Paper/Watch guard: Reportstatus PASS um 2026-09-06T22:27:38.498349+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.
+- **2026-09-06 · Fehler / Blocker:** Runtime context gate: Reportstatus FAIL_INCOMPLETE_V3_CONTEXT um 2026-09-06T22:27:38.431034+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.
 
 ## Letzter dokumentierter Entwicklungsstand — übernommen, nicht heute neu erledigt
 
@@ -24,8 +26,6 @@ Der Export trennt neu datierte Belege, den letzten dokumentierten Entwicklungsst
 - **2026-09-05 · Fehler / Blocker:** Der anschließende Startversuch stoppte mit FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW vor teurer Berechnung. Die vorherige Queue-Zeile war bereits selected statt eligible; der gültige nächste Start bleibt offen.
 - **2026-09-05 · Beobachtung:** Ein neuer OpenAI-Auswertungseintrag wurde am späten Abend gemeldet. Seine Settlement-Preisquelle ist noch nicht vollständig belegt; er wird nicht als bestätigter Leistungsnachweis ausgegeben.
 - **2026-09-05 · Fehler / Blocker:** Der Abgleich dokumentiert fehlerverdächtige historische OpenAI-Settlements mit entry_price == exit_price. Die Preisquelle muss geprüft und die betroffenen Outcomes lokal aus historischen Preisen korrigiert werden; der Abschluss ist offen.
-- **2026-09-05 · Beobachtung:** Paper/Watch guard: Reportstatus PASS um 2026-09-05T22:32:53.666893+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.
-- **2026-09-05 · Fehler / Blocker:** Runtime context gate: Reportstatus FAIL_INCOMPLETE_V3_CONTEXT um 2026-09-05T22:32:53.653994+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.
 - **2026-09-05 · Beobachtung:** Die angehängte V2-Basis dokumentiert einen eigenständigen QUICK mit 120 von 120 Ergebnissen (2 nested_pass, 46 nested_rejected, 72 fast_rejected). Die Factory-Bindung ab Start fehlte: kein kanonischer B-Abschluss.
 - **2026-09-05 · Fehler / Blocker:** Neue geschlossene Watch-Outcomes waren im Abgleich seit etwa 18:59 nicht sichtbar. Weiterlaufende Entscheidungen beweisen nicht automatisch einen gesunden Outcome-Writer.
 - **2026-09-05 · Beobachtung:** Am 05.09. bis etwa 23:35 Ortszeit wurden frische Research-Watch-Entscheidungen dokumentiert. NO TRADE wegen nicht erfüllter Setup-Regeln ist nicht mit einem toten Prozess gleichzusetzen.
@@ -41,7 +41,7 @@ Der Export trennt neu datierte Belege, den letzten dokumentierten Entwicklungsst
 - ML: `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` · not verified · FACTORY_HYPOTHESIS_READY_LAUNCH_DUE · not verified · 0/0.
 - Zustandsquelle: `LAST_COMPLETED_STAGE`.
 - Einordnung: `HISTORICAL_STAGE_NOT_LIVE_PROGRESS`.
-- Quellzeitpunkt: `2026-09-06T01:44:49.187926Z`.
+- Quellzeitpunkt: `2026-09-06T22:44:59.701265Z`.
 - Live-Trading laut Quelle: `Nein`; Real Capital: `0`; Promotion laut Quelle: `Nein`.
 
 Eine aktuelle Report-Zeit ist kein Beweis für einen frischen Worker. LAST_COMPLETED_STAGE bleibt historische Stage-Information. Eine Schema-Kennung oder WebUI-Quellversion beweist nicht, welcher Programmcode gerade ausgeführt wird.
@@ -90,8 +90,8 @@ P1/P2 und alle übernommenen Aufgaben stehen in der [Roadmap](../docs/progress/R
 - REQUIREMENT_AUDIT · Requirement audit · 2026-09-06 · READ_PROJECTED.
 - LOCAL_REPORT · QUICK · not verified · UNDATED_NOT_USED.
 - LOCAL_REPORT · BALANCED · not verified · UNDATED_NOT_USED.
-- LOCAL_REPORT · Paper/Watch guard · 2026-09-05 · READ_PROJECTED.
-- LOCAL_REPORT · Runtime context gate · 2026-09-05 · READ_PROJECTED.
+- LOCAL_REPORT · Paper/Watch guard · 2026-09-06 · READ_PROJECTED.
+- LOCAL_REPORT · Runtime context gate · 2026-09-06 · READ_PROJECTED.
 - LOCAL_REPORT · Canonical-history integrity · not verified · UNDATED_NOT_USED.
 - STRUCTURED_EVENT ·  · 2026-09-06 · READ.
 - STRUCTURED_EVENT ·  · 2026-09-06 · READ.

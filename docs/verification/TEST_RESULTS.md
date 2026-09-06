@@ -8,8 +8,8 @@
 
 ## Observed gate reports — not independently rerun
 
-- **2026-09-05 · Observation:** Paper/Watch guard: report status PASS at 2026-09-05T22:32:53.666893+00:00. Observed artifact only; the gate was not rerun by this publication.
-- **2026-09-05 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-05T22:32:53.653994+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-06 · Observation:** Paper/Watch guard: report status PASS at 2026-09-06T22:27:38.498349+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-06 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-06T22:27:38.431034+00:00. Observed artifact only; the gate was not rerun by this publication.
 
 ## What publication validates
 

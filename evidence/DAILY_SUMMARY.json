@@ -75,24 +75,6 @@
     },
     {
       "as_of": "2026-09-05",
-      "de": "Paper/Watch guard: Reportstatus PASS um 2026-09-05T22:32:53.666893+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
-      "en": "Paper/Watch guard: report status PASS at 2026-09-05T22:32:53.666893+00:00. Observed artifact only; the gate was not rerun by this publication.",
-      "evidence_level": "reported",
-      "id": "report_paper_watch_guard_last",
-      "kind": "observation",
-      "scope": "report"
-    },
-    {
-      "as_of": "2026-09-05",
-      "de": "Runtime context gate: Reportstatus FAIL_INCOMPLETE_V3_CONTEXT um 2026-09-05T22:32:53.653994+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
-      "en": "Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-05T22:32:53.653994+00:00. Observed artifact only; the gate was not rerun by this publication.",
-      "evidence_level": "reported",
-      "id": "report_runtime_entry_snapshot_coverage",
-      "kind": "failure",
-      "scope": "report"
-    },
-    {
-      "as_of": "2026-09-05",
       "de": "Die angehängte V2-Basis dokumentiert einen eigenständigen QUICK mit 120 von 120 Ergebnissen (2 nested_pass, 46 nested_rejected, 72 fast_rejected). Die Factory-Bindung ab Start fehlte: kein kanonischer B-Abschluss.",
       "en": "The attached V2 baseline documents a standalone QUICK with 120 of 120 results (2 nested_pass, 46 nested_rejected, 72 fast_rejected). Factory binding at launch was missing: this is not canonical B completion.",
       "evidence_level": "reported",
@@ -153,6 +135,24 @@
       "id": "publisher_v543_selftest",
       "kind": "verification",
       "scope": "public_publisher"
+    },
+    {
+      "as_of": "2026-09-06",
+      "de": "Paper/Watch guard: Reportstatus PASS um 2026-09-06T22:27:38.498349+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
+      "en": "Paper/Watch guard: report status PASS at 2026-09-06T22:27:38.498349+00:00. Observed artifact only; the gate was not rerun by this publication.",
+      "evidence_level": "reported",
+      "id": "report_paper_watch_guard_last",
+      "kind": "observation",
+      "scope": "report"
+    },
+    {
+      "as_of": "2026-09-06",
+      "de": "Runtime context gate: Reportstatus FAIL_INCOMPLETE_V3_CONTEXT um 2026-09-06T22:27:38.431034+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
+      "en": "Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-06T22:27:38.431034+00:00. Observed artifact only; the gate was not rerun by this publication.",
+      "evidence_level": "reported",
+      "id": "report_runtime_entry_snapshot_coverage",
+      "kind": "failure",
+      "scope": "report"
     }
   ],
   "publication_date": "2026-09-06",
@@ -266,21 +266,21 @@
       "as_of": "2026-09-06",
       "id": "ACTIVE_PAPER_RUNTIME",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "status": "OPEN_RUNTIME_NOT_PROVEN",
       "title": "Fresh ACTIVE_PAPER runtime decisions"
     },
     {
       "as_of": "2026-09-06",
       "id": "RESEARCH_FORWARD_RUNTIME",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_RESEARCH_FORWARD_OUTCOMES_PROVEN",
+      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
       "title": "Fresh RESEARCH_FORWARD cycles and outcomes"
     },
     {
       "as_of": "2026-09-06",
       "id": "WATCH_SCANNER_RUNTIME",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "status": "OPEN_RUNTIME_NOT_PROVEN",
       "title": "Fresh embedded or standalone Watch scanner"
     },
     {
@@ -406,7 +406,7 @@
       "as_of": "2026-09-06",
       "id": "VISIBLE_WINDOWS_TERMINALS",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "status": "OPEN_RUNTIME_NOT_PROVEN",
       "title": "Real visible Windows Terminal runtime contract"
     },
     {
@@ -427,14 +427,14 @@
       "as_of": "2026-09-06",
       "id": "RUNTIME_EXACT_IDENTITY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "status": "WAITING_LOCAL_QA_SAMPLES",
       "title": "Declared and actual executable composition identity"
     },
     {
       "as_of": "2026-09-06",
       "id": "POST_START_RUNTIME_QA",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "status": "WAITING_LOCAL_QA_SAMPLES",
       "title": "Independent multi-cycle post-start runtime QA"
     },
     {
@@ -672,7 +672,7 @@
       "as_of": "2026-09-06",
       "id": "COMPLETE_VISIBLE_RUNTIME_RECOVERY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "status": "OPEN_RUNTIME_NOT_PROVEN",
       "title": "Complete visible Paper/Forward/Watch runtime recovery"
     },
     {
@@ -707,14 +707,14 @@
       "as_of": "2026-09-06",
       "id": "RUNTIME_SINGLETON_PROCESS_CONTROL",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "status": "WAITING_LOCAL_QA_SAMPLES",
       "title": "One owned runtime process and visible terminal per component"
     },
     {
       "as_of": "2026-09-06",
       "id": "SINGLE_RUNTIME_SUPERVISOR_START_AUTHORITY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "status": "WAITING_LOCAL_QA_SAMPLES",
       "title": "Single supervisor owns all runtime starts, replacement and recovery"
     },
     {
@@ -759,9 +759,9 @@
     "active_stage_source": "LAST_COMPLETED_STAGE",
     "application": "v90_8_5",
     "coins": "0/0",
-    "eligible_experiments": 43,
-    "eligible_source_utc": "2026-09-06T01:44:18.304162Z",
-    "exported_utc": "2026-09-06T01:44:52.176662Z",
+    "eligible_experiments": 0,
+    "eligible_source_utc": "2026-09-06T22:41:03.612988Z",
+    "exported_utc": "2026-09-06T22:45:01.997707Z",
     "freshness": "HISTORICAL_STAGE_NOT_LIVE_PROGRESS",
     "input_read_receipts": [
       {
@@ -895,8 +895,8 @@
         "warnings": []
       },
       {
-        "bytes_on_disk": 26843,
-        "characters_scanned": 26838,
+        "bytes_on_disk": 28745,
+        "characters_scanned": 28740,
         "kind": "REPORT_INPUT",
         "label": "Local ML current truth",
         "omitted_items": 0,
@@ -905,8 +905,8 @@
         "warnings": []
       },
       {
-        "bytes_on_disk": 794,
-        "characters_scanned": 792,
+        "bytes_on_disk": 1671,
+        "characters_scanned": 1665,
         "kind": "REPORT_INPUT",
         "label": "Training events",
         "omitted_items": 0,
@@ -915,8 +915,8 @@
         "warnings": []
       },
       {
-        "bytes_on_disk": 11130,
-        "characters_scanned": 11130,
+        "bytes_on_disk": 9924,
+        "characters_scanned": 9924,
         "kind": "REPORT_INPUT",
         "label": "Research eligibility",
         "omitted_items": 0,
@@ -926,7 +926,7 @@
       }
     ],
     "live": false,
-    "observed_utc": "2026-09-06T01:44:49.187926Z",
+    "observed_utc": "2026-09-06T22:44:59.701265Z",
     "package_basis": "NOT_AVAILABLE",
     "package_release": "not verified",
     "promotion_allowed": false,
@@ -1074,8 +1074,8 @@
       "warnings": []
     },
     {
-      "bytes_on_disk": 26843,
-      "characters_scanned": 26838,
+      "bytes_on_disk": 28745,
+      "characters_scanned": 28740,
       "kind": "REPORT_INPUT",
       "label": "Local ML current truth",
       "omitted_items": 0,
@@ -1084,8 +1084,8 @@
       "warnings": []
     },
     {
-      "bytes_on_disk": 794,
-      "characters_scanned": 792,
+      "bytes_on_disk": 1671,
+      "characters_scanned": 1665,
       "kind": "REPORT_INPUT",
       "label": "Training events",
       "omitted_items": 0,
@@ -1094,8 +1094,8 @@
       "warnings": []
     },
     {
-      "bytes_on_disk": 11130,
-      "characters_scanned": 11130,
+      "bytes_on_disk": 9924,
+      "characters_scanned": 9924,
       "kind": "REPORT_INPUT",
       "label": "Research eligibility",
       "omitted_items": 0,
@@ -1111,8 +1111,8 @@
     },
     {
       "as_of": "2026-09-06",
-      "bytes_on_disk": 192698,
-      "characters_scanned": 192645,
+      "bytes_on_disk": 194611,
+      "characters_scanned": 194564,
       "kind": "REQUIREMENT_AUDIT",
       "label": "Requirement audit",
       "omitted_items": 0,
@@ -1121,8 +1121,8 @@
       "warnings": []
     },
     {
-      "bytes_on_disk": 196229331,
-      "characters_scanned": 196228958,
+      "bytes_on_disk": 188678126,
+      "characters_scanned": 188678022,
       "kind": "LOCAL_REPORT",
       "label": "QUICK",
       "omitted_items": 0,
@@ -1141,7 +1141,7 @@
       "warnings": []
     },
     {
-      "as_of": "2026-09-05",
+      "as_of": "2026-09-06",
       "bytes_on_disk": 848,
       "characters_scanned": 848,
       "kind": "LOCAL_REPORT",
@@ -1152,7 +1152,7 @@
       "warnings": []
     },
     {
-      "as_of": "2026-09-05",
+      "as_of": "2026-09-06",
       "bytes_on_disk": 6819,
       "characters_scanned": 6819,
       "kind": "LOCAL_REPORT",

@@ -87,9 +87,9 @@ Original requirement IDs and statuses below are observations of the local audit.
 | ML_PROGRESS_LIVENESS_TRUTH — ML progress/liveness truth | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-06 |
 | ADAPTIVE_STORAGE_CAPACITY — Adaptive storage capacity guard | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | STORAGE_RETENTION_CLASSIFICATION — Safe storage cleanup and retention classification | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
-| ACTIVE_PAPER_RUNTIME — Fresh ACTIVE_PAPER runtime decisions | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-06 |
-| RESEARCH_FORWARD_RUNTIME — Fresh RESEARCH_FORWARD cycles and outcomes | CURRENT_RESEARCH_FORWARD_OUTCOMES_PROVEN | 2026-09-06 |
-| WATCH_SCANNER_RUNTIME — Fresh embedded or standalone Watch scanner | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-06 |
+| ACTIVE_PAPER_RUNTIME — Fresh ACTIVE_PAPER runtime decisions | OPEN_RUNTIME_NOT_PROVEN | 2026-09-06 |
+| RESEARCH_FORWARD_RUNTIME — Fresh RESEARCH_FORWARD cycles and outcomes | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-06 |
+| WATCH_SCANNER_RUNTIME — Fresh embedded or standalone Watch scanner | OPEN_RUNTIME_NOT_PROVEN | 2026-09-06 |
 | WATCH_EXIT_RUNTIME — Fresh Watch exit evaluator | CURRENT_WATCH_EXIT_OUTCOMES_PROVEN | 2026-09-06 |
 | SOURCE_ROLE_ISOLATION — Paper/Forward/Watch/Codex source-role isolation | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | OUTCOME_CAPTURE — Role-separated outcome capture | CURRENT_LOCAL_OUTCOMES_PROVEN | 2026-09-06 |
@@ -107,11 +107,11 @@ Original requirement IDs and statuses below are observations of the local audit.
 | CODEX_BASELINE_OPTIMIZED — Baseline versus optimized outcome separation | WAITING_BASELINE_OPTIMIZED_PAIR | 2026-09-06 |
 | CHAT8_MEMORY_STRATEGY_EFFECT — Chat8 memory later changes strategy/ML | WAITING_MEMORY_READ_EFFECT | 2026-09-06 |
 | NEWS_MACRO_CONTEXT — News/macro as non-binding context | WAITING_CONTEXT_CAPTURE | 2026-09-06 |
-| VISIBLE_WINDOWS_TERMINALS — Real visible Windows Terminal runtime contract | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-06 |
+| VISIBLE_WINDOWS_TERMINALS — Real visible Windows Terminal runtime contract | OPEN_RUNTIME_NOT_PROVEN | 2026-09-06 |
 | LOCAL_RUNTIME_INDEPENDENT_OF_CODEX — Local runtime independent of Codex automation | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-06 |
 | RUNTIME_SELF_HEALING — Self-healing preserves approved visible runtime | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
-| RUNTIME_EXACT_IDENTITY — Declared and actual executable composition identity | CURRENT_LOCAL_QA_PROVEN | 2026-09-06 |
-| POST_START_RUNTIME_QA — Independent multi-cycle post-start runtime QA | CURRENT_LOCAL_QA_PROVEN | 2026-09-06 |
+| RUNTIME_EXACT_IDENTITY — Declared and actual executable composition identity | WAITING_LOCAL_QA_SAMPLES | 2026-09-06 |
+| POST_START_RUNTIME_QA — Independent multi-cycle post-start runtime QA | WAITING_LOCAL_QA_SAMPLES | 2026-09-06 |
 | WEBUI_CANONICAL_CURRENT_TRUTH — WebUI canonical current truth hierarchy | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | DASHBOARD_TRUTH_COCKPIT — Dashboard truth cockpit | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | WEBUI_COMPLETE_PAGE_SET — Complete browser page set | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
@@ -145,13 +145,13 @@ Original requirement IDs and statuses below are observations of the local audit.
 | BACKWARD_COMPATIBILITY — Readable legacy models/evidence/memory | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | REPORTING_STEP_VALIDATION — Before/reproduce/fix/test/evidence reporting | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | SAFETY_SCOPE — LIVE=false, no direct action/consumer/real capital | CURRENT_SAFETY_PROVEN | 2026-09-06 |
-| COMPLETE_VISIBLE_RUNTIME_RECOVERY — Complete visible Paper/Forward/Watch runtime recovery | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-06 |
+| COMPLETE_VISIBLE_RUNTIME_RECOVERY — Complete visible Paper/Forward/Watch runtime recovery | OPEN_RUNTIME_NOT_PROVEN | 2026-09-06 |
 | CODEX_TRADE_BRANCH_E2E — Codex prediction-to-outcome trade branch is current and prospective | WAITING_E2E_VARIANTS | 2026-09-06 |
 | CODEFIX_DELIVERY_QA_VISIBLE_RESTART_CHAIN — Codefix to exact delivery, QA, visible restart and fresh evidence | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | GLOBAL_DB_READ_WRITE_CONTRACT — Canonical runtime database read/write preflight and single-writer contract | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | LIVE_RUNTIME_DATA_SOURCE_CONTRACT — Current runtime price and context data is live, causal and freshness-bound | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
-| RUNTIME_SINGLETON_PROCESS_CONTROL — One owned runtime process and visible terminal per component | CURRENT_LOCAL_QA_PROVEN | 2026-09-06 |
-| SINGLE_RUNTIME_SUPERVISOR_START_AUTHORITY — Single supervisor owns all runtime starts, replacement and recovery | CURRENT_LOCAL_QA_PROVEN | 2026-09-06 |
+| RUNTIME_SINGLETON_PROCESS_CONTROL — One owned runtime process and visible terminal per component | WAITING_LOCAL_QA_SAMPLES | 2026-09-06 |
+| SINGLE_RUNTIME_SUPERVISOR_START_AUTHORITY — Single supervisor owns all runtime starts, replacement and recovery | WAITING_LOCAL_QA_SAMPLES | 2026-09-06 |
 | GPU_CUDA_SYSTEM_RESOURCE_GOVERNOR — GPU/CUDA and system headroom guard with owned-process control | CURRENT_RESOURCE_OBSERVATION | 2026-09-06 |
 | CRASH_SAFE_TASK_RECOVERY — Crash-safe recovery of durable requirements, tasks and approved runtimes | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-06 |
 | NO_DIRECT_CODEX_STATE_SQLITE_WRITE — Project outbox user-session dispatch without Codex-state SQLite writes | REPLACED_BY_LOCAL_SERVICE | 2026-09-06 |
