@@ -5,30 +5,50 @@ Deutsch: [Öffentliches Status-Update](./2026-09-07-public-status_DE.md)
 <!-- AUTO_VALUES_START -->
 ## Summary
 
-This export separates newly dated evidence, the last documented development state and outstanding work. A date change neither deletes tasks nor turns earlier achievements into new achievements.
+September 7 was an active runtime-repair and validation day. The important change was not another static release-note rollover: AlgoSphere was restarted visibly, the local runtime stack came back with the supervisor and core services running, and the ML autopilot resumed a real QUICK run. At the same time, the day exposed two remaining truth gaps that must not be hidden by a generic nightly summary: same-run resume is still not proven, and Watch-vs-Research behavior still needs a causal parity check rather than a threshold change.
 
-## Observations for the publication date
+The previous nightly text incorrectly said that no new development proof existed today and therefore carried September 5 work forward as the main development story. That was incomplete. This update corrects the dated narrative while preserving the distinction between observed runtime state, reported implementation work and still-open proof.
 
-- **2026-09-07 · Observation:** Paper/Watch guard: report status PASS at 2026-09-07T22:37:30.243423+00:00. Observed artifact only; the gate was not rerun by this publication.
-- **2026-09-07 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-07T22:37:30.232913+00:00. Observed artifact only; the gate was not rerun by this publication.
+## What changed today
 
-## Last documented development state — carried forward, not newly completed today
+### Runtime restart and service recovery
 
-- **2026-09-05 · Failure / blocker:** The attached V2 baseline records a technical BALANCED failure at the GPU watchdog / BLOCKED_PREFLIGHT. This is not a scientific rejection; that source does not provide a successful replacement proof.
-- **2026-09-05 · Implementation reported by source:** The V2 baseline records fixes for Windows checkpoint writes, reuse of completed phases and duplicate research-worker prevention. These remain scoped reported checks, not a global PASS.
-- **2026-09-05 · Failure / blocker:** The daily review records a usage-limit interruption of the broader runtime-liveness repair task. Unknown partial changes are not considered complete.
-- **2026-09-05 · Implementation reported by source:** The review reports a technical fix for queue_id being written where factory_queue_id was required. A new research core was reported activated; real Factory–QUICK end-to-end proof remains open.
-- **2026-09-05 · Documented verification:** The Factory identity fix has 15 passing tests documented. They are not rerun by the public export and do not establish full operational proof.
-- **2026-09-05 · Failure / blocker:** The subsequent launch stopped with FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW before expensive computation. The earlier queue row was selected rather than eligible; a valid next launch remains pending.
-- **2026-09-05 · Observation:** A new OpenAI evaluation row was reported late in the evening. Its settlement-price source is not fully evidenced and it is not presented as verified performance.
-- **2026-09-05 · Failure / blocker:** The review documents faulty historical OpenAI settlements with entry_price == exit_price. Price provenance must be checked and affected outcomes rebuilt locally from historical prices; completion remains open.
-- **2026-09-05 · Observation:** The attached V2 baseline documents a standalone QUICK with 120 of 120 results (2 nested_pass, 46 nested_rejected, 72 fast_rejected). Factory binding at launch was missing: this is not canonical B completion.
-- **2026-09-05 · Failure / blocker:** The review showed no new visible closed Watch outcomes after approximately 18:59. Continuing decisions do not automatically prove a healthy outcome writer.
-- **2026-09-05 · Observation:** Fresh Research Watch decisions were documented through approximately 23:35 local time on September 5. NO TRADE due to setup gates is not the same as a dead process.
-- **2026-09-06 · Implementation reported by source:** The local installer installed GitHub Nightly v5.4.1. Windows line endings are canonicalized only in staged export copies before hashing; day rollover, open tasks and version scopes remain separate. This does not yet prove the scheduled nightly run.
-- **2026-09-06 · Documented verification:** The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.
-- **2026-09-06 · Implementation reported by source:** The local installer installed GitHub Nightly v5.4.3. Large reports are read as memory-bounded status projections; unusable sources remain visible as coverage warnings; day rollover, open tasks and version scopes remain separate. This does not yet prove the scheduled nightly run.
-- **2026-09-06 · Documented verification:** The installed publisher module passed its bundled offline regression suite locally. This is not ML/trading acceptance and the test did not publish to GitHub.
+- A visible restart was completed successfully during the repair session.
+- The runtime supervisor was present as a single supervisor instance.
+- Point13 / ACTIVE_PAPER, Research Forward, Research Autopilot, Local ML Autopilot and WebUI were reported running after restart.
+- The currently active QUICK run is a new runtime run identity (`run_f6cf…` in the repair session). The earlier run had been interrupted and work resumed under a new run id.
+- Because the resumed work did **not** preserve the same run id, `Same-Run-Resume` is still **not PASS**. Recovery worked, but exact same-run continuation remains an open acceptance item.
+
+### ML progress
+
+- The 23:45 publisher observed `ML AUTOPILOT QUICK RUNNING`.
+- Profile: `quick`.
+- Phase: `MODEL_TRAIN`.
+- Current symbol: `MYXUSDT`.
+- Progress: `3/5` coins.
+- State source: `LIVE_STAGE_HEARTBEAT`.
+- Freshness classification: `CURRENT_REPORT`.
+- Source timestamp: `2026-09-07T22:45:00.432722Z`.
+
+This is current runtime evidence, but it is not the same as proof that the run will terminalize correctly or that a candidate is scientifically good.
+
+### Watch vs Research: behavior still under investigation
+
+- WATCH is allowed to create research/watch trades.
+- RESEARCH is not supposed to create those trades in the same role; its purpose remains evaluation/research rather than simply duplicating Watch execution.
+- Today showed a visible difference: Watch can produce trades while Research may remain without trades.
+- That difference must **not** be "fixed" by loosening thresholds or forcing trades.
+- The required next check is a causal Watch-vs-Research parity comparison using identical timestamps, coins and market states, following the funnel through eligibility, assignment, setup gates, decision creation and outcome handling.
+- The investigation must determine whether the difference is a legitimate no-setup result or a pipeline/assignment defect.
+- The active QUICK training must not be interrupted for that analysis.
+
+## Important corrections to previous assumptions
+
+- A successful restart is not the same as same-run resume. The runtime recovered, but continuity under the exact original run identity remains unproven.
+- A live `RUNNING` label is not enough by itself; fresh stage heartbeat and current progress are required.
+- `NO TRADE` in Research is not automatically a failure. It may be a correct setup-gate result. The code must first prove where Watch and Research diverge.
+- Watch activity alone does not prove that Research assignment, funnel parity or outcome persistence are correct.
+- The public publisher must not say `NO_NEW_DEVELOPMENT_PROOF_TODAY` when current repair/runtime evidence exists but was not ingested by its source-selection logic.
 
 ## Operational state from local reports
 
@@ -38,67 +58,49 @@ This export separates newly dated evidence, the last documented development stat
 - Explicit package/update manifest: `not verified`.
 - Application source version: `v90_8_5`.
 - Historical source-hotfix identifier: `v90_8_5_23`.
-- ML: `ML AUTOPILOT QUICK RUNNING` · quick · MODEL_TRAIN · MYXUSDT · 3/5.
+- ML: `ML AUTOPILOT QUICK RUNNING` · `quick` · `MODEL_TRAIN` · `MYXUSDT` · `3/5`.
 - State source: `LIVE_STAGE_HEARTBEAT`.
 - Freshness classification: `CURRENT_REPORT`.
-- Source timestamp: `2026-09-07T22:45:00.432722Z`.
-- Live trading reported by source: `No`; Real Capital: `0`; Promotion reported by source: `No`.
+- Live trading reported by source: `No`.
+- Real capital: `0`.
+- Automatic promotion: `No`.
 
-A current report timestamp is not proof of a fresh worker. LAST_COMPLETED_STAGE remains historical stage information. A schema label or WebUI source version does not prove the version of executing code.
+The WebUI source version is not claimed as the executing runtime release. The explicit runtime-release field remains unverified.
 
-This publisher only reads reports. It starts no training, orders, promotions or capital actions.
+## Current blockers / not yet proven
 
-## Outstanding priorities
+- **P0:** Same-Run-Resume — recovery after interruption worked, but continuation under the exact same run id is not yet proven.
+- **P0:** QUICK terminalization — the active run must complete with correct identity, one terminal result and persisted learning memory.
+- **P0:** QUICK → BALANCED — only a genuinely promising QUICK may trigger BALANCED, and this still needs prospective runtime proof.
+- **P0:** Watch-vs-Research parity — determine whether the current trade/no-trade difference is expected setup behavior or an assignment/pipeline defect.
+- **P0:** Research Forward freshness/outcomes — keep proving fresh functional cycles rather than only process existence.
+- **P0:** Current Truth / stale detection — runtime and WebUI must distinguish fresh worker truth from historical stage state.
+- **P0:** Historical OpenAI outcome repair — older suspicious settlements with `entry_price == exit_price` remain a separate unresolved data-quality item until provenance and rebuild are proven.
+- **P0:** Runtime context gate — latest observed artifact remains `FAIL_INCOMPLETE_V3_CONTEXT`; this publication did not rerun the gate.
+- **P0:** Live readiness remains closed. No automatic live or real-capital promotion.
 
-- **P0 · OPEN · 2026-09-05:** Scientific terminalization of B
-- **P0 · OPEN · 2026-09-05:** BALANCED/OOS only for qualified candidates
-- **P0 · OPEN · 2026-09-05:** Candidate Freeze
-- **P0 · OPEN · 2026-09-05:** Challenger Lifecycle
-- **P0 · OPEN · 2026-09-05:** Current Truth / stale detection
-- **P0 · OPEN · 2026-09-05:** Elite Canary
-- **P0 · OPEN · 2026-09-05:** Real Factory/QUICK end-to-end proof
-- **P0 · OPEN · 2026-09-05:** Resolve the GPU watchdog / preflight root cause
-- **P0 · OPEN · 2026-09-05:** LIVE_READINESS_GATE
-- **P0 · OPEN · 2026-09-05:** Historical OpenAI outcome repair
-- **P0 · OPEN · 2026-09-05:** Verify the ongoing OpenAI settlement chain
-- **P0 · OPEN · 2026-09-05:** Paper Execution Parity
-- **P0 · OPEN · 2026-09-05:** Paper Outcome Memory E2E
-- **P0 · OPEN · 2026-09-05:** Reference Benchmark Contract V1
-- **P0 · OPEN · 2026-09-05:** Role Separation
+## What the nightly publisher still gets wrong
 
-P1/P2 and all carried-forward tasks are listed in the [Roadmap](../docs/progress/ROADMAP.md).
+The scheduler and GitHub upload work. The remaining problem is source selection and narrative generation.
 
-## Sources and verification limits
+The nightly currently prefers dated reviewed summaries and a small set of projected reports. If fresh work is present only in newer repair/runtime artifacts that are not recognized by the publisher, it falls back to older development text and can emit `NO_NEW_DEVELOPMENT_PROOF_TODAY_PREVIOUS_DATED_WORK_PRESERVED` even though material work happened.
 
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
-- REPORT_INPUT · Local ML current truth · not verified · READ_PROJECTED.
-- REPORT_INPUT · Training events · not verified · READ_PROJECTED.
-- REPORT_INPUT · Research eligibility · not verified · READ_PROJECTED.
-- REVIEWED_MASTER_SUMMARY ·  · 2026-09-05 · DATED_BASELINE.
-- REQUIREMENT_AUDIT · Requirement audit · 2026-09-07 · READ_PROJECTED.
-- LOCAL_REPORT · QUICK · not verified · UNDATED_NOT_USED.
-- LOCAL_REPORT · BALANCED · not verified · UNDATED_NOT_USED.
-- LOCAL_REPORT · Paper/Watch guard · 2026-09-07 · READ_PROJECTED.
-- LOCAL_REPORT · Runtime context gate · 2026-09-07 · READ_PROJECTED.
-- LOCAL_REPORT · Canonical-history integrity · not verified · UNDATED_NOT_USED.
-- STRUCTURED_EVENT ·  · 2026-09-06 · READ.
-- STRUCTURED_EVENT ·  · 2026-09-06 · READ.
+The next publisher revision should therefore build the daily narrative deterministically from structured evidence for the publication day:
 
-Documented tests are not rerun by the export. Unknown data schemas remain unassessed; plans and acceptance targets are not passing tests. A technical abort is not a scientific rejection.
+1. `today_completed`
+2. `today_verified`
+3. `today_failed_or_blocked`
+4. `runtime_state`
+5. `active_scientific_run`
+6. `important_corrections`
+7. `current_todo`
+8. `still_not_proven`
 
-Coverage warnings: NO_LOCAL_MASTER_USING_DATED_REVIEW_AND_LOCAL_REPORTS, QUICK:UNDATED_NOT_USED, BALANCED:UNDATED_NOT_USED, CANONICAL_HISTORY_INTEGRITY:UNDATED_NOT_USED, NO_NEW_DEVELOPMENT_PROOF_TODAY_PREVIOUS_DATED_WORK_PRESERVED
+It should ingest current acceptance/repair summaries, runtime heartbeats, scientific-run events, experiment memory, Watch/Forward status and blocker reports before falling back to an older reviewed summary. Old release notes remain history, not the default daily headline.
 
-[Current status](../CURRENT_STATUS.md) · [Tests](../docs/verification/TEST_RESULTS.md) · [Source projection](../evidence/DAILY_SUMMARY.json)
+## Safety boundary
+
+The boundary remains `LIVE=false`, `DIRECT_ACTION=0`, `CONSUMER=0`, `REAL_CAPITAL=0`. No automatic live trading and no automatic real-capital promotion.
+
+[Current status](../CURRENT_STATUS.md) · [Roadmap](../docs/progress/ROADMAP.md) · [Tests](../docs/verification/TEST_RESULTS.md) · [Source projection](../evidence/DAILY_SUMMARY.json)
 <!-- AUTO_VALUES_END -->
