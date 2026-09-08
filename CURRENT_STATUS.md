@@ -16,38 +16,43 @@ Publication date: **2026-09-07**. Runtime observations, implementation reports a
 - Source timestamp: `2026-09-07T22:45:00.432722Z`.
 - Live trading reported by source: `No`; Real Capital: `0`; Promotion reported by source: `No`.
 
-A current report timestamp is not proof of a fresh worker. LAST_COMPLETED_STAGE remains historical stage information. A schema label or WebUI source version does not prove the version of executing code.
+A current report timestamp is not proof of a fresh worker by itself. A schema label or WebUI source version does not prove the version of executing code.
 
 This publisher only reads reports. It starts no training, orders, promotions or capital actions.
 
-## Research eligibility
-
-No eligible experiment is reported; this is not launch authorization.
-Source timestamp: `2026-09-07T22:44:32.920542Z`.
-
 ## Most recent documented development
 
-- **2026-09-07 · Observation:** Paper/Watch guard: report status PASS at 2026-09-07T22:37:30.243423+00:00. Observed artifact only; the gate was not rerun by this publication.
-- **2026-09-07 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-07T22:37:30.232913+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-07 · Runtime recovery:** the local stack was visibly restarted and core services returned under the supervisor.
+- **2026-09-07 · ML observation:** a real QUICK run is active with fresh stage heartbeat, profile `quick`, phase `MODEL_TRAIN`, symbol `MYXUSDT`, progress `3/5`.
+- **2026-09-07 · Important limitation:** recovery used a new run identity, therefore exact Same-Run-Resume remains open and is not reported as PASS.
+- **2026-09-07 · Watch/Research investigation:** Watch may create trades while Research can remain `NO TRADE`; this must be resolved through causal funnel parity on identical timestamps/coins/market states, not by forcing trades or loosening thresholds.
+- **2026-09-07 · Publisher defect identified:** the nightly can incorrectly fall back to older reviewed development text when current repair/runtime artifacts are not part of its source-selection set.
 
-## Last documented failures and blockers
+## Current blockers and next proof
 
-- **2026-09-05 · Failure / blocker:** The attached V2 baseline records a technical BALANCED failure at the GPU watchdog / BLOCKED_PREFLIGHT. This is not a scientific rejection; that source does not provide a successful replacement proof.
-- **2026-09-05 · Failure / blocker:** The daily review records a usage-limit interruption of the broader runtime-liveness repair task. Unknown partial changes are not considered complete.
-- **2026-09-05 · Failure / blocker:** The subsequent launch stopped with FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW before expensive computation. The earlier queue row was selected rather than eligible; a valid next launch remains pending.
-- **2026-09-05 · Failure / blocker:** The review documents faulty historical OpenAI settlements with entry_price == exit_price. Price provenance must be checked and affected outcomes rebuilt locally from historical prices; completion remains open.
-- **2026-09-05 · Failure / blocker:** The review showed no new visible closed Watch outcomes after approximately 18:59. Continuing decisions do not automatically prove a healthy outcome writer.
-- **2026-09-07 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-07T22:37:30.232913+00:00. Observed artifact only; the gate was not rerun by this publication.
+- Same-Run-Resume under the exact original run id.
+- Correct terminalization of the active QUICK with identity, one terminal result and persisted learning memory.
+- Prospective QUICK → BALANCED only for genuinely promising evidence.
+- Watch-vs-Research parity across eligibility, assignment, setup gates, decisions and outcomes.
+- Fresh Research Forward functional cycles/outcomes over a longer run.
+- Current Truth / stale detection across runtime and WebUI.
+- Historical OpenAI outcome repair for suspicious `entry_price == exit_price` settlements.
+- Latest observed runtime-context gate remains `FAIL_INCOMPLETE_V3_CONTEXT`; the public publisher did not rerun it.
+- Live readiness remains closed; no automatic real-capital promotion.
 
-## Remaining work
+## GitHub nightly status
 
-Open items are carried forward without a calendar-day reset. See the [complete roadmap](docs/progress/ROADMAP.md) and [dated update](updates/2026-09-07-public-status.md).
+The scheduler and GitHub upload are working. The remaining defect is the automatic narrative/source-selection layer. The publisher must ingest current-day repair/acceptance summaries, runtime heartbeats, scientific-run events, experiment memory, Watch/Forward state and blocker reports before falling back to older dated summaries.
 
-## Publication verification boundary
+The intended daily sections are: `today_completed`, `today_verified`, `today_failed_or_blocked`, `runtime_state`, `active_scientific_run`, `important_corrections`, `current_todo`, and `still_not_proven`.
 
-The publisher verifies the final allowlist, privacy rules, internal file links, manifest bytes and ZIP content before upload. It does not rerun application tests or attest that a trading component is healthy. The observations above must not be interpreted as live-readiness.
+## Research eligibility
 
-## Input coverage
+No eligible experiment is reported by the latest projected eligibility source; this is not launch authorization.
+Source timestamp: `2026-09-07T22:44:32.920542Z`.
 
-Coverage warnings: NO_LOCAL_MASTER_USING_DATED_REVIEW_AND_LOCAL_REPORTS, QUICK:UNDATED_NOT_USED, BALANCED:UNDATED_NOT_USED, CANONICAL_HISTORY_INTEGRITY:UNDATED_NOT_USED, NO_NEW_DEVELOPMENT_PROOF_TODAY_PREVIOUS_DATED_WORK_PRESERVED
-Large reports are streamed for selected status fields. A NOT_USED source contributes no fresh claim; previously documented work remains dated and is not reverified.
+## Safety boundary
+
+`LIVE=false`, `DIRECT_ACTION=0`, `CONSUMER=0`, `REAL_CAPITAL=0` remain the operating boundary.
+
+See the [dated update](updates/2026-09-07-public-status.md), [roadmap](docs/progress/ROADMAP.md) and [test evidence](docs/verification/TEST_RESULTS.md).
