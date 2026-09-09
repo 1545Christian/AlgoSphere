@@ -6,7 +6,7 @@ Aufbau, Test und Dokumentation eines Weges von Research und Backtesting zu Paper
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes Update: [deutsches Statusupdate](updates/2026-09-08-public-status_DE.md)<br>
+Neuestes Update: [deutsches Statusupdate](updates/2026-09-09-public-status_DE.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -29,7 +29,7 @@ Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wieder
 | Paket-/Update-Manifest | `not verified` |
 | Anwendungs-Quellversion | `v90_8_5` |
 | Historische Source-Hotfix-Kennung | `v90_8_5_23` |
-| ML | `ML AUTOPILOT RUNNING / TRAINING PAUSED` |
+| ML | `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` |
 | Stage source | `LAST_COMPLETED_STAGE` |
 | Freshness | `HISTORICAL_STAGE_NOT_LIVE_PROGRESS` |
 | Live | `Nein` |
@@ -67,7 +67,7 @@ Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es 
 | Zweck | Dokument |
 |---|---|
 | Aktueller Stand und Hauptblocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Neuestes datiertes Update | [englisches Update](updates/2026-09-08-public-status.md) |
+| Neuestes datiertes Update | [englisches Update](updates/2026-09-09-public-status.md) |
 | Tests und Prüfgrenzen | [Testergebnisse](docs/verification/TEST_RESULTS.md) |
 | Offene Arbeit und Prioritäten | [Roadmap](docs/progress/ROADMAP.md) |
 | Projektgeschichte | [Projektgeschichte](docs/project/PROJECT_HISTORY.md) |

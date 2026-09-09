@@ -1,6 +1,6 @@
 # Current public status
 
-Publication date: **2026-09-08**. Runtime observations, implementation reports and acceptance proofs remain separate.
+Publication date: **2026-09-09**. Runtime observations, implementation reports and acceptance proofs remain separate.
 
 ## Operational state from local reports
 
@@ -10,10 +10,10 @@ Publication date: **2026-09-08**. Runtime observations, implementation reports a
 - Explicit package/update manifest: `not verified`.
 - Application source version: `v90_8_5`.
 - Historical source-hotfix identifier: `v90_8_5_23`.
-- ML: `ML AUTOPILOT RUNNING / TRAINING PAUSED` · not verified · IDLE_OPERATOR_PAUSED · not verified · 0/0.
+- ML: `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` · not verified · FACTORY_HYPOTHESIS_READY_LAUNCH_DUE · not verified · 0/0.
 - State source: `LAST_COMPLETED_STAGE`.
 - Freshness classification: `HISTORICAL_STAGE_NOT_LIVE_PROGRESS`.
-- Source timestamp: `2026-09-08T22:44:58.035408Z`.
+- Source timestamp: `2026-09-09T22:45:01.868090Z`.
 - Live trading reported by source: `No`; Real Capital: `0`; Promotion reported by source: `No`.
 
 A current report timestamp is not proof of a fresh worker. LAST_COMPLETED_STAGE remains historical stage information. A schema label or WebUI source version does not prove the version of executing code.
@@ -22,13 +22,13 @@ This publisher only reads reports. It starts no training, orders, promotions or 
 
 ## Research eligibility
 
-No eligible experiment is reported; this is not launch authorization.
-Source timestamp: `2026-09-08T22:39:26.033144Z`.
+1 eligible experiments are reported; this count does not prove a launchable Factory queue row.
+Source timestamp: `2026-09-09T22:43:01.820958Z`.
 
 ## Most recent documented development
 
-- **2026-09-08 · Observation:** Paper/Watch guard: report status PASS at 2026-09-08T22:27:33.482759+00:00. Observed artifact only; the gate was not rerun by this publication.
-- **2026-09-08 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-08T22:27:33.464734+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-09 · Observation:** Paper/Watch guard: report status PASS at 2026-09-09T22:30:13.208442+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-09 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-09T22:30:13.179572+00:00. Observed artifact only; the gate was not rerun by this publication.
 
 ## Last documented failures and blockers
 
@@ -37,11 +37,11 @@ Source timestamp: `2026-09-08T22:39:26.033144Z`.
 - **2026-09-05 · Failure / blocker:** The subsequent launch stopped with FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW before expensive computation. The earlier queue row was selected rather than eligible; a valid next launch remains pending.
 - **2026-09-05 · Failure / blocker:** The review documents faulty historical OpenAI settlements with entry_price == exit_price. Price provenance must be checked and affected outcomes rebuilt locally from historical prices; completion remains open.
 - **2026-09-05 · Failure / blocker:** The review showed no new visible closed Watch outcomes after approximately 18:59. Continuing decisions do not automatically prove a healthy outcome writer.
-- **2026-09-08 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-08T22:27:33.464734+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-09 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-09T22:30:13.179572+00:00. Observed artifact only; the gate was not rerun by this publication.
 
 ## Remaining work
 
-Open items are carried forward without a calendar-day reset. See the [complete roadmap](docs/progress/ROADMAP.md) and [dated update](updates/2026-09-08-public-status.md).
+Open items are carried forward without a calendar-day reset. See the [complete roadmap](docs/progress/ROADMAP.md) and [dated update](updates/2026-09-09-public-status.md).
 
 ## Publication verification boundary
 
