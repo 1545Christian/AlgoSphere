@@ -137,616 +137,616 @@
       "scope": "public_publisher"
     },
     {
-      "as_of": "2026-09-09",
-      "de": "Paper/Watch guard: Reportstatus PASS um 2026-09-09T22:30:13.208442+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
-      "en": "Paper/Watch guard: report status PASS at 2026-09-09T22:30:13.208442+00:00. Observed artifact only; the gate was not rerun by this publication.",
+      "as_of": "2026-09-10",
+      "de": "Paper/Watch guard: Reportstatus PASS um 2026-09-10T22:14:05.536019+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
+      "en": "Paper/Watch guard: report status PASS at 2026-09-10T22:14:05.536019+00:00. Observed artifact only; the gate was not rerun by this publication.",
       "evidence_level": "reported",
       "id": "report_paper_watch_guard_last",
       "kind": "observation",
       "scope": "report"
     },
     {
-      "as_of": "2026-09-09",
-      "de": "Runtime context gate: Reportstatus FAIL_INCOMPLETE_V3_CONTEXT um 2026-09-09T22:30:13.179572+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
-      "en": "Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-09T22:30:13.179572+00:00. Observed artifact only; the gate was not rerun by this publication.",
+      "as_of": "2026-09-10",
+      "de": "Runtime context gate: Reportstatus FAIL_INCOMPLETE_V3_CONTEXT um 2026-09-10T22:14:05.521993+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.",
+      "en": "Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-10T22:14:05.521993+00:00. Observed artifact only; the gate was not rerun by this publication.",
       "evidence_level": "reported",
       "id": "report_runtime_entry_snapshot_coverage",
       "kind": "failure",
       "scope": "report"
     }
   ],
-  "publication_date": "2026-09-09",
+  "publication_date": "2026-09-10",
   "requirement_audit": [
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "A_RUNTIME_ENTRY_LINEAGE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "A immutable entry/decision/position/event lineage"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "B_FEATURE_CONTRACT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "B feature reduction and versioned parity contract"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "C_STATE_MODEL",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "C deterministic state model parity and drift"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "C_CROSS_COIN_EVENT_MODEL",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "C cross-coin event identity and best-one/two counterfactual"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "D_EXPERIMENT_REGISTRY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "D durable experiment registry and lineage"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "D_NEGATIVE_MEMORY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "D negative-memory repeat prevention"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "E_EXPERIMENT_FACTORY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "E bounded automatic experiment factory"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "E_DECAY_FRESHNESS",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "E current decay and freshness windows"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "F_META_PORTFOLIO",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "F meta decision and portfolio selection"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "G_CHAMPION_CHALLENGER",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "G champion/challenger/shadow gating"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "G_POSITIVE_CANDIDATES",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "G v141/v143/v145/v149/v150 candidate terminal lifecycle"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "ML_AUTOPILOT_LOCAL_LOOP",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
       "title": "Local ML autonomous memory-to-next-experiment loop"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "ML_PROGRESS_LIVENESS_TRUTH",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
       "title": "ML progress/liveness truth"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "ADAPTIVE_STORAGE_CAPACITY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Adaptive storage capacity guard"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "STORAGE_RETENTION_CLASSIFICATION",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Safe storage cleanup and retention classification"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "ACTIVE_PAPER_RUNTIME",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "status": "OPEN_RUNTIME_NOT_PROVEN",
       "title": "Fresh ACTIVE_PAPER runtime decisions"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "RESEARCH_FORWARD_RUNTIME",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_RESEARCH_FORWARD_OUTCOMES_PROVEN",
       "title": "Fresh RESEARCH_FORWARD cycles and outcomes"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WATCH_SCANNER_RUNTIME",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "status": "OPEN_RUNTIME_NOT_PROVEN",
       "title": "Fresh embedded or standalone Watch scanner"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WATCH_EXIT_RUNTIME",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_WATCH_EXIT_OUTCOMES_PROVEN",
       "title": "Fresh Watch exit evaluator"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "SOURCE_ROLE_ISOLATION",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Paper/Forward/Watch/Codex source-role isolation"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "OUTCOME_CAPTURE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_LOCAL_OUTCOMES_PROVEN",
       "title": "Role-separated outcome capture"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "MYX_WATCH_TERMINAL_COVERAGE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "MYX terminal coverage and breakeven semantics"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "ONDO_ADA_OPEN_CLOSED_LIFECYCLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "ONDO/ADA open-to-closed lifecycle truth"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "UNIFIED_MEMORY_WRITE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Unified learning-memory writes"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "UNIFIED_MEMORY_READ",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Memory reads before ML/router selection"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "UNIFIED_MEMORY_PROVEN_EFFECT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Measured without/with-memory effect"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "MEMORY_MACHINE_READABLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Versioned machine-readable knowledge"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "MEMORY_HUMAN_READABLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Human-readable learning summaries"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "PORTABLE_KNOWLEDGE_EXPORT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "WAITING_PUBLIC_STATUS_EXPORT_PROOF",
       "title": "Portable knowledge export and provenance"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT8_LOCAL_TRACKER",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
       "title": "Local same-ID 5m prediction tracker"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT8_SCHEDULED_MARKET_INTELLIGENCE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
       "title": "Scheduled material market-intelligence cycle"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CODEX_RESEARCH_ONLY_BRANCH",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_RESEARCH_PREDICTION_PROVEN",
       "title": "Complete no-capital Codex prediction-to-memory branch"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CODEX_BASELINE_OPTIMIZED",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "WAITING_BASELINE_OPTIMIZED_PAIR",
       "title": "Baseline versus optimized outcome separation"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT8_MEMORY_STRATEGY_EFFECT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "WAITING_MEMORY_READ_EFFECT",
       "title": "Chat8 memory later changes strategy/ML"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "NEWS_MACRO_CONTEXT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "WAITING_CONTEXT_CAPTURE",
       "title": "News/macro as non-binding context"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "VISIBLE_WINDOWS_TERMINALS",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "status": "OPEN_RUNTIME_NOT_PROVEN",
       "title": "Real visible Windows Terminal runtime contract"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "LOCAL_RUNTIME_INDEPENDENT_OF_CODEX",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
       "title": "Local runtime independent of Codex automation"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "RUNTIME_SELF_HEALING",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Self-healing preserves approved visible runtime"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "RUNTIME_EXACT_IDENTITY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "status": "WAITING_LOCAL_QA_SAMPLES",
       "title": "Declared and actual executable composition identity"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "POST_START_RUNTIME_QA",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "status": "WAITING_LOCAL_QA_SAMPLES",
       "title": "Independent multi-cycle post-start runtime QA"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WEBUI_CANONICAL_CURRENT_TRUTH",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "WebUI canonical current truth hierarchy"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "DASHBOARD_TRUTH_COCKPIT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Dashboard truth cockpit"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WEBUI_COMPLETE_PAGE_SET",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Complete browser page set"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WEBUI_LAYOUT_RESPONSIVE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "WebUI responsive layout and no browser errors"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WEBUI_USER_DATA_QUALITY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "User-facing N/A/current/historical semantics"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WEBUI_DECISIONS_PAGE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Current decisions page chronology"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WEBUI_TRADE_TABLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Complete trade table"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WEBUI_TRADE_CHART",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Trade chart entry/exit truth page"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "WEBUI_PERFORMANCE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Measured WebUI overview performance"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT1_ROLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Chat1 ML/factory/memory role liveness"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT2_ROLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Chat2 strategy/risk/challenger role liveness"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT3_ROLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Chat3 forward/watch/outcome role liveness"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT4_ROLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Chat4 independent non-duplicate QA"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT5_ROLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Chat5 integrate/reconcile/failure-control role"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT6_ROLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Chat6 runtime/storage/visible-terminal role"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT7_ROLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Chat7 read-only completeness audit role"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CHAT8_ROLE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Chat8 prospective intelligence role"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "EVENT_DRIVEN_ORCHESTRATION",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Event-driven dispatch over scheduled message-bus use"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "SUPERVISOR_RETURN_CHAIN",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Worker terminal to Chat5 return to next child"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "REQUIREMENT_TASK_MATERIALIZATION",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "OPEN/PARTIAL code-fixable has exactly one task"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "STATUS_EVENT_CONSUMPTION",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Incremental status/event evidence consumption"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "TERMINAL_COVERAGE_DEDUPLICATION",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Terminal evidence prevents duplicate work"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "NON_STARVATION_PARALLELISM",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Independent owner work must not starve"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "AUTONOMOUS_CHAIN_ACCEPTANCE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Multiple-owner autonomous chain acceptance"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "LAUNCHER_CWD_INDEPENDENCE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Launcher CWD independence"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "USER_SESSION_TRANSPORT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Project outbox user-session bridge"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "RESERVED_CLAIM_STATE_MACHINE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Shared reservation claimability predicate"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "DEFENDER_SAFE_OPERATIONS",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_LOCAL_QA_PROVEN",
       "title": "Defender-safe fail-closed operations"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "DB_SAFETY_CONCURRENCY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "SQLite/WAL/atomic concurrency safety"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "DATA_QUALITY_CAUSAL_PATH",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "WAITING_CAUSAL_SOURCE_PROOF",
       "title": "Prospective data causal-path quality"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "BACKWARD_COMPATIBILITY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Readable legacy models/evidence/memory"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "REPORTING_STEP_VALIDATION",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Before/reproduce/fix/test/evidence reporting"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "SAFETY_SCOPE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_SAFETY_PROVEN",
       "title": "LIVE=false, no direct action/consumer/real capital"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "COMPLETE_VISIBLE_RUNTIME_RECOVERY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_RUNTIME_PROVEN",
+      "status": "OPEN_RUNTIME_NOT_PROVEN",
       "title": "Complete visible Paper/Forward/Watch runtime recovery"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CODEX_TRADE_BRANCH_E2E",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "WAITING_E2E_VARIANTS",
       "title": "Codex prediction-to-outcome trade branch is current and prospective"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CODEFIX_DELIVERY_QA_VISIBLE_RESTART_CHAIN",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Codefix to exact delivery, QA, visible restart and fresh evidence"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "GLOBAL_DB_READ_WRITE_CONTRACT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Canonical runtime database read/write preflight and single-writer contract"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "LIVE_RUNTIME_DATA_SOURCE_CONTRACT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Current runtime price and context data is live, causal and freshness-bound"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "RUNTIME_SINGLETON_PROCESS_CONTROL",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "status": "WAITING_LOCAL_QA_SAMPLES",
       "title": "One owned runtime process and visible terminal per component"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "SINGLE_RUNTIME_SUPERVISOR_START_AUTHORITY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
-      "status": "CURRENT_LOCAL_QA_PROVEN",
+      "status": "WAITING_LOCAL_QA_SAMPLES",
       "title": "Single supervisor owns all runtime starts, replacement and recovery"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "GPU_CUDA_SYSTEM_RESOURCE_GOVERNOR",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_RESOURCE_OBSERVATION",
       "title": "GPU/CUDA and system headroom guard with owned-process control"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CRASH_SAFE_TASK_RECOVERY",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Crash-safe recovery of durable requirements, tasks and approved runtimes"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "NO_DIRECT_CODEX_STATE_SQLITE_WRITE",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "REPLACED_BY_LOCAL_SERVICE",
       "title": "Project outbox user-session dispatch without Codex-state SQLite writes"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "TRADE_OUTCOME_PIPELINE_LIVENESS",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "IMPLEMENTED_AWAITING_CURRENT_PROOF",
       "title": "Timestamp-bound Paper/Watch/Forward candidate-to-outcome liveness truth"
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "id": "CODEX_IMMUTABLE_PORTFOLIO_DRIFT",
       "scope": "REPORTED_LOCAL_AUDIT_NOT_REVERIFIED",
       "status": "CURRENT_PREDICTION_ONLY_AWAITING_DRIFT_PROOF",
@@ -760,8 +760,8 @@
     "application": "v90_8_5",
     "coins": "0/0",
     "eligible_experiments": 1,
-    "eligible_source_utc": "2026-09-09T22:43:01.820958Z",
-    "exported_utc": "2026-09-09T22:45:02.214609Z",
+    "eligible_source_utc": "2026-09-10T22:39:07.024573Z",
+    "exported_utc": "2026-09-10T22:45:03.499939Z",
     "freshness": "HISTORICAL_STAGE_NOT_LIVE_PROGRESS",
     "input_read_receipts": [
       {
@@ -895,8 +895,8 @@
         "warnings": []
       },
       {
-        "bytes_on_disk": 57781,
-        "characters_scanned": 57776,
+        "bytes_on_disk": 58373,
+        "characters_scanned": 58368,
         "kind": "REPORT_INPUT",
         "label": "Local ML current truth",
         "omitted_items": 0,
@@ -905,8 +905,8 @@
         "warnings": []
       },
       {
-        "bytes_on_disk": 1638,
-        "characters_scanned": 1632,
+        "bytes_on_disk": 1297,
+        "characters_scanned": 1291,
         "kind": "REPORT_INPUT",
         "label": "Training events",
         "omitted_items": 0,
@@ -915,8 +915,8 @@
         "warnings": []
       },
       {
-        "bytes_on_disk": 41991,
-        "characters_scanned": 41991,
+        "bytes_on_disk": 35122,
+        "characters_scanned": 35122,
         "kind": "REPORT_INPUT",
         "label": "Research eligibility",
         "omitted_items": 0,
@@ -926,7 +926,7 @@
       }
     ],
     "live": false,
-    "observed_utc": "2026-09-09T22:45:01.868090Z",
+    "observed_utc": "2026-09-10T22:43:56.346209Z",
     "package_basis": "NOT_AVAILABLE",
     "package_release": "not verified",
     "promotion_allowed": false,
@@ -1074,8 +1074,8 @@
       "warnings": []
     },
     {
-      "bytes_on_disk": 57781,
-      "characters_scanned": 57776,
+      "bytes_on_disk": 58373,
+      "characters_scanned": 58368,
       "kind": "REPORT_INPUT",
       "label": "Local ML current truth",
       "omitted_items": 0,
@@ -1084,8 +1084,8 @@
       "warnings": []
     },
     {
-      "bytes_on_disk": 1638,
-      "characters_scanned": 1632,
+      "bytes_on_disk": 1297,
+      "characters_scanned": 1291,
       "kind": "REPORT_INPUT",
       "label": "Training events",
       "omitted_items": 0,
@@ -1094,8 +1094,8 @@
       "warnings": []
     },
     {
-      "bytes_on_disk": 41991,
-      "characters_scanned": 41991,
+      "bytes_on_disk": 35122,
+      "characters_scanned": 35122,
       "kind": "REPORT_INPUT",
       "label": "Research eligibility",
       "omitted_items": 0,
@@ -1110,9 +1110,9 @@
       "status": "DATED_BASELINE"
     },
     {
-      "as_of": "2026-09-09",
-      "bytes_on_disk": 269572,
-      "characters_scanned": 269519,
+      "as_of": "2026-09-10",
+      "bytes_on_disk": 296586,
+      "characters_scanned": 296539,
       "kind": "REQUIREMENT_AUDIT",
       "label": "Requirement audit",
       "omitted_items": 0,
@@ -1121,8 +1121,8 @@
       "warnings": []
     },
     {
-      "bytes_on_disk": 200389415,
-      "characters_scanned": 200389297,
+      "bytes_on_disk": 199767852,
+      "characters_scanned": 199767765,
       "kind": "LOCAL_REPORT",
       "label": "QUICK",
       "omitted_items": 0,
@@ -1132,16 +1132,16 @@
     },
     {
       "bytes_on_disk": 163440292,
-      "characters_scanned": 163439694,
+      "characters_scanned": 27262976,
       "kind": "LOCAL_REPORT",
       "label": "BALANCED",
       "omitted_items": 0,
       "read_mode": "STREAM_PROJECTED",
-      "status": "UNDATED_NOT_USED",
+      "status": "SCAN_TIME_LIMIT_NOT_USED",
       "warnings": []
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "bytes_on_disk": 848,
       "characters_scanned": 848,
       "kind": "LOCAL_REPORT",
@@ -1152,7 +1152,7 @@
       "warnings": []
     },
     {
-      "as_of": "2026-09-09",
+      "as_of": "2026-09-10",
       "bytes_on_disk": 6819,
       "characters_scanned": 6819,
       "kind": "LOCAL_REPORT",
@@ -1685,7 +1685,7 @@
   "warnings": [
     "NO_LOCAL_MASTER_USING_DATED_REVIEW_AND_LOCAL_REPORTS",
     "QUICK:UNDATED_NOT_USED",
-    "BALANCED:UNDATED_NOT_USED",
+    "BALANCED:SCAN_TIME_LIMIT_NOT_USED",
     "CANONICAL_HISTORY_INTEGRITY:UNDATED_NOT_USED",
     "NO_NEW_DEVELOPMENT_PROOF_TODAY_PREVIOUS_DATED_WORK_PRESERVED"
   ]
