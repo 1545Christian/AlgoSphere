@@ -1,6 +1,6 @@
 # Current public status
 
-Publication date: **2026-09-10**. Runtime observations, implementation reports and acceptance proofs remain separate.
+Publication date: **2026-09-11**. Runtime observations, implementation reports and acceptance proofs remain separate.
 
 ## Operational state from local reports
 
@@ -13,7 +13,7 @@ Publication date: **2026-09-10**. Runtime observations, implementation reports a
 - ML: `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` · not verified · FACTORY_HYPOTHESIS_READY_LAUNCH_DUE · not verified · 0/0.
 - State source: `LAST_COMPLETED_STAGE`.
 - Freshness classification: `HISTORICAL_STAGE_NOT_LIVE_PROGRESS`.
-- Source timestamp: `2026-09-10T22:43:56.346209Z`.
+- Source timestamp: `2026-09-11T22:44:57.174919Z`.
 - Live trading reported by source: `No`; Real Capital: `0`; Promotion reported by source: `No`.
 
 A current report timestamp is not proof of a fresh worker. LAST_COMPLETED_STAGE remains historical stage information. A schema label or WebUI source version does not prove the version of executing code.
@@ -23,12 +23,12 @@ This publisher only reads reports. It starts no training, orders, promotions or 
 ## Research eligibility
 
 1 eligible experiments are reported; this count does not prove a launchable Factory queue row.
-Source timestamp: `2026-09-10T22:39:07.024573Z`.
+Source timestamp: `2026-09-11T22:39:18.271174Z`.
 
 ## Most recent documented development
 
-- **2026-09-10 · Observation:** Paper/Watch guard: report status PASS at 2026-09-10T22:14:05.536019+00:00. Observed artifact only; the gate was not rerun by this publication.
-- **2026-09-10 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-10T22:14:05.521993+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-11 · Observation:** Paper/Watch guard: report status PASS at 2026-09-11T21:49:52.676094+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-11 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-11T21:49:52.668030+00:00. Observed artifact only; the gate was not rerun by this publication.
 
 ## Last documented failures and blockers
 
@@ -37,11 +37,11 @@ Source timestamp: `2026-09-10T22:39:07.024573Z`.
 - **2026-09-05 · Failure / blocker:** The subsequent launch stopped with FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW before expensive computation. The earlier queue row was selected rather than eligible; a valid next launch remains pending.
 - **2026-09-05 · Failure / blocker:** The review documents faulty historical OpenAI settlements with entry_price == exit_price. Price provenance must be checked and affected outcomes rebuilt locally from historical prices; completion remains open.
 - **2026-09-05 · Failure / blocker:** The review showed no new visible closed Watch outcomes after approximately 18:59. Continuing decisions do not automatically prove a healthy outcome writer.
-- **2026-09-10 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-10T22:14:05.521993+00:00. Observed artifact only; the gate was not rerun by this publication.
+- **2026-09-11 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-11T21:49:52.668030+00:00. Observed artifact only; the gate was not rerun by this publication.
 
 ## Remaining work
 
-Open items are carried forward without a calendar-day reset. See the [complete roadmap](docs/progress/ROADMAP.md) and [dated update](updates/2026-09-10-public-status.md).
+Open items are carried forward without a calendar-day reset. See the [complete roadmap](docs/progress/ROADMAP.md) and [dated update](updates/2026-09-11-public-status.md).
 
 ## Publication verification boundary
 
