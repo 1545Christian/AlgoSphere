@@ -16,14 +16,6 @@ AlgoSphere is an independent research and engineering project. I have worked on 
 
 That learning work grew into several of my own Python prototypes, revised repeatedly. The current aim is a consistent, auditable path from research and backtesting to paper and shadow execution.
 
-## Recent correction
-
-The September 12 status is a human-reviewed correction of the last few days. The GitHub nightly upload itself has been working, but its automatic narrative repeatedly carried older September 5/6 development text forward.
-
-The most important recent engineering work is the rebuild of the OpenAI research path onto **Bitget Futures-only context**, immutable request evidence and a canonical **100-USDT / 12-bps** outcome contract. Earlier OpenAI comparison results were re-audited; some of the previous positive curve was not reproducible under the corrected Futures basis, so the old result is now treated as historical research reference rather than current performance truth.
-
-See [CURRENT_STATUS.md](CURRENT_STATUS.md) and the [September 12 update](updates/2026-09-12-public-status.md) for the full explanation.
-
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START:CURRENT_STATUS -->
@@ -37,7 +29,7 @@ See [CURRENT_STATUS.md](CURRENT_STATUS.md) and the [September 12 update](updates
 | Explicit package/update manifest | `not verified` |
 | Application source version | `v90_8_5` |
 | Historical source-hotfix identifier | `v90_8_5_23` |
-| ML | `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` |
+| ML | `ML AUTOPILOT RUNNING / HYPOTHESIS PRODUCER PAUSED` |
 | Stage source | `LAST_COMPLETED_STAGE` |
 | Freshness | `HISTORICAL_STAGE_NOT_LIVE_PROGRESS` |
 | Live | `No` |

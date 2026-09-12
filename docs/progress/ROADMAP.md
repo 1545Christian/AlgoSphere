@@ -1,6 +1,6 @@
 # Current public roadmap
 
-Publication: 2026-09-11. Items retain their evidence date. An absent item is not considered closed; source-level claims require runtime proof for closure.
+Publication: 2026-09-12. Items retain their evidence date. An absent item is not considered closed; source-level claims require runtime proof for closure.
 
 ## P0
 
@@ -72,91 +72,91 @@ Original requirement IDs and statuses below are observations of the local audit.
 
 | Requirement | Source status | As of |
 |---|---|---|
-| A_RUNTIME_ENTRY_LINEAGE — A immutable entry/decision/position/event lineage | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| B_FEATURE_CONTRACT — B feature reduction and versioned parity contract | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| C_STATE_MODEL — C deterministic state model parity and drift | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| C_CROSS_COIN_EVENT_MODEL — C cross-coin event identity and best-one/two counterfactual | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| D_EXPERIMENT_REGISTRY — D durable experiment registry and lineage | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| D_NEGATIVE_MEMORY — D negative-memory repeat prevention | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| E_EXPERIMENT_FACTORY — E bounded automatic experiment factory | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| E_DECAY_FRESHNESS — E current decay and freshness windows | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| F_META_PORTFOLIO — F meta decision and portfolio selection | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| G_CHAMPION_CHALLENGER — G champion/challenger/shadow gating | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| G_POSITIVE_CANDIDATES — G v141/v143/v145/v149/v150 candidate terminal lifecycle | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| ML_AUTOPILOT_LOCAL_LOOP — Local ML autonomous memory-to-next-experiment loop | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| ML_PROGRESS_LIVENESS_TRUTH — ML progress/liveness truth | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| ADAPTIVE_STORAGE_CAPACITY — Adaptive storage capacity guard | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| STORAGE_RETENTION_CLASSIFICATION — Safe storage cleanup and retention classification | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| ACTIVE_PAPER_RUNTIME — Fresh ACTIVE_PAPER runtime decisions | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| RESEARCH_FORWARD_RUNTIME — Fresh RESEARCH_FORWARD cycles and outcomes | CURRENT_RESEARCH_FORWARD_OUTCOMES_PROVEN | 2026-09-11 |
-| WATCH_SCANNER_RUNTIME — Fresh embedded or standalone Watch scanner | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| WATCH_EXIT_RUNTIME — Fresh Watch exit evaluator | CURRENT_WATCH_EXIT_OUTCOMES_PROVEN | 2026-09-11 |
-| SOURCE_ROLE_ISOLATION — Paper/Forward/Watch/Codex source-role isolation | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| OUTCOME_CAPTURE — Role-separated outcome capture | CURRENT_LOCAL_OUTCOMES_PROVEN | 2026-09-11 |
-| MYX_WATCH_TERMINAL_COVERAGE — MYX terminal coverage and breakeven semantics | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| ONDO_ADA_OPEN_CLOSED_LIFECYCLE — ONDO/ADA open-to-closed lifecycle truth | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| UNIFIED_MEMORY_WRITE — Unified learning-memory writes | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| UNIFIED_MEMORY_READ — Memory reads before ML/router selection | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| UNIFIED_MEMORY_PROVEN_EFFECT — Measured without/with-memory effect | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| MEMORY_MACHINE_READABLE — Versioned machine-readable knowledge | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| MEMORY_HUMAN_READABLE — Human-readable learning summaries | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| PORTABLE_KNOWLEDGE_EXPORT — Portable knowledge export and provenance | WAITING_PUBLIC_STATUS_EXPORT_PROOF | 2026-09-11 |
-| CHAT8_LOCAL_TRACKER — Local same-ID 5m prediction tracker | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| CHAT8_SCHEDULED_MARKET_INTELLIGENCE — Scheduled material market-intelligence cycle | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| CODEX_RESEARCH_ONLY_BRANCH — Complete no-capital Codex prediction-to-memory branch | CURRENT_RESEARCH_PREDICTION_PROVEN | 2026-09-11 |
-| CODEX_BASELINE_OPTIMIZED — Baseline versus optimized outcome separation | WAITING_BASELINE_OPTIMIZED_PAIR | 2026-09-11 |
-| CHAT8_MEMORY_STRATEGY_EFFECT — Chat8 memory later changes strategy/ML | WAITING_MEMORY_READ_EFFECT | 2026-09-11 |
-| NEWS_MACRO_CONTEXT — News/macro as non-binding context | WAITING_CONTEXT_CAPTURE | 2026-09-11 |
-| VISIBLE_WINDOWS_TERMINALS — Real visible Windows Terminal runtime contract | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| LOCAL_RUNTIME_INDEPENDENT_OF_CODEX — Local runtime independent of Codex automation | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| RUNTIME_SELF_HEALING — Self-healing preserves approved visible runtime | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| RUNTIME_EXACT_IDENTITY — Declared and actual executable composition identity | CURRENT_LOCAL_QA_PROVEN | 2026-09-11 |
-| POST_START_RUNTIME_QA — Independent multi-cycle post-start runtime QA | CURRENT_LOCAL_QA_PROVEN | 2026-09-11 |
-| WEBUI_CANONICAL_CURRENT_TRUTH — WebUI canonical current truth hierarchy | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| DASHBOARD_TRUTH_COCKPIT — Dashboard truth cockpit | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| WEBUI_COMPLETE_PAGE_SET — Complete browser page set | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| WEBUI_LAYOUT_RESPONSIVE — WebUI responsive layout and no browser errors | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| WEBUI_USER_DATA_QUALITY — User-facing N/A/current/historical semantics | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| WEBUI_DECISIONS_PAGE — Current decisions page chronology | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| WEBUI_TRADE_TABLE — Complete trade table | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| WEBUI_TRADE_CHART — Trade chart entry/exit truth page | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| WEBUI_PERFORMANCE — Measured WebUI overview performance | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| CHAT1_ROLE — Chat1 ML/factory/memory role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| CHAT2_ROLE — Chat2 strategy/risk/challenger role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| CHAT3_ROLE — Chat3 forward/watch/outcome role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| CHAT4_ROLE — Chat4 independent non-duplicate QA | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| CHAT5_ROLE — Chat5 integrate/reconcile/failure-control role | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| CHAT6_ROLE — Chat6 runtime/storage/visible-terminal role | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| CHAT7_ROLE — Chat7 read-only completeness audit role | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| CHAT8_ROLE — Chat8 prospective intelligence role | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| EVENT_DRIVEN_ORCHESTRATION — Event-driven dispatch over scheduled message-bus use | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| SUPERVISOR_RETURN_CHAIN — Worker terminal to Chat5 return to next child | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| REQUIREMENT_TASK_MATERIALIZATION — OPEN/PARTIAL code-fixable has exactly one task | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| STATUS_EVENT_CONSUMPTION — Incremental status/event evidence consumption | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| TERMINAL_COVERAGE_DEDUPLICATION — Terminal evidence prevents duplicate work | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| NON_STARVATION_PARALLELISM — Independent owner work must not starve | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| AUTONOMOUS_CHAIN_ACCEPTANCE — Multiple-owner autonomous chain acceptance | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| LAUNCHER_CWD_INDEPENDENCE — Launcher CWD independence | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| USER_SESSION_TRANSPORT — Project outbox user-session bridge | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| RESERVED_CLAIM_STATE_MACHINE — Shared reservation claimability predicate | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| DEFENDER_SAFE_OPERATIONS — Defender-safe fail-closed operations | CURRENT_LOCAL_QA_PROVEN | 2026-09-11 |
-| DB_SAFETY_CONCURRENCY — SQLite/WAL/atomic concurrency safety | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| DATA_QUALITY_CAUSAL_PATH — Prospective data causal-path quality | WAITING_CAUSAL_SOURCE_PROOF | 2026-09-11 |
-| BACKWARD_COMPATIBILITY — Readable legacy models/evidence/memory | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| REPORTING_STEP_VALIDATION — Before/reproduce/fix/test/evidence reporting | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| SAFETY_SCOPE — LIVE=false, no direct action/consumer/real capital | CURRENT_SAFETY_PROVEN | 2026-09-11 |
-| COMPLETE_VISIBLE_RUNTIME_RECOVERY — Complete visible Paper/Forward/Watch runtime recovery | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-11 |
-| CODEX_TRADE_BRANCH_E2E — Codex prediction-to-outcome trade branch is current and prospective | WAITING_E2E_VARIANTS | 2026-09-11 |
-| CODEFIX_DELIVERY_QA_VISIBLE_RESTART_CHAIN — Codefix to exact delivery, QA, visible restart and fresh evidence | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| GLOBAL_DB_READ_WRITE_CONTRACT — Canonical runtime database read/write preflight and single-writer contract | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| LIVE_RUNTIME_DATA_SOURCE_CONTRACT — Current runtime price and context data is live, causal and freshness-bound | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| RUNTIME_SINGLETON_PROCESS_CONTROL — One owned runtime process and visible terminal per component | CURRENT_LOCAL_QA_PROVEN | 2026-09-11 |
-| SINGLE_RUNTIME_SUPERVISOR_START_AUTHORITY — Single supervisor owns all runtime starts, replacement and recovery | CURRENT_LOCAL_QA_PROVEN | 2026-09-11 |
-| GPU_CUDA_SYSTEM_RESOURCE_GOVERNOR — GPU/CUDA and system headroom guard with owned-process control | CURRENT_RESOURCE_OBSERVATION | 2026-09-11 |
-| CRASH_SAFE_TASK_RECOVERY — Crash-safe recovery of durable requirements, tasks and approved runtimes | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| NO_DIRECT_CODEX_STATE_SQLITE_WRITE — Project outbox user-session dispatch without Codex-state SQLite writes | REPLACED_BY_LOCAL_SERVICE | 2026-09-11 |
-| TRADE_OUTCOME_PIPELINE_LIVENESS — Timestamp-bound Paper/Watch/Forward candidate-to-outcome liveness truth | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-11 |
-| CODEX_IMMUTABLE_PORTFOLIO_DRIFT — Fail-closed immutable Codex shadow portfolio drift repair and bounded prediction backlog | CURRENT_PREDICTION_ONLY_AWAITING_DRIFT_PROOF | 2026-09-11 |
+| A_RUNTIME_ENTRY_LINEAGE — A immutable entry/decision/position/event lineage | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| B_FEATURE_CONTRACT — B feature reduction and versioned parity contract | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| C_STATE_MODEL — C deterministic state model parity and drift | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| C_CROSS_COIN_EVENT_MODEL — C cross-coin event identity and best-one/two counterfactual | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| D_EXPERIMENT_REGISTRY — D durable experiment registry and lineage | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| D_NEGATIVE_MEMORY — D negative-memory repeat prevention | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| E_EXPERIMENT_FACTORY — E bounded automatic experiment factory | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| E_DECAY_FRESHNESS — E current decay and freshness windows | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| F_META_PORTFOLIO — F meta decision and portfolio selection | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| G_CHAMPION_CHALLENGER — G champion/challenger/shadow gating | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| G_POSITIVE_CANDIDATES — G v141/v143/v145/v149/v150 candidate terminal lifecycle | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| ML_AUTOPILOT_LOCAL_LOOP — Local ML autonomous memory-to-next-experiment loop | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| ML_PROGRESS_LIVENESS_TRUTH — ML progress/liveness truth | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| ADAPTIVE_STORAGE_CAPACITY — Adaptive storage capacity guard | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| STORAGE_RETENTION_CLASSIFICATION — Safe storage cleanup and retention classification | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| ACTIVE_PAPER_RUNTIME — Fresh ACTIVE_PAPER runtime decisions | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| RESEARCH_FORWARD_RUNTIME — Fresh RESEARCH_FORWARD cycles and outcomes | CURRENT_RESEARCH_FORWARD_OUTCOMES_PROVEN | 2026-09-12 |
+| WATCH_SCANNER_RUNTIME — Fresh embedded or standalone Watch scanner | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| WATCH_EXIT_RUNTIME — Fresh Watch exit evaluator | CURRENT_WATCH_EXIT_OUTCOMES_PROVEN | 2026-09-12 |
+| SOURCE_ROLE_ISOLATION — Paper/Forward/Watch/Codex source-role isolation | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| OUTCOME_CAPTURE — Role-separated outcome capture | CURRENT_LOCAL_OUTCOMES_PROVEN | 2026-09-12 |
+| MYX_WATCH_TERMINAL_COVERAGE — MYX terminal coverage and breakeven semantics | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| ONDO_ADA_OPEN_CLOSED_LIFECYCLE — ONDO/ADA open-to-closed lifecycle truth | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| UNIFIED_MEMORY_WRITE — Unified learning-memory writes | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| UNIFIED_MEMORY_READ — Memory reads before ML/router selection | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| UNIFIED_MEMORY_PROVEN_EFFECT — Measured without/with-memory effect | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| MEMORY_MACHINE_READABLE — Versioned machine-readable knowledge | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| MEMORY_HUMAN_READABLE — Human-readable learning summaries | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| PORTABLE_KNOWLEDGE_EXPORT — Portable knowledge export and provenance | WAITING_PUBLIC_STATUS_EXPORT_PROOF | 2026-09-12 |
+| CHAT8_LOCAL_TRACKER — Local same-ID 5m prediction tracker | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| CHAT8_SCHEDULED_MARKET_INTELLIGENCE — Scheduled material market-intelligence cycle | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| CODEX_RESEARCH_ONLY_BRANCH — Complete no-capital Codex prediction-to-memory branch | CURRENT_RESEARCH_PREDICTION_PROVEN | 2026-09-12 |
+| CODEX_BASELINE_OPTIMIZED — Baseline versus optimized outcome separation | WAITING_BASELINE_OPTIMIZED_PAIR | 2026-09-12 |
+| CHAT8_MEMORY_STRATEGY_EFFECT — Chat8 memory later changes strategy/ML | WAITING_MEMORY_READ_EFFECT | 2026-09-12 |
+| NEWS_MACRO_CONTEXT — News/macro as non-binding context | WAITING_CONTEXT_CAPTURE | 2026-09-12 |
+| VISIBLE_WINDOWS_TERMINALS — Real visible Windows Terminal runtime contract | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| LOCAL_RUNTIME_INDEPENDENT_OF_CODEX — Local runtime independent of Codex automation | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| RUNTIME_SELF_HEALING — Self-healing preserves approved visible runtime | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| RUNTIME_EXACT_IDENTITY — Declared and actual executable composition identity | CURRENT_LOCAL_QA_PROVEN | 2026-09-12 |
+| POST_START_RUNTIME_QA — Independent multi-cycle post-start runtime QA | CURRENT_LOCAL_QA_PROVEN | 2026-09-12 |
+| WEBUI_CANONICAL_CURRENT_TRUTH — WebUI canonical current truth hierarchy | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| DASHBOARD_TRUTH_COCKPIT — Dashboard truth cockpit | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| WEBUI_COMPLETE_PAGE_SET — Complete browser page set | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| WEBUI_LAYOUT_RESPONSIVE — WebUI responsive layout and no browser errors | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| WEBUI_USER_DATA_QUALITY — User-facing N/A/current/historical semantics | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| WEBUI_DECISIONS_PAGE — Current decisions page chronology | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| WEBUI_TRADE_TABLE — Complete trade table | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| WEBUI_TRADE_CHART — Trade chart entry/exit truth page | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| WEBUI_PERFORMANCE — Measured WebUI overview performance | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| CHAT1_ROLE — Chat1 ML/factory/memory role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| CHAT2_ROLE — Chat2 strategy/risk/challenger role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| CHAT3_ROLE — Chat3 forward/watch/outcome role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| CHAT4_ROLE — Chat4 independent non-duplicate QA | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| CHAT5_ROLE — Chat5 integrate/reconcile/failure-control role | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| CHAT6_ROLE — Chat6 runtime/storage/visible-terminal role | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| CHAT7_ROLE — Chat7 read-only completeness audit role | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| CHAT8_ROLE — Chat8 prospective intelligence role | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| EVENT_DRIVEN_ORCHESTRATION — Event-driven dispatch over scheduled message-bus use | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| SUPERVISOR_RETURN_CHAIN — Worker terminal to Chat5 return to next child | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| REQUIREMENT_TASK_MATERIALIZATION — OPEN/PARTIAL code-fixable has exactly one task | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| STATUS_EVENT_CONSUMPTION — Incremental status/event evidence consumption | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| TERMINAL_COVERAGE_DEDUPLICATION — Terminal evidence prevents duplicate work | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| NON_STARVATION_PARALLELISM — Independent owner work must not starve | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| AUTONOMOUS_CHAIN_ACCEPTANCE — Multiple-owner autonomous chain acceptance | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| LAUNCHER_CWD_INDEPENDENCE — Launcher CWD independence | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| USER_SESSION_TRANSPORT — Project outbox user-session bridge | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| RESERVED_CLAIM_STATE_MACHINE — Shared reservation claimability predicate | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| DEFENDER_SAFE_OPERATIONS — Defender-safe fail-closed operations | CURRENT_LOCAL_QA_PROVEN | 2026-09-12 |
+| DB_SAFETY_CONCURRENCY — SQLite/WAL/atomic concurrency safety | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| DATA_QUALITY_CAUSAL_PATH — Prospective data causal-path quality | WAITING_CAUSAL_SOURCE_PROOF | 2026-09-12 |
+| BACKWARD_COMPATIBILITY — Readable legacy models/evidence/memory | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| REPORTING_STEP_VALIDATION — Before/reproduce/fix/test/evidence reporting | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| SAFETY_SCOPE — LIVE=false, no direct action/consumer/real capital | CURRENT_SAFETY_PROVEN | 2026-09-12 |
+| COMPLETE_VISIBLE_RUNTIME_RECOVERY — Complete visible Paper/Forward/Watch runtime recovery | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-12 |
+| CODEX_TRADE_BRANCH_E2E — Codex prediction-to-outcome trade branch is current and prospective | WAITING_E2E_VARIANTS | 2026-09-12 |
+| CODEFIX_DELIVERY_QA_VISIBLE_RESTART_CHAIN — Codefix to exact delivery, QA, visible restart and fresh evidence | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| GLOBAL_DB_READ_WRITE_CONTRACT — Canonical runtime database read/write preflight and single-writer contract | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| LIVE_RUNTIME_DATA_SOURCE_CONTRACT — Current runtime price and context data is live, causal and freshness-bound | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| RUNTIME_SINGLETON_PROCESS_CONTROL — One owned runtime process and visible terminal per component | CURRENT_LOCAL_QA_PROVEN | 2026-09-12 |
+| SINGLE_RUNTIME_SUPERVISOR_START_AUTHORITY — Single supervisor owns all runtime starts, replacement and recovery | CURRENT_LOCAL_QA_PROVEN | 2026-09-12 |
+| GPU_CUDA_SYSTEM_RESOURCE_GOVERNOR — GPU/CUDA and system headroom guard with owned-process control | CURRENT_RESOURCE_OBSERVATION | 2026-09-12 |
+| CRASH_SAFE_TASK_RECOVERY — Crash-safe recovery of durable requirements, tasks and approved runtimes | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| NO_DIRECT_CODEX_STATE_SQLITE_WRITE — Project outbox user-session dispatch without Codex-state SQLite writes | REPLACED_BY_LOCAL_SERVICE | 2026-09-12 |
+| TRADE_OUTCOME_PIPELINE_LIVENESS — Timestamp-bound Paper/Watch/Forward candidate-to-outcome liveness truth | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-12 |
+| CODEX_IMMUTABLE_PORTFOLIO_DRIFT — Fail-closed immutable Codex shadow portfolio drift repair and bounded prediction backlog | CURRENT_PREDICTION_ONLY_AWAITING_DRIFT_PROOF | 2026-09-12 |
 
 ## Acceptance boundary
 

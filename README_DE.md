@@ -16,14 +16,6 @@ AlgoSphere ist ein unabhängiges Forschungs- und Entwicklungsprojekt. Ich arbeit
 
 Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wiederholt überarbeitete. Heute geht es um einen konsistenten und nachvollziehbaren Weg von Research und Backtesting bis Paper- und Shadow-Ausführung.
 
-## Aktuelle Korrektur
-
-Der Status vom 12. September ist eine menschlich geprüfte Korrektur der letzten Tage. Der tägliche GitHub-Upload selbst funktioniert, aber die automatische Tageszusammenfassung hatte mehrfach ältere Entwicklungsinformationen vom 5./6. September übernommen.
-
-Die wichtigste aktuelle Arbeit ist der Neuaufbau des OpenAI-Research-Pfads auf **reinen Bitget-Futures-Kontext**, unveränderliche Anfrage-Evidenz und einen kanonischen **100-USDT-/12-bps-Vertrag**. Frühere OpenAI-Vergleichsergebnisse wurden erneut geprüft; ein Teil der positiven alten Kurve ließ sich auf der korrigierten Futures-Basis nicht bestätigen. Der alte Verlauf bleibt deshalb als historische Forschungsreferenz erhalten, gilt aber nicht mehr als aktuelle Performance-Wahrheit.
-
-Die Details stehen in [CURRENT_STATUS.md](CURRENT_STATUS.md) und im [Update vom 12. September](updates/2026-09-12-public-status_DE.md).
-
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START:CURRENT_STATUS -->
@@ -37,7 +29,7 @@ Die Details stehen in [CURRENT_STATUS.md](CURRENT_STATUS.md) und im [Update vom 
 | Paket-/Update-Manifest | `not verified` |
 | Anwendungs-Quellversion | `v90_8_5` |
 | Historische Source-Hotfix-Kennung | `v90_8_5_23` |
-| ML | `ML AUTOPILOT · NEXT FACTORY HYPOTHESIS READY` |
+| ML | `ML AUTOPILOT RUNNING / HYPOTHESIS PRODUCER PAUSED` |
 | Stage source | `LAST_COMPLETED_STAGE` |
 | Freshness | `HISTORICAL_STAGE_NOT_LIVE_PROGRESS` |
 | Live | `Nein` |
@@ -75,7 +67,7 @@ Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es 
 | Zweck | Dokument |
 |---|---|
 | Aktueller Stand und Hauptblocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Neuestes datiertes Update | [deutsches Update](updates/2026-09-12-public-status_DE.md) |
+| Neuestes datiertes Update | [englisches Update](updates/2026-09-12-public-status.md) |
 | Tests und Prüfgrenzen | [Testergebnisse](docs/verification/TEST_RESULTS.md) |
 | Offene Arbeit und Prioritäten | [Roadmap](docs/progress/ROADMAP.md) |
 | Projektgeschichte | [Projektgeschichte](docs/project/PROJECT_HISTORY.md) |

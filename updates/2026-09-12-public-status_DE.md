@@ -2,127 +2,103 @@
 
 English: [Public status update](./2026-09-12-public-status.md)
 
-## Zusammenfassung
+<!-- AUTO_VALUES_START -->
+## Kurzfassung
 
-In den letzten Tagen ging es vor allem darum, den Daten- und Evidenzpfad rund um die OpenAI-Forschung sauber zu korrigieren — nicht darum, eine alte Equity-Kurve im Nachhinein besser aussehen zu lassen.
+Der Export trennt neu datierte Belege, den letzten dokumentierten Entwicklungsstand und weiterhin offene Arbeit. Ein Tageswechsel löscht keine Aufgaben und macht ältere Erfolge nicht zu neuen Erfolgen.
 
-Der wichtigste Befund: Mehrere Annahmen aus dem früheren OpenAI-Vergleich waren zu optimistisch oder technisch nicht sauber genug belegt. Gefunden wurden gemischte Spot-/Futures-Eingaben, veralteter Coin-Kontext, ein historisches Problem bei der Interpretation von Exit-Zeitpunkten und eine Vergleichslogik, die aus einer OpenAI-Richtung zu schnell einen Trade ableiten konnte, obwohl der Text selbst teilweise noch auf Bestätigung oder Pullback wartete.
+## Beobachtungen für den Veröffentlichungstag
 
-Daraus wurde die aktive Richtung geändert. Der OpenAI-Paper-Pfad wurde als prospektiver **AI-only Futures-Pfad** neu aufgebaut: mit unveränderlichen Entscheidungssnapshots, kausaler Zeitbindung und einem einheitlichen **100-USDT-/12-bps-Vertrag**. Der historische Vergleich bleibt als Forschungsreferenz erhalten, wird aber nicht mehr ungeprüft als Performance-Wahrheit behandelt.
+- **2026-09-12 · Beobachtung:** Paper/Watch guard: Reportstatus PASS um 2026-09-12T19:48:42.838249+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.
+- **2026-09-12 · Fehler / Blocker:** Runtime context gate: Reportstatus FAIL_INCOMPLETE_V3_CONTEXT um 2026-09-12T19:48:42.811204+00:00. Nur abgelesenes Artefakt; der Export hat das Gate nicht erneut ausgeführt.
 
-## Was sich zwischen dem 8. und 11. September geändert hat
+## Letzter dokumentierter Entwicklungsstand — übernommen, nicht heute neu erledigt
 
-### Research / Forward: Warm-up und sichtbare Outcomes
+- **2026-09-05 · Fehler / Blocker:** Die angehängte V2-Basis dokumentiert einen technischen BALANCED-Abbruch am GPU-Watchdog / BLOCKED_PREFLIGHT. Das ist kein wissenschaftlicher Reject; ein erfolgreicher neuer Nachweis liegt in dieser Quelle nicht vor.
+- **2026-09-05 · Umsetzung laut Quelle:** Die V2-Basis führt Windows-Checkpoint-Schreibfehler, Wiederaufnahme fertiger Phasen und die Vermeidung doppelter Research-Worker als repariert. Das bleibt dokumentierte Teilprüfung, kein Gesamt-PASS.
+- **2026-09-05 · Fehler / Blocker:** Der breitere Runtime-Liveness-Reparaturauftrag wurde laut Tagesabgleich durch ein Nutzungslimit unterbrochen. Unbekannte Teiländerungen gelten nicht als abgeschlossen.
+- **2026-09-05 · Umsetzung laut Quelle:** Der Abgleich meldet den konkreten Fehler queue_id statt factory_queue_id als technisch repariert. Ein neuer Research-Core wurde laut Abgleich aktiviert; der reale Factory-QUICK-End-to-End-Nachweis bleibt offen.
+- **2026-09-05 · Dokumentierte Prüfung:** Für den Factory-Identity-Fix sind 15 bestandene Tests dokumentiert. Diese Tests wurden beim öffentlichen Export nicht erneut ausgeführt und beweisen keinen vollständigen Betrieb.
+- **2026-09-05 · Fehler / Blocker:** Der anschließende Startversuch stoppte mit FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW vor teurer Berechnung. Die vorherige Queue-Zeile war bereits selected statt eligible; der gültige nächste Start bleibt offen.
+- **2026-09-05 · Beobachtung:** Ein neuer OpenAI-Auswertungseintrag wurde am späten Abend gemeldet. Seine Settlement-Preisquelle ist noch nicht vollständig belegt; er wird nicht als bestätigter Leistungsnachweis ausgegeben.
+- **2026-09-05 · Fehler / Blocker:** Der Abgleich dokumentiert fehlerverdächtige historische OpenAI-Settlements mit entry_price == exit_price. Die Preisquelle muss geprüft und die betroffenen Outcomes lokal aus historischen Preisen korrigiert werden; der Abschluss ist offen.
+- **2026-09-05 · Beobachtung:** Die angehängte V2-Basis dokumentiert einen eigenständigen QUICK mit 120 von 120 Ergebnissen (2 nested_pass, 46 nested_rejected, 72 fast_rejected). Die Factory-Bindung ab Start fehlte: kein kanonischer B-Abschluss.
+- **2026-09-05 · Fehler / Blocker:** Neue geschlossene Watch-Outcomes waren im Abgleich seit etwa 18:59 nicht sichtbar. Weiterlaufende Entscheidungen beweisen nicht automatisch einen gesunden Outcome-Writer.
+- **2026-09-05 · Beobachtung:** Am 05.09. bis etwa 23:35 Ortszeit wurden frische Research-Watch-Entscheidungen dokumentiert. NO TRADE wegen nicht erfüllter Setup-Regeln ist nicht mit einem toten Prozess gleichzusetzen.
+- **2026-09-06 · Umsetzung laut Quelle:** Der lokale Installer hat GitHub Nightly v5.4.1 installiert. Windows-Zeilenumbrüche werden vor der Prüfsummenbildung nur in den Exportkopien vereinheitlicht; Tageswechsel, offene Aufgaben und Versionsbereiche bleiben getrennt. Der geplante Nachtlauf ist damit noch nicht nachgewiesen.
+- **2026-09-06 · Dokumentierte Prüfung:** Die mitgelieferte Offline-Regression des installierten Publisher-Moduls wurde lokal erfolgreich ausgeführt. Keine ML-/Trading-Abnahme und keine GitHub-Veröffentlichung durch diesen Test.
+- **2026-09-06 · Umsetzung laut Quelle:** Der lokale Installer hat GitHub Nightly v5.4.3 installiert. Große Berichte werden speicherbegrenzt nur für Statusfelder eingelesen; nicht verwendbare Quellen bleiben als Warnung sichtbar; Tageswechsel, offene Aufgaben und Versionsbereiche bleiben getrennt. Der geplante Nachtlauf ist damit noch nicht nachgewiesen.
+- **2026-09-06 · Dokumentierte Prüfung:** Die mitgelieferte Offline-Regression des installierten Publisher-Moduls wurde lokal erfolgreich ausgeführt. Keine ML-/Trading-Abnahme und keine GitHub-Veröffentlichung durch diesen Test.
 
-Im Research-Pfad wurde ein Warm-up-Problem korrigiert. Zuvor konnte ein Lauf so aussehen, als gäbe es schlicht keine Ergebnisse, obwohl für die Bewertung noch nicht genügend Historie vorlag. Nach der Korrektur wurden wieder frische Zyklen und Outcomes sichtbar.
+## Betriebsstand aus lokalen Berichten
 
-Das ist wichtig, weil ein Research-System sauber unterscheiden muss zwischen **„es gab kein Setup“** und **„die Pipeline hatte noch nicht genug Daten, um überhaupt eines zu prüfen“**.
+- Runtime-Release laut explizitem Berichtsfeld: `not verified`.
+- Acceptance-Berichtskennung (keine Laufzeitversion): `v125`.
+- WebUI-Quellversion: `v90_8_10_161`.
+- Paket-/Update-Manifest: `not verified`.
+- Anwendungs-Quellversion: `v90_8_5`.
+- Historische Source-Hotfix-Kennung: `v90_8_5_23`.
+- ML: `ML AUTOPILOT RUNNING / HYPOTHESIS PRODUCER PAUSED` · not verified · IDLE_OPERATOR_PAUSED · not verified · 0/0.
+- Zustandsquelle: `LAST_COMPLETED_STAGE`.
+- Einordnung: `HISTORICAL_STAGE_NOT_LIVE_PROGRESS`.
+- Quellzeitpunkt: `2026-09-12T22:44:59.909018Z`.
+- Live-Trading laut Quelle: `Nein`; Real Capital: `0`; Promotion laut Quelle: `Nein`.
 
-### Kanonische Outcomes: vom Zwischenstand 50 USDT zur aktiven 100-USDT-Basis
+Eine aktuelle Report-Zeit ist kein Beweis für einen frischen Worker. LAST_COMPLETED_STAGE bleibt historische Stage-Information. Eine Schema-Kennung oder WebUI-Quellversion beweist nicht, welcher Programmcode gerade ausgeführt wird.
 
-Zuerst wurde ein 50-USDT-Zwischenstand bereinigt, um Duplikate, uneinheitliche Kostenlogik und unbelegte Zeilen aus dem historischen Bestand herauszunehmen.
+Dieser Publisher liest nur Berichte. Er startet keine Trainings, Orders, Promotionen oder Kapitalaktionen.
 
-Inzwischen gilt als aktive Basis ein **kanonischer 100-USDT-Vertrag mit global 12 bps Kosten**. Im letzten Rebuild wurden **81.283 Outcomes** migriert. Aktive X9-/50-USDT-Outcomes, Duplikate und geprüfte verwaiste Verweise stehen bei **0**. **327 Outcomes bleiben ausdrücklich `UNPROVEN`**, statt sie stillschweigend in gültige Ergebnisse umzuwandeln.
+## Aktuelle offene Prioritäten
 
-Das ist Absicht: Fehlende Evidenz bleibt fehlende Evidenz.
+- **P0 · OPEN · 2026-09-05:** B wissenschaftlich terminalisieren
+- **P0 · OPEN · 2026-09-05:** BALANCED/OOS nur auf Gewinnern
+- **P0 · OPEN · 2026-09-05:** Candidate Freeze
+- **P0 · OPEN · 2026-09-05:** Challenger Lifecycle
+- **P0 · OPEN · 2026-09-05:** Current Truth / stale detection
+- **P0 · OPEN · 2026-09-05:** Elite Canary
+- **P0 · OPEN · 2026-09-05:** Factory/QUICK echter E2E-Beweis
+- **P0 · OPEN · 2026-09-05:** GPU-Watchdog-/Preflight-Ursache abschließend klären
+- **P0 · OPEN · 2026-09-05:** LIVE_READINESS_GATE
+- **P0 · OPEN · 2026-09-05:** OpenAI historische Outcome-Reparatur
+- **P0 · OPEN · 2026-09-05:** OpenAI laufende Settlement-Kette beweisen
+- **P0 · OPEN · 2026-09-05:** Paper Execution Parity
+- **P0 · OPEN · 2026-09-05:** Paper Outcome Memory E2E
+- **P0 · OPEN · 2026-09-05:** Reference Benchmark Contract V1
+- **P0 · OPEN · 2026-09-05:** Role Separation
 
-### Historischer OpenAI-Vergleich erneut gegen Futures-Preise geprüft
+P1/P2 und alle übernommenen Aufgaben stehen in der [Roadmap](../docs/progress/ROADMAP.md).
 
-Das frühere OpenAI-Kontrollfenster bestand aus 87 historischen Vergleichstrades. Mit der alten 12-bps-Rechnung ergab es rund **+43,49 USDT**.
+## Quellen und Prüfgrenzen
 
-Nach dem Neuaufbau auf der vorgesehenen **Bitget-Futures-Preisbasis** sank derselbe Kontrollbestand auf rund **+27,07 USDT**.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Runtime acceptance · not verified · READ_PROJECTED.
+- REPORT_INPUT · Local ML current truth · not verified · READ_PROJECTED.
+- REPORT_INPUT · Training events · not verified · READ_PROJECTED.
+- REPORT_INPUT · Research eligibility · not verified · READ_PROJECTED.
+- REVIEWED_MASTER_SUMMARY ·  · 2026-09-05 · DATED_BASELINE.
+- REQUIREMENT_AUDIT · Requirement audit · 2026-09-12 · READ_PROJECTED.
+- LOCAL_REPORT · QUICK · not verified · UNDATED_NOT_USED.
+- LOCAL_REPORT · BALANCED · not verified · UNDATED_NOT_USED.
+- LOCAL_REPORT · Paper/Watch guard · 2026-09-12 · READ_PROJECTED.
+- LOCAL_REPORT · Runtime context gate · 2026-09-12 · READ_PROJECTED.
+- LOCAL_REPORT · Canonical-history integrity · not verified · UNDATED_NOT_USED.
+- STRUCTURED_EVENT ·  · 2026-09-06 · READ.
+- STRUCTURED_EVENT ·  · 2026-09-06 · READ.
 
-Die anschließende Fortführung bestätigte die frühe Kurve nicht:
+Dokumentierte Tests wurden beim Export nicht erneut ausgeführt. Unbekannte Datenschemata bleiben unbewertet; Planungs- und Akzeptanzziele gelten nicht als bestandene Tests. Technischer Abbruch ist kein wissenschaftlicher Reject.
 
-- Kontrollfenster: 87 Trades, nach Futures-Korrektur ca. **+27,07 USDT**
-- Fortführung: 672 Trades, ca. **−116,50 USDT**
-- zusammen ausgewerteter Bestand: 759 Trades, ca. **−89,43 USDT**
+Quellenlücken: NO_LOCAL_MASTER_USING_DATED_REVIEW_AND_LOCAL_REPORTS, QUICK:UNDATED_NOT_USED, BALANCED:UNDATED_NOT_USED, CANONICAL_HISTORY_INTEGRITY:UNDATED_NOT_USED, NO_NEW_DEVELOPMENT_PROOF_TODAY_PREVIOUS_DATED_WORK_PRESERVED
 
-Zum Rebuild-Stand vom 10. September waren 25 OpenAI-Fälle noch offen.
-
-Außerdem zeigte sich, dass der positive Anfang stark von wenigen Trades getragen wurde: Drei ENA-Trades lieferten zusammen etwa **+28,68 USDT**, während die übrigen 84 Kontrolltrades zusammen leicht negativ waren.
-
-In der Fortführung zeigte sich zudem ein deutlicher Unterschied zwischen den Seiten: Shorts blieben insgesamt positiv, während spätere Long-Signale den Hauptteil der Verluste verursachten. Das belegt eine veränderte Ergebnisqualität, aber noch nicht die eine einzelne Ursache oder Regeländerung.
-
-### Das „30-Minuten“-Problem wurde präzisiert
-
-Eine frühere Formulierung konnte so verstanden werden, als wären Trades 30 Minuten nach einer OpenAI-Antwort gefüllt worden. Das zeigte die Prüfung nicht.
-
-Der bestätigte Fehler lag beim **Alter des Eingangskontexts**: Ein neuer Gesamtzyklus konnte eine ältere Coin-Prognose erneut verwenden. Dadurch konnte eine Abfrage frisch aussehen, obwohl einzelne Eingangsdaten bereits deutlich älter waren.
-
-Für die normalen Runtime-Pfade waren die beobachteten Abstände Signal → Fill wesentlich kleiner:
-
-- Paper: bis ca. 85 Sekunden
-- Watch: bis ca. 86 Sekunden
-- Research Forward: bis ca. 88 Sekunden
-
-Beim historischen OpenAI-Vergleich war der gespeicherte Vergleichs-Entry an den ursprünglichen Prediction-Zeitpunkt gebunden. Wo die Antwortverfügbarkeit belegt werden konnte, lag sie ungefähr 16–33 Sekunden später. Das waren historische Vergleichstrades, keine tatsächlich ausgeführten Orders.
-
-### OpenAI-Requests werden jetzt an das gebunden, was das Modell wirklich gesehen hat
-
-Der Code wurde so geändert, dass der tatsächliche Anfragekontext dauerhaft erhalten bleibt, statt später aus neueren Marktdaten rekonstruiert zu werden.
-
-Die beabsichtigte Bindung umfasst jetzt unter anderem:
-
-- den tatsächlich verwendeten Marktkontext,
-- den Futures-Referenzpreis,
-- Start- und Antwortzeit der Anfrage,
-- den Entscheidungskontext von Paper/Watch,
-- und die spätere Abrechnung auf Basis der ursprünglichen Evidenz statt eines ersetzten Lookups.
-
-Ein späterer Writer darf fehlende Preisbelege nicht still ergänzen oder den ursprünglichen Kontext austauschen.
-
-### Der AI-only OpenAI-Paper-Pfad wurde neu aufgebaut
-
-Der prospektive OpenAI-Pfad ist jetzt sauber von lokaler ML-Richtung und altem Legacy-Kontext getrennt.
-
-Die aktive Implementierung folgt diesen Regeln:
-
-- **nur Bitget Futures 1m** für Referenz-, Entry- und Exitpreise,
-- frischer 1m-/5m-/15m-/1h-Kontext vor jeder OpenAI-Anfrage,
-- keine lokale ML-Richtung im OpenAI-Request,
-- kein Spot-Preis-Fallback,
-- keine X9-Logik im aktiven OpenAI-Outcome-Pfad,
-- Entry erst nach vorhandener OpenAI-Antwort und erfüllter strukturierter Futures-Bedingung,
-- neuere Coin-Bewertungen ersetzen ältere offene Ideen, damit keine „Zombie-Entries“ später auftauchen,
-- `NO_TRADE`, abgelaufene, invalidierte und abgelöste Prognosen bleiben fürs Lernen erhalten, ohne nachträglich Trades oder PnL zu erfinden,
-- aktiver Wirtschaftsvertrag: **100 USDT und 12 bps Kosten**.
-
-API-Takt und Tageslimit wurden nicht erhöht. Das Antwortlimit wurde von 2.200 auf 3.200 Tokens angehoben, damit weniger unvollständige und damit unbrauchbare Antworten entstehen, ohne häufiger neue Requests zu senden.
-
-### Prüfung des neuen prospektiven Pfads
-
-Der Umsetzungsbericht dokumentiert:
-
-- **28 gezielte Tests bestanden**,
-- Futures-Preflight: **PASS**,
-- aktive X9-Outcomes in diesem Pfad: **0**,
-- lokale ML-Felder im OpenAI-Request: **0**,
-- durch die Tests ausgelöste API-Aufrufe: **0**.
-
-Der Supervisor hat den geänderten Prozess automatisch neu geladen. Zum Zeitpunkt der Abnahme gab es noch keinen ersten natürlichen neuen AI-only-Fall. Der prospektive End-to-End-Nachweis in der laufenden Runtime steht daher noch aus.
-
-Diese Grenze ist wichtig: Eine implementierte und getestete Änderung ist positive Evidenz, aber noch nicht dasselbe wie ein natürlicher Forward-Nachweis.
-
-## Was noch offen ist
-
-Die nächsten Schritte sind jetzt klarer:
-
-1. Die ersten natürlichen AI-only-Fälle vollständig von Anfrage bis Outcome beobachten.
-2. Den Entscheidungssnapshot vom Prompt bis zum Outcome-Memory unverändert halten.
-3. Alte OpenAI-Zeilen mit nicht belegbarem Kontext oder Exit sauber neu aufbauen oder als `UNPROVEN` belassen.
-4. Historische Referenzvergleiche strikt von prospektiver Paper-Ausführung trennen.
-5. Den Lifecycle **Factory → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION** weiterführen, ohne Evidenz-Gates zu überspringen.
-6. Die Quellenwahl des öffentlichen Nightly-Publishers reparieren, damit neue Entwicklungsarbeit nicht wieder durch einen alten Stand vom 5. September ersetzt wird.
-
-## Korrektur des öffentlichen Status
-
-Der tägliche GitHub-Upload selbst ist in den letzten Tagen planmäßig gelaufen. Das Problem lag in der **automatischen Auswahl der Tagesgeschichte**: Die Dateien übernahmen immer wieder ältere Entwicklungsinformationen vom 5./6. September, obwohl lokal neuere Arbeit vorhanden war.
-
-Dieses Update vom 12. September ist deshalb eine menschlich geprüfte Korrektur der öffentlichen Darstellung. Es macht alte Ergebnisse nicht rückwirkend zu einem PASS. Es dokumentiert, was sich geändert hat, was widerlegt wurde, was repariert wurde und wo noch natürlicher Runtime-Nachweis fehlt.
-
-## Sicherheitsgrenze
-
-AlgoSphere bleibt ein Research-System. Live-Trading und automatische Freigaben für Echtgeld bleiben deaktiviert. Historische und Paper-Ergebnisse sind Forschungsnachweise und keine Zusage zukünftiger Performance.
-
-[Aktueller Status](../CURRENT_STATUS.md) · [Roadmap](../docs/progress/ROADMAP.md) · [Dokumentierte Entwicklungsarbeit](../docs/progress/COMPLETED_WORK.md) · [Tests](../docs/verification/TEST_RESULTS.md)
+[Current status](../CURRENT_STATUS.md) · [Tests](../docs/verification/TEST_RESULTS.md) · [Source projection](../evidence/DAILY_SUMMARY.json)
+<!-- AUTO_VALUES_END -->
