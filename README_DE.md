@@ -6,7 +6,7 @@ Aufbau, Test und Dokumentation eines Weges von Research und Backtesting zu Paper
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes Update: [deutsches Statusupdate](updates/2026-09-11-public-status_DE.md)<br>
+Neuestes Update: [deutsches Statusupdate](updates/2026-09-12-public-status_DE.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -15,6 +15,14 @@ Telegram: https://t.me/AlgoSphereOfficial
 AlgoSphere ist ein unabhängiges Forschungs- und Entwicklungsprojekt. Ich arbeite seit ungefähr drei Jahren an den zugrunde liegenden Ideen und Python-Prototypen; begonnen hat es mit dem Nachbauen und Anpassen von Lernbeispielen, auch aus YouTube-Videos.
 
 Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wiederholt überarbeitete. Heute geht es um einen konsistenten und nachvollziehbaren Weg von Research und Backtesting bis Paper- und Shadow-Ausführung.
+
+## Aktuelle Korrektur
+
+Der Status vom 12. September ist eine menschlich geprüfte Korrektur der letzten Tage. Der tägliche GitHub-Upload selbst funktioniert, aber die automatische Tageszusammenfassung hatte mehrfach ältere Entwicklungsinformationen vom 5./6. September übernommen.
+
+Die wichtigste aktuelle Arbeit ist der Neuaufbau des OpenAI-Research-Pfads auf **reinen Bitget-Futures-Kontext**, unveränderliche Anfrage-Evidenz und einen kanonischen **100-USDT-/12-bps-Vertrag**. Frühere OpenAI-Vergleichsergebnisse wurden erneut geprüft; ein Teil der positiven alten Kurve ließ sich auf der korrigierten Futures-Basis nicht bestätigen. Der alte Verlauf bleibt deshalb als historische Forschungsreferenz erhalten, gilt aber nicht mehr als aktuelle Performance-Wahrheit.
+
+Die Details stehen in [CURRENT_STATUS.md](CURRENT_STATUS.md) und im [Update vom 12. September](updates/2026-09-12-public-status_DE.md).
 
 <!-- HUMAN_TEXT_END -->
 
@@ -67,7 +75,7 @@ Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es 
 | Zweck | Dokument |
 |---|---|
 | Aktueller Stand und Hauptblocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Neuestes datiertes Update | [englisches Update](updates/2026-09-11-public-status.md) |
+| Neuestes datiertes Update | [deutsches Update](updates/2026-09-12-public-status_DE.md) |
 | Tests und Prüfgrenzen | [Testergebnisse](docs/verification/TEST_RESULTS.md) |
 | Offene Arbeit und Prioritäten | [Roadmap](docs/progress/ROADMAP.md) |
 | Projektgeschichte | [Projektgeschichte](docs/project/PROJECT_HISTORY.md) |
