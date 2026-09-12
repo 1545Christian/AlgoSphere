@@ -6,7 +6,7 @@ Building, testing and documenting the path from research and backtesting to pape
 
 Deutsch: [README_DE.md](README_DE.md)<br>
 Latest status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Latest update: [English status update](updates/2026-09-11-public-status.md)<br>
+Latest update: [English status update](updates/2026-09-12-public-status.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -15,6 +15,14 @@ Telegram: https://t.me/AlgoSphereOfficial
 AlgoSphere is an independent research and engineering project. I have worked on the underlying ideas and Python prototypes for approximately three years, beginning by rebuilding and adapting examples from educational material, including YouTube videos.
 
 That learning work grew into several of my own Python prototypes, revised repeatedly. The current aim is a consistent, auditable path from research and backtesting to paper and shadow execution.
+
+## Recent correction
+
+The September 12 status is a human-reviewed correction of the last few days. The GitHub nightly upload itself has been working, but its automatic narrative repeatedly carried older September 5/6 development text forward.
+
+The most important recent engineering work is the rebuild of the OpenAI research path onto **Bitget Futures-only context**, immutable request evidence and a canonical **100-USDT / 12-bps** outcome contract. Earlier OpenAI comparison results were re-audited; some of the previous positive curve was not reproducible under the corrected Futures basis, so the old result is now treated as historical research reference rather than current performance truth.
+
+See [CURRENT_STATUS.md](CURRENT_STATUS.md) and the [September 12 update](updates/2026-09-12-public-status.md) for the full explanation.
 
 <!-- HUMAN_TEXT_END -->
 
@@ -67,7 +75,7 @@ This repository is a public documentation and evidence record. It is not a downl
 | Purpose | Document |
 |---|---|
 | Current state and main blocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Latest dated update | [English update](updates/2026-09-11-public-status.md) |
+| Latest dated update | [English update](updates/2026-09-12-public-status.md) |
 | Tests and verification limits | [Test results](docs/verification/TEST_RESULTS.md) |
 | Open work and priorities | [Roadmap](docs/progress/ROADMAP.md) |
 | Project history | [Project history](docs/project/PROJECT_HISTORY.md) |
