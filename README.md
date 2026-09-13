@@ -6,7 +6,7 @@ Building, testing and documenting the path from research and backtesting to pape
 
 Deutsch: [README_DE.md](README_DE.md)<br>
 Latest status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Latest update: [English status update](updates/2026-09-12-public-status.md)<br>
+Latest update: [English status update](updates/2026-09-13-public-status.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 <!-- HUMAN_TEXT_START -->
@@ -25,7 +25,7 @@ That learning work grew into several of my own Python prototypes, revised repeat
 |---|---|
 | Runtime release reported in explicit field | `not verified` |
 | Acceptance report label (not executable version) | `v125` |
-| WebUI source version | `v90_8_10_161` |
+| WebUI source version | `v90_8_10_162` |
 | Explicit package/update manifest | `not verified` |
 | Application source version | `v90_8_5` |
 | Historical source-hotfix identifier | `v90_8_5_23` |
@@ -67,7 +67,7 @@ This repository is a public documentation and evidence record. It is not a downl
 | Purpose | Document |
 |---|---|
 | Current state and main blocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Latest dated update | [English update](updates/2026-09-12-public-status.md) |
+| Latest dated update | [English update](updates/2026-09-13-public-status.md) |
 | Tests and verification limits | [Test results](docs/verification/TEST_RESULTS.md) |
 | Open work and priorities | [Roadmap](docs/progress/ROADMAP.md) |
 | Project history | [Project history](docs/project/PROJECT_HISTORY.md) |
