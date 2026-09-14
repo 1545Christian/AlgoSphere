@@ -1,165 +1,87 @@
 # Current public roadmap
 
-Publication: 2026-09-13. Items retain their evidence date. An absent item is not considered closed; source-level claims require runtime proof for closure.
+Publication: **2026-09-14**. This is the human-reviewed roadmap while the nightly publisher is paused.
 
-## P0
+The detailed machine-readable requirement inventory from the last automatic audit remains preserved in the dated September 13 public update and evidence files. This roadmap focuses on the **current operating priorities** and does not treat an old calendar-day status as current truth.
 
-- **OPEN · 2026-09-05:** Scientific terminalization of B
-- **OPEN · 2026-09-05:** BALANCED/OOS only for qualified candidates
-- **OPEN · 2026-09-05:** Candidate Freeze
-- **OPEN · 2026-09-05:** Challenger Lifecycle
-- **OPEN · 2026-09-05:** Current Truth / stale detection
-- **OPEN · 2026-09-05:** Elite Canary
-- **OPEN · 2026-09-05:** Real Factory/QUICK end-to-end proof
-- **OPEN · 2026-09-05:** Resolve the GPU watchdog / preflight root cause
-- **OPEN · 2026-09-05:** LIVE_READINESS_GATE
-- **OPEN · 2026-09-05:** Historical OpenAI outcome repair
-- **OPEN · 2026-09-05:** Verify the ongoing OpenAI settlement chain
-- **OPEN · 2026-09-05:** Paper Execution Parity
-- **OPEN · 2026-09-05:** Paper Outcome Memory E2E
-- **OPEN · 2026-09-05:** Reference Benchmark Contract V1
-- **OPEN · 2026-09-05:** Role Separation
+## Current lifecycle contract
 
-## P1
+The intended training lifecycle is:
 
-- **OPEN · 2026-09-05:** Remove competing launchers, wrappers and status paths
-- **OPEN · 2026-09-05:** Context Alignment Writer / External Writer Reload
-- **OPEN · 2026-09-05:** Cost-efficient development governance
-- **OPEN · 2026-09-05:** One canonical start, status and restart path per component
-- **OPEN · 2026-09-05:** Entry timing separated from higher-timeframe market bias
-- **OPEN · 2026-09-05:** Frozen Champion Protection
-- **OPEN · 2026-09-05:** Connect global filters everywhere
-- **OPEN · 2026-09-05:** GPU/CPU audit and training speedup proof
-- **OPEN · 2026-09-05:** Evidence for historical memory migration v23–v141+
-- **OPEN · 2026-09-05:** Incremental FeatureCache extension
-- **OPEN · 2026-09-05:** Market-wide shock and post-shock rebound detection
-- **OPEN · 2026-09-05:** Understandable metrics and definitions
-- **OPEN · 2026-09-05:** Explain News / OpenAI / Local ML consensus
-- **OPEN · 2026-09-05:** Complete the OpenAI AI-only outcome loop and error attribution
-- **OPEN · 2026-09-05:** OpenAI Live Input Receipt Contract
-- **OPEN · 2026-09-05:** Research Forward Outcome Visibility
-- **OPEN · 2026-09-05:** Hardware-aware resource policy and memory guard
-- **OPEN · 2026-09-05:** Ridge Numerical Stability
-- **OPEN · 2026-09-05:** Role-aware Decision Panel
-- **OPEN · 2026-09-05:** Runtime Core / Source Parity
-- **OPEN · 2026-09-05:** Strategy / Coin / Side / Regime / Volatility / Outcome meta-learning
-- **OPEN · 2026-09-05:** Visible training terminal and real progress
-- **OPEN · 2026-09-05:** Continue observing the Watch closed-outcome writer
-- **OPEN · 2026-09-05:** WebUI Current Truth
-- **OPEN · 2026-09-05:** Clear Watch, Reference and OpenAI role presentation
+`HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`
 
-## P2
+`candidate_eligible` is eligibility / artifact metadata. It is **not** a separate operating stage.
 
-- **OPEN · 2026-09-05:** Approved Model Bundle Loader
-- **OPEN · 2026-09-05:** Bitget read-only permission enforcement
-- **OPEN · 2026-09-05:** Client Preview
-- **OPEN · 2026-09-05:** Copyright / License / Terms / Disclaimer
-- **OPEN · 2026-09-05:** Demo Connected Backend
-- **OPEN · 2026-09-05:** Demo Offline Backend
-- **OPEN · 2026-09-05:** Distribution Profile Isolation
-- **OPEN · 2026-09-05:** Memory Tier Separation
-- **OPEN · 2026-09-05:** One-click Installer
-- **OPEN · 2026-09-05:** Orphaned Launcher Cleanup / Archive Release Payload
-- **OPEN · 2026-09-05:** Reports-Code-Migration
-- **OPEN · 2026-09-05:** Research Knowledge Bundle
-- **OPEN · 2026-09-05:** Root Cleanup
-- **OPEN · 2026-09-05:** Secure Credential Store
-- **OPEN · 2026-09-05:** SQLite Retention
+A Rule artifact that passes its own evidence must remain preserved even if an ML selector rejects or selects nothing useful. **ML selector collapse is not Rule failure.**
 
-## Current machine-readable audit inventory
+## P0 — current priorities
 
-Original requirement IDs and statuses below are observations of the local audit. They do not silently close differently scoped planning items above.
+### Trading / research truth before retraining
 
-| Requirement | Source status | As of |
-|---|---|---|
-| A_RUNTIME_ENTRY_LINEAGE — A immutable entry/decision/position/event lineage | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| B_FEATURE_CONTRACT — B feature reduction and versioned parity contract | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| C_STATE_MODEL — C deterministic state model parity and drift | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| C_CROSS_COIN_EVENT_MODEL — C cross-coin event identity and best-one/two counterfactual | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| D_EXPERIMENT_REGISTRY — D durable experiment registry and lineage | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| D_NEGATIVE_MEMORY — D negative-memory repeat prevention | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| E_EXPERIMENT_FACTORY — E bounded automatic experiment factory | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| E_DECAY_FRESHNESS — E current decay and freshness windows | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| F_META_PORTFOLIO — F meta decision and portfolio selection | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| G_CHAMPION_CHALLENGER — G champion/challenger/shadow gating | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| G_POSITIVE_CANDIDATES — G v141/v143/v145/v149/v150 candidate terminal lifecycle | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| ML_AUTOPILOT_LOCAL_LOOP — Local ML autonomous memory-to-next-experiment loop | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| ML_PROGRESS_LIVENESS_TRUTH — ML progress/liveness truth | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| ADAPTIVE_STORAGE_CAPACITY — Adaptive storage capacity guard | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| STORAGE_RETENTION_CLASSIFICATION — Safe storage cleanup and retention classification | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| ACTIVE_PAPER_RUNTIME — Fresh ACTIVE_PAPER runtime decisions | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| RESEARCH_FORWARD_RUNTIME — Fresh RESEARCH_FORWARD cycles and outcomes | CURRENT_RESEARCH_FORWARD_OUTCOMES_PROVEN | 2026-09-13 |
-| WATCH_SCANNER_RUNTIME — Fresh embedded or standalone Watch scanner | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| WATCH_EXIT_RUNTIME — Fresh Watch exit evaluator | CURRENT_WATCH_EXIT_OUTCOMES_PROVEN | 2026-09-13 |
-| SOURCE_ROLE_ISOLATION — Paper/Forward/Watch/Codex source-role isolation | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| OUTCOME_CAPTURE — Role-separated outcome capture | CURRENT_LOCAL_OUTCOMES_PROVEN | 2026-09-13 |
-| MYX_WATCH_TERMINAL_COVERAGE — MYX terminal coverage and breakeven semantics | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| ONDO_ADA_OPEN_CLOSED_LIFECYCLE — ONDO/ADA open-to-closed lifecycle truth | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| UNIFIED_MEMORY_WRITE — Unified learning-memory writes | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| UNIFIED_MEMORY_READ — Memory reads before ML/router selection | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| UNIFIED_MEMORY_PROVEN_EFFECT — Measured without/with-memory effect | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| MEMORY_MACHINE_READABLE — Versioned machine-readable knowledge | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| MEMORY_HUMAN_READABLE — Human-readable learning summaries | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| PORTABLE_KNOWLEDGE_EXPORT — Portable knowledge export and provenance | WAITING_PUBLIC_STATUS_EXPORT_PROOF | 2026-09-13 |
-| CHAT8_LOCAL_TRACKER — Local same-ID 5m prediction tracker | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| CHAT8_SCHEDULED_MARKET_INTELLIGENCE — Scheduled material market-intelligence cycle | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| CODEX_RESEARCH_ONLY_BRANCH — Complete no-capital Codex prediction-to-memory branch | CURRENT_RESEARCH_PREDICTION_PROVEN | 2026-09-13 |
-| CODEX_BASELINE_OPTIMIZED — Baseline versus optimized outcome separation | WAITING_BASELINE_OPTIMIZED_PAIR | 2026-09-13 |
-| CHAT8_MEMORY_STRATEGY_EFFECT — Chat8 memory later changes strategy/ML | WAITING_MEMORY_READ_EFFECT | 2026-09-13 |
-| NEWS_MACRO_CONTEXT — News/macro as non-binding context | WAITING_CONTEXT_CAPTURE | 2026-09-13 |
-| VISIBLE_WINDOWS_TERMINALS — Real visible Windows Terminal runtime contract | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| LOCAL_RUNTIME_INDEPENDENT_OF_CODEX — Local runtime independent of Codex automation | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| RUNTIME_SELF_HEALING — Self-healing preserves approved visible runtime | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| RUNTIME_EXACT_IDENTITY — Declared and actual executable composition identity | CURRENT_LOCAL_QA_PROVEN | 2026-09-13 |
-| POST_START_RUNTIME_QA — Independent multi-cycle post-start runtime QA | CURRENT_LOCAL_QA_PROVEN | 2026-09-13 |
-| WEBUI_CANONICAL_CURRENT_TRUTH — WebUI canonical current truth hierarchy | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| DASHBOARD_TRUTH_COCKPIT — Dashboard truth cockpit | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| WEBUI_COMPLETE_PAGE_SET — Complete browser page set | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| WEBUI_LAYOUT_RESPONSIVE — WebUI responsive layout and no browser errors | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| WEBUI_USER_DATA_QUALITY — User-facing N/A/current/historical semantics | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| WEBUI_DECISIONS_PAGE — Current decisions page chronology | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| WEBUI_TRADE_TABLE — Complete trade table | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| WEBUI_TRADE_CHART — Trade chart entry/exit truth page | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| WEBUI_PERFORMANCE — Measured WebUI overview performance | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| CHAT1_ROLE — Chat1 ML/factory/memory role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| CHAT2_ROLE — Chat2 strategy/risk/challenger role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| CHAT3_ROLE — Chat3 forward/watch/outcome role liveness | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| CHAT4_ROLE — Chat4 independent non-duplicate QA | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| CHAT5_ROLE — Chat5 integrate/reconcile/failure-control role | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| CHAT6_ROLE — Chat6 runtime/storage/visible-terminal role | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| CHAT7_ROLE — Chat7 read-only completeness audit role | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| CHAT8_ROLE — Chat8 prospective intelligence role | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| EVENT_DRIVEN_ORCHESTRATION — Event-driven dispatch over scheduled message-bus use | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| SUPERVISOR_RETURN_CHAIN — Worker terminal to Chat5 return to next child | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| REQUIREMENT_TASK_MATERIALIZATION — OPEN/PARTIAL code-fixable has exactly one task | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| STATUS_EVENT_CONSUMPTION — Incremental status/event evidence consumption | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| TERMINAL_COVERAGE_DEDUPLICATION — Terminal evidence prevents duplicate work | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| NON_STARVATION_PARALLELISM — Independent owner work must not starve | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| AUTONOMOUS_CHAIN_ACCEPTANCE — Multiple-owner autonomous chain acceptance | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| LAUNCHER_CWD_INDEPENDENCE — Launcher CWD independence | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| USER_SESSION_TRANSPORT — Project outbox user-session bridge | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| RESERVED_CLAIM_STATE_MACHINE — Shared reservation claimability predicate | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| DEFENDER_SAFE_OPERATIONS — Defender-safe fail-closed operations | CURRENT_LOCAL_QA_PROVEN | 2026-09-13 |
-| DB_SAFETY_CONCURRENCY — SQLite/WAL/atomic concurrency safety | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| DATA_QUALITY_CAUSAL_PATH — Prospective data causal-path quality | WAITING_CAUSAL_SOURCE_PROOF | 2026-09-13 |
-| BACKWARD_COMPATIBILITY — Readable legacy models/evidence/memory | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| REPORTING_STEP_VALIDATION — Before/reproduce/fix/test/evidence reporting | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| SAFETY_SCOPE — LIVE=false, no direct action/consumer/real capital | CURRENT_SAFETY_PROVEN | 2026-09-13 |
-| COMPLETE_VISIBLE_RUNTIME_RECOVERY — Complete visible Paper/Forward/Watch runtime recovery | CURRENT_LOCAL_RUNTIME_PROVEN | 2026-09-13 |
-| CODEX_TRADE_BRANCH_E2E — Codex prediction-to-outcome trade branch is current and prospective | WAITING_E2E_VARIANTS | 2026-09-13 |
-| CODEFIX_DELIVERY_QA_VISIBLE_RESTART_CHAIN — Codefix to exact delivery, QA, visible restart and fresh evidence | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| GLOBAL_DB_READ_WRITE_CONTRACT — Canonical runtime database read/write preflight and single-writer contract | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| LIVE_RUNTIME_DATA_SOURCE_CONTRACT — Current runtime price and context data is live, causal and freshness-bound | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| RUNTIME_SINGLETON_PROCESS_CONTROL — One owned runtime process and visible terminal per component | CURRENT_LOCAL_QA_PROVEN | 2026-09-13 |
-| SINGLE_RUNTIME_SUPERVISOR_START_AUTHORITY — Single supervisor owns all runtime starts, replacement and recovery | CURRENT_LOCAL_QA_PROVEN | 2026-09-13 |
-| GPU_CUDA_SYSTEM_RESOURCE_GOVERNOR — GPU/CUDA and system headroom guard with owned-process control | CURRENT_RESOURCE_OBSERVATION | 2026-09-13 |
-| CRASH_SAFE_TASK_RECOVERY — Crash-safe recovery of durable requirements, tasks and approved runtimes | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| NO_DIRECT_CODEX_STATE_SQLITE_WRITE — Project outbox user-session dispatch without Codex-state SQLite writes | REPLACED_BY_LOCAL_SERVICE | 2026-09-13 |
-| TRADE_OUTCOME_PIPELINE_LIVENESS — Timestamp-bound Paper/Watch/Forward candidate-to-outcome liveness truth | IMPLEMENTED_AWAITING_CURRENT_PROOF | 2026-09-13 |
-| CODEX_IMMUTABLE_PORTFOLIO_DRIFT — Fail-closed immutable Codex shadow portfolio drift repair and bounded prediction backlog | CURRENT_PREDICTION_ONLY_AWAITING_DRIFT_PROOF | 2026-09-13 |
+- **OPEN · 2026-09-14:** Collect natural new Active Paper outcomes under the repaired evidence path.
+- **OPEN · 2026-09-14:** Continue Research Watch no-capital counterfactual observation and settlement.
+- **OPEN · 2026-09-14:** Continue Research Forward no-capital counterfactual observation and settlement.
+- **OPEN · 2026-09-14:** Prove the repaired `Decision → Trade → Outcome → Canonical Memory` chain prospectively, not only through backfill.
+- **OPEN · 2026-09-14:** Use repaired MFE/MAE, exit-subreason and post-exit horizons for later learning without changing exit parameters prematurely.
+- **OPEN · 2026-09-14:** Keep the 0.30% expected-net Paper protection intact while preserving blocked Research setup matches as no-capital observations.
 
-## Acceptance boundary
+### OpenAI AI-only
 
-Code checks, planning targets, scientific outcomes and operational acceptance are different scopes. No live activation is performed by documentation publishing.
+- **OPEN · 2026-09-14:** Prove the first natural OpenAI AI-only `decision → entry → managed exit → outcome → learning` chain.
+- **OPEN · 2026-09-14:** Keep OpenAI independent from local ML direction, Spot fallback and X9 logic.
+- **OPEN · 2026-09-14:** Complete 45m / 8h horizon variants when the OpenAI strategy scope is reopened.
+- **OPEN · 2026-09-14:** Add explicit `selected_variant_id` and separately stored rejected variants.
+- **OPEN · 2026-09-14:** Complete NO_TRADE missed-opportunity classification by horizon.
+- **OPEN · 2026-09-14:** Keep historical OpenAI performance qualified until legacy context and settlement provenance are fully separated from prospective evidence.
 
-[Latest source projection](../../evidence/DAILY_SUMMARY.json)
+### ML / Factory
+
+- **PAUSED · 2026-09-14:** Broad training remains intentionally paused.
+- **PAUSED · 2026-09-14:** Factory / hypothesis producer remains intentionally paused.
+- **OPEN · 2026-09-14:** Preserve Rule evidence independently from ML-selector success.
+- **OPEN · 2026-09-14:** Use ENAUSDT LONG `basis_dislocation` as the reference case for Rule-contract preservation.
+- **OPEN · 2026-09-14:** Resume QUICK only under the corrected Rule/history/threshold contract.
+- **OPEN · 2026-09-14:** Run genuine ROBUST_OOS only after QUICK evidence is valid and sufficiently dense.
+- **OPEN · 2026-09-14:** Promote to CHALLENGER only after ROBUST_OOS PASS; no shortcut from QUICK to Paper/Live.
+
+### Safety / runtime
+
+- **OPEN · 2026-09-14:** Maintain fail-closed runtime boundaries and singleton ownership.
+- **OPEN · 2026-09-14:** Keep Live disabled and Real Capital at 0 until explicit later approval and independent readiness proof.
+- **OPEN · 2026-09-14:** Continue current-truth / stale-state verification in WebUI and runtime reports.
+
+## P1 — research quality and learning
+
+- **OPEN · 2026-09-14:** Continue settling the counterfactual backlog at 15m / 45m / 1h / 3h / 8h.
+- **OPEN · 2026-09-14:** Expand Strategy × Coin × Side × Regime × Volatility × Outcome learning once enough clean observations exist.
+- **OPEN · 2026-09-14:** Separate good blocks, missed edge, adverse-first entries and edge-after-excessive-drawdown cases.
+- **OPEN · 2026-09-14:** Measure whether canonical memory materially changes later selection before claiming a complete self-learning loop.
+- **OPEN · 2026-09-14:** Keep Local ML Canaries clearly labelled as observation/counterfactual paths rather than real position-management paths.
+- **OPEN · 2026-09-14:** Maintain understandable WebUI semantics for `NO_SETUP`, `SETUP_MATCH`, `PAPER_BLOCKED_EXPECTED_NET_UNPROVEN` and counterfactual open/settled states.
+
+## P1 — publication / evidence
+
+- **PAUSED · 2026-09-14:** Automatic nightly publication is temporarily stopped by the operator.
+- **OPEN · 2026-09-14:** Repair nightly source selection before re-enabling it so current engineering evidence is not replaced by older September 5/6 narrative.
+- **OPEN · 2026-09-14:** Keep public status human-reviewed while the nightly publisher is paused.
+- **OPEN · 2026-09-14:** Preserve the distinction between runtime observation, implementation report, test evidence and true end-to-end acceptance.
+
+## P2 — later / distribution work
+
+The following remain lower priority until the trading/research/training truth path is stable:
+
+- installer/distribution cleanup
+- secure credential storage
+- demo/client packaging
+- retention/root cleanup
+- approved model-bundle loading
+- public documentation/disclaimer polish
+- broader hardware/resource optimization
+
+## Current safety boundary
+
+`LIVE=false` · `DIRECT_ACTION=0` · `CONSUMER=0` · `REAL_CAPITAL=0`
+
+No documentation change authorizes live trading, real capital, Paper promotion from counterfactuals, or automatic promotion from QUICK.
+
+[Current status](../../CURRENT_STATUS.md) · [Reviewed September 14 update](../../updates/2026-09-14-public-status.md) · [Completed engineering work](COMPLETED_WORK.md) · [Last automatic September 13 update](../../updates/2026-09-13-public-status.md)
