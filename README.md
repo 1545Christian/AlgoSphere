@@ -6,39 +6,44 @@ Building, testing and documenting the path from research and backtesting to pape
 
 Deutsch: [README_DE.md](README_DE.md)<br>
 Latest status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Latest update: [English status update](updates/2026-09-13-public-status.md)<br>
+Latest update: [English status update](updates/2026-09-14-public-status.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
-<!-- HUMAN_TEXT_START -->
 ## What AlgoSphere is
 
 AlgoSphere is an independent research and engineering project. I have worked on the underlying ideas and Python prototypes for approximately three years, beginning by rebuilding and adapting examples from educational material, including YouTube videos.
 
 That learning work grew into several of my own Python prototypes, revised repeatedly. The current aim is a consistent, auditable path from research and backtesting to paper and shadow execution.
 
-<!-- HUMAN_TEXT_END -->
-
-<!-- AUTO_VALUES_START:CURRENT_STATUS -->
 ## Current status
 
-| Scope | Observed |
+| Scope | Current reviewed state |
 |---|---|
-| Runtime release reported in explicit field | `not verified` |
-| Acceptance report label (not executable version) | `v125` |
-| WebUI source version | `v90_8_10_162` |
-| Explicit package/update manifest | `not verified` |
-| Application source version | `v90_8_5` |
-| Historical source-hotfix identifier | `v90_8_5_23` |
-| ML | `ML AUTOPILOT RUNNING / HYPOTHESIS PRODUCER PAUSED` |
-| Stage source | `LAST_COMPLETED_STAGE` |
-| Freshness | `HISTORICAL_STAGE_NOT_LIVE_PROGRESS` |
-| Live | `No` |
-| Promotion | `No` |
-<!-- AUTO_VALUES_END:CURRENT_STATUS -->
+| Training | **Paused** |
+| Factory / hypothesis producer | **Paused** |
+| Active Paper | Running / fail-closed |
+| Research Watch / Forward | Running with no-capital counterfactual observation enabled |
+| OpenAI AI-only | Process alive; fresh natural E2E trade chain still unproven |
+| WebUI | Reviewed repair status PASS, source version `v90_8_10_162` |
+| Live trading | **No** |
+| Real capital | **0** |
+| Automatic promotion | **No** |
 
 The project remains fail-closed. No research result is promoted when required runtime evidence is incomplete.
 
-<!-- HUMAN_TEXT_START -->
+The current focus is not broad retraining. It is proving that Paper, Watch, Research Forward, OpenAI, exits, outcomes and canonical memory remain causally linked and learn from the right evidence.
+
+## Key recent corrections
+
+- The 0.30% expected-net guard remains hard for Paper, but blocked Research setup matches are now preserved as no-capital counterfactuals instead of being discarded.
+- 49 counterfactual observations were created in the initial backfill; 13 were settled through 8h at the recorded checkpoint.
+- 58 local 100-USDT trades were repaired through `Decision → Trade → Outcome → Canonical Memory`, including exit state and post-exit horizons.
+- WebUI liveness/current-truth defects were corrected.
+- OpenAI remains Futures-only and independent from local ML, but a fresh natural AI-only trade-to-learning chain is still pending proof.
+- Training and Factory remain paused because Rule evidence must be preserved independently from ML selector success.
+- The intended lifecycle is now `HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`; `candidate_eligible` is metadata, not a separate operating stage.
+
+See [CURRENT_STATUS.md](CURRENT_STATUS.md) for the reviewed current state and the [September 14 update](updates/2026-09-14-public-status.md) for details.
 
 ## What visitors can do here
 
@@ -66,8 +71,8 @@ This repository is a public documentation and evidence record. It is not a downl
 
 | Purpose | Document |
 |---|---|
-| Current state and main blocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Latest dated update | [English update](updates/2026-09-13-public-status.md) |
+| Current state and main blockers | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
+| Latest dated update | [English update](updates/2026-09-14-public-status.md) |
 | Tests and verification limits | [Test results](docs/verification/TEST_RESULTS.md) |
 | Open work and priorities | [Roadmap](docs/progress/ROADMAP.md) |
 | Project history | [Project history](docs/project/PROJECT_HISTORY.md) |
@@ -81,19 +86,16 @@ I have worked on the underlying ideas and Python prototypes for approximately th
 
 Codex and ChatGPT now support implementation, debugging, technical review and documentation. Their output is reviewed and revised before publication. The architecture, project decisions and responsibility remain human.
 
-Because repeated Codex handoffs caused uncertainty about the actual project state, I am currently rechecking the open requirements with ChatGPT against the code, dated artifacts and tests. Memory is part of that review: the project has structures and earlier evidence for writing and reading experiment knowledge, but a complete, demonstrably effective learning loop is not yet confirmed. After the open checks are completed, I will continue with training, trading-related research and the wider research-to-execution chain.
+Because repeated Codex handoffs caused uncertainty about the actual project state, I am rechecking important requirements against code, dated artifacts and tests before resuming broader training. That review has already exposed several cases where a technically running component was not yet equivalent to a proven end-to-end learning path.
+
+## Publication note
+
+The automatic nightly uploader worked on recent days, but its narrative source selection repeatedly carried older September 5/6 text forward while newer engineering work existed. The nightly publisher is currently paused by the operator; the September 14 status is human-reviewed to avoid another stale overwrite.
 
 ## Future use
 
 In the long term, AlgoSphere is intended to become a controlled research-to-execution system for my own use. Own trading can only be considered after complete checks of data, runtime, risk and operations. Any later live use requires explicit human approval and independent safeguards. Live trading is not enabled now. No trading performance, profitability or successful project completion is promised.
 
-## Sponsorship purpose
-
-Voluntary sponsorship supports the public side of AlgoSphere: documentation, verification work, status exports, evidence summaries, public build logs and the effort needed to keep the research process auditable.
-
-Sponsorship does not fund a promised trading product. It provides no trading signals, investment advice, private source code, market data, models, strategy parameters, ownership, repayment, financial return or exclusive access.
-
 ## Support and disclaimer
 
 Short updates: [Telegram](https://t.me/AlgoSphereOfficial). Voluntary support: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Sponsorship is not an investment and provides no trading signals, investment advice, ownership, return or guaranteed outcome. See the full [Disclaimer](docs/legal/DISCLAIMER.md).
-<!-- HUMAN_TEXT_END -->
