@@ -1,53 +1,115 @@
 # Current public status
 
-Publication date: **2026-09-13**. Runtime observations, implementation reports and acceptance proofs remain separate.
+Publication date: **2026-09-14**. This is a human-reviewed status while the nightly publisher is paused. Runtime observations, implementation reports and acceptance proofs remain separate.
 
-## Operational state from local reports
+## Current operating boundary
 
-- Runtime release reported in explicit field: `not verified`.
-- Acceptance report label (not executable version): `v125`.
-- WebUI source version: `v90_8_10_162`.
-- Explicit package/update manifest: `not verified`.
-- Application source version: `v90_8_5`.
-- Historical source-hotfix identifier: `v90_8_5_23`.
-- ML: `ML AUTOPILOT RUNNING / HYPOTHESIS PRODUCER PAUSED` · not verified · IDLE_OPERATOR_PAUSED · not verified · 0/0.
-- State source: `LAST_COMPLETED_STAGE`.
-- Freshness classification: `HISTORICAL_STAGE_NOT_LIVE_PROGRESS`.
-- Source timestamp: `2026-09-13T22:44:59.998192Z`.
-- Live trading reported by source: `No`; Real Capital: `0`; Promotion reported by source: `No`.
+- Training: **PAUSED**
+- Factory / hypothesis producer: **PAUSED**
+- Live trading: **No**
+- Real capital: **0**
+- Automatic promotion: **No**
+- WebUI source version last reported: `v90_8_10_162`
+- Application source version last reported: `v90_8_5`
+- Safety boundary remains fail-closed.
 
-A current report timestamp is not proof of a fresh worker. LAST_COMPLETED_STAGE remains historical stage information. A schema label or WebUI source version does not prove the version of executing code.
+The project is intentionally not resuming broad ML training yet. The current priority is to prove the active Paper / Watch / Research / OpenAI / Outcome / Memory path first.
 
-This publisher only reads reports. It starts no training, orders, promotions or capital actions.
+## What is currently working
 
-## Research eligibility
+- Active Paper, Research Watch and Research Forward are running on current Futures data.
+- The WebUI integrity/liveness defects were repaired: 1-hour liveness semantics, decision-time freshness, 7/7 signed baselines, proven live-input provenance and no observed historical fallback in the repaired acceptance report.
+- Local trade outcome capture was repaired for **58 local 100-USDT trades**:
+  - Active Paper 4/4 decision IDs linked
+  - Research Watch 26/26
+  - Research Forward 28/28
+- The documented chain is now `Decision → Trade → Outcome → Canonical Memory` for that repaired set.
+- Exit subreason, trailing state, MFE/MAE, post-exit 30m/60m/120m/horizon and learning classification were persisted for the repaired local set.
+- The no-capital counterfactual path is authorized and visible in the runtime/WebUI.
 
-No eligible experiment is reported; this is not launch authorization.
-Source timestamp: `2026-09-13T22:40:24.377008Z`.
+## Expected-net / Research correction
 
-## Most recent documented development
+The 0.30% expected-net guard remains a hard Paper protection.
 
-- **2026-09-13 · Observation:** Paper/Watch guard: report status PASS at 2026-09-13T21:51:38.702295+00:00. Observed artifact only; the gate was not rerun by this publication.
-- **2026-09-13 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-13T21:51:38.679245+00:00. Observed artifact only; the gate was not rerun by this publication.
+The important correction is that Research no longer needs to forget a valid setup merely because expected net is not yet proven.
 
-## Last documented failures and blockers
+Current semantics:
 
-- **2026-09-05 · Failure / blocker:** The attached V2 baseline records a technical BALANCED failure at the GPU watchdog / BLOCKED_PREFLIGHT. This is not a scientific rejection; that source does not provide a successful replacement proof.
-- **2026-09-05 · Failure / blocker:** The daily review records a usage-limit interruption of the broader runtime-liveness repair task. Unknown partial changes are not considered complete.
-- **2026-09-05 · Failure / blocker:** The subsequent launch stopped with FACTORY_QUICK_NO_ELIGIBLE_QUEUE_ROW before expensive computation. The earlier queue row was selected rather than eligible; a valid next launch remains pending.
-- **2026-09-05 · Failure / blocker:** The review documents faulty historical OpenAI settlements with entry_price == exit_price. Price provenance must be checked and affected outcomes rebuilt locally from historical prices; completion remains open.
-- **2026-09-05 · Failure / blocker:** The review showed no new visible closed Watch outcomes after approximately 18:59. Continuing decisions do not automatically prove a healthy outcome writer.
-- **2026-09-13 · Failure / blocker:** Runtime context gate: report status FAIL_INCOMPLETE_V3_CONTEXT at 2026-09-13T21:51:38.679245+00:00. Observed artifact only; the gate was not rerun by this publication.
+- `NO_SETUP` → no setup, no observation required.
+- `SETUP_MATCH + EXPECTED_NET_RETURN_UNPROVEN` → no Paper/Live trade, but preserve a no-capital counterfactual.
+- `SETUP_MATCH + expected_net >= 0.30%` → may continue through normal Paper economics.
 
-## Remaining work
+The initial counterfactual backfill created **49** observations. At the recorded checkpoint **13 were settled through 8h** and **36 were pending**.
 
-Open items are carried forward without a calendar-day reset. See the [complete roadmap](docs/progress/ROADMAP.md) and [dated update](updates/2026-09-13-public-status.md).
+## Missed-edge evidence
 
-## Publication verification boundary
+The latest forward-path audit found **49 unique blocked market setups**. Within that limited sample:
 
-The publisher verifies the final allowlist, privacy rules, internal file links, manifest bytes and ZIP content before upload. It does not rerun application tests or attest that a trading component is healthy. The observations above must not be interpreted as live-readiness.
+- 13 unique missed scalp opportunities (15–45m)
+- 2 unique missed intraday opportunities (1–3h)
+- 0 confirmed missed swing opportunities (3–8h)
+- 4 adverse-first / bad-entry cases
+- 15 cases where edge appeared only after excessive drawdown
+- 15 unclear/pending cases
 
-## Input coverage
+This does **not** mean the Paper guard should be weakened. It means Research must preserve blocked setups long enough to learn whether the block was correct.
 
-Coverage warnings: NO_LOCAL_MASTER_USING_DATED_REVIEW_AND_LOCAL_REPORTS, QUICK:UNDATED_NOT_USED, BALANCED:UNDATED_NOT_USED, CANONICAL_HISTORY_INTEGRITY:UNDATED_NOT_USED, NO_NEW_DEVELOPMENT_PROOF_TODAY_PREVIOUS_DATED_WORK_PRESERVED
-Large reports are streamed for selected status fields. A NOT_USED source contributes no fresh claim; previously documented work remains dated and is not reverified.
+## Market-phase / strategy-family learning
+
+The current sample already shows that edge varies by regime and strategy family. Range and Up samples were stronger overall than Down / Strong-Down. `basis_dislocation` was particularly strong in the recorded Range sample; `volatility_scaled_momentum` held up better in Down than `relative_strength_pullback`.
+
+These are research observations only, not production-rule changes.
+
+## OpenAI AI-only status
+
+The OpenAI process is technically alive under `OPENAI_AI_ONLY_FUTURES_PAPER_V1` with Futures-only pricing, 100-USDT canonical notional, its own position manager, horizon settlement and integrity PASS in the latest acceptance report.
+
+However, the latest reviewed state had **no new natural AI-only fills**. The observed status was `OPENAI_AI_ONLY_PAPER_TICK_COMPLETE`.
+
+Therefore the current truth is:
+
+**OpenAI is running, but a fresh natural AI-only `decision → entry → managed exit → outcome → learning` chain is still not proven end to end.**
+
+The earlier historical OpenAI comparison remains qualified because audits found stale per-coin context, Spot-related inputs, inherited local direction, immediate-entry assumptions and historical exit-time interpretation problems. The prospective path was rebuilt to avoid those issues.
+
+Still open in the OpenAI research layer:
+
+- 45m and 8h horizon variants
+- multi-horizon candidate variants
+- `selected_variant_id`
+- separately stored rejected variants
+- full NO_TRADE missed-opportunity classification by horizon
+
+## ML / Factory status
+
+Training and Factory remain intentionally paused.
+
+The recent ML root cause was not simply a bad model. The training/research contract had drifted from the earlier Rule contract: history length, thresholds and early filtering could reduce a historically active Rule to only a handful of signals before ML saw it.
+
+ENAUSDT LONG `basis_dislocation` remains the key reference case. The older Rule contract was reproduced with a materially larger causal signal set and a reproducible OOS trade set.
+
+The binding lesson is:
+
+**ML selector collapse is not Rule failure. A Rule artifact that passes its own evidence must not be deleted because ML rejects or selects nothing useful.**
+
+The intended lifecycle is now:
+
+`HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`
+
+`candidate_eligible` is metadata / eligibility, not a separate operating stage.
+
+## Current priorities
+
+1. Collect natural new Paper / Watch / Forward / counterfactual outcomes.
+2. Prove the first complete natural OpenAI AI-only forward chain.
+3. Continue settling the counterfactual backlog and measure which blocked setup families actually contain edge.
+4. Use the repaired exit/post-exit evidence for later learning without changing exit parameters prematurely.
+5. Preserve Rule evidence independently from ML selector success when training resumes.
+6. Resume the corrected lifecycle only after the active trading/research paths are trustworthy.
+7. Keep GitHub status human-reviewed while the nightly publisher is paused.
+
+## Publication note
+
+The previous nightly files on September 8–13 repeatedly carried older September 5/6 narrative because the source-selection layer did not ingest all recent engineering evidence. The nightly upload itself had been running, but the narrative was incomplete. It is currently paused by the operator to prevent another stale overwrite.
+
+See the [reviewed September 14 update](updates/2026-09-14-public-status.md), [roadmap](docs/progress/ROADMAP.md) and [completed engineering work](docs/progress/COMPLETED_WORK.md).
