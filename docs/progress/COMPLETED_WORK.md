@@ -2,6 +2,60 @@
 
 Items below are dated source reports and reviewed repair results. They are not a claim that every end-to-end requirement is closed.
 
+## September 16 — reviewed engineering progress
+
+### OpenAI AI-only Market Analyst V2
+
+- Fixed a false stale-data classification where signal age was confused with underlying Bitget candle freshness.
+- Verified independent OpenAI analysis: local Rule/ML/Watch/Research/Trade-Like-CHE/Paper direction fields are rejected before the API call.
+- BTC/ETH are context only; active analysis coins are ADA, ENA, MYX, ONDO and TUT.
+- Replaced the rigid OpenAI flow with `OPENAI_AI_MARKET_ANALYST_V2` and a strict multi-scenario JSON contract.
+- Added machine-readable scenario support for range fade, pullback/rally, continuation, breakout/breakdown, failed breakout/breakdown, reversal and NO_TRADE.
+- Scenario payload includes trigger, entry zone, invalidation, emergency stop, two targets, runner condition, expiry and stable IDs.
+- Paid-call cadence now distinguishes successful calls from blocked attempts; blocked attempts no longer postpone the next max-age refresh.
+- Added one-open-position-per-symbol exclusion so open coins remain locally monitored but are excluded from duplicate OpenAI entry analysis until settlement.
+- First real V2 proof reported 5 coin analyses, 9 scenarios, 6 armed scenarios, 0 schema errors and 0 real orders.
+- Existing runtime/storage architecture was extended; no second queue, evaluator, terminal writer or parallel database was introduced.
+- OpenAI V2 relevant regression suite: **263/263 PASS**, plus Python compile, JavaScript syntax, real Bitget data fetch, real OpenAI V2 call and WebUI API check.
+
+### Unified trade-memory contract
+
+- Paper, Watch, Research Forward and OpenAI were unified onto the same existing executed-trade capture path.
+- Current required fields now include IDs, role/strategy family, symbol/side, real entry/exit time and price, market phase, expected-net source/status, MFE/MAE with timestamps, costs, stop/target/exit reason, data quality/provenance and margin/notional when source evidence exists.
+- Current executed-trade checkpoint reported 0 missing required core fields for:
+  - Paper market-context: 35
+  - Watch: 19
+  - Research Forward: 28
+  - OpenAI AI-only: 3
+- All 66 previously executed OpenAI AI-only outcomes were reported with trade ID, strategy, setup, market phase and MFE/MAE timing.
+- 38 very old OpenAI trades still have unknown `source_margin_usdt` because the historical source never recorded margin/notional/leverage; values were intentionally not invented.
+- Unknown values now use explicit states such as `PENDING_PATH_SETTLEMENT`, `NOT_APPLICABLE` and `NOT_RECONSTRUCTABLE` instead of silently becoming zero.
+- 854 `openai_market_evaluations` remain correctly separated as analyses/counterfactuals, not executed trades.
+- Relevant unified-memory suite: **264 PASS**; final focused post-change suite: **121 PASS**; 0 reported failures in those focused runs.
+
+### Trade-Like-CHE / WebUI fixes
+
+- Fixed a Trade-Like-CHE projection mismatch where stored `entry_price` / `opened_at` were not mapped to UI fields `entry_price_raw` / `entry_time`.
+- Productive ONDOUSDT proof showed recorded entry `0.3391` with matching effective entry.
+- Added safe aliases/fallbacks for entry time and raw entry price.
+- Added causal ADX calculation from closed 5-minute Futures candles as display/analysis data only; ADX is not an ML or entry feature.
+- Fixed UI coloring so a negative Volume-Z value no longer paints ADX/ATR/RSI as negative.
+- Natural decision round reported 40/40 current variants with numeric ADX and 0 missing ADX values.
+- Compact ID rendering added globally: full IDs remain available for audit/tooltips/details while tables show readable suffixes.
+- Desktop table typography/layout made more compact and readable across active/closed trades, Watch/Research, OpenAI, strategies and candidates.
+- Late-session projection fixes identified and corrected:
+  - Trade-Like-CHE Capture used an unpopulated alias despite canonical outcome data being present.
+  - OpenAI NO_TRADE looked only at the evaluation ledger while valid NO_TRADE predictions also lived in the canonical prediction ledger.
+
+### Runtime/start-path investigation
+
+- Clarified that `START_ALGOSPHERE.cmd` can appear to do nothing when a healthy supervisor is already running because duplicate startup is intentionally refused.
+- Start-path UX was being adjusted so an already-running state becomes visible and opens the WebUI rather than looking like a failed start.
+- A more important runtime blocker was found: Research Forward could start and then fail on the first ADAUSDT direct Bitget refresh with `WinError 10013`.
+- At the same time, the central market-data loader already had fresh 1-minute Futures data.
+- The intended repair is to stay inside the existing shared reader and allow a centrally confirmed hot-file tail only after strict freshness/availability validation when the direct socket fails.
+- This fallback does **not** yet have final acceptance proof in the attached work log and remains OPEN.
+
 ## September 14 — reviewed current repair state
 
 - WebUI release/integrity tests repaired; reviewed status reported `INTEGRITY_STATUS = PASS`, `OPERATIONAL = true`, 7/7 signed baselines PASS.
@@ -17,26 +71,14 @@ Items below are dated source reports and reviewed repair results. They are not a
 - Historical pseudo-edge rows without expected-net proof were reclassified and no longer presented as Paper-allowed.
 - Fail-closed runtime authorization was updated specifically for no-capital Research Watch / Research Forward counterfactual observation.
 - Runtime restart completed with Active Paper protection unchanged, Research Watch `ACTIVE_NO_CAPITAL`, Research Forward `WATCH_NO_CAPITAL`, and WebUI counterfactual visibility enabled.
-- OpenAI strategy was intentionally **not** changed by the Paper/Research counterfactual repair.
-
-## OpenAI AI-only — current reviewed state
-
-- OpenAI runs under `OPENAI_AI_ONLY_FUTURES_PAPER_V1` with Futures-only pricing and 100-USDT canonical notional.
-- OpenAI integrity, position-manager and horizon-settlement checks were reported PASS in the latest acceptance state.
-- A fresh natural OpenAI AI-only `decision → entry → managed exit → outcome → learning` chain is **still not proven**; the latest reviewed state had no new natural fills and only `OPENAI_AI_ONLY_PAPER_TICK_COMPLETE`.
-- Earlier historical OpenAI performance remains qualified because audits found stale per-coin context, Spot-related inputs, inherited local direction, immediate-entry assumptions and historical exit-time interpretation problems.
-- The prospective OpenAI path was rebuilt to remove local-ML direction, Spot fallback and X9 logic from the active AI-only path.
-- 45m / 8h variants, multi-horizon candidate storage, selected/rejected variant identity and full NO_TRADE-by-horizon learning remain open.
 
 ## ML / Factory — current reviewed state
 
 - Training remains intentionally paused.
 - Factory / hypothesis producer remains intentionally paused.
-- The recent root-cause review showed that training-contract drift could remove Rule signal density before ML evaluation through history-length, threshold and early-filter changes.
-- ENAUSDT LONG `basis_dislocation` remains the reference case for preserving Rule evidence independently from ML-selector success.
-- Binding interpretation: **ML selector collapse is not Rule failure**.
-- Intended lifecycle: `HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`.
-- `candidate_eligible` is eligibility/artifact metadata, not a separate operating stage.
+- The current lifecycle remains `HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`.
+- `candidate_eligible` is eligibility/artifact metadata, not a separate stage.
+- Rule evidence must remain preserved independently from ML-selector success: ML selector collapse is not Rule failure.
 
 ## Earlier documented work
 
@@ -46,4 +88,4 @@ Items below are dated source reports and reviewed repair results. They are not a
 - **2026-09-06 · Publisher work:** GitHub Nightly v5.4.x installed with staged line-ending normalization, bounded report reading and coverage warnings.
 - **2026-09-08–13 · Publication observation:** nightly upload itself ran, but the automatic narrative repeatedly carried older September 5/6 text because current repair/runtime evidence was not fully selected by the publisher.
 
-[Current status](../../CURRENT_STATUS.md) · [Outstanding work](ROADMAP.md) · [Reviewed September 14 update](../../updates/2026-09-14-public-status.md)
+[Current status](../../CURRENT_STATUS.md) · [Outstanding work](ROADMAP.md) · [Reviewed September 17 update](../../updates/2026-09-17-public-status.md)
