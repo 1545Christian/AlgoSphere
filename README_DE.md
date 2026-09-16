@@ -6,93 +6,84 @@ Aufbau, Test und Dokumentation eines Weges von Research und Backtesting zu Paper
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes Update: [deutsches Statusupdate](updates/2026-09-14-public-status_DE.md)<br>
+Neuestes Update: [deutsches Statusupdate](updates/2026-09-17-public-status_DE.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 ## Was AlgoSphere ist
 
-AlgoSphere ist ein unabhängiges Forschungs- und Entwicklungsprojekt. Ich arbeite seit ungefähr drei Jahren an den zugrunde liegenden Ideen und Python-Prototypen; begonnen hat es mit dem Nachbauen und Anpassen von Lernbeispielen, auch aus YouTube-Videos.
+AlgoSphere ist ein unabhängiges Forschungs- und Entwicklungsprojekt. Aktuelles Ziel ist ein konsistenter und nachvollziehbarer Weg von Research und Backtesting bis Paper-/Shadow-Ausführung, mit sauberer Trennung zwischen Trading, Research, OpenAI-Analyse, ML-Selektion und Evidenz/Memory.
 
-Aus dieser Lernphase entstanden mehrere eigene Python-Prototypen, die ich wiederholt überarbeitete. Heute geht es um einen konsistenten und nachvollziehbaren Weg von Research und Backtesting bis Paper- und Shadow-Ausführung.
+## Aktuell geprüfter Stand
 
-## Aktueller Stand
-
-| Bereich | Aktuell geprüfter Stand |
+| Bereich | Aktueller Stand |
 |---|---|
 | Training | **Pausiert** |
 | Factory / Hypothesis Producer | **Pausiert** |
 | Active Paper | Läuft / fail-closed |
-| Research Watch / Forward | Läuft mit No-Capital-Counterfactual-Beobachtung |
-| OpenAI AI-only | Prozess aktiv; natürliche E2E-Trade-Kette noch nicht bewiesen |
-| WebUI | Reparierter Prüfstand PASS, Quellversion `v90_8_10_162` |
+| Research Watch | Läuft / No-Capital-Research-Pfad |
+| Research Forward | **Runtime-Recovery noch offen wegen direktem Bitget-Socket `WinError 10013`** |
+| OpenAI AI-only | V2 Multi-Szenario-Analyst aktiv; weitere kausale Settlements nötig |
+| Trade Memory | Für ausgeführte Trades über Paper / Watch / Research Forward / OpenAI vereinheitlicht |
+| WebUI | Wichtige Projektions-/Layoutfehler repariert; breiter finaler Browser-Audit noch offen |
 | Live-Trading | **Nein** |
 | Echtgeld | **0** |
 | Automatische Promotion | **Nein** |
 
-Das Projekt bleibt fail-closed. Bei unvollständiger Runtime-Evidenz wird kein Research-Ergebnis weiter aktiviert.
+Das Projekt bleibt fail-closed. Kein Dokumentationsupdate autorisiert Live-Trading oder Echtgeld-Ausführung.
 
-Der aktuelle Schwerpunkt liegt nicht auf breitem Retraining, sondern darauf zu beweisen, dass Paper, Watch, Research Forward, OpenAI, Exit, Outcome und Canonical Memory kausal sauber verbunden bleiben und aus der richtigen Evidenz lernen.
+## Was zuletzt wirklich besser wurde
 
-## Wichtige Korrekturen der letzten Tage
+- OpenAI nutzt jetzt `OPENAI_AI_MARKET_ANALYST_V2` mit unabhängiger Multi-Szenario-Analyse statt lokaler Richtungsübernahme.
+- Ein falscher Stale-Data-Zustand wurde repariert: Signalalter soll nicht mehr mit der Frische der zugrunde liegenden Futures-Kerzen verwechselt werden.
+- Die OpenAI-Paid-Call-Cadence unterscheidet jetzt erfolgreiche Calls von blockierten Versuchen.
+- Offene Coins werden bis Close/Settlement von doppelten OpenAI-Entry-Analysen ausgeschlossen.
+- Paper / Watch / Research Forward / OpenAI ausgeführte Trades verwenden einen vergleichbaren Memory-Vertrag.
+- Unbekannte historische Werte werden explizit typisiert statt stillschweigend als 0 behandelt.
+- Trade-Like-CHE Entry-Preis-Projektion, ADX-Anzeige, kompakte IDs, Capture-Projektion und OpenAI-NO_TRADE-Projektion wurden repariert oder verbessert.
 
-- Der 0,30%-Expected-Net-Guard bleibt für Paper hart, aber geblockte Research-Setup-Matches werden nun als No-Capital-Counterfactuals erhalten statt verworfen.
-- Im ersten Backfill wurden 49 Counterfactuals erzeugt; 13 waren zum dokumentierten Prüfzeitpunkt bis 8h ausgewertet.
-- 58 lokale 100-USDT-Trades wurden durch `Decision → Trade → Outcome → Canonical Memory` repariert, inklusive Exit-State und Post-Exit-Horizonten.
-- WebUI-Liveness-/Current-Truth-Fehler wurden korrigiert.
-- OpenAI bleibt Futures-only und unabhängig von lokalem ML, aber eine frische natürliche AI-only Trade→Learning-Kette ist noch nicht bewiesen.
-- Training und Factory bleiben pausiert, weil Rule-Evidenz unabhängig vom Erfolg eines ML-Selectors erhalten bleiben muss.
-- Der beabsichtigte Lifecycle lautet jetzt `HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`; `candidate_eligible` ist Metadatum, keine eigene operative Stufe.
+## Aktueller Hauptblocker
 
-Siehe [CURRENT_STATUS.md](CURRENT_STATUS.md) für den aktuellen geprüften Stand und das [Update vom 14.09.](updates/2026-09-14-public-status_DE.md) für Details.
+Der jüngste Arbeitsstand zeigt, dass Research Forward bei einem direkten Bitget-Refresh mit `WinError 10013` abbrechen kann, obwohl der zentrale Market-Data-Loader bereits frische 1-Minuten-Futuresdaten besitzt.
 
-## Was Besucher hier sehen können
+Die vorgesehene Reparatur bleibt im bestehenden gemeinsamen Reader: Bei direktem Socket-Ausfall darf nur nach strenger Frische-/Verfügbarkeitsprüfung der zentral bestätigte Hot-File-Tail verwendet werden. Dafür fehlt noch der endgültige Restart-/Runtime-Nachweis.
 
-Besucher können:
+## ML-Lifecycle
 
-- den aktuellen dokumentierten Projektstand prüfen,
-- bestandene und blockierte Kontrollen sehen,
-- bekannte technische Probleme und offene Arbeit verfolgen,
-- datierte Updates vergleichen,
-- das bereinigte Evidenzregister einsehen,
-- die Integrität eines öffentlichen Exports prüfen.
+Der beabsichtigte Lifecycle bleibt:
 
-Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es ist keine herunterladbare Veröffentlichung der privaten AlgoSphere-Anwendung.
+`HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`
 
-## Was öffentlich ist / was privat bleibt
+`candidate_eligible` ist Metadatum/Eligibility, keine eigene operative Stufe.
 
-| Öffentlich | Privat |
-|---|---|
-| Status, Testgrenzen, Blocker und Geschichte | Anwendungscode und proprietäre Handelslogik |
-| Roadmap, datierte EN-/DE-Updates und öffentlicher Prüfer | Zugangsdaten, Konten sowie Exchange-/Telegram-Konfiguration |
-| Bereinigtes Evidenzregister | Datenbanken, Marktdaten, Modelle, Checkpoints und Strategieparameter |
-| Exportintegrität | Private Logs und Runtime-Pfade |
+Rule-Evidenz muss unabhängig vom Erfolg eines ML-Selectors erhalten bleiben. **ML-Selector-Kollaps ist nicht Rule-Failure.**
 
 ## Hier beginnen
 
 | Zweck | Dokument |
 |---|---|
 | Aktueller Stand und Hauptblocker | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Neuestes datiertes Update | [deutsches Update](updates/2026-09-14-public-status_DE.md) |
+| Neuestes geprüftes Update | [Update vom 17. September](updates/2026-09-17-public-status_DE.md) |
 | Tests und Prüfgrenzen | [Testergebnisse](docs/verification/TEST_RESULTS.md) |
 | Offene Arbeit und Prioritäten | [Roadmap](docs/progress/ROADMAP.md) |
+| Dokumentierte Arbeiten | [Completed Work](docs/progress/COMPLETED_WORK.md) |
 | Projektgeschichte | [Projektgeschichte](docs/project/PROJECT_HISTORY.md) |
 | Evidenzhilfe | [Evidenzübersicht](evidence/EVIDENCE_SUMMARY.md) |
 
 Alle datierten [Updates](updates/) durchsuchen.
 
-## Projektgeschichte und KI-Unterstützung
+## Öffentlich / privat
 
-Codex und ChatGPT unterstützen Implementierung, Fehlersuche, technische Prüfung und Dokumentation. Ihre Ergebnisse werden vor der Veröffentlichung geprüft und überarbeitet. Architektur, Projektentscheidungen und Verantwortung bleiben menschlich.
+Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es enthält nicht den privaten Anwendungscode, Zugangsdaten, Konto-Konfiguration, Marktdatenbanken, Modelle oder proprietäre Strategieparameter.
 
-Weil wiederholte Codex-Übergaben Unsicherheit über den tatsächlichen Projektstand erzeugt haben, werden wichtige Anforderungen derzeit erneut gegen Code, datierte Artefakte und Tests geprüft, bevor breites Training wieder aufgenommen wird. Diese Prüfung hat bereits mehrere Fälle sichtbar gemacht, in denen ein technisch laufender Prozess noch keine bewiesene End-to-End-Lernkette bedeutete.
+Codex und ChatGPT unterstützen Implementierung, Fehlersuche, Review und Dokumentation, aber AlgoSphere soll unabhängig von Codex laufen. Runtime-/Trading-Betrieb darf nicht davon abhängen, dass eine AI-Coding-Session aktiv ist.
 
 ## Hinweis zur Veröffentlichung
 
-Der automatische Nightly-Upload funktionierte in den letzten Tagen, aber seine Narrative-Source-Selection schleppte mehrfach ältere Texte vom 5./6. September weiter, obwohl neuere Engineering-Arbeit vorlag. Der Nightly-Publisher ist aktuell vom Operator pausiert; der Stand vom 14.09. wurde manuell geprüft, damit kein veralteter Text wieder darübergeschrieben wird.
+Der automatische Nightly-Publisher bleibt vom Operator pausiert, weil seine Narrative-Source-Selection zuvor veraltete Entwicklungsstände weitergezogen hat. Der Stand vom 17. September wurde manuell geprüft.
 
 ## Künftige Nutzung
 
-Langfristig soll AlgoSphere ein kontrolliertes Research-to-Execution-System für meine eigene Nutzung werden. Eigener Handel kommt erst infrage, wenn Daten, Runtime, Risiko und Betrieb vollständig geprüft sind. Jede spätere Live-Nutzung erfordert ausdrückliche menschliche Freigabe und unabhängige Schutzmechanismen. Aktuell ist Live-Trading nicht aktiviert. Es wird keine Handelsleistung, Rentabilität oder erfolgreiche Fertigstellung des Projekts versprochen.
+AlgoSphere soll langfristig ein kontrolliertes Research-to-Execution-System für die eigene Nutzung werden. Jede spätere Live-Nutzung erfordert ausdrückliche menschliche Freigabe, vollständige Runtime-/Daten-/Risiko-Prüfung und unabhängige Schutzmechanismen. Aktuell ist Live-Trading nicht aktiviert; Rentabilität oder ein bestimmtes Ergebnis werden nicht versprochen.
 
 ## Unterstützung und Disclaimer
 
