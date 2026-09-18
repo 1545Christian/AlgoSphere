@@ -1,90 +1,105 @@
 # AlgoSphere
 
-Independent crypto-ML research and engineering project.
+**AI × Quant Research for crypto markets**
 
-Building, testing and documenting the path from research and backtesting to paper and shadow execution.
+Independent research and engineering project exploring data-driven market analysis, machine learning, decision intelligence and controlled research-to-execution workflows.
 
 Deutsch: [README_DE.md](README_DE.md)<br>
-Latest status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Latest update: [English status update](updates/2026-09-17-public-status.md)<br>
+Current status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
+Latest reviewed update: [September 18, 2026](updates/2026-09-18-public-status.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
-## What AlgoSphere is
+## Overview
 
-AlgoSphere is an independent research and engineering project. The current goal is a consistent, auditable path from research and backtesting to paper/shadow execution, with clear separation between trading, research, OpenAI analysis, ML selection and evidence/memory.
+AlgoSphere combines:
 
-## Current reviewed status
+- quantitative market analysis
+- market context and regime detection
+- rule-based strategy research
+- machine-learning validation
+- decision and outcome learning
+- OpenAI-assisted market analysis
+- paper and shadow execution
+- canonical evidence and trade memory
 
-| Scope | Current state |
-|---|---|
-| Training | **Paused** |
-| Factory / hypothesis producer | **Paused** |
-| Active Paper | Running / fail-closed |
-| Research Watch | Running / no-capital research path |
-| Research Forward | **Runtime recovery still open because of direct Bitget socket `WinError 10013`** |
-| OpenAI AI-only | V2 multi-scenario analyst active; more causal settled outcomes still needed |
-| Trade memory | Unified across Paper / Watch / Research Forward / OpenAI executed trades |
-| WebUI | Major projection/layout fixes completed; broad final browser audit still open |
-| Live trading | **No** |
-| Real capital | **0** |
-| Automatic promotion | **No** |
+The project focuses on reproducibility, causal evaluation and preserving both positive and negative research evidence.
 
-The project remains fail-closed. No documentation change authorizes live trading or real-capital execution.
-
-## What improved recently
-
-- OpenAI now uses `OPENAI_AI_MARKET_ANALYST_V2` with independent multi-scenario analysis instead of inheriting local directional bias.
-- A false stale-data condition was fixed: signal age is no longer supposed to be confused with underlying Futures-candle freshness.
-- OpenAI paid-call cadence now distinguishes successful calls from blocked attempts.
-- Open symbols are excluded from duplicate OpenAI entry analysis until close/settlement.
-- Paper / Watch / Research Forward / OpenAI executed trades share one comparable memory contract.
-- Unknown historical values are explicitly typed instead of silently being treated as zero.
-- Trade-Like-CHE entry-price projection, ADX display, compact ID rendering, Capture projection and OpenAI NO_TRADE projection were repaired or improved.
-
-## Current main blocker
-
-The latest work log shows Research Forward can fail on a direct Bitget refresh with `WinError 10013` even while the central market-data loader already has fresh 1-minute Futures data.
-
-The intended repair remains inside the existing shared reader: on direct-socket failure, use the centrally confirmed hot-file tail only after strict freshness/availability validation. This needs final restart/runtime proof before it can be called closed.
-
-## ML lifecycle
-
-The intended lifecycle remains:
+## Research lifecycle
 
 `HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`
 
-`candidate_eligible` is metadata/eligibility, not a separate operating stage.
+`candidate_eligible` is eligibility metadata, not a separate operating stage.
 
-Rule evidence must remain preserved independently from ML-selector success. **ML selector collapse is not Rule failure.**
+Rule evidence is preserved independently from ML-selector performance. **ML selector collapse is not Rule failure.**
 
-## Start here
+## Current reviewed status
 
-| Purpose | Document |
+| Area | Current state |
 |---|---|
-| Current state and main blockers | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Latest reviewed update | [September 17 update](updates/2026-09-17-public-status.md) |
-| Tests and verification limits | [Test results](docs/verification/TEST_RESULTS.md) |
-| Open work and priorities | [Roadmap](docs/progress/ROADMAP.md) |
-| Completed engineering work | [Completed work](docs/progress/COMPLETED_WORK.md) |
-| Project history | [Project history](docs/project/PROJECT_HISTORY.md) |
-| Evidence guide | [Evidence summary](evidence/EVIDENCE_SUMMARY.md) |
+| Active Paper | Running / fail-closed |
+| Paper Context V2 Shadow | **Active** |
+| Research Watch | Running / no-capital research path |
+| Research Forward / Trade Like Che CURRENT | Running |
+| Trade Like Che Context V2 | **Active Shadow · 170/170 health PASS** |
+| Market Intelligence V2.1 | Research baseline available |
+| ENA one-coin pilot | **Completed · Rule vs ML = DEGRADED · no promotion** |
+| Robustness Gate | **Implemented · evidence-gated** |
+| OpenAI AI-only | Active; input contract expanded, compact request work still pending forward proof |
+| Canonical Memory / Learning | Implemented but not yet fully closed end-to-end |
+| Training operator | Available / manual operator control |
+| Broad training | Not auto-started |
+| Live trading | **Disabled** |
+| Real capital | **0** |
+| Automatic promotion | **Disabled** |
 
-Browse all dated [updates](updates/).
+For detailed runtime, validation and open-work status, see [CURRENT_STATUS.md](CURRENT_STATUS.md).
+
+## Evidence and transparency
+
+AlgoSphere publishes selected:
+
+- reviewed project status
+- research summaries
+- verification results
+- evidence records
+- development history
+- known limitations and failed experiments
+
+A completed run is not automatically treated as a good model. The latest ENA pilot is a concrete example: the run completed successfully, but the ML result was weaker than the preserved Rule baseline and therefore remained ineligible for Challenger promotion.
 
 ## Public / private boundary
 
-This repository is a public documentation and evidence record. It does not contain the private application source code, credentials, account configuration, market databases, models or proprietary strategy parameters.
+This repository is a public documentation and evidence record.
 
-Codex and ChatGPT support implementation, debugging, review and documentation, but AlgoSphere is intended to run independently of Codex. Runtime/trading operation must not depend on an AI coding session being present.
+It does not contain the private application source code, credentials, account configuration, market databases, trained models or proprietary strategy parameters.
 
-## Publication note
+## Documentation
 
-The automatic nightly publisher remains paused by the operator because its narrative source selection previously carried stale development text forward. The September 17 status is human-reviewed.
+| Topic | Document |
+|---|---|
+| Current status | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
+| Latest reviewed update | [September 18 update](updates/2026-09-18-public-status.md) |
+| Roadmap | [docs/progress/ROADMAP.md](docs/progress/ROADMAP.md) |
+| Completed engineering work | [docs/progress/COMPLETED_WORK.md](docs/progress/COMPLETED_WORK.md) |
+| Project history | [docs/project/PROJECT_HISTORY.md](docs/project/PROJECT_HISTORY.md) |
+| Verification | [docs/verification/TEST_RESULTS.md](docs/verification/TEST_RESULTS.md) |
+| Evidence guide | [evidence/EVIDENCE_SUMMARY.md](evidence/EVIDENCE_SUMMARY.md) |
+| Disclaimer | [docs/legal/DISCLAIMER.md](docs/legal/DISCLAIMER.md) |
 
-## Future use
+Browse all dated [updates](updates/).
 
-AlgoSphere is intended to become a controlled research-to-execution system for personal use. Any future live use requires explicit human approval, complete runtime/data/risk checks and independent safeguards. Live trading is not enabled now, and no profitability or outcome is promised.
+## Public updates
 
-## Support and disclaimer
+Shorter development and research updates are also published on Telegram:
 
-Short updates: [Telegram](https://t.me/AlgoSphereOfficial). Voluntary support: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Sponsorship is not an investment and provides no trading signals, investment advice, ownership, return or guaranteed outcome. See the full [Disclaimer](docs/legal/DISCLAIMER.md).
+https://t.me/AlgoSphereOfficial
+
+## Disclaimer
+
+AlgoSphere is a research and engineering project.
+
+Nothing in this repository constitutes financial or investment advice. Crypto and derivatives trading involve substantial risk. Past, simulated or paper results do not guarantee future performance.
+
+See the full [Disclaimer](docs/legal/DISCLAIMER.md).
+
+Voluntary support: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Sponsorship is not an investment and provides no trading signals, ownership, return or guaranteed outcome.
