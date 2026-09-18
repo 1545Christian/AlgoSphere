@@ -1,97 +1,85 @@
 # Current public roadmap
 
-Publication: **2026-09-17**. This is the human-reviewed roadmap while the nightly publisher remains paused.
+Publication: **2026-09-18**. Human-reviewed.
 
-## Current lifecycle contract
-
-The intended training lifecycle remains:
+## Lifecycle contract
 
 `HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`
 
-`candidate_eligible` is eligibility / artifact metadata. It is **not** a separate operating stage.
+`candidate_eligible` is eligibility metadata, not an operating stage.
 
-A Rule artifact that passes its own evidence must remain preserved even if an ML selector rejects or selects nothing useful. **ML selector collapse is not Rule failure.**
+Rule evidence remains preserved independently from ML-selector success.
 
-## P0 — runtime / data path before retraining
+## P0 — model quality and research closure
 
-- **OPEN · 2026-09-17:** Finish and prove the Research Forward `WinError 10013` recovery through the existing shared market-data reader.
-- **OPEN · 2026-09-17:** Allow the centrally confirmed 1-minute Futures hot-file tail only after strict freshness/availability validation when the direct socket fails.
-- **OPEN · 2026-09-17:** Reject stale local files; do not create a second reader or parallel market-data path.
-- **OPEN · 2026-09-17:** Prove `START_ALGOSPHERE.cmd` clearly in both already-running and genuinely stopped/orphaned states.
-- **OPEN · 2026-09-17:** Complete the isolated-browser audit of Cockpit, Trading, OpenAI and Research after runtime stability is restored.
-- **OPEN · 2026-09-17:** Recheck Forecast propagation and Research open-position visibility after the runtime restart.
-- **OPEN · 2026-09-17:** Re-verify Trade-Like-CHE Capture and OpenAI NO_TRADE in the running browser after the runtime fix.
+- **OPEN:** Evaluate the completed ENA one-coin pilot through the versioned Robustness Gate.
+- **OPEN:** Explain the observed Rule-vs-ML degradation before any broader training run.
+- **OPEN:** Keep broad multi-coin training blocked until comparable Rule/ML populations, OOS folds and evidence are valid.
+- **OPEN:** Preserve negative ML results instead of treating technical run completion as model success.
+- **OPEN:** Complete the currently running ML/Memory root-cause audit before changing the model stack again.
 
-## P0 — OpenAI AI-only V2
+## P0 — Canonical Memory / continuous learning
 
-- **ACTIVE / NEEDS OUTCOMES · 2026-09-17:** Keep `OPENAI_AI_MARKET_ANALYST_V2` independent from local Rule / ML / Watch / Research / Paper directional bias.
-- **ACTIVE / NEEDS OUTCOMES · 2026-09-17:** Continue local monitoring of armed scenarios and open positions under the existing Paper path.
-- **OPEN · 2026-09-17:** Accumulate multiple completed causal V2 outcomes before making any performance claim.
-- **OPEN · 2026-09-17:** Keep one-open-position-per-symbol exclusion and block duplicate OpenAI entry analysis while a symbol is open.
-- **OPEN · 2026-09-17:** Keep paid-call cadence tied to `last_successful_paid_call`, not blocked attempts.
-- **OPEN · 2026-09-17:** Configure a trusted model-price source before publishing exact OpenAI USD cost estimates.
+- **OPEN:** Make per-trade Learning Delta explicit and visible.
+- **OPEN:** Finish CURRENT / CONTEXT_V2 separation inside Canonical Memory, not only runtime projections.
+- **OPEN:** Persist and expose promotion history consistently.
+- **OPEN:** Keep Decision→Trade→Outcome→Memory→Learning identity complete for new prospective evidence.
+- **OPEN:** Do not create training requests until evidence thresholds are genuinely met.
 
-## P0 — unified trade memory / evidence
+## P0 — OpenAI AI-only
 
-- **IMPLEMENTED / NEEDS PROSPECTIVE PROOF · 2026-09-17:** Maintain one executed-trade memory contract across Paper, Watch, Research Forward and OpenAI.
-- **IMPLEMENTED / NEEDS PROSPECTIVE PROOF · 2026-09-17:** Keep unknown historical values explicit (`PENDING_PATH_SETTLEMENT`, `NOT_APPLICABLE`, `NOT_RECONSTRUCTABLE`) instead of coercing them to zero.
-- **OPEN · 2026-09-17:** Continue proving the unified contract prospectively on new natural trades, not only repaired/backfilled records.
-- **OPEN · 2026-09-17:** Preserve the separation between `openai_market_evaluations` and actual executed OpenAI trades.
+- **IMPLEMENTED / NEEDS FORWARD PROOF:** 3D / 7D context, explicit structure/support-resistance and open-position context added.
+- **OPEN:** Finish compact request projection and one-plan-per-symbol response contract.
+- **OPEN:** Verify the compact contract only on the next normal paid call; do not generate a paid test call.
+- **OPEN:** Reduce request size materially from the observed ~73.9k input-token baseline without removing causal decision context.
+- **OPEN:** Accumulate causal settled outcomes before judging OpenAI trading quality.
+- **OPEN:** Keep no second local trading-decision engine after OpenAI.
 
-## P0 — ML / Factory
+## P0 — Research Forward / Context V2
 
-- **PAUSED · 2026-09-17:** Broad training remains intentionally paused.
-- **PAUSED · 2026-09-17:** Factory / hypothesis producer remains intentionally paused.
-- **OPEN · 2026-09-17:** Preserve Rule evidence independently from ML-selector success.
-- **OPEN · 2026-09-17:** Resume QUICK only after runtime/data/evidence paths are stable and under the corrected Rule/history/threshold contract.
-- **OPEN · 2026-09-17:** Run genuine ROBUST_OOS only after QUICK evidence is valid and sufficiently dense.
-- **OPEN · 2026-09-17:** Promote to CHALLENGER only after ROBUST_OOS PASS; no shortcut from QUICK to Paper/Live.
-
-## P0 — full verification
-
-- **OPEN · 2026-09-17:** Rerun the complete project test suite after the runtime/data-source repair.
-- **OPEN · 2026-09-17:** Explicitly close or classify the earlier full-suite failures instead of treating focused green suites as global acceptance.
-- **OPEN · 2026-09-17:** Preserve the distinction between focused regression PASS, runtime acceptance and scientific/profitability evidence.
+- **CLOSED:** Research Forward Context V2 activation.
+- **CLOSED:** 34 evaluations per coin / 170 total health contract.
+- **CLOSED:** Fresh V2 NO_TRADE evidence visible.
+- **OPEN:** Continue prospective evidence collection while CURRENT and V2 remain separated.
 
 ## P1 — WebUI / operator usability
 
-- **IMPLEMENTED / NEEDS FINAL BROWSER PROOF · 2026-09-17:** Compact full SHA/decision/trade/outcome IDs into readable suffixes while keeping full IDs in tooltips/details.
-- **IMPLEMENTED / NEEDS FINAL BROWSER PROOF · 2026-09-17:** Keep table typography and spacing consistent across active/closed trades, Watch/Research, OpenAI, strategies and candidates.
-- **IMPLEMENTED / NEEDS FINAL BROWSER PROOF · 2026-09-17:** Keep Trade-Like-CHE entry-time/entry-price aliases mapped correctly.
-- **IMPLEMENTED / NEEDS FINAL BROWSER PROOF · 2026-09-17:** Keep ADX as display/analysis data only until explicitly promoted to a modeling feature.
-- **OPEN · 2026-09-17:** Finish Cockpit clipping/scrolling/table-height/open-position consistency review.
-- **OPEN · 2026-09-17:** Finish OpenAI large-table/layout review and Forecast visibility check.
-- **OPEN · 2026-09-17:** Finish Research open/closed status consistency review.
+- **CLOSED:** Global open-position projection across Paper / Watch / Research Forward / OpenAI.
+- **CLOSED:** Main overview payload and load-time reduction.
+- **OPEN:** Simplify duplicated/dense page layouts.
+- **OPEN:** Add server-side pagination / table virtualization for large histories.
+- **OPEN:** Keep CURRENT, V2, Paper, Watch, Research and OpenAI semantics visibly distinct.
+- **OPEN:** Keep the training operator explicit and manual; no hidden auto-start.
 
-## P1 — research quality and learning
+## P1 — legacy evidence / parity research
 
-- **OPEN · 2026-09-17:** Continue settling Research counterfactuals at 15m / 45m / 1h / 3h / 8h.
-- **OPEN · 2026-09-17:** Expand Strategy × Coin × Side × Regime × Volatility × Outcome learning once enough clean observations exist.
-- **OPEN · 2026-09-17:** Measure whether unified/canonical memory materially changes later selection before claiming a complete self-learning loop.
-- **OPEN · 2026-09-17:** Keep Local ML Canaries clearly labelled as observation/counterfactual paths rather than real position-management paths.
+- **OPEN:** Determine canonical import contract for historical manual trades with prior-signal provenance.
+- **OPEN:** Quantify Telegram signal provenance quality before using it as training evidence.
+- **OPEN:** Compare legacy 1m/5m/15m entry confirmation through replay before adopting anything.
+- **OPEN:** Compare persistent Pending/Recheck semantics through replay/state evidence.
+- **OPEN:** Measure Recency Weighting as a research variant only; do not migrate legacy half-lives by default.
+- **OPEN:** Keep old models as historical evidence only unless current feature/dataset/lifecycle compatibility is proven.
 
-## P1 — publication / evidence
+## P1 — verification
 
-- **PAUSED · 2026-09-17:** Automatic nightly publication remains stopped by the operator.
-- **OPEN · 2026-09-17:** Repair nightly source selection before re-enabling it so current engineering evidence is not replaced by stale narrative.
-- **OPEN · 2026-09-17:** Keep public status human-reviewed while the nightly publisher is paused.
+- **OPEN:** Rerun/classify the complete project test suite after current parallel work settles.
+- **OPEN:** Keep focused regression PASS distinct from runtime acceptance and scientific evidence.
+- **OPEN:** Preserve explicit failure / NEEDS_MORE_EVIDENCE states.
 
-## P2 — later / distribution work
+## P2 — later
 
-Lower priority until runtime/data/trading/research truth is stable:
+Lower priority until research truth and lifecycle closure improve:
 
+- broader multi-coin training
+- automated promotion
 - installer/distribution cleanup
-- secure credential storage
+- secure credential packaging
 - demo/client packaging
-- retention/root cleanup
-- approved model-bundle loading
-- public documentation/disclaimer polish
-- broader hardware/resource optimization
+- broader resource optimization
+- documentation/file-name cleanup without breaking existing public links
 
-## Current safety boundary
+## Safety boundary
 
-`LIVE=false` · `REAL_CAPITAL=0` · `ORDERS=0`
+`LIVE=false` · `REAL_CAPITAL=0` · automatic promotion disabled.
 
-Training paused · Factory paused · no automatic promotion.
-
-[Current status](../../CURRENT_STATUS.md) · [Reviewed September 17 update](../../updates/2026-09-17-public-status.md) · [Completed engineering work](COMPLETED_WORK.md) · [Test results](../verification/TEST_RESULTS.md)
+[Current status](../../CURRENT_STATUS.md) · [September 18 update](../../updates/2026-09-18-public-status.md) · [Completed work](COMPLETED_WORK.md) · [Test results](../verification/TEST_RESULTS.md)
