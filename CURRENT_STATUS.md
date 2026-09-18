@@ -1,139 +1,171 @@
 # Current public status
 
-Publication date: **2026-09-17**. This is a human-reviewed status while the nightly publisher remains paused.
+Publication date: **2026-09-18**. Human-reviewed.
 
-## Current operating boundary
+## Operating boundary
 
-- Training: **PAUSED**
-- Factory / hypothesis producer: **PAUSED**
 - Live trading: **No**
 - Real capital: **0**
 - Automatic promotion: **No**
-- OpenAI model in latest V2 acceptance: `gpt-5.6-luna`
-- OpenAI prompt contract: `OPENAI_AI_MARKET_ANALYST_V2`
-- WebUI source version later reported in the same work session: `90.8.10.184`
-- Safety boundary remains fail-closed.
+- Paper / Shadow research: active
+- Training: operator-controlled; no broad automatic training
+- Factory / hypothesis producer: not automatically resumed
+- Safety boundary: fail-closed
 
-The project is still intentionally not resuming broad ML training. The current priority is to finish and prove the runtime/data/evidence path first.
+## What is confirmed working
 
-## What is materially better now
+### Research Forward / Trade Like Che Context V2
 
-### OpenAI AI-only V2
+The updated Research Forward contract is active and health-checked:
 
-The OpenAI branch has moved from a rigid directional flow to an independent multi-scenario analyst:
+- 5 active coins
+- 26 CURRENT variants per coin
+- 8 CONTEXT_V2 variants per coin
+- 34 total per coin
+- 170 expected total
+- 170 active
+- health check: **PASS**
 
-- current Futures data is used for technical availability,
-- local Rule / ML / Watch / Research / Paper direction fields are rejected before the API call,
-- BTC and ETH are context only,
-- active analysis symbols are ADA / ENA / MYX / ONDO / TUT,
-- multiple conditional scenarios can be armed and monitored locally,
-- paid-call cadence is based on the last successful call rather than blocked attempts,
-- one open OpenAI position per symbol is enforced,
-- open symbols are excluded from duplicate OpenAI entry analysis until close/settlement.
+Fresh Context V2 Shadow decisions are visible, including explicit `NO_TRADE / NO_CURRENT_SETUP` evidence.
 
-The first real V2 proof reported 5 coin analyses, 9 scenarios, 6 armed scenarios, 0 schema errors and 0 real orders. Later in the same work session the unified-memory audit reported 3 current executed OpenAI AI-only trades and one open TUTUSDT position under monitoring.
+Paper Context V2 stayed active and was not interrupted by the minimal Research Forward activation.
 
-The important boundary is unchanged: the profitability of the new V2 analyst is **not yet proven**. It needs multiple completed causal V2 outcomes.
+### WebUI
 
-### Unified executed-trade memory
+The open-position projection now aggregates open positions from Paper, Watch, Research Forward and OpenAI.
 
-Paper, Watch, Research Forward and OpenAI now use one existing capture path for comparable executed-trade evidence.
+At the recorded browser checkpoint:
 
-Current required fields include stable trade/strategy/setup identity, symbol/side, real entry/exit time and price, market phase, expected-net source/status, MFE/MAE with timestamps, costs, stop/target/exit reason, data-quality/provenance and margin/notional where source evidence exists.
+- Paper open: 2
+- Watch open: 1
+- Research Forward open: 2
+- OpenAI open: 0
 
-At the recorded checkpoint, current executed-trade sets had 0 missing required core fields:
+Performance also improved materially:
 
-- Paper market-context: 35
-- Watch: 19
-- Research Forward: 28
-- OpenAI AI-only: 3
+- 24h cold overview: ~2.61 s
+- 24h warm overview: ~0.03 s
+- 24h payload: ~0.74 MB versus 4.79 MB before
 
-All 66 previously executed OpenAI AI-only outcomes were also reported with trade identity, strategy, setup, market phase and MFE/MAE timing.
+Detailed data is loaded on demand.
 
-Unknown historical values are no longer silently treated as zero. Explicit states such as `PENDING_PATH_SETTLEMENT`, `NOT_APPLICABLE` and `NOT_RECONSTRUCTABLE` are used instead.
+### Research & Models operator
 
-### WebUI / projection repairs
+The Training & Research page now exposes operator-controlled actions for one-coin testing and active-universe training, plus readiness, lifecycle, Rule-vs-ML, artifact and run-state visibility.
 
-The following were repaired or improved:
+Nothing auto-starts and no automatic activation/promotion was enabled.
 
-- Trade-Like-CHE entry price/time alias mismatch,
-- ADX added as causal display/analysis data from closed 5-minute Futures candles,
-- negative Volume-Z no longer paints the whole indicator cell red,
-- compact ID rendering across trade/research/OpenAI/strategy tables,
-- larger/more readable table typography without exposing full hashes,
-- Trade-Like-CHE Capture projection repaired to use the canonical outcome value,
-- OpenAI NO_TRADE projection corrected to include the canonical prediction ledger instead of only the evaluation ledger.
+### ENA one-coin pilot
 
-The broader Cockpit / Trading / OpenAI / Research layout audit was still in progress when the runtime problem below interrupted final verification.
+The explicit ENA pilot completed:
 
-## Important runtime problem still open
+- full-history ready
+- feature provenance revalidated
+- OOS contract ready
+- 756 OOS result rows
+- 126 Rule-baseline rows
+- all 3 feature arms
+- all 4 architectures
+- all 7 horizons
+- Logistic + HistGradientBoosting
+- identical folds for Rule and ML: 2026-07 / 2026-08 / 2026-09
+- Registry ID 7
 
-The most important remaining blocker from the latest work log is not a trading rule problem but a runtime/data-source problem.
+Result:
 
-Research Forward was observed starting and then failing on the first ADAUSDT direct Bitget refresh with:
+- `RULE_VS_ML = DEGRADED`
+- `candidate_eligible = false`
+- Challenger eligibility = false
+- promotion allowed = false
+- Rule artifact preserved = yes
 
-`WinError 10013`
+The negative result is preserved rather than hidden or promoted.
 
-At the same time, the central market-data loader already had fresh 1-minute Futures data.
+### Robustness Gate
 
-The intended repair stays inside the existing shared reader: if the direct socket fails, the reader may use the centrally confirmed hot-file tail only after strict freshness and availability checks. Stale files must still be rejected. No second market-data reader or parallel data path should be introduced.
+A read-only, versioned robustness contract exists between OOS Candidate evidence and later Challenger eligibility.
 
-The attached engineering log ends while this fallback is being designed. **This fix is therefore not yet accepted as complete.** It needs a successful restart plus a fresh Research Forward cycle without the socket failure.
+The gate requires evidence across multi-fold walk-forward, recent OOS, stability, cost stress, calibration, tail risk and sample support, with controlled optional ablation/perturbation checks.
 
-## START_ALGOSPHERE behavior
+The newer ENA pilot still needs to be evaluated through this gate before any claim of `ROBUST_OOS_READY`.
 
-Another user-visible issue was clarified: when the supervisor is already healthy, `START_ALGOSPHERE.cmd` can intentionally refuse a duplicate launch and return successfully, which looks like "nothing happened" to the user. The start path was being adjusted so an already-running healthy state becomes visible and opens the WebUI instead of appearing to fail silently.
+### OpenAI AI-only
 
-That behavior still needs final proof together with the runtime/socket fix.
+The input-contract gap identified in the real request was partially closed.
 
-## OpenAI cost control
+The request path now supports:
 
-The project is tracking call/hour/day/token budgets. In the latest V2 acceptance state the project intentionally did not display an exact USD cost because no trusted local price configuration for `gpt-5.6-luna` was present.
+- 1m / 5m / 15m / 1h / 1D / 3D / 7D context
+- BTC / ETH context
+- regime / range position
+- explicit structure / support-resistance summary
+- volume / volatility
+- news
+- aggregated learning memory
+- open-position context when present
 
-Exact USD cost reporting remains open until a verified model-price source is configured.
+No reliable Futures/Spot basis source was available, so no basis value is fabricated.
 
-## ML / Factory status
+A redacted actual-request export was created without a new paid call.
 
-Training and Factory remain intentionally paused.
+The next optimization is still in progress: the measured pre-compaction request was ~73,933 input tokens and ~4,438 output tokens, so the builder is being reduced to a compact market context and one explicit plan per symbol. This is **not yet forward-proven**.
 
-The current lifecycle contract remains:
+## What remains incomplete
 
-`HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`
+### Canonical Memory / Learning / Lifecycle
 
-`candidate_eligible` remains metadata/eligibility, not a separate stage.
+The chain `Decision → Trade → Outcome → Canonical Memory → Learning → Lifecycle` exists, but it is not completely closed.
 
-Rule evidence must be preserved independently from ML selector success. **ML selector collapse is not Rule failure.**
+Known gaps:
 
-The work from September 16 did not reopen Training or Factory.
+- some historical Decision→Trade linkage remains incomplete
+- per-trade Learning Delta is not visible
+- CURRENT vs CONTEXT_V2 separation is partial in Canonical Memory
+- promotion history is only partially persisted
+- Challenger is not yet an active operational promotion state
+- Champion is mainly a frozen Paper fallback, not a newly promoted model
 
-## Test / verification state
+### Legacy-parity questions
 
-Focused regression results from the latest work are strong:
+The legacy audit found no mandatory old capability blocking the ENA pilot.
 
-- OpenAI V2 related suite: 263/263 PASS
-- unified-memory related relevant suite: 264 PASS
-- final focused post-memory changes: 121 PASS
-- ADX/display focused suite: 154 PASS
-- Trade-Like-CHE entry projection focused suite: 22 PASS
-- compact-table WebUI focused suite: 14 PASS
+Still partial:
 
-These focused results are useful evidence, but they do **not** by themselves prove that the earlier full-suite checkpoint with 1,307 tests / 64 failures is fully closed. A complete suite rerun and explicit classification of all earlier failures remains open.
+- Telegram/manual-signal provenance
+- explicit 1m/5m/15m entry-confirmation sequence
+- persistent Pending/Recheck parity
+- canonical import of manual trades with prior-signal provenance
+- Recency weighting only as a research comparison
+
+These are research items, not instructions to copy old implementation into the current system.
+
+### Model quality
+
+The main scientific problem remains open: technical completion of the pipeline has not yet produced demonstrated ML uplift.
+
+The ENA pilot explicitly showed ML degradation versus Rule baseline. That is useful evidence, but not a model-quality success.
+
+OpenAI decision quality is also not yet established; more causal settled outcomes are needed.
+
+### Verification
+
+Focused suites are green in the affected areas, but focused regression PASS is not equivalent to global scientific/runtime acceptance. The complete suite and earlier failures still need explicit closure/classification after current parallel work settles.
 
 ## Current priorities
 
-1. Finish and prove the Research Forward `WinError 10013` fallback through the existing shared reader.
-2. Prove `START_ALGOSPHERE.cmd` for both already-running and genuinely stopped/orphaned states.
-3. Complete the isolated-browser audit of Cockpit, Trading, OpenAI and Research after runtime stability is restored.
-4. Recheck Forecast propagation and Research open-position visibility after restart.
-5. Re-verify Capture and NO_TRADE in the running browser after the runtime fix.
-6. Accumulate several causal OpenAI V2 settlements before judging performance.
-7. Configure trusted model pricing before publishing exact OpenAI USD costs.
-8. Rerun the complete project test suite and close/classify the earlier full-suite failures.
-9. Keep Training / Factory paused until runtime and evidence paths are trustworthy.
-10. Keep Live disabled and Real Capital at 0.
+1. Finish local validation of the compact OpenAI request / single-plan contract, then use the next normal paid call as forward proof.
+2. Evaluate the new ENA pilot through the Robustness Gate.
+3. Close the remaining Canonical Memory / Learning / Promotion-history gaps.
+4. Continue simplifying the WebUI and add pagination/virtualization where large histories remain heavy.
+5. Investigate legacy-partial areas through controlled replay/evidence only.
+6. Keep broad multi-coin training and automatic promotion blocked until evidence justifies them.
+7. Continue collecting prospective Paper / Watch / Research / OpenAI outcomes.
+8. Rerun/classify the complete project test suite once the current parallel work is stable.
 
-## Publication note
+## Safety boundary
 
-The automatic nightly publisher remains paused by the operator. This status and the September 17 updates are human-reviewed so newer engineering work is not overwritten by stale narrative selection.
+`LIVE=false` · `REAL_CAPITAL=0` · automatic promotion disabled.
 
-See the [reviewed September 17 update](updates/2026-09-17-public-status.md), [roadmap](docs/progress/ROADMAP.md), [completed engineering work](docs/progress/COMPLETED_WORK.md) and [test results](docs/verification/TEST_RESULTS.md).
+No documentation update authorizes live trading or real-capital execution.
+
+See the [September 18 update](updates/2026-09-18-public-status.md), [roadmap](docs/progress/ROADMAP.md), [completed work](docs/progress/COMPLETED_WORK.md) and [test results](docs/verification/TEST_RESULTS.md).
