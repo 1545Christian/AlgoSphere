@@ -6,79 +6,60 @@ Independent research and engineering project exploring data-driven market analys
 
 Deutsch: [README_DE.md](README_DE.md)<br>
 Current status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Latest reviewed update: [September 18, 2026](updates/2026-09-18-public-status.md)<br>
+Latest reviewed update: [September 19, 2026](updates/2026-09-19-public-status.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
 ## Overview
 
-AlgoSphere combines:
+AlgoSphere combines quantitative market analysis, market-state research, rule and ML validation, canonical decision/outcome memory, OpenAI-assisted analysis, and Paper/Shadow execution.
 
-- quantitative market analysis
-- market context and regime detection
-- rule-based strategy research
-- machine-learning validation
-- decision and outcome learning
-- OpenAI-assisted market analysis
-- paper and shadow execution
-- canonical evidence and trade memory
-
-The project focuses on reproducibility, causal evaluation and preserving both positive and negative research evidence.
+The project focuses on reproducibility, causal evaluation, explicit lineage and preserving both positive and negative evidence.
 
 ## Research lifecycle
 
-`HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`
+HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
 
-`candidate_eligible` is eligibility metadata, not a separate operating stage.
-
-Rule evidence is preserved independently from ML-selector performance. **ML selector collapse is not Rule failure.**
+`candidate_eligible` is eligibility metadata, not a separate operating stage. Rule evidence remains preserved independently from ML-selector performance.
 
 ## Current reviewed status
 
 | Area | Current state |
 |---|---|
 | Active Paper | Running / fail-closed |
-| Paper Context V2 Shadow | **Active** |
+| Paper Context V2 Shadow | Active |
 | Research Watch | Running / no-capital research path |
 | Research Forward / Trade Like Che CURRENT | Running |
-| Trade Like Che Context V2 | **Active Shadow · 170/170 health PASS** |
+| Trade Like Che Context V2 | Active Shadow; CURRENT/V2 separation repaired |
+| CONTEXT_V2 learning | Canonical Learning Delta now consumed by selector |
 | Market Intelligence V2.1 | Research baseline available |
-| ENA one-coin pilot | **Completed · Rule vs ML = DEGRADED · no promotion** |
-| Robustness Gate | **Implemented · evidence-gated** |
-| OpenAI AI-only | Active; input contract expanded, compact request work still pending forward proof |
-| Canonical Memory / Learning | Implemented but not yet fully closed end-to-end |
-| Training operator | Available / manual operator control |
-| Broad training | Not auto-started |
-| Live trading | **Disabled** |
-| Real capital | **0** |
-| Automatic promotion | **Disabled** |
+| ENA one-coin pilot | Completed; Rule vs ML = DEGRADED; no promotion |
+| Robustness Gate | Implemented / evidence-gated |
+| Canonical Memory / Learning | Improved, but historical lineage repair still incomplete |
+| Research storage | Future writer fixed; historical 62 GB DB not migrated |
+| Research handoff | Future compact Candidate/Rule evidence projection fixed; awaiting natural run proof |
+| WebUI | Version 90.8.10.196 at latest browser proof |
+| Live trading | Disabled |
+| Real capital | 0 |
+| Automatic promotion | Disabled |
 
 For detailed runtime, validation and open-work status, see [CURRENT_STATUS.md](CURRENT_STATUS.md).
 
 ## Evidence and transparency
 
-AlgoSphere publishes selected:
+AlgoSphere publishes selected reviewed project status, research summaries, verification results, evidence records, development history and known limitations.
 
-- reviewed project status
-- research summaries
-- verification results
-- evidence records
-- development history
-- known limitations and failed experiments
-
-A completed run is not automatically treated as a good model. The latest ENA pilot is a concrete example: the run completed successfully, but the ML result was weaker than the preserved Rule baseline and therefore remained ineligible for Challenger promotion.
+A technically completed run is not automatically treated as a good model. Negative, failed and insufficient-evidence results remain visible.
 
 ## Public / private boundary
 
-This repository is a public documentation and evidence record.
-
-It does not contain the private application source code, credentials, account configuration, market databases, trained models or proprietary strategy parameters.
+This repository is a public documentation and evidence record. It does not contain the private application source code, credentials, account configuration, market databases, trained models or proprietary strategy parameters.
 
 ## Documentation
 
 | Topic | Document |
 |---|---|
 | Current status | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Latest reviewed update | [September 18 update](updates/2026-09-18-public-status.md) |
+| Latest reviewed update | [September 19 update](updates/2026-09-19-public-status.md) |
 | Roadmap | [docs/progress/ROADMAP.md](docs/progress/ROADMAP.md) |
 | Completed engineering work | [docs/progress/COMPLETED_WORK.md](docs/progress/COMPLETED_WORK.md) |
 | Project history | [docs/project/PROJECT_HISTORY.md](docs/project/PROJECT_HISTORY.md) |
@@ -96,9 +77,7 @@ https://t.me/AlgoSphereOfficial
 
 ## Disclaimer
 
-AlgoSphere is a research and engineering project.
-
-Nothing in this repository constitutes financial or investment advice. Crypto and derivatives trading involve substantial risk. Past, simulated or paper results do not guarantee future performance.
+AlgoSphere is a research and engineering project. Nothing in this repository constitutes financial or investment advice. Crypto and derivatives trading involve substantial risk. Past, simulated or paper results do not guarantee future performance.
 
 See the full [Disclaimer](docs/legal/DISCLAIMER.md).
 
