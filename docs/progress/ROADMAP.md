@@ -1,85 +1,58 @@
 # Current public roadmap
 
-Publication: **2026-09-18**. Human-reviewed.
+Publication: **2026-09-19**. Human-reviewed.
 
 ## Lifecycle contract
 
-`HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION`
-
-`candidate_eligible` is eligibility metadata, not an operating stage.
+HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
 
 Rule evidence remains preserved independently from ML-selector success.
 
-## P0 — model quality and research closure
+## P0 — Canonical Memory / learning closure
 
-- **OPEN:** Evaluate the completed ENA one-coin pilot through the versioned Robustness Gate.
-- **OPEN:** Explain the observed Rule-vs-ML degradation before any broader training run.
-- **OPEN:** Keep broad multi-coin training blocked until comparable Rule/ML populations, OOS folds and evidence are valid.
-- **OPEN:** Preserve negative ML results instead of treating technical run completion as model success.
-- **OPEN:** Complete the currently running ML/Memory root-cause audit before changing the model stack again.
+- **OPEN:** Run the scoped Exact-only historical backfill only after the active SQLite writer is safely paused.
+- **OPEN:** Resolve PAPER/CURRENT Contribution/Delta population mismatch without synthetic relabeling.
+- **OPEN:** Keep new CONTEXT_V2 writes fail-closed for required state evidence.
+- **IMPLEMENTED / NEEDS PROSPECTIVE PROOF:** Canonical Learning Delta is connected to the CONTEXT_V2 selector.
+- **OPEN:** Make future without-vs-with-memory traces visible and auditable on natural decisions.
 
-## P0 — Canonical Memory / continuous learning
+## P0 — Research evidence handoff
 
-- **OPEN:** Make per-trade Learning Delta explicit and visible.
-- **OPEN:** Finish CURRENT / CONTEXT_V2 separation inside Canonical Memory, not only runtime projections.
-- **OPEN:** Persist and expose promotion history consistently.
-- **OPEN:** Keep Decision→Trade→Outcome→Memory→Learning identity complete for new prospective evidence.
-- **OPEN:** Do not create training requests until evidence thresholds are genuinely met.
+- **IMPLEMENTED / NEEDS NATURAL RUN:** compact Candidate/Rule/Nested-Fold/Contract evidence is projected before the Canonical Memory handoff.
+- **OPEN:** Prove this on the next natural QUICK/Research handoff; do not start training only for proof.
+- **OPEN:** Keep full active_strategies payloads out of Canonical Memory.
 
-## P0 — OpenAI AI-only
+## P0 — Research storage
 
-- **IMPLEMENTED / NEEDS FORWARD PROOF:** 3D / 7D context, explicit structure/support-resistance and open-position context added.
-- **OPEN:** Finish compact request projection and one-plan-per-symbol response contract.
-- **OPEN:** Verify the compact contract only on the next normal paid call; do not generate a paid test call.
-- **OPEN:** Reduce request size materially from the observed ~73.9k input-token baseline without removing causal decision context.
-- **OPEN:** Accumulate causal settled outcomes before judging OpenAI trading quality.
-- **OPEN:** Keep no second local trading-decision engine after OpenAI.
+- **CLOSED FUTURE-WRITE FIX:** remove duplicated decoded + *_json aliases from future active_strategies snapshots.
+- **OPEN:** Observe future real runs to confirm expected storage reduction.
+- **NO ACTION AUTHORIZED:** no historical DELETE, VACUUM or migration.
 
-## P0 — Research Forward / Context V2
+## P0 — model quality
 
-- **CLOSED:** Research Forward Context V2 activation.
-- **CLOSED:** 34 evaluations per coin / 170 total health contract.
-- **CLOSED:** Fresh V2 NO_TRADE evidence visible.
-- **OPEN:** Continue prospective evidence collection while CURRENT and V2 remain separated.
+- **OPEN:** Explain Rule-vs-ML degradation before broader training.
+- **OPEN:** Evaluate eligible candidates through the Robustness Gate.
+- **OPEN:** Keep broad multi-coin training and automatic promotion blocked until uplift is proven.
 
-## P1 — WebUI / operator usability
+## P1 — WebUI
 
-- **CLOSED:** Global open-position projection across Paper / Watch / Research Forward / OpenAI.
-- **CLOSED:** Main overview payload and load-time reduction.
-- **OPEN:** Simplify duplicated/dense page layouts.
-- **OPEN:** Add server-side pagination / table virtualization for large histories.
-- **OPEN:** Keep CURRENT, V2, Paper, Watch, Research and OpenAI semantics visibly distinct.
-- **OPEN:** Keep the training operator explicit and manual; no hidden auto-start.
+- **CLOSED:** CURRENT / CONTEXT_V2 filter and KPI separation repaired.
+- **CLOSED:** filter/variant/scroll persistence through background refresh.
+- **CLOSED:** shared table typography/compact-row contract at WebUI 90.8.10.196.
+- **OPEN:** continue reducing dense headers/cards and add pagination/virtualization for large histories.
 
-## P1 — legacy evidence / parity research
+## P1 — legacy and historical evidence
 
-- **OPEN:** Determine canonical import contract for historical manual trades with prior-signal provenance.
-- **OPEN:** Quantify Telegram signal provenance quality before using it as training evidence.
-- **OPEN:** Compare legacy 1m/5m/15m entry confirmation through replay before adopting anything.
-- **OPEN:** Compare persistent Pending/Recheck semantics through replay/state evidence.
-- **OPEN:** Measure Recency Weighting as a research variant only; do not migrate legacy half-lives by default.
-- **OPEN:** Keep old models as historical evidence only unless current feature/dataset/lifecycle compatibility is proven.
+- **OPEN:** keep legacy gaps explicit as LEGACY_SCHEMA_GAP / NOT_RECONSTRUCTABLE where exact values are unavailable.
+- **OPEN:** evaluate legacy MTF entry confirmation, Pending/Recheck and manual-signal provenance only through controlled evidence/replay.
 
-## P1 — verification
+## Verification
 
-- **OPEN:** Rerun/classify the complete project test suite after current parallel work settles.
-- **OPEN:** Keep focused regression PASS distinct from runtime acceptance and scientific evidence.
-- **OPEN:** Preserve explicit failure / NEEDS_MORE_EVIDENCE states.
-
-## P2 — later
-
-Lower priority until research truth and lifecycle closure improve:
-
-- broader multi-coin training
-- automated promotion
-- installer/distribution cleanup
-- secure credential packaging
-- demo/client packaging
-- broader resource optimization
-- documentation/file-name cleanup without breaking existing public links
+- Focused green suites prove the changed contracts, not global profitability or total project closure.
+- Complete suite classification remains separate from focused acceptance.
 
 ## Safety boundary
 
 `LIVE=false` · `REAL_CAPITAL=0` · automatic promotion disabled.
 
-[Current status](../../CURRENT_STATUS.md) · [September 18 update](../../updates/2026-09-18-public-status.md) · [Completed work](COMPLETED_WORK.md) · [Test results](../verification/TEST_RESULTS.md)
+[Current status](../../CURRENT_STATUS.md) · [September 19 update](../../updates/2026-09-19-public-status.md) · [Completed work](COMPLETED_WORK.md) · [Test results](../verification/TEST_RESULTS.md)
