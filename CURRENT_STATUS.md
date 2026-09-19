@@ -1,6 +1,6 @@
 # Current public status
 
-Publication date: **2026-09-18**. Human-reviewed.
+Publication date: **2026-09-19**. Human-reviewed.
 
 ## Operating boundary
 
@@ -9,158 +9,87 @@ Publication date: **2026-09-18**. Human-reviewed.
 - Automatic promotion: **No**
 - Paper / Shadow research: active
 - Training: operator-controlled; no broad automatic training
-- Factory / hypothesis producer: not automatically resumed
 - Safety boundary: fail-closed
 
-## What is confirmed working
+## Confirmed working
 
-### Research Forward / Trade Like Che Context V2
+### Trade Like Che CURRENT / CONTEXT_V2
 
-The updated Research Forward contract is active and health-checked:
+- CURRENT and CONTEXT_V2 projections are separated again in the WebUI.
+- NO_TRADE evidence is stored and projected through the existing canonical paths.
+- latest browser proof: CONTEXT_V2 40 decisions / 32 settled / 40 memory; CURRENT 72 decisions / 77 settled at that checkpoint.
+- variant/filter/scroll state survives background refresh.
+- WebUI version at final browser proof: **90.8.10.196**.
 
-- 5 active coins
-- 26 CURRENT variants per coin
-- 8 CONTEXT_V2 variants per coin
-- 34 total per coin
-- 170 expected total
-- 170 active
-- health check: **PASS**
+### Canonical Learning → CONTEXT_V2 selector
 
-Fresh Context V2 Shadow decisions are visible, including explicit `NO_TRADE / NO_CURRENT_SETUP` evidence.
+The existing CONTEXT_V2 selector now consumes matching Canonical Learning Delta evidence instead of relying only on market-state/context-fit.
 
-Paper Context V2 stayed active and was not interrupted by the minimal Research Forward activation.
+Matching is variant-safe by coin, side, strategy family and market state. Counterfactual/NO_TRADE evidence is not counted as an executed trade.
 
-### WebUI
+New decision traces can preserve base score, market-state delta, memory delta, final score and without-vs-with-memory decision reasoning.
 
-The open-position projection now aggregates open positions from Paper, Watch, Research Forward and OpenAI.
+Focused validation: **75 passed**.
 
-At the recorded browser checkpoint:
+### Research storage future writer
 
-- Paper open: 2
-- Watch open: 1
-- Research Forward open: 2
-- OpenAI open: 0
+research_runs growth was traced to large unique active_strategies snapshots plus duplicate physical *_json aliases alongside decoded canonical fields.
 
-Performance also improved materially:
+Classic content deduplication is not the answer: 329 runs had active_strategies and 328 snapshots were unique.
 
-- 24h cold overview: ~2.61 s
-- 24h warm overview: ~0.03 s
-- 24h payload: ~0.74 MB versus 4.79 MB before
+The future writer now drops duplicate physical aliases and keeps the decoded canonical representation. Historical rows were not migrated or deleted.
 
-Detailed data is loaded on demand.
+Representative evidence-based estimate: ~134.5 MB before versus ~65.3–71.7 MB after, nominally ~49% smaller future snapshots.
 
-### Research & Models operator
+### Research → Canonical handoff
 
-The Training & Research page now exposes operator-controlled actions for one-coin testing and active-universe training, plus readiness, lifecycle, Rule-vs-ML, artifact and run-state visibility.
+normalize_report() previously dropped compact candidate/rule evidence from active_strategies before the standardized Research/Memory handoff.
 
-Nothing auto-starts and no automatic activation/promotion was enabled.
+The future handoff now projects compact artifact/strategy identity, nested-fold metrics, data/code/execution identity, baseline/stress evidence and setup/threshold/exit-policy/feature hashes.
 
-### ENA one-coin pilot
+Full strategy payloads are not copied into Canonical Memory.
 
-The explicit ENA pilot completed:
+Current proof state: **AWAITING_REAL_RUN**. No natural post-patch Research/QUICK handoff has yet provided end-to-end proof.
 
-- full-history ready
-- feature provenance revalidated
-- OOS contract ready
-- 756 OOS result rows
-- 126 Rule-baseline rows
-- all 3 feature arms
-- all 4 architectures
-- all 7 horizons
-- Logistic + HistGradientBoosting
-- identical folds for Rule and ML: 2026-07 / 2026-08 / 2026-09
-- Registry ID 7
+## Still incomplete
 
-Result:
+### Historical Canonical backfill
 
-- `RULE_VS_ML = DEGRADED`
-- `candidate_eligible = false`
-- Challenger eligibility = false
-- promotion allowed = false
-- Rule artifact preserved = yes
+The scoped Exact-only operator was corrected to the real schema:
 
-The negative result is preserved rather than hidden or promoted.
+- canonical_trade_outcomes.decision_id → memory_decisions.decision_id
+- Contributions/Deltas link by canonical_outcome_id
 
-### Robustness Gate
+Read-only exact-chain proof:
 
-A read-only, versioned robustness contract exists between OOS Candidate evidence and later Challenger eligibility.
+- PAPER/CURRENT: 17 exact chains, but 17/17 show Contribution/Delta source_population = TRADE_LIKE_CHE
+- PAPER/CONTEXT_V2: no Outcomes/Contributions/Deltas
+- TLC/CURRENT: 30 exact chains
+- TLC/CONTEXT_V2: 30 exact chains
 
-The gate requires evidence across multi-fold walk-forward, recent OOS, stability, cost stress, calibration, tail risk and sample support, with controlled optional ablation/perturbation checks.
+The historical apply remains blocked by repeated `sqlite3.OperationalError: database is locked`. No repair commit is claimed.
 
-The newer ENA pilot still needs to be evaluated through this gate before any claim of `ROBUST_OOS_READY`.
+### Canonical state completeness
 
-### OpenAI AI-only
+Historical gaps remain visible rather than being synthesized:
 
-The input-contract gap identified in the real request was partially closed.
-
-The request path now supports:
-
-- 1m / 5m / 15m / 1h / 1D / 3D / 7D context
-- BTC / ETH context
-- regime / range position
-- explicit structure / support-resistance summary
-- volume / volatility
-- news
-- aggregated learning memory
-- open-position context when present
-
-No reliable Futures/Spot basis source was available, so no basis value is fabricated.
-
-A redacted actual-request export was created without a new paid call.
-
-The next optimization is still in progress: the measured pre-compaction request was ~73,933 input tokens and ~4,438 output tokens, so the builder is being reduced to a compact market context and one explicit plan per symbol. This is **not yet forward-proven**.
-
-## What remains incomplete
-
-### Canonical Memory / Learning / Lifecycle
-
-The chain `Decision → Trade → Outcome → Canonical Memory → Learning → Lifecycle` exists, but it is not completely closed.
-
-Known gaps:
-
-- some historical Decision→Trade linkage remains incomplete
-- per-trade Learning Delta is not visible
-- CURRENT vs CONTEXT_V2 separation is partial in Canonical Memory
-- promotion history is only partially persisted
-- Challenger is not yet an active operational promotion state
-- Champion is mainly a frozen Paper fallback, not a newly promoted model
-
-### Legacy-parity questions
-
-The legacy audit found no mandatory old capability blocking the ENA pilot.
-
-Still partial:
-
-- Telegram/manual-signal provenance
-- explicit 1m/5m/15m entry-confirmation sequence
-- persistent Pending/Recheck parity
-- canonical import of manual trades with prior-signal provenance
-- Recency weighting only as a research comparison
-
-These are research items, not instructions to copy old implementation into the current system.
+- market_state_version missing across target legacy populations
+- market_state_id missing in parts of the population, including PAPER/CONTEXT_V2
+- LEGACY_SCHEMA_GAP markers remain evidence
 
 ### Model quality
 
-The main scientific problem remains open: technical completion of the pipeline has not yet produced demonstrated ML uplift.
-
-The ENA pilot explicitly showed ML degradation versus Rule baseline. That is useful evidence, but not a model-quality success.
-
-OpenAI decision quality is also not yet established; more causal settled outcomes are needed.
-
-### Verification
-
-Focused suites are green in the affected areas, but focused regression PASS is not equivalent to global scientific/runtime acceptance. The complete suite and earlier failures still need explicit closure/classification after current parallel work settles.
+The main scientific problem remains open: technical pipeline completion has not yet demonstrated durable ML uplift. The ENA pilot remained Rule-vs-ML DEGRADED and was not promoted.
 
 ## Current priorities
 
-1. Finish local validation of the compact OpenAI request / single-plan contract, then use the next normal paid call as forward proof.
-2. Evaluate the new ENA pilot through the Robustness Gate.
-3. Close the remaining Canonical Memory / Learning / Promotion-history gaps.
-4. Continue simplifying the WebUI and add pagination/virtualization where large histories remain heavy.
-5. Investigate legacy-partial areas through controlled replay/evidence only.
-6. Keep broad multi-coin training and automatic promotion blocked until evidence justifies them.
-7. Continue collecting prospective Paper / Watch / Research / OpenAI outcomes.
-8. Rerun/classify the complete project test suite once the current parallel work is stable.
+1. Apply the scoped historical backfill only after the active SQLite writer is safely paused.
+2. Explain and repair the PAPER/CURRENT Contribution/Delta population mismatch without relabeling history.
+3. Obtain a natural future Research/QUICK handoff to prove the new compact evidence projection end-to-end.
+4. Continue prospective CURRENT vs CONTEXT_V2 evidence collection with strict lane/variant separation.
+5. Keep the new Canonical Learning Delta → CONTEXT_V2 selector trace verifiable on future decisions.
+6. Continue WebUI simplification and pagination/virtualization for large histories.
+7. Keep broad training and automatic promotion blocked until actual uplift and robustness are demonstrated.
 
 ## Safety boundary
 
@@ -168,4 +97,4 @@ Focused suites are green in the affected areas, but focused regression PASS is n
 
 No documentation update authorizes live trading or real-capital execution.
 
-See the [September 18 update](updates/2026-09-18-public-status.md), [roadmap](docs/progress/ROADMAP.md), [completed work](docs/progress/COMPLETED_WORK.md) and [test results](docs/verification/TEST_RESULTS.md).
+See the [September 19 update](updates/2026-09-19-public-status.md), [roadmap](docs/progress/ROADMAP.md), [completed work](docs/progress/COMPLETED_WORK.md) and [test results](docs/verification/TEST_RESULTS.md).
