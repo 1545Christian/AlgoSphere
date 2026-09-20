@@ -1,100 +1,161 @@
 # Current public status
 
-Publication date: **2026-09-19**. Human-reviewed.
+Publication date: **2026-09-21**. Human-reviewed.
+
+No major AlgoSphere development work was continued on September 20. This document consolidates the latest verified state and removes stale blockers from the public status.
 
 ## Operating boundary
 
 - Live trading: **No**
 - Real capital: **0**
 - Automatic promotion: **No**
+- Demo release: **Not ready**
+- Elite / UTA: **Deferred**
 - Paper / Shadow research: active
 - Training: operator-controlled; no broad automatic training
 - Safety boundary: fail-closed
 
-## Confirmed working
+## Runtime / Research Forward
 
-### Trade Like Che CURRENT / CONTEXT_V2
+The latest Research Forward restart proof confirms that the current scientific overlay is bound before engine creation.
 
-- CURRENT and CONTEXT_V2 projections are separated again in the WebUI.
-- NO_TRADE evidence is stored and projected through the existing canonical paths.
-- latest browser proof: CONTEXT_V2 40 decisions / 32 settled / 40 memory; CURRENT 72 decisions / 77 settled at that checkpoint.
-- variant/filter/scroll state survives background refresh.
-- WebUI version at final browser proof: **90.8.10.196**.
+- runtime composition hashes: **35/35 PASS**
+- Research Forward hash proof: **PASS**
+- strategies: **170 / 170**
+- duplicates: **0**
+- CURRENT control path unchanged
+- WebUI: **90.8.10.199**
 
-### Canonical Learning → CONTEXT_V2 selector
+The same proof showed CURRENT 19 settled / -2.05 USDT and CONTEXT_V2 13 settled / -0.79 USDT.
 
-The existing CONTEXT_V2 selector now consumes matching Canonical Learning Delta evidence instead of relying only on market-state/context-fit.
+This does **not** prove V2 is better. The new event population around that proof was still dominated by NO_CURRENT_SETUP, so selector-ranking uplift is not yet established.
 
-Matching is variant-safe by coin, side, strategy family and market state. Counterfactual/NO_TRADE evidence is not counted as an executed trade.
+## Canonical Memory / Learning
 
-New decision traces can preserve base score, market-state delta, memory delta, final score and without-vs-with-memory decision reasoning.
+The current Canonical Memory core and new-write contract are now treated as **PROVEN_CLOSED**.
 
-Focused validation: **75 passed**.
+Current-path guarantees include stable provenance and identity, machine/human/AI-readable evidence, no parallel truth path, Decision → Outcome → Learning linkage and Before → Delta → After traceability.
 
-### Research storage future writer
+The earlier SQLite-lock status is no longer the final state: the scoped Exact-only backfill was later committed and targeted mapping/state repair completed where exact evidence existed.
 
-research_runs growth was traced to large unique active_strategies snapshots plus duplicate physical *_json aliases alongside decoded canonical fields.
+Verified historical repair included:
 
-Classic content deduplication is not the answer: 329 runs had active_strategies and 328 snapshots were unique.
+- PAPER/CURRENT 17/17 Outcome → Contribution → Delta chains repaired
+- exact-recoverable state fields repaired for 1,483 PAPER/CURRENT rows
+- exact-recoverable state fields repaired for 10 PAPER/CONTEXT_V2 rows
+- targeted integrity check: PASS
 
-The future writer now drops duplicate physical aliases and keeps the decoded canonical representation. Historical rows were not migrated or deleted.
+Legacy gaps intentionally remain where exact evidence does not exist:
 
-Representative evidence-based estimate: ~134.5 MB before versus ~65.3–71.7 MB after, nominally ~49% smaller future snapshots.
+- 1,739 UNVERSIONED rows
+- 74 no-evidence legacy gaps
 
-### Research → Canonical handoff
+Those values are not synthesized. PAPER/CONTEXT_V2 still did not have a comparable settled outcome population at that checkpoint.
 
-normalize_report() previously dropped compact candidate/rule evidence from active_strategies before the standardized Research/Memory handoff.
+## CONTEXT_V2 selector
 
-The future handoff now projects compact artifact/strategy identity, nested-fold metrics, data/code/execution identity, baseline/stress evidence and setup/threshold/exit-policy/feature hashes.
+The existing CONTEXT_V2 selector consumes Canonical Learning Delta evidence in addition to market-state/context-fit. Matching is variant-safe by coin, side, strategy family and market state. CURRENT remains the control path.
 
-Full strategy payloads are not copied into Canonical Memory.
+Technical connection: proven. Trading improvement: **INSUFFICIENT_EVIDENCE**.
 
-Current proof state: **AWAITING_REAL_RUN**. No natural post-patch Research/QUICK handoff has yet provided end-to-end proof.
+## Market Intelligence / training
 
-## Still incomplete
+The latest important training result remains the ENA full-history one-coin pilot:
 
-### Historical Canonical backfill
+- Rule and ML compared on the same OOS folds
+- RULE_VS_ML = DEGRADED
+- candidate_eligible = false
+- no Challenger promotion
+- no automatic promotion
+- Rule evidence preserved
 
-The scoped Exact-only operator was corrected to the real schema:
+The Robustness Gate remains required before any later Challenger claim. Broad multi-coin training remains deferred.
 
-- canonical_trade_outcomes.decision_id → memory_decisions.decision_id
-- Contributions/Deltas link by canonical_outcome_id
+## Research handoff
 
-Read-only exact-chain proof:
+The Research → standardized memory projection now preserves compact Candidate / Rule / Nested-Fold / Contract evidence that had previously been dropped before the Canonical Memory boundary.
 
-- PAPER/CURRENT: 17 exact chains, but 17/17 show Contribution/Delta source_population = TRADE_LIKE_CHE
-- PAPER/CONTEXT_V2: no Outcomes/Contributions/Deltas
-- TLC/CURRENT: 30 exact chains
-- TLC/CONTEXT_V2: 30 exact chains
+The future projection is structurally tested. Current proof state: **AWAITING_REAL_RUN**. No additional training run should be started only to prove this connection.
 
-The historical apply remains blocked by repeated `sqlite3.OperationalError: database is locked`. No repair commit is claimed.
+## Storage / database
 
-### Canonical state completeness
+The local database had grown to roughly 62 GB, with research_runs contributing roughly 35 GB.
 
-Historical gaps remain visible rather than being synthesized:
+The future snapshot writer was corrected so decoded canonical fields are no longer stored together with duplicate physical *_json aliases. Representative evidence indicates about **49% smaller future large snapshots**.
 
-- market_state_version missing across target legacy populations
-- market_state_id missing in parts of the population, including PAPER/CONTEXT_V2
-- LEGACY_SCHEMA_GAP markers remain evidence
+A Future Summary Identity contract was also added for future runs, including summary hash, schema version, evidence/archive pointers, artifact/checkpoint/canonical-evidence status and retention metadata.
 
-### Model quality
+Existing 569 historical runs were not rewritten.
 
-The main scientific problem remains open: technical pipeline completion has not yet demonstrated durable ML uplift. The ENA pilot remained Rule-vs-ML DEGRADED and was not promoted.
+Legacy compaction is **not authorized** yet:
+
+- 0 runs currently proven eligible for automatic compaction
+- 173 resumable
+- 394 missing required evidence
+- 2 unknown
+
+No historical DELETE / VACUUM / migration is authorized from this status.
+
+## WebUI
+
+The Research / Trade Like Che UI is materially improved: CURRENT / CONTEXT_V2 separation, stable variant/filter/scroll state, compact shared table contract, long text via tooltips, and the same served build across local IP and configured aliases at proof time.
+
+The full product-style information architecture is still not considered finished. Large-history pagination/virtualization and further reduction of dense page regions remain open.
+
+## OpenAI AI-only
+
+The AI-only lane remains independent: OpenAI is the final trading decision layer inside that lane.
+
+The current request contract includes multi-timeframe context, BTC/ETH context, news, structure/support-resistance, learning memory and current OpenAI position context. Open positions are monitored locally and should not trigger repeated paid calls merely because they remain open.
+
+Still open: compact single-plan request forward proof, causal decision-quality evidence and trusted cost reporting. Profitability is **not proven** and the older positive PnL interpretation must not be used as profit evidence.
+
+## Demo / Packaging / Release
+
+Demo and distribution remain **OPEN / BLOCKED**.
+
+Before a public/client demo can be called ready, the project still needs:
+
+- Offline Demo / Connected Demo isolation
+- no accidental Training / OpenAI-paid / Live / real-capital activation
+- approved and signed model-bundle contract
+- Bitget Demo/Testnet end-to-end proof
+- Decision → Entry → Exit → Outcome → reconnect/recovery proof
+- product-ready client/WebUI surface
+- installer / update / rollback / configuration / logs
+- local-PC vs remote WebUI/server operating-model decision
+- later server/webspace deployment contract
+- secure credentials
+- explicit read-only permissions where intended
+- release integrity
+- license / terms / disclaimer
+- distribution-profile isolation
+
+Important boundaries: Demo Connected ≠ Live; Bitget read-only ≠ trading permission; LAST_APPROVED_MODEL_BUNDLE ≠ latest trained model.
+
+Normal Futures live readiness remains later work behind Demo/stability proof. Elite / UTA remains deferred beyond stable Normal Futures.
+
+## What remains scientifically open
+
+The central research question is unchanged: **more infrastructure works, but durable predictive / trading uplift is not yet demonstrated.**
+
+Not yet proven: ENA ML uplift, CONTEXT_V2 selector uplift, OpenAI decision quality, and a newly completed Learning → Challenger → Paper → Champion cycle.
 
 ## Current priorities
 
-1. Apply the scoped historical backfill only after the active SQLite writer is safely paused.
-2. Explain and repair the PAPER/CURRENT Contribution/Delta population mismatch without relabeling history.
-3. Obtain a natural future Research/QUICK handoff to prove the new compact evidence projection end-to-end.
-4. Continue prospective CURRENT vs CONTEXT_V2 evidence collection with strict lane/variant separation.
-5. Keep the new Canonical Learning Delta → CONTEXT_V2 selector trace verifiable on future decisions.
-6. Continue WebUI simplification and pagination/virtualization for large histories.
-7. Keep broad training and automatic promotion blocked until actual uplift and robustness are demonstrated.
+1. Keep prospective CURRENT / CONTEXT_V2 evidence collection clean and variant-safe.
+2. Wait for a natural Research/QUICK handoff to prove the future compact evidence projection.
+3. Continue model-quality investigation before broader training.
+4. Keep historical unknowns explicit.
+5. Keep legacy storage compaction blocked until retention safety is proven.
+6. Continue WebUI simplification.
+7. Keep Demo/Packaging/Release separate from Live readiness.
+8. Do not reopen Elite/UTA before Normal Futures is stable.
 
 ## Safety boundary
 
-`LIVE=false` · `REAL_CAPITAL=0` · automatic promotion disabled.
+LIVE=false · REAL_CAPITAL=0 · automatic promotion disabled · Demo not ready.
 
-No documentation update authorizes live trading or real-capital execution.
+No documentation update authorizes live trading, real-capital execution, automatic promotion or release readiness.
 
-See the [September 19 update](updates/2026-09-19-public-status.md), [roadmap](docs/progress/ROADMAP.md), [completed work](docs/progress/COMPLETED_WORK.md) and [test results](docs/verification/TEST_RESULTS.md).
+See the [September 21 update](updates/2026-09-21-public-status.md), [roadmap](docs/progress/ROADMAP.md), [completed work](docs/progress/COMPLETED_WORK.md) and [test results](docs/verification/TEST_RESULTS.md).
