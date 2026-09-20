@@ -1,6 +1,6 @@
 # Current public roadmap
 
-Publication: **2026-09-19**. Human-reviewed.
+Publication: **2026-09-21**. Human-reviewed.
 
 ## Lifecycle contract
 
@@ -8,51 +8,84 @@ HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
 
 Rule evidence remains preserved independently from ML-selector success.
 
-## P0 — Canonical Memory / learning closure
+## P0 — scientific/model quality
 
-- **OPEN:** Run the scoped Exact-only historical backfill only after the active SQLite writer is safely paused.
-- **OPEN:** Resolve PAPER/CURRENT Contribution/Delta population mismatch without synthetic relabeling.
-- **OPEN:** Keep new CONTEXT_V2 writes fail-closed for required state evidence.
-- **IMPLEMENTED / NEEDS PROSPECTIVE PROOF:** Canonical Learning Delta is connected to the CONTEXT_V2 selector.
-- **OPEN:** Make future without-vs-with-memory traces visible and auditable on natural decisions.
+- **OPEN:** explain and improve Rule-vs-ML degradation before broad training.
+- **OPEN:** collect enough natural CONTEXT_V2 evidence to test selector uplift.
+- **OPEN:** collect enough causal OpenAI settlements to evaluate decision quality.
+- **OPEN:** demonstrate a genuinely new Learning → Challenger → Paper → Champion cycle.
+- **OPEN:** keep broad multi-coin training blocked until evidence supports it.
 
-## P0 — Research evidence handoff
+## P0 — Research / learning handoff
 
-- **IMPLEMENTED / NEEDS NATURAL RUN:** compact Candidate/Rule/Nested-Fold/Contract evidence is projected before the Canonical Memory handoff.
-- **OPEN:** Prove this on the next natural QUICK/Research handoff; do not start training only for proof.
-- **OPEN:** Keep full active_strategies payloads out of Canonical Memory.
+- **IMPLEMENTED / NEEDS NATURAL RUN:** compact Candidate/Rule/Nested-Fold/Contract evidence projection.
+- **OPEN:** prove it on the next natural Research/QUICK handoff.
+- **CLOSED CURRENT CONTRACT:** Canonical Memory core / new-write contract.
+- **OPEN LEGACY:** keep remaining historical UNVERSIONED / no-evidence gaps explicit rather than synthesizing values.
 
-## P0 — Research storage
+## P0 — Runtime / Research Forward
 
-- **CLOSED FUTURE-WRITE FIX:** remove duplicated decoded + *_json aliases from future active_strategies snapshots.
-- **OPEN:** Observe future real runs to confirm expected storage reduction.
-- **NO ACTION AUTHORIZED:** no historical DELETE, VACUUM or migration.
+- **CLOSED:** scientific overlay bound before engine creation.
+- **CLOSED:** runtime composition hash proof.
+- **CLOSED:** 170/170 strategies, 0 duplicates.
+- **OPEN:** continue prospective V2 evidence collection; do not claim uplift from small settled snapshots.
 
-## P0 — model quality
+## P0 — Storage / retention
 
-- **OPEN:** Explain Rule-vs-ML degradation before broader training.
-- **OPEN:** Evaluate eligible candidates through the Robustness Gate.
-- **OPEN:** Keep broad multi-coin training and automatic promotion blocked until uplift is proven.
+- **CLOSED FUTURE-WRITE FIX:** no duplicate decoded + *_json aliases in future snapshots.
+- **CLOSED CONTRACT:** future summary identity / retention metadata added.
+- **OPEN:** natural future-run proof for new summary identity.
+- **BLOCKED:** legacy compaction; no automatic compaction eligibility proven.
+- **NO ACTION:** no historical DELETE / VACUUM / broad migration.
 
 ## P1 — WebUI
 
-- **CLOSED:** CURRENT / CONTEXT_V2 filter and KPI separation repaired.
-- **CLOSED:** filter/variant/scroll persistence through background refresh.
-- **CLOSED:** shared table typography/compact-row contract at WebUI 90.8.10.196.
-- **OPEN:** continue reducing dense headers/cards and add pagination/virtualization for large histories.
+- **CLOSED:** CURRENT / CONTEXT_V2 separation and stable filter/variant state.
+- **CLOSED:** same accepted build across local IP and aliases at latest proof.
+- **OPEN:** pagination / virtualization for large histories.
+- **OPEN:** reduce dense header/filter/card regions.
+- **OPEN:** finish product-style information architecture before Demo release.
 
-## P1 — legacy and historical evidence
+## P1 — OpenAI AI-only
 
-- **OPEN:** keep legacy gaps explicit as LEGACY_SCHEMA_GAP / NOT_RECONSTRUCTABLE where exact values are unavailable.
-- **OPEN:** evaluate legacy MTF entry confirmation, Pending/Recheck and manual-signal provenance only through controlled evidence/replay.
+- **CLOSED:** OpenAI remains final decision layer inside AI-only lane.
+- **CLOSED:** open positions monitored locally without periodic reprompting.
+- **OPEN:** normal forward proof for compact single-plan request.
+- **OPEN:** causal decision-quality evidence.
+- **OPEN:** trusted cost reporting before public exact-cost claims.
 
-## Verification
+## P1 — Demo / Packaging / Release
 
-- Focused green suites prove the changed contracts, not global profitability or total project closure.
-- Complete suite classification remains separate from focused acceptance.
+- **OPEN/BLOCKED:** define and prove Offline Demo isolation.
+- **OPEN/BLOCKED:** define and prove Connected Demo isolation.
+- **OPEN/BLOCKED:** approved/signed model-bundle release contract.
+- **OPEN/BLOCKED:** Bitget Demo/Testnet E2E.
+- **OPEN/BLOCKED:** Decision → Entry → Exit → Outcome → reconnect/recovery E2E.
+- **OPEN/BLOCKED:** product-ready Demo WebUI/client.
+- **OPEN:** installer / update / rollback / config / logs.
+- **OPEN:** local-PC vs remote WebUI/server deployment model.
+- **OPEN:** secure credential store and read-only permission enforcement.
+- **OPEN:** release integrity + license/terms/disclaimer.
+- **DEFERRED:** server/webspace deployment until the client model is settled.
+
+## Later — Live
+
+- **DEFERRED:** Normal Futures live readiness until Demo/stability proof.
+- **DEFERRED:** Paper↔Live execution parity proof.
+- **DEFERRED:** Live risk/sizing/exit failover.
+- **DEFERRED:** Elite / UTA until Normal Futures is stable.
+
+## Verification principles
+
+- backend PASS ≠ user-visible PASS
+- process running ≠ service healthy ≠ scientific activity
+- QUICK PASS ≠ promotion
+- technical abort ≠ scientific reject
+- Demo Connected ≠ Live
+- LAST_APPROVED_MODEL_BUNDLE ≠ latest trained model
 
 ## Safety boundary
 
-`LIVE=false` · `REAL_CAPITAL=0` · automatic promotion disabled.
+LIVE=false · REAL_CAPITAL=0 · automatic promotion disabled · Demo not ready.
 
-[Current status](../../CURRENT_STATUS.md) · [September 19 update](../../updates/2026-09-19-public-status.md) · [Completed work](COMPLETED_WORK.md) · [Test results](../verification/TEST_RESULTS.md)
+[Current status](../../CURRENT_STATUS.md) · [September 21 update](../../updates/2026-09-21-public-status.md) · [Completed work](COMPLETED_WORK.md) · [Test results](../verification/TEST_RESULTS.md)
