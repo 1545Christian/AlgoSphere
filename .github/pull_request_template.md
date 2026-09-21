@@ -17,3 +17,5 @@ If the change affects a factual project claim, link the public evidence or expla
 - [ ] I kept Paper / Shadow / Research / OpenAI / Live boundaries clear where relevant.
 - [ ] Links and referenced public files are valid.
 - [ ] The wording is understandable to someone who does not know the internal project history.
+- [ ] External claims/references are linked to an original or authoritative source where practical.
+- [ ] I understand that contributions are published under the applicable repository license.
