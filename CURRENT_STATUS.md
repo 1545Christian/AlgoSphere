@@ -1,161 +1,170 @@
 # Current public status
 
-Publication date: **2026-09-21**. Human-reviewed.
-
-No major AlgoSphere development work was continued on September 20. This document consolidates the latest verified state and removes stale blockers from the public status.
+Publication date: **2026-09-21**. Human-reviewed from the latest internal project handoff.
 
 ## Operating boundary
 
 - Live trading: **No**
 - Real capital: **0**
 - Automatic promotion: **No**
-- Demo release: **Not ready**
+- Demo / Testnet: **Not started**
 - Elite / UTA: **Deferred**
 - Paper / Shadow research: active
-- Training: operator-controlled; no broad automatic training
+- Training: operator-controlled
 - Safety boundary: fail-closed
 
-## Runtime / Research Forward
+## Latest WebUI / current-truth proof
 
-The latest Research Forward restart proof confirms that the current scientific overlay is bound before engine creation.
+The latest reviewed WebUI checkpoint has moved beyond the earlier 90.8.10.199 proof.
 
-- runtime composition hashes: **35/35 PASS**
-- Research Forward hash proof: **PASS**
-- strategies: **170 / 170**
-- duplicates: **0**
-- CURRENT control path unchanged
-- WebUI: **90.8.10.199**
+Latest accepted build in the internal handoff: **90.8.10.239**.
 
-The same proof showed CURRENT 19 settled / -2.05 USDT and CONTEXT_V2 13 settled / -0.79 USDT.
+Reported browser-accepted scope:
 
-This does **not** prove V2 is better. The new event population around that proof was still dominated by NO_CURRENT_SETUP, so selector-ranking uplift is not yet established.
+- B37_EXIT_LABEL_SEMANTICS = PASS
+- B38_NO_TRADE_CURRENT_TRUTH = PASS
+- B39_FULL_WEBUI_SWEEP = PASS
+- BROWSER_ACCEPTANCE_PASS = PASS
+- friendly host/private browser path = PASS
+- no Failed to fetch
+- Paper CURRENT and CONTEXT_V2 remain separated
 
-## Canonical Memory / Learning
+At that checkpoint, Paper CURRENT showed **124 settled / +4.03 USDT / PF 1.09 / 0 open**, with API ↔ DOM matching for the checked scope.
 
-The current Canonical Memory core and new-write contract are now treated as **PROVEN_CLOSED**.
+CONTEXT_V2 showed **501 decisions / 0 settled / 0 open** at that same checkpoint.
 
-Current-path guarantees include stable provenance and identity, machine/human/AI-readable evidence, no parallel truth path, Decision → Outcome → Learning linkage and Before → Delta → After traceability.
+These figures describe current UI/runtime truth for the checked population. They are not a claim of predictive superiority or live profitability.
 
-The earlier SQLite-lock status is no longer the final state: the scoped Exact-only backfill was later committed and targeted mapping/state repair completed where exact evidence existed.
+## Canonical Memory / learning
 
-Verified historical repair included:
+The **current writer path** is clean:
 
-- PAPER/CURRENT 17/17 Outcome → Contribution → Delta chains repaired
-- exact-recoverable state fields repaired for 1,483 PAPER/CURRENT rows
-- exact-recoverable state fields repaired for 10 PAPER/CONTEXT_V2 rows
-- targeted integrity check: PASS
+- CURRENT_MEMORY_WRITER = PASS
+- SINGLE_LEARNING_WRITER = PROVEN
+- PARALLEL_LEARNING_ENGINE = NOT_FOUND
 
-Legacy gaps intentionally remain where exact evidence does not exist:
+However, the latest trust review does **not** treat the entire historical/canonical memory population as closed.
 
-- 1,739 UNVERSIONED rows
-- 74 no-evidence legacy gaps
+Open historical/current reconciliation issues still include:
 
-Those values are not synthesized. PAPER/CONTEXT_V2 still did not have a comparable settled outcome population at that checkpoint.
+- Paper CURRENT rows where Delta exists but Contribution/lane lineage is incomplete
+- Paper CONTEXT_V2 with no comparable settled canonical outcome population
+- TLC CONTEXT_V2 rows with Outcome but incomplete Contribution/Delta
+- Research Forward join mismatches around identity/lane/state
+- OpenAI lacking a fully trusted settled learning chain in the checked sample
 
-## CONTEXT_V2 selector
+The current writer can therefore be trusted separately from the unresolved historical archive.
 
-The existing CONTEXT_V2 selector consumes Canonical Learning Delta evidence in addition to market-state/context-fit. Matching is variant-safe by coin, side, strategy family and market state. CURRENT remains the control path.
+## Exact-only OpenAI memory repair
 
-Technical connection: proven. Trading improvement: **INSUFFICIENT_EVIDENCE**.
+A small OpenAI canonical repair remains blocked.
+
+The intended 3-row repair discovered 4 possible rows during re-check:
+
+- authorized target rows: 3
+- discovered target rows: 4
+- target-set drift: YES
+
+The apply was correctly **not** forced because a writer-free maintenance state was also not safely proven.
+
+The next valid step is:
+
+1. establish a writer-free maintenance window
+2. classify the fourth row
+3. explicitly re-authorize the exact target IDs
+4. execute one exact-only transaction
+5. verify target/non-target mutation and SQLite integrity
+6. restart runtime cleanly
+
+No synthetic or broad historical repair is authorized.
+
+## OpenAI AI-only
+
+A concrete OpenAI paper-loop bug was found and patched on disk.
+
+The bug could allow a valid OPEN observation to be overwritten after a temporary Futures BBO/history failure.
+
+Focused patch validation: **49 PASS**.
+
+The remaining work is:
+
+- activate the patch in the controlled runtime
+- verify the old failure mode no longer reproduces
+- reconcile the earlier approximately **+43.49 USDT** interpretation against the current canonical source, population, date range and cost contract
+- define one trusted current OpenAI number for the UI
+
+Therefore:
+
+- OpenAI decision path: active
+- runtime patch activation: pending
+- historical +43.49 reconciliation: pending
+- OpenAI number trust: not closed
+- OpenAI profitability: not proven
 
 ## Market Intelligence / training
 
-The latest important training result remains the ENA full-history one-coin pilot:
+The ENA full-history one-coin pilot remains the important model-quality result:
 
-- Rule and ML compared on the same OOS folds
-- RULE_VS_ML = DEGRADED
+- Rule vs ML = DEGRADED
 - candidate_eligible = false
 - no Challenger promotion
 - no automatic promotion
 - Rule evidence preserved
 
-The Robustness Gate remains required before any later Challenger claim. Broad multi-coin training remains deferred.
+Broad training remains blocked until model-quality evidence improves.
 
-## Research handoff
+## Research handoff / storage
 
-The Research → standardized memory projection now preserves compact Candidate / Rule / Nested-Fold / Contract evidence that had previously been dropped before the Canonical Memory boundary.
+The future Research → Memory projection and future snapshot writer improvements remain in place.
 
-The future projection is structurally tested. Current proof state: **AWAITING_REAL_RUN**. No additional training run should be started only to prove this connection.
+Natural forward proof for some future handoff/storage contracts is still pending.
 
-## Storage / database
-
-The local database had grown to roughly 62 GB, with research_runs contributing roughly 35 GB.
-
-The future snapshot writer was corrected so decoded canonical fields are no longer stored together with duplicate physical *_json aliases. Representative evidence indicates about **49% smaller future large snapshots**.
-
-A Future Summary Identity contract was also added for future runs, including summary hash, schema version, evidence/archive pointers, artifact/checkpoint/canonical-evidence status and retention metadata.
-
-Existing 569 historical runs were not rewritten.
-
-Legacy compaction is **not authorized** yet:
-
-- 0 runs currently proven eligible for automatic compaction
-- 173 resumable
-- 394 missing required evidence
-- 2 unknown
-
-No historical DELETE / VACUUM / migration is authorized from this status.
-
-## WebUI
-
-The Research / Trade Like Che UI is materially improved: CURRENT / CONTEXT_V2 separation, stable variant/filter/scroll state, compact shared table contract, long text via tooltips, and the same served build across local IP and configured aliases at proof time.
-
-The full product-style information architecture is still not considered finished. Large-history pagination/virtualization and further reduction of dense page regions remain open.
-
-## OpenAI AI-only
-
-The AI-only lane remains independent: OpenAI is the final trading decision layer inside that lane.
-
-The current request contract includes multi-timeframe context, BTC/ETH context, news, structure/support-resistance, learning memory and current OpenAI position context. Open positions are monitored locally and should not trigger repeated paid calls merely because they remain open.
-
-Still open: compact single-plan request forward proof, causal decision-quality evidence and trusted cost reporting. Profitability is **not proven** and the older positive PnL interpretation must not be used as profit evidence.
+No broad historical compaction/delete/vacuum is authorized.
 
 ## Demo / Packaging / Release
 
-Demo and distribution remain **OPEN / BLOCKED**.
+Bitget Demo/Testnet has **not started**.
 
-Before a public/client demo can be called ready, the project still needs:
+Current gate: **M2 = BLOCKED_BY_M1**.
 
-- Offline Demo / Connected Demo isolation
-- no accidental Training / OpenAI-paid / Live / real-capital activation
-- approved and signed model-bundle contract
-- Bitget Demo/Testnet end-to-end proof
-- Decision → Entry → Exit → Outcome → reconnect/recovery proof
-- product-ready client/WebUI surface
-- installer / update / rollback / configuration / logs
-- local-PC vs remote WebUI/server operating-model decision
-- later server/webspace deployment contract
-- secure credentials
-- explicit read-only permissions where intended
-- release integrity
-- license / terms / disclaimer
-- distribution-profile isolation
+M1 is not closed because Memory trust and OpenAI number trust are still incomplete.
 
-Important boundaries: Demo Connected ≠ Live; Bitget read-only ≠ trading permission; LAST_APPROVED_MODEL_BUNDLE ≠ latest trained model.
+Still not done:
 
-Normal Futures live readiness remains later work behind Demo/stability proof. Elite / UTA remains deferred beyond stable Normal Futures.
+- Demo execution router proof
+- real Bitget Demo order ACK/fill/position/exit cycle
+- fees and reconciliation
+- restart/reconnect recovery
+- Paper → Demo handoff
+- TLC → Demo handoff
+- OpenAI → Demo handoff
+- fallback to current simulated path
 
-## What remains scientifically open
+Important boundaries:
 
-The central research question is unchanged: **more infrastructure works, but durable predictive / trading uplift is not yet demonstrated.**
+- Demo Connected ≠ Live
+- Demo/Testnet ≠ real capital
+- Live remains disabled
 
-Not yet proven: ENA ML uplift, CONTEXT_V2 selector uplift, OpenAI decision quality, and a newly completed Learning → Challenger → Paper → Champion cycle.
+## Current critical path
 
-## Current priorities
+The project should not return to broad WebUI re-audits unless a new regression is observed.
 
-1. Keep prospective CURRENT / CONTEXT_V2 evidence collection clean and variant-safe.
-2. Wait for a natural Research/QUICK handoff to prove the future compact evidence projection.
-3. Continue model-quality investigation before broader training.
-4. Keep historical unknowns explicit.
-5. Keep legacy storage compaction blocked until retention safety is proven.
-6. Continue WebUI simplification.
-7. Keep Demo/Packaging/Release separate from Live readiness.
-8. Do not reopen Elite/UTA before Normal Futures is stable.
+1. classify OpenAI target-set drift (3 vs 4)
+2. create safe maintenance state
+3. exact-only canonical apply
+4. controlled runtime restart
+5. activate CH06 OpenAI patch
+6. reconcile current/historical OpenAI numbers
+7. close M1 if current Memory/UI/OpenAI trust gates pass
+8. only then start Bitget Demo/Testnet M2
+
+## Scientific boundary
+
+Infrastructure progress does not prove trading edge.
+
+Still not proven: durable ML uplift, CONTEXT_V2 uplift, OpenAI profitability, a new Challenger → Paper → Champion cycle, or Demo/live readiness.
 
 ## Safety boundary
 
-LIVE=false · REAL_CAPITAL=0 · automatic promotion disabled · Demo not ready.
-
-No documentation update authorizes live trading, real-capital execution, automatic promotion or release readiness.
-
-See the [September 21 update](updates/2026-09-21-public-status.md), [roadmap](docs/progress/ROADMAP.md), [completed work](docs/progress/COMPLETED_WORK.md) and [test results](docs/verification/TEST_RESULTS.md).
+LIVE=false · REAL_CAPITAL=0 · automatic promotion disabled · Demo/Testnet not started.
