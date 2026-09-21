@@ -23,6 +23,7 @@ If you are new to the project, start with [START_HERE.md](START_HERE.md). It exp
 ## Questions and participation
 
 - [FAQ](FAQ.md)
+- [Glossary](GLOSSARY.md) — project terms such as CURRENT, CONTEXT_V2, OOS, Shadow and Canonical Memory
 - [Contributing](../CONTRIBUTING.md)
 - [Support](../SUPPORT.md)
 - [Security](../SECURITY.md)
