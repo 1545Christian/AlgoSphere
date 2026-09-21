@@ -54,16 +54,16 @@ A newer model does not become active simply because it is newer. Promotion is in
 | Research Forward / Trade Like Che CURRENT | Running |
 | Trade Like Che Context V2 | Active Shadow / runtime hash proof available |
 | CONTEXT_V2 learning | Canonical Learning Delta connected to selector |
-| Canonical Memory core | **Current contract PROVEN_CLOSED** |
-| Historical Canonical repair | Scoped backfill committed; exact repair completed where provable |
+| Canonical Memory current writer | **PASS**; historical/global trust still incomplete |
+| OpenAI exact memory repair | **Blocked** by target-set drift (3 authorized / 4 discovered) + maintenance-state proof |
 | Market Intelligence V2.1 | Research baseline available |
 | ENA one-coin pilot | Completed; Rule vs ML = DEGRADED; no promotion |
 | Robustness Gate | Implemented / evidence-gated |
 | Research handoff | Future compact Candidate/Rule evidence projection fixed; awaiting natural-run proof |
 | Research storage | Future writer + summary identity improved; legacy compaction not authorized |
-| OpenAI AI-only | Active; decision quality still not proven |
-| WebUI | Latest verified Research-Forward proof: v90.8.10.199 |
-| Demo / Packaging / Release | **OPEN / BLOCKED** |
+| OpenAI AI-only | Active; paper-loop patch 49 PASS on disk, runtime activation + number reconciliation pending |
+| WebUI | Latest accepted browser scope: **v90.8.10.239** |
+| Demo / Packaging / Release | **M2 BLOCKED_BY_M1 / Bitget Demo not started** |
 | Live trading | Disabled |
 | Real capital | 0 |
 | Automatic promotion | Disabled |
