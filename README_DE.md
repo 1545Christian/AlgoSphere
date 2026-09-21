@@ -9,17 +9,39 @@ Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
 Neuestes geprüftes Update: [21. September 2026](updates/2026-09-21-public-status_DE.md)<br>
 Telegram: https://t.me/AlgoSphereOfficial
 
+> **Hinweis zum öffentlichen Repository:** Hier werden das Projekt und ausgewählte Evidence dokumentiert. Dieses Repository ist kein Download der privaten AlgoSphere-Trading-Anwendung.
+
 ## Überblick
 
 AlgoSphere verbindet quantitative Marktanalyse, Market-State- und Regime-Research, Rule- und ML-Validierung, kanonische Decision → Outcome → Learning-Evidence, OpenAI-gestützte Analyse, Paper-/Shadow-Ausführung, Lifecycle-Governance und spätere Demo-/Packaging-/Release-Arbeit.
 
 Im Mittelpunkt stehen Reproduzierbarkeit, kausale Auswertung, eindeutige Lineage und der Erhalt positiver wie negativer Evidence.
 
+## Wohin sich AlgoSphere entwickeln soll
+
+AlgoSphere wird zu einem konfigurierbaren quantitativen Research- und Trading-Analyse-System entwickelt, das über ein breites Universum von Kryptomärkten arbeiten kann.
+
+Das langfristige Ziel ist nicht, ein Modell oder eine Strategie auf jeden Coin zu zwingen. Das System soll anhand messbarer Evidence lernen:
+
+- was bei einem bestimmten Coin, einer Side, Marktphase und einem Horizont funktioniert
+- wann eine Rule-Strategie stärker ist als ML
+- wann ein Modell neu trainiert oder revalidiert werden sollte
+- wann eine Strategie im Research bleiben muss statt promotet zu werden
+- und wann **NO_TRADE** die bessere Entscheidung ist
+
+Marktanalyse, Strategie-Research, ML-Training, Validierung und evidenzbasierte Anpassung sollen mit der Zeit stärker automatisiert werden. Promotion, Execution-Berechtigungen und jede spätere Echtgeld-Nutzung bleiben trotzdem ausdrücklich geregelt.
+
+Die Coins in aktuellen Berichten sind Arbeits-Populationen und nicht das spätere Limit. Langfristig soll das Coin-Universum einstellbar sein — innerhalb der Grenzen von Daten, Rechenleistung, Liquidität, Qualität und Exchange-Unterstützung.
+
+Mehr dazu: [Projektrichtung](docs/project/PROJECT_DIRECTION_DE.md).
+
 ## Research-Lifecycle
 
 HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
 
 candidate_eligible ist Eligibility-Metadatum und keine eigene operative Stufe. Rule-Evidence bleibt unabhängig vom Erfolg des ML-Selectors erhalten.
+
+Ein neueres Modell wird nicht allein deshalb aktiv, weil es neuer ist. Promotion soll von reproduzierbarer Evidence und kontrolliertem Vergleich abhängen.
 
 ## Aktuell geprüfter Stand
 
@@ -49,23 +71,37 @@ Details zu Status und offenen Punkten stehen in [CURRENT_STATUS.md](CURRENT_STAT
 
 ## Evidence und Transparenz
 
-AlgoSphere veröffentlicht ausgewählte geprüfte Projektstände, Research-Zusammenfassungen, Verifikationsergebnisse, Evidence, Entwicklungshistorie und bekannte Grenzen. Negative Ergebnisse bleiben sichtbar.
+AlgoSphere veröffentlicht ausgewählte geprüfte Projektstände, Research-Zusammenfassungen, Verifikationsergebnisse, Evidence, Entwicklungshistorie und bekannte Grenzen.
+
+Negative Ergebnisse bleiben sichtbar. Technischer Abschluss wird nicht als Beweis für Modellqualität, Profitabilität oder Live-Readiness dargestellt.
 
 ## Öffentlich / privat
 
-Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es enthält nicht den privaten Anwendungscode, Zugangsdaten, Konto-Konfiguration, Marktdatenbanken, trainierte Modelle oder proprietäre Strategieparameter.
+Dieses Repository ist die **öffentliche Dokumentations- und Evidence-Schicht** von AlgoSphere.
+
+Es enthält Projektdokumentation, ausgewählte öffentliche Evidence-Exporte und kleine öffentliche Verifikationswerkzeuge. Es enthält **nicht** den privaten Anwendungs-/Runtime-Code, Zugangsdaten, Kontokonfiguration, private Marktdatenbanken, trainierte Model Bundles oder proprietäre Strategieparameter.
+
+Eine öffentliche AlgoSphere-Anwendung wird derzeit nicht über dieses Repository zum Download angeboten.
+
+Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md).
 
 ## Dokumentation
 
 | Thema | Dokument |
 |---|---|
+| Projektrichtung | [docs/project/PROJECT_DIRECTION_DE.md](docs/project/PROJECT_DIRECTION_DE.md) |
+| Öffentlicher Repository-Umfang | [docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md](docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md) |
 | Aktueller Status | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
 | Neuestes geprüftes Update | [Update vom 21. September](updates/2026-09-21-public-status_DE.md) |
 | Roadmap | [docs/progress/ROADMAP.md](docs/progress/ROADMAP.md) |
 | Dokumentierte Arbeiten | [docs/progress/COMPLETED_WORK.md](docs/progress/COMPLETED_WORK.md) |
 | Projektgeschichte | [docs/project/PROJECT_HISTORY.md](docs/project/PROJECT_HISTORY.md) |
+| FAQ | [docs/FAQ_DE.md](docs/FAQ_DE.md) |
 | Verifikation | [docs/verification/TEST_RESULTS.md](docs/verification/TEST_RESULTS.md) |
 | Evidence-Übersicht | [evidence/EVIDENCE_SUMMARY.md](evidence/EVIDENCE_SUMMARY.md) |
+| Mitmachen | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| Support | [SUPPORT.md](SUPPORT.md) |
+| Security | [SECURITY.md](SECURITY.md) |
 | Disclaimer | [docs/legal/DISCLAIMER.md](docs/legal/DISCLAIMER.md) |
 
 Alle datierten [Updates](updates/) durchsuchen.
@@ -74,13 +110,9 @@ Alle datierten [Updates](updates/) durchsuchen.
 
 AlgoSphere ist auch deshalb öffentlich dokumentiert, damit Research nachvollzogen, hinterfragt und verbessert werden kann.
 
-- Häufige Fragen: [FAQ auf Deutsch](docs/FAQ_DE.md)
-- English FAQ: [docs/FAQ.md](docs/FAQ.md)
-- Mitmachen / Hinweise einreichen: [CONTRIBUTING.md](CONTRIBUTING.md)
-- Support und richtige Anlaufstelle: [SUPPORT.md](SUPPORT.md)
-- Bugreports, Research-Fragen und Verbesserungsideen: über die GitHub-Issue-Vorlagen
+Hilfreich sind reproduzierbare Bugreports, Dokumentationskorrekturen, Research-Fragen, relevante Papers/Methoden und Verbesserungsideen, die sich fair testen lassen.
 
-Besonders hilfreich sind Hinweise mit reproduzierbarer Evidence, missverständlichen öffentlichen Aussagen, Research-Fragen, Dokumentationslücken oder einem fairen Vorschlag, wie eine Idee getestet werden kann.
+Für Bugs, Research-Fragen und Ideen gibt es strukturierte GitHub-Issue-Vorlagen. Bitte vorher [CONTRIBUTING.md](CONTRIBUTING.md) lesen.
 
 ## Öffentliche Updates
 
