@@ -6,6 +6,8 @@ AlgoSphere is currently an independent research project, not an open-source trad
 
 That said, useful public contributions are welcome.
 
+Before contributing, please read the [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md) so it is clear which parts of AlgoSphere are public and which remain private.
+
 ## Good ways to contribute
 
 You can help by reporting:
@@ -51,6 +53,8 @@ Please do not post:
 
 Small documentation corrections are welcome.
 
+By submitting a contribution, you agree that it may be distributed under the license that applies to the part of the repository you are changing: public documentation/evidence under CC BY-SA 4.0, and the small public verification tools under MIT. See [Licensing](docs/legal/LICENSING.md).
+
 Larger code or architecture changes should first be discussed in an issue. This public repository is mainly a documentation/evidence layer, so not every internal implementation change belongs here.
 
 ## Research principles
@@ -70,3 +74,17 @@ Contributions should respect the same principles used by the project:
 For common questions, see [docs/FAQ.md](docs/FAQ.md).
 
 For short public project updates, see the Telegram channel linked in the README.
+
+## Before you submit
+
+A good public contribution should be understandable without access to the private AlgoSphere application.
+
+Before opening an issue or pull request, check that:
+
+- the claim can be supported by public evidence or is clearly presented as a question/hypothesis
+- no private paths, credentials, account data or proprietary parameters are included
+- current and historical states are not mixed
+- a technical PASS is not described as a profitability result
+- any external paper, article or method is linked to its original source where possible
+
+If you are unsure which route to use, start with the [FAQ](docs/FAQ.md) or [Support](SUPPORT.md).
