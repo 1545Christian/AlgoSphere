@@ -10,6 +10,8 @@ Historical, simulated, paper, shadow and scoped QA observations do not establish
 
 Voluntary support is accepted through [GitHub Sponsors](https://github.com/sponsors/1545Christian) and helps fund research, development, testing infrastructure and public technical documentation. Sponsorship is not an investment and provides no ownership, repayment, profit participation, financial return, trading signals, investment advice, exclusive access or guaranteed project outcome.
 
+Copyright reuse of public material is governed separately by the repository's [Licensing](LICENSING.md) terms. Those licenses do not grant access to or rights in the private AlgoSphere application, unpublished models, proprietary strategy material, credentials, accounts or infrastructure.
+
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
