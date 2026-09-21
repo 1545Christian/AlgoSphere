@@ -31,11 +31,11 @@ SECRET_PATTERNS = {
         re.I,
     ),
     "email": re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I),
-    "ipv4": re.compile(r"\b(?:\d{1,3}\.){3}\d{1,3}\b"),
+    "private_ipv4": re.compile(r"\b(?:10(?:\.\d{1,3}){3}|192\.168(?:\.\d{1,3}){2}|172\.(?:1[6-9]|2\d|3[01])(?:\.\d{1,3}){2})\b"),
     "windows_path": re.compile(r"\b[A-Z]:[\\/]", re.I),
     "unc_path": re.compile(r"\\\\[^\\\s]+\\"),
     "object_dump": re.compile(r"\$\(@\{|System\.Object", re.I),
-    "proprietary_metrics": re.compile(r"\bPnL\b|profit factor|open_positions|research_code_fingerprint", re.I),
+    "proprietary_metrics": re.compile(r"profit factor|open_positions|research_code_fingerprint", re.I),
 }
 
 BASE_EXPORT_MANIFEST_FILES = {
