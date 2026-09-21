@@ -1,0 +1,40 @@
+name: Bug or documentation issue
+description: Report a reproducible problem in the public repository, documentation or public UI
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Please keep private credentials, account data and proprietary strategy parameters out of public issues.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What did you find?
+      description: Describe the problem in plain language.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Where can it be verified?
+      description: Add a public file path, screenshot, page, commit or reproduction steps if available.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Documentation
+        - Public status / evidence
+        - WebUI
+        - Research methodology
+        - Demo / packaging
+        - Other
+    validations:
+      required: true
