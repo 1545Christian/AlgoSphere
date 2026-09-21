@@ -4,55 +4,39 @@ Reviewed: **2026-09-21**
 
 This page summarizes selected public verification evidence. It does not certify profitability, live readiness or a globally clean private test suite.
 
-## Recent focused verification
+## Latest focused verification
 
-Recent project work reported focused green checks including:
+Latest internal handoff reports:
 
-- Canonical Learning → CONTEXT_V2 selector focused validation: **75 PASS**
-- Research Forward runtime composition hashes: **35/35 PASS**
-- Research Forward strategy count at the accepted runtime proof: **170 / 170**, 0 duplicates
-- Research Forward hash proof: **PASS**
-- focused Context V2 regression checks around the runtime-composition repair: PASS
-- Python compilation at that repair checkpoint: PASS
-- supervisor smoke state at that repair checkpoint: RUNNING
+- WebUI B37 Exit Label Semantics: **PASS**
+- WebUI B38 NO_TRADE Current Truth: **PASS**
+- WebUI B39 Full WebUI Sweep: **PASS**
+- Browser acceptance on WebUI **90.8.10.239**: **PASS**
+- OpenAI paper-loop patch focused suite: **49 PASS**
+- current memory writer: **PASS**
+- single learning writer: **PROVEN**
+- parallel learning engine: **NOT FOUND**
 
-The latest browser/runtime proof used WebUI **90.8.10.199**.
+Earlier still-valid focused evidence includes:
 
-## Training evidence is separate from test evidence
+- Canonical Learning → CONTEXT_V2 selector: **75 PASS**
+- Research Forward runtime composition: **35/35 PASS**
+- Research Forward strategies: **170/170**, 0 duplicates
 
-The ENA full-history one-coin pilot completed technically, but its model-quality result remained:
+## What remains unproven
 
-- Rule vs ML: **DEGRADED**
-- candidate eligibility: false
-- Challenger promotion: no
+The green checks above do not prove:
 
-A green software test does not turn a degraded scientific result into a successful model.
+- historical Canonical Memory completeness
+- successful exact-only OpenAI backfill
+- runtime activation of the latest OpenAI patch
+- reconciliation of the older ~+43.49 USDT view
+- OpenAI profitability
+- Bitget Demo/Testnet E2E
+- live readiness
 
-## Runtime proof is separate from source-code proof
+## Evidence layers
 
-AlgoSphere now treats these as different layers of evidence:
+AlgoSphere distinguishes code/source state, focused tests, runtime/process proof, API/UI proof, browser proof and prospective outcome proof.
 
-- source/file state
-- relevant SHA / composition identity
-- running process
-- served API/UI state
-- browser-visible projection
-- prospective outcome evidence
-
-A code edit on disk is therefore not described as active runtime behavior until the relevant runtime proof agrees.
-
-## Full-suite boundary
-
-The public documentation does **not** currently claim that every private application test is globally green.
-
-Older full-suite checkpoints and older runtime blockers remain historical evidence, but they are not used as the current project status when later targeted proof has superseded them.
-
-## Publication verification
-
-The public repository includes a small standard-library verifier for the documentation/evidence export.
-
-That verifier checks public-file boundaries, common privacy/secret patterns, local Markdown links, language counterlinks and export-manifest integrity when used on a staged export.
-
-It does not execute the private trading application.
-
-[Current status](../../CURRENT_STATUS.md) · [September 21 update](../../updates/2026-09-21-public-status.md) · [Roadmap](../progress/ROADMAP.md)
+A later layer is not inferred automatically from an earlier one.
