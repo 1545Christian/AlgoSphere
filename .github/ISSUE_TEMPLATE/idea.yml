@@ -1,0 +1,35 @@
+name: Idea / improvement
+description: Suggest a public-facing improvement, research idea or documentation enhancement
+title: "[Idea] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest an improvement.
+        AlgoSphere is a research project, so useful ideas should be testable and evidence-oriented rather than framed as guaranteed trading improvements.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you improve?
+      description: Describe the idea in plain language.
+      placeholder: I think the project could improve...
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why might this matter?
+      description: Explain the problem, user benefit or research value.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or reference
+      description: Optional paper, benchmark, screenshot, public source or comparison that supports the idea.
+  - type: textarea
+    id: test
+    attributes:
+      label: How could it be tested fairly?
+      description: If relevant, describe what would count as evidence for or against the idea.
