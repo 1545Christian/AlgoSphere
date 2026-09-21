@@ -83,7 +83,9 @@ Es enthält Projektdokumentation, ausgewählte öffentliche Evidence-Exporte und
 
 Eine öffentliche AlgoSphere-Anwendung wird derzeit nicht über dieses Repository zum Download angeboten.
 
-Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md).
+Die öffentliche Dokumentation/Evidence steht unter CC BY-SA 4.0; die kleinen öffentlichen Verifikationswerkzeuge unter MIT. Keine dieser Lizenzen gilt für die private AlgoSphere-Anwendung oder nicht veröffentlichte Projektinhalte.
+
+Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md) und [Lizenzierung](docs/legal/LICENSING.md).
 
 ## Dokumentation
 
@@ -102,6 +104,7 @@ Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOP
 | Mitmachen | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Support | [SUPPORT.md](SUPPORT.md) |
 | Security | [SECURITY.md](SECURITY.md) |
+| Lizenzierung | [docs/legal/LICENSING.md](docs/legal/LICENSING.md) |
 | Disclaimer | [docs/legal/DISCLAIMER.md](docs/legal/DISCLAIMER.md) |
 
 Alle datierten [Updates](updates/) durchsuchen.
