@@ -54,16 +54,16 @@ Ein neueres Modell wird nicht allein deshalb aktiv, weil es neuer ist. Promotion
 | Research Forward / Trade Like Che CURRENT | Läuft |
 | Trade Like Che Context V2 | Active Shadow / Runtime-Hash-Proof vorhanden |
 | CONTEXT_V2 Learning | Canonical Learning Delta an Selector angeschlossen |
-| Canonical Memory Core | **Aktueller Contract PROVEN_CLOSED** |
-| Historische Canonical-Reparatur | Scoped Backfill committed; exakte Reparatur durchgeführt, soweit beweisbar |
+| Canonical Memory aktueller Writer | **PASS**; historischer/globaler Trust noch unvollständig |
+| OpenAI Exact-Memory-Repair | **Blockiert** durch Target-Set-Drift (3 autorisiert / 4 gefunden) + Maintenance-State-Proof |
 | Market Intelligence V2.1 | Research-Baseline vorhanden |
 | ENA 1-Coin-Pilot | Abgeschlossen; Rule vs ML = DEGRADED; keine Promotion |
 | Robustness Gate | Implementiert / evidenzgesteuert |
 | Research Handoff | Future-Projektion kompakter Candidate-/Rule-Evidence repariert; natürlicher Run-Proof steht aus |
 | Research Storage | Future-Writer + Summary-Identity verbessert; Legacy-Compaction nicht freigegeben |
-| OpenAI AI-only | Aktiv; Decision-Qualität weiterhin nicht bewiesen |
-| WebUI | letzter geprüfter Research-Forward-Proof: v90.8.10.199 |
-| Demo / Packaging / Release | **OPEN / BLOCKED** |
+| OpenAI AI-only | Aktiv; Paper-Loop-Patch 49 PASS on-disk, Runtime-Aktivierung + Zahlen-Reconciliation offen |
+| WebUI | letzter akzeptierter Browser-Scope: **v90.8.10.239** |
+| Demo / Packaging / Release | **M2 BLOCKED_BY_M1 / Bitget Demo nicht gestartet** |
 | Live-Trading | Deaktiviert |
 | Echtgeld | 0 |
 | Automatische Promotion | Deaktiviert |
