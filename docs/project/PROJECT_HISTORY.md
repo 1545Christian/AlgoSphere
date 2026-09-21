@@ -12,25 +12,36 @@ I first rebuilt and adapted examples from YouTube videos and other educational m
 
 ## Automation, ML and walk-forward work
 
-Later work broadened into automation, research pipelines, ML-oriented experiments and walk-forward-oriented evaluation. Public documentation deliberately omits implementation and strategy detail.
+Later work broadened into automation, research pipelines, ML-oriented experiments, walk-forward evaluation, multi-coin market analysis and increasingly structured evidence.
 
 ## Paper, watch and shadow integration
 
-The development direction later included paper, watch and shadow boundaries. Their public purpose is to document gates and evidence boundaries, not to make an activation claim.
+The development direction expanded into Paper, Watch, Research Forward, OpenAI AI-only and Shadow comparison paths. Their purpose is to test decision quality and learning under separated evidence populations before any later live-readiness claim.
 
-## Current evidence and fail-closed orientation
+## Canonical Memory and evidence-driven learning
 
-The current public focus is evidence, explicit blockers and fail-closed controls. Available local technical records establish only the dated window stated below.
+A major later focus became the Decision → Trade → Outcome → Canonical Memory → Learning chain, including provenance, before/delta/after evidence and variant-safe comparison.
+
+## Current direction
+
+AlgoSphere is now being developed toward a configurable research and trading-analysis environment that can work across a broad crypto universe, train and compare models and strategies, learn from outcomes and move through an evidence-gated lifecycle.
+
+The public GitHub repository documents this work. The private operational trading application is not published here.
 
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
-**Local technical evidence window:** 9 September 2025 to 2026-09-13. **not verified:** this accessible evidence does not independently prove every part of the approximately three-year personal history.
+**Public technical evidence window:** 9 September 2025 to 21 September 2026.
 
-| Phase | Period | Public interpretation |
-|---|---|---|
-| Early learning and revision family | Sep–Oct 2025 records | dated prototype revision records |
-| Automation and ML / walk-forward work | 2026 records | observed local development records; detailed continuity not published |
-| Paper, watch and shadow integration | Aug 2026 records | observed gate-oriented work; no activation claim |
-| Evidence and fail-closed focus | current reviewed window | current public documentation orientation |
+The approximately three-year personal development history is not independently proven in full by the public repository; the dated technical record covers the period above.
+
+| Phase | Public interpretation |
+|---|---|
+| Early learning and prototype revisions | personal development history plus dated prototype records |
+| Automation / ML / walk-forward work | observed technical development and research records |
+| Paper / Watch / Shadow integration | separated evidence and validation paths |
+| Canonical Memory / Learning | decision-outcome-learning lineage and controlled adaptation |
+| Current direction | configurable multi-coin research, ML training, validation and later controlled execution |
 <!-- AUTO_VALUES_END -->
+
+[Project direction](PROJECT_DIRECTION.md) · [Current status](../../CURRENT_STATUS.md) · [Latest update](../../updates/2026-09-21-public-status.md)
