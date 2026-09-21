@@ -102,6 +102,7 @@ Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOP
 | Dokumentierte Arbeiten | [docs/progress/COMPLETED_WORK.md](docs/progress/COMPLETED_WORK.md) |
 | Projektgeschichte | [docs/project/PROJECT_HISTORY.md](docs/project/PROJECT_HISTORY.md) |
 | FAQ | [docs/FAQ_DE.md](docs/FAQ_DE.md) |
+| Glossar | [docs/GLOSSARY_DE.md](docs/GLOSSARY_DE.md) |
 | Verifikation | [docs/verification/TEST_RESULTS.md](docs/verification/TEST_RESULTS.md) |
 | Evidence-Übersicht | [evidence/EVIDENCE_SUMMARY.md](evidence/EVIDENCE_SUMMARY.md) |
 | Mitmachen | [CONTRIBUTING.md](CONTRIBUTING.md) |
