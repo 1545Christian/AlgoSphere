@@ -7,7 +7,8 @@ Unabhängiges Forschungs- und Engineering-Projekt für datengetriebene Marktanal
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
 Neuestes geprüftes Update: [21. September 2026](updates/2026-09-21-public-status_DE.md)<br>
-Telegram: https://t.me/AlgoSphereOfficial
+Telegram: https://t.me/AlgoSphereOfficial<br>
+Neu hier? [Hier anfangen](docs/START_HERE_DE.md) · [Architektur](docs/project/ARCHITECTURE_OVERVIEW_DE.md) · [Dokumentationsübersicht](docs/README.md)
 
 > **Hinweis zum öffentlichen Repository:** Hier werden das Projekt und ausgewählte Evidence dokumentiert. Dieses Repository ist kein Download der privaten AlgoSphere-Trading-Anwendung.
 
@@ -91,6 +92,8 @@ Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOP
 
 | Thema | Dokument |
 |---|---|
+| Hier anfangen | [docs/START_HERE_DE.md](docs/START_HERE_DE.md) |
+| Architekturüberblick | [docs/project/ARCHITECTURE_OVERVIEW_DE.md](docs/project/ARCHITECTURE_OVERVIEW_DE.md) |
 | Projektrichtung | [docs/project/PROJECT_DIRECTION_DE.md](docs/project/PROJECT_DIRECTION_DE.md) |
 | Öffentlicher Repository-Umfang | [docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md](docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md) |
 | Aktueller Status | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
@@ -105,9 +108,10 @@ Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOP
 | Support | [SUPPORT.md](SUPPORT.md) |
 | Security | [SECURITY.md](SECURITY.md) |
 | Lizenzierung | [docs/legal/LICENSING.md](docs/legal/LICENSING.md) |
+| Zitierhinweis | [CITATION.cff](CITATION.cff) |
 | Disclaimer | [docs/legal/DISCLAIMER.md](docs/legal/DISCLAIMER.md) |
 
-Alle datierten [Updates](updates/) durchsuchen.
+Datierte [Updates im Archiv](updates/README.md) ansehen.
 
 ## Fragen, Ideen und Feedback
 
