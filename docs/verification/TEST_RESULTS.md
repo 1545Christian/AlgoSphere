@@ -1,58 +1,58 @@
 # Test results and verification limits
 
-## September 16 focused verification
+Reviewed: **2026-09-21**
 
-The following focused suites were reported during the latest repair work:
+This page summarizes selected public verification evidence. It does not certify profitability, live readiness or a globally clean private test suite.
 
-- OpenAI AI Market Analyst V2 relevant regression suite: **263/263 PASS**
-- Unified trade-memory relevant suite: **264 PASS**
-- Final focused suite after the last memory changes: **121 PASS**
-- ADX / indicator-display focused suite: **154 PASS**
-- Trade-Like-CHE entry projection focused suite: **22 PASS**
-- Compact WebUI/table rendering focused suite: **14 PASS**
+## Recent focused verification
 
-Additional checks reported during the same work included:
+Recent project work reported focused green checks including:
 
-- Python compilation: PASS
-- JavaScript syntax: PASS
-- real Bitget data fetch: PASS
-- real OpenAI V2 call: PASS
-- WebUI API checks after visible restart: PASS at the relevant checkpoint
-- visible runtime restart / safety rebind: PASS at the relevant checkpoint
+- Canonical Learning → CONTEXT_V2 selector focused validation: **75 PASS**
+- Research Forward runtime composition hashes: **35/35 PASS**
+- Research Forward strategy count at the accepted runtime proof: **170 / 170**, 0 duplicates
+- Research Forward hash proof: **PASS**
+- focused Context V2 regression checks around the runtime-composition repair: PASS
+- Python compilation at that repair checkpoint: PASS
+- supervisor smoke state at that repair checkpoint: RUNNING
 
-These are meaningful scoped checks. They are **not equivalent to a complete project-suite acceptance**.
+The latest browser/runtime proof used WebUI **90.8.10.199**.
 
-## Full-suite boundary still open
+## Training evidence is separate from test evidence
 
-An earlier full-suite checkpoint from the broader project review recorded:
+The ENA full-history one-coin pilot completed technically, but its model-quality result remained:
 
-- total tests: **1,307**
-- failures: **64**
+- Rule vs ML: **DEGRADED**
+- candidate eligibility: false
+- Challenger promotion: no
 
-The focused green suites above do not prove that every one of those earlier failures has been resolved. A complete suite rerun after the current runtime/data-source repair is still required, with every remaining failure either fixed or explicitly classified as intentional/non-blocking.
+A green software test does not turn a degraded scientific result into a successful model.
 
-Until then, do not present the project as globally test-clean.
+## Runtime proof is separate from source-code proof
 
-## Runtime acceptance still separate from tests
+AlgoSphere now treats these as different layers of evidence:
 
-A unit/regression PASS does not by itself prove:
+- source/file state
+- relevant SHA / composition identity
+- running process
+- served API/UI state
+- browser-visible projection
+- prospective outcome evidence
 
-- Research Forward survives a fresh direct Bitget refresh without the current `WinError 10013` problem,
-- `START_ALGOSPHERE.cmd` behaves correctly for already-running and truly stopped/orphaned states,
-- Forecast propagation and Research open-position visibility are correct after restart,
-- Capture and NO_TRADE render correctly in the final running browser state,
-- OpenAI V2 is profitable or scientifically superior.
+A code edit on disk is therefore not described as active runtime behavior until the relevant runtime proof agrees.
 
-Those require runtime / browser / outcome evidence in addition to tests.
+## Full-suite boundary
 
-## Earlier documented verification
+The public documentation does **not** currently claim that every private application test is globally green.
 
-- **2026-09-05:** Factory identity fix had 15 passing focused tests documented.
-- **2026-09-06:** Installed publisher module passed its bundled offline regression suite locally.
-- **2026-09-13:** Paper/Watch guard report observed PASS; runtime context gate still reported `FAIL_INCOMPLETE_V3_CONTEXT` at that time.
+Older full-suite checkpoints and older runtime blockers remain historical evidence, but they are not used as the current project status when later targeted proof has superseded them.
 
-## Publication verification boundary
+## Publication verification
 
-The public documentation records reviewed engineering/test evidence. It does not independently rerun the private application test suite or certify live readiness.
+The public repository includes a small standard-library verifier for the documentation/evidence export.
 
-[Current status](../../CURRENT_STATUS.md) · [Reviewed September 17 update](../../updates/2026-09-17-public-status.md) · [Roadmap](../progress/ROADMAP.md)
+That verifier checks public-file boundaries, common privacy/secret patterns, local Markdown links, language counterlinks and export-manifest integrity when used on a staged export.
+
+It does not execute the private trading application.
+
+[Current status](../../CURRENT_STATUS.md) · [September 21 update](../../updates/2026-09-21-public-status.md) · [Roadmap](../progress/ROADMAP.md)
