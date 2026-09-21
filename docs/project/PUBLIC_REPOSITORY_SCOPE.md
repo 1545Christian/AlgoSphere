@@ -52,3 +52,13 @@ No public application download is currently offered from this repository.
 If a future Demo or client package is released, it will be documented as a separate release track with its own integrity, configuration, permission and safety boundaries.
 
 Until then, repository visibility should not be interpreted as product availability or live-trading readiness.
+
+## Licensing
+
+Public documentation and public evidence authored for this repository are licensed under **CC BY-SA 4.0**, unless a file says otherwise.
+
+The small public verification tools under `tools/` and `tests/` use the **MIT License**.
+
+These licenses apply only to material actually published in this repository. They do not license the private AlgoSphere application, unpublished models, private strategy material, credentials, account data or infrastructure.
+
+See [Licensing](../legal/LICENSING.md).
