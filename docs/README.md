@@ -6,6 +6,7 @@ If you are new to the project, start with [START_HERE.md](START_HERE.md). It exp
 
 ## Core project documents
 
+- [Architecture Overview](project/ARCHITECTURE_OVERVIEW.md) — how market inputs, decisions, memory, learning and validation fit together
 - [Project Direction](project/PROJECT_DIRECTION.md) — long-term purpose and design direction
 - [Current Status](../CURRENT_STATUS.md) — latest reviewed operating state
 - [Roadmap](progress/ROADMAP.md) — open work and next priorities
@@ -31,6 +32,7 @@ If you are new to the project, start with [START_HERE.md](START_HERE.md). It exp
 
 - [Licensing](legal/LICENSING.md)
 - [Disclaimer](legal/DISCLAIMER.md)
+- [Citation metadata](../CITATION.cff)
 
 ## Updates
 
