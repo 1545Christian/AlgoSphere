@@ -7,7 +7,8 @@ Independent research and engineering project exploring data-driven market analys
 Deutsch: [README_DE.md](README_DE.md)<br>
 Current status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
 Latest reviewed update: [September 21, 2026](updates/2026-09-21-public-status.md)<br>
-Telegram: https://t.me/AlgoSphereOfficial
+Telegram: https://t.me/AlgoSphereOfficial<br>
+New here? [Start here](docs/START_HERE.md) · [Architecture](docs/project/ARCHITECTURE_OVERVIEW.md) · [Documentation map](docs/README.md)
 
 > **Public repository note:** this repository documents the project and selected evidence. It is not a download of the private AlgoSphere trading application.
 
@@ -91,6 +92,8 @@ See [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md) and [Lice
 
 | Topic | Document |
 |---|---|
+| Start here | [docs/START_HERE.md](docs/START_HERE.md) |
+| Architecture overview | [docs/project/ARCHITECTURE_OVERVIEW.md](docs/project/ARCHITECTURE_OVERVIEW.md) |
 | Project direction | [docs/project/PROJECT_DIRECTION.md](docs/project/PROJECT_DIRECTION.md) |
 | Public repository scope | [docs/project/PUBLIC_REPOSITORY_SCOPE.md](docs/project/PUBLIC_REPOSITORY_SCOPE.md) |
 | Current status | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
@@ -105,9 +108,10 @@ See [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md) and [Lice
 | Support | [SUPPORT.md](SUPPORT.md) |
 | Security | [SECURITY.md](SECURITY.md) |
 | Licensing | [docs/legal/LICENSING.md](docs/legal/LICENSING.md) |
+| Citation | [CITATION.cff](CITATION.cff) |
 | Disclaimer | [docs/legal/DISCLAIMER.md](docs/legal/DISCLAIMER.md) |
 
-Browse all dated [updates](updates/).
+Browse the dated [updates archive](updates/README.md).
 
 ## Questions, ideas and feedback
 
