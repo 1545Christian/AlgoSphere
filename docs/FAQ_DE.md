@@ -1,5 +1,7 @@
 # AlgoSphere FAQ
 
+English: [FAQ.md](FAQ.md)
+
 Kurze, verständliche Antworten auf Fragen, die zum Projekt häufig auftauchen.
 
 ## Was ist AlgoSphere?
@@ -8,7 +10,19 @@ AlgoSphere ist ein unabhängiges AI-×-Quant-Forschungs- und Engineering-Projekt
 
 Untersucht wird, wie Market Context, regelbasierte Strategien, Machine Learning, OpenAI-gestützte Analyse, Canonical Memory sowie Paper-/Shadow-Ausführung so zusammenarbeiten können, dass Ergebnisse messbar und nachvollziehbar bleiben.
 
+Langfristig soll daraus ein konfigurierbares Research- und Trading-Analyse-System entstehen, das über ein breites Coin-Universum arbeiten, Strategien und Modelle vergleichen, aus Outcomes lernen und sich nur über evidenzbasierte Revalidierung verbessern kann.
+
 AlgoSphere wird nicht als fertiges Trading-Produkt dargestellt.
+
+Mehr dazu: [Projektrichtung](project/PROJECT_DIRECTION_DE.md).
+
+## Gibt es hier AlgoSphere zum Download?
+
+Nein, derzeit nicht.
+
+Dieses GitHub-Repository ist die öffentliche Dokumentations- und Evidence-Schicht. Es enthält auch kleine Verifikationswerkzeuge für den öffentlichen Export, aber nicht die private Trading-/Runtime-Anwendung.
+
+Siehe [Umfang des öffentlichen Repositorys](project/PUBLIC_REPOSITORY_SCOPE_DE.md).
 
 ## Handelt AlgoSphere bereits live mit Echtgeld?
 
@@ -33,9 +47,23 @@ Das öffentliche Repository und der Telegram-Kanal dokumentieren Entwicklung und
 
 Nein.
 
-Dieses Repository ist die öffentliche Dokumentations- und Evidence-Schicht.
+Privater Anwendungscode, Zugangsdaten, Kontokonfiguration, Marktdatenbanken, trainierte Model Bundles und proprietäre Strategieparameter werden nicht veröffentlicht.
 
-Privater Anwendungscode, Zugangsdaten, Kontokonfiguration, Marktdatenbanken, trainierte Modelle und proprietäre Strategieparameter werden nicht veröffentlicht.
+## Soll AlgoSphere später autonom arbeiten?
+
+Im Research und bei der Validierung zunehmend ja — aber nicht unkontrolliert.
+
+Der vorgesehene Kreislauf ist:
+
+neue Evidence → Evaluation → Learning Delta → Revalidierung → Lifecycle-Entscheidung
+
+Marktanalyse, Strategie-Research, ML-Training und evidenzbasierte Anpassung sollen mit der Zeit stärker automatisiert werden. Promotion, Execution-Berechtigungen und jede spätere Echtgeld-Nutzung bleiben trotzdem ausdrücklich geregelt.
+
+## Ist AlgoSphere auf die aktuell sichtbaren Coins begrenzt?
+
+Nein.
+
+Diese Coins sind Arbeits-Populationen. Langfristig soll das Coin-Universum einstellbar sein und eher durch Datenqualität, Rechenleistung, Liquidität, Exchange-Unterstützung und Validierungsqualität als durch eine kleine fest programmierte Liste begrenzt werden.
 
 ## Ist das ML bereits besser als das Rule-System?
 
@@ -108,6 +136,7 @@ Bitte vorher [CONTRIBUTING.md](../CONTRIBUTING.md) lesen.
 ## Wo anfangen?
 
 - [README](../README_DE.md)
+- [Projektrichtung](project/PROJECT_DIRECTION_DE.md)
 - [Aktueller Status](../CURRENT_STATUS.md)
 - [Neuestes Update](../updates/2026-09-21-public-status_DE.md)
 - [Roadmap](progress/ROADMAP.md)
