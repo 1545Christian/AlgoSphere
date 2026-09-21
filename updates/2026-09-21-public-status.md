@@ -2,6 +2,8 @@
 
 Deutsch: [Öffentliches Status-Update](./2026-09-21-public-status_DE.md)
 
+> **Late September 21 update:** the newest internal handoff moved the state forward again. WebUI browser acceptance is now at **90.8.10.239** for B37/B38/B39 PASS. The current Memory writer is PASS, but global/historical Memory trust remains open because of existing chain/join gaps. A small OpenAI exact-repair is blocked by target-set drift (3 authorized / 4 discovered) and the still-unproven writer-free maintenance state. The new OpenAI paper-loop patch has **49 focused tests PASS** but is not yet runtime-active; the earlier approximately **+43.49 USDT** interpretation is still unreconciled. **Bitget Demo/Testnet has not started and remains M2 BLOCKED_BY_M1.**
+
 ## Why this update exists
 
 No major AlgoSphere development work was continued on September 20. This update reconciles the latest verified state across the project threads so the public documentation does not carry stale blockers forward or imply that unfinished work is complete.
