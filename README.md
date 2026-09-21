@@ -83,7 +83,9 @@ It contains project documentation, selected evidence exports and small public ve
 
 There is currently no public AlgoSphere application download from this repository.
 
-See [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md).
+Public documentation/evidence is licensed under CC BY-SA 4.0; the small public verification tools use MIT. Neither license applies to the private AlgoSphere application or unpublished project assets.
+
+See [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md) and [Licensing](docs/legal/LICENSING.md).
 
 ## Documentation
 
@@ -102,6 +104,7 @@ See [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md).
 | Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) |
 | Support | [SUPPORT.md](SUPPORT.md) |
 | Security | [SECURITY.md](SECURITY.md) |
+| Licensing | [docs/legal/LICENSING.md](docs/legal/LICENSING.md) |
 | Disclaimer | [docs/legal/DISCLAIMER.md](docs/legal/DISCLAIMER.md) |
 
 Browse all dated [updates](updates/).
