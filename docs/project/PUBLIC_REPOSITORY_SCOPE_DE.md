@@ -52,3 +52,13 @@ Aus diesem Repository wird aktuell keine öffentliche Anwendung zum Download ang
 Falls später ein Demo- oder Client-Paket veröffentlicht wird, erhält es einen eigenen Release-Track mit eigener Integrity-, Config-, Permission- und Safety-Grenze.
 
 Bis dahin bedeutet die öffentliche Sichtbarkeit des Repositorys weder Produktverfügbarkeit noch Live-Trading-Readiness.
+
+## Lizenzierung
+
+Öffentliche Dokumentation und öffentliche Evidence, die für dieses Repository erstellt wurden, stehen unter **CC BY-SA 4.0**, sofern eine Datei nichts anderes angibt.
+
+Die kleinen öffentlichen Verifikationswerkzeuge unter `tools/` und `tests/` stehen unter der **MIT License**.
+
+Diese Lizenzen gelten nur für tatsächlich in diesem Repository veröffentlichte Inhalte. Sie geben weder die private AlgoSphere-Anwendung noch nicht veröffentlichte Modelle, Strategieinhalte, Zugangsdaten, Kontodaten oder Infrastruktur frei.
+
+Siehe [Lizenzierung](../legal/LICENSING.md).
