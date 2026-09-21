@@ -70,6 +70,18 @@ Dieses Repository ist ein öffentlicher Dokumentations- und Evidenznachweis. Es 
 
 Alle datierten [Updates](updates/) durchsuchen.
 
+## Fragen, Ideen und Feedback
+
+AlgoSphere ist auch deshalb öffentlich dokumentiert, damit Research nachvollzogen, hinterfragt und verbessert werden kann.
+
+- Häufige Fragen: [FAQ auf Deutsch](docs/FAQ_DE.md)
+- English FAQ: [docs/FAQ.md](docs/FAQ.md)
+- Mitmachen / Hinweise einreichen: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Support und richtige Anlaufstelle: [SUPPORT.md](SUPPORT.md)
+- Bugreports, Research-Fragen und Verbesserungsideen: über die GitHub-Issue-Vorlagen
+
+Besonders hilfreich sind Hinweise mit reproduzierbarer Evidence, missverständlichen öffentlichen Aussagen, Research-Fragen, Dokumentationslücken oder einem fairen Vorschlag, wie eine Idee getestet werden kann.
+
 ## Öffentliche Updates
 
 Kürzere Entwicklungs- und Research-Updates erscheinen auch auf Telegram:
