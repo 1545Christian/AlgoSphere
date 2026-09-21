@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: AlgoSphere FAQ
+    url: https://github.com/1545Christian/AlgoSphere/blob/main/docs/FAQ.md
+    about: Read common questions before opening a new issue.
+  - name: Telegram updates
+    url: https://t.me/AlgoSphereOfficial
+    about: Short public project updates.
