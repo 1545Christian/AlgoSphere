@@ -102,6 +102,7 @@ See [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md) and [Lice
 | Completed engineering work | [docs/progress/COMPLETED_WORK.md](docs/progress/COMPLETED_WORK.md) |
 | Project history | [docs/project/PROJECT_HISTORY.md](docs/project/PROJECT_HISTORY.md) |
 | FAQ | [docs/FAQ.md](docs/FAQ.md) |
+| Glossary | [docs/GLOSSARY.md](docs/GLOSSARY.md) |
 | Verification | [docs/verification/TEST_RESULTS.md](docs/verification/TEST_RESULTS.md) |
 | Evidence guide | [evidence/EVIDENCE_SUMMARY.md](evidence/EVIDENCE_SUMMARY.md) |
 | Contributing | [CONTRIBUTING.md](CONTRIBUTING.md) |
