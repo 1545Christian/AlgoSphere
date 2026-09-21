@@ -1,5 +1,7 @@
 # AlgoSphere FAQ
 
+Deutsch: [FAQ_DE.md](FAQ_DE.md)
+
 A short, plain-language answer to the questions that come up most often around the project.
 
 ## What is AlgoSphere?
@@ -8,7 +10,19 @@ AlgoSphere is an independent AI × Quant research and engineering project for cr
 
 The project explores how market context, rules, machine learning, OpenAI-assisted analysis, canonical memory and Paper/Shadow execution can be combined in a way that is measurable and auditable.
 
+The long-term direction is a configurable research and trading-analysis system that can work across a broad coin universe, compare strategies and models, learn from outcomes and improve through evidence-gated revalidation.
+
 It is not presented as a finished trading product.
+
+More detail: [Project Direction](project/PROJECT_DIRECTION.md).
+
+## Is there an AlgoSphere download here?
+
+No public application download is currently offered from this repository.
+
+This GitHub repository is the public documentation and evidence layer. It also contains small verification tools for the public export, but not the private trading/runtime application.
+
+See [Public Repository Scope](project/PUBLIC_REPOSITORY_SCOPE.md).
 
 ## Is AlgoSphere live trading with real money?
 
@@ -19,6 +33,7 @@ The current public status remains:
 - Live trading: disabled
 - Real capital: 0
 - Automatic model promotion: disabled
+- Demo release: not ready
 
 Paper and Shadow paths are used for research and validation.
 
@@ -32,9 +47,23 @@ The public repository and Telegram channel document research and development pro
 
 No.
 
-This repository is the public documentation and evidence layer.
+Private application source code, credentials, account configuration, market databases, trained model bundles and proprietary strategy parameters are not published here.
 
-Private application source code, credentials, account configuration, market databases, trained models and proprietary strategy parameters are not published here.
+## Is AlgoSphere intended to become autonomous?
+
+Increasingly autonomous in research and validation, yes — but not uncontrolled.
+
+The intended loop is:
+
+new evidence → evaluation → learning delta → revalidation → lifecycle decision
+
+The goal is to automate more market analysis, strategy research, ML training and evidence-based adaptation over time while keeping promotion, execution permissions and any future real-capital use explicitly governed.
+
+## Is the system limited to the coins shown in current reports?
+
+No.
+
+Those coins are working populations. The long-term direction is a configurable coin universe, limited by data quality, compute, liquidity, exchange support and validation quality rather than by a hard-coded small list.
 
 ## Does the machine learning already beat the rule-based system?
 
@@ -94,13 +123,14 @@ The project still needs clear Offline/Connected Demo isolation, approved model b
 
 ## Can I contribute?
 
-Feedback, reproducible bug reports, research questions and documentation corrections are welcome.
+Feedback, reproducible bug reports, research questions, relevant papers/methods and documentation corrections are welcome.
 
 Please read [CONTRIBUTING.md](../CONTRIBUTING.md) before opening an issue.
 
 ## Where should I start?
 
 - [README](../README.md)
+- [Project Direction](project/PROJECT_DIRECTION.md)
 - [Current Status](../CURRENT_STATUS.md)
 - [Latest Update](../updates/2026-09-21-public-status.md)
 - [Roadmap](progress/ROADMAP.md)
