@@ -153,7 +153,7 @@ class VerifyPublicExportTests(unittest.TestCase):
 
     def errors_after(self, mutate) -> list[str]:
         mutate()
-        return verify_public_export.verify(self.root)
+        return verify_public_export.verify(self.root, export_only=True)
 
     def assert_error(self, mutate, expected: str) -> None:
         errors = self.errors_after(mutate)
