@@ -80,6 +80,8 @@ REPOSITORY_EXTRA_FILES = {
     "SUPPORT.md",
     "docs/FAQ.md",
     "docs/FAQ_DE.md",
+    "docs/GLOSSARY.md",
+    "docs/GLOSSARY_DE.md",
     "docs/README.md",
     "docs/START_HERE.md",
     "docs/START_HERE_DE.md",
