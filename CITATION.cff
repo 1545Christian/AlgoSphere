@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you reference AlgoSphere's public research documentation or evidence, please cite this repository."
+title: "AlgoSphere — Public Research Documentation & Evidence"
+authors:
+  - family-names: "Heftenberger"
+    given-names: "Christian"
+repository-code: "https://github.com/1545Christian/AlgoSphere"
+url: "https://github.com/1545Christian/AlgoSphere"
+abstract: >-
+  Public research documentation and selected evidence for AlgoSphere,
+  an independent AI × Quant research and engineering project exploring
+  crypto-market analysis, machine learning, canonical learning,
+  Paper/Shadow validation and controlled research-to-execution workflows.
+license: "CC-BY-SA-4.0"
+keywords:
+  - quantitative research
+  - algorithmic trading
+  - machine learning
+  - cryptocurrency
+  - market analysis
+  - backtesting
+  - trading systems
+  - artificial intelligence
