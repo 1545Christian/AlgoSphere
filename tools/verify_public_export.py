@@ -68,7 +68,24 @@ SUPPORT_FILES = {
     "updates/2026-08-30-initial-public-status.md",
     "updates/2026-08-30-public-history-and-status.md",
 }
-REPOSITORY_ALLOWLIST = BASE_EXPORT_MANIFEST_FILES | SUPPORT_FILES
+REPOSITORY_EXTRA_FILES = {
+    ".github/ISSUE_TEMPLATE/bug_report.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/ISSUE_TEMPLATE/idea.yml",
+    ".github/ISSUE_TEMPLATE/research_question.yml",
+    ".github/pull_request_template.md",
+    "CODE_OF_CONDUCT.md",
+    "CONTRIBUTING.md",
+    "SUPPORT.md",
+    "docs/FAQ.md",
+    "docs/FAQ_DE.md",
+    "docs/project/PROJECT_DIRECTION.md",
+    "docs/project/PROJECT_DIRECTION_DE.md",
+    "docs/project/PUBLIC_REPOSITORY_SCOPE.md",
+    "docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md",
+    "evidence/DAILY_SUMMARY.json",
+}
+REPOSITORY_ALLOWLIST = BASE_EXPORT_MANIFEST_FILES | SUPPORT_FILES | REPOSITORY_EXTRA_FILES
 LANGUAGE_COUNTERLINKS = {
     "README.md": "README_DE.md",
     "README_DE.md": "README.md",
@@ -226,19 +243,26 @@ def verify_register(root: Path) -> list[str]:
 
 def verify_repository_allowlist(root: Path, *, export_only: bool = False) -> list[str]:
     errors: list[str] = []
-    entries, manifest_errors = manifest_entries(root)
-    expected_files, expected_errors = expected_manifest_files(entries)
-    errors.extend(manifest_errors)
-    errors.extend(expected_errors)
-    allowed = expected_files | {"evidence/EXPORT_CONTENTS.md"} if export_only else expected_files | SUPPORT_FILES
+    if export_only:
+        entries, manifest_errors = manifest_entries(root)
+        expected_files, expected_errors = expected_manifest_files(entries)
+        errors.extend(manifest_errors)
+        errors.extend(expected_errors)
+        allowed = expected_files | {"evidence/EXPORT_CONTENTS.md"}
+        required = allowed
+    else:
+        allowed = REPOSITORY_ALLOWLIST
+        required = BASE_EXPORT_MANIFEST_FILES | SUPPORT_FILES
+
     for path in _iter_files(root):
         relative = _relative(path, root)
         if "__pycache__" in path.parts or ".pytest_cache" in path.parts or path.suffix.lower() in {".pyc", ".pyo", ".pyd"}:
             errors.append(f"FAIL: cache artifact is forbidden: {relative}")
         if relative not in allowed and not (not export_only and is_historical_update_file(relative)):
             errors.append(f"FAIL: unexpected public repository file: {relative}")
+
     present = {_relative(path, root) for path in _iter_files(root)}
-    missing = allowed - present
+    missing = required - present
     if missing:
         label = "export" if export_only else "repository"
         errors.append(f"FAIL: required {label} files are missing: {', '.join(sorted(missing))}")
@@ -366,7 +390,8 @@ def verify_lf_text_files(root: Path) -> list[str]:
 def verify(root: Path, *, export_only: bool = False) -> list[str]:
     root = root.resolve()
     errors: list[str] = []
-    errors.extend(verify_manifest(root))
+    if export_only:
+        errors.extend(verify_manifest(root))
     errors.extend(verify_register(root))
     errors.extend(verify_repository_allowlist(root, export_only=export_only))
     errors.extend(verify_privacy_scan(root))
@@ -396,8 +421,11 @@ def main() -> int:
         print("FAIL: public export verification failed")
         print("\n".join(errors))
         return 1
-    print("PASS: SHA-256 manifest, manifest byte sizes and report-register CSV bytes verified.")
-    print("PASS: allowlist, cache, private path, secret scan, Markdown links and EN/DE counterlinks verified.")
+    if args.export_only:
+        print("PASS: staged-export SHA-256 manifest and byte sizes verified.")
+    else:
+        print("PASS: live repository checked without treating the historical export manifest as a current-file hash lock.")
+    print("PASS: report register, allowlist, cache, privacy scan, Markdown links and EN/DE counterlinks verified.")
     print("PASS: HUMAN_TEXT and AUTO_VALUES blocks are present only as non-nested blocks.")
     return 0
 
