@@ -70,6 +70,17 @@ This repository is a public documentation and evidence record. It does not conta
 
 Browse all dated [updates](updates/).
 
+## Questions, ideas and feedback
+
+AlgoSphere is public partly so the research process can be challenged, checked and improved.
+
+- Common questions: [FAQ](docs/FAQ.md)
+- How to contribute: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Support and where to ask: [SUPPORT.md](SUPPORT.md)
+- Bug reports, research questions and improvement ideas: use the GitHub issue templates
+
+Useful feedback is especially welcome when it points to reproducible evidence, unclear public claims, research methodology, documentation gaps or a fair way to test an idea.
+
 ## Public updates
 
 Shorter development and research updates are also published on Telegram:
