@@ -2,90 +2,62 @@
 
 Publication: **2026-09-21**. Human-reviewed.
 
-## Lifecycle contract
+## Immediate P0 — close M1 without reopening proven work
 
-HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
+- **CLOSED for current scope:** WebUI build 90.8.10.239 browser acceptance.
+- **OPEN:** classify OpenAI exact-repair target drift (3 authorized vs 4 discovered).
+- **OPEN:** establish a writer-free maintenance state.
+- **OPEN:** perform one exact-only canonical repair on explicitly authorized target IDs.
+- **OPEN:** restart runtime and prove single-writer / no-lock state.
+- **OPEN:** activate the OpenAI paper-loop patch in runtime.
+- **OPEN:** reconcile the historical ~+43.49 USDT view against current canonical source/population/time/cost contract.
+- **OPEN:** close M1 only when current Memory/UI/OpenAI trust gates agree.
 
-Rule evidence remains preserved independently from ML-selector success.
+## P0 — Memory
 
-## P0 — scientific/model quality
+- **PROVEN CURRENT PATH:** current memory writer.
+- **PROVEN:** single learning writer; no parallel learning engine found.
+- **OPEN LEGACY/RECONCILIATION:** incomplete historical Contribution/Delta/lane/state chains.
+- **RULE:** classified non-reconstructable legacy gaps must not be synthesized.
 
-- **OPEN:** explain and improve Rule-vs-ML degradation before broad training.
-- **OPEN:** collect enough natural CONTEXT_V2 evidence to test selector uplift.
-- **OPEN:** collect enough causal OpenAI settlements to evaluate decision quality.
-- **OPEN:** demonstrate a genuinely new Learning → Challenger → Paper → Champion cycle.
-- **OPEN:** keep broad multi-coin training blocked until evidence supports it.
+## P0 — OpenAI
 
-## P0 — Research / learning handoff
+- **PATCHED ON DISK:** OPEN-observation overwrite bug.
+- **FOCUSED TESTS:** 49 PASS.
+- **OPEN:** controlled runtime activation.
+- **OPEN:** number reconciliation and current canonical UI truth.
+- **OPEN:** causal profitability evidence.
 
-- **IMPLEMENTED / NEEDS NATURAL RUN:** compact Candidate/Rule/Nested-Fold/Contract evidence projection.
-- **OPEN:** prove it on the next natural Research/QUICK handoff.
-- **CLOSED CURRENT CONTRACT:** Canonical Memory core / new-write contract.
-- **OPEN LEGACY:** keep remaining historical UNVERSIONED / no-evidence gaps explicit rather than synthesizing values.
+## P0 — model quality
 
-## P0 — Runtime / Research Forward
+- **OPEN:** improve/explain Rule-vs-ML degradation before broad training.
+- **OPEN:** collect enough prospective CONTEXT_V2 evidence.
+- **OPEN:** preserve Rule evidence independently from ML.
 
-- **CLOSED:** scientific overlay bound before engine creation.
-- **CLOSED:** runtime composition hash proof.
-- **CLOSED:** 170/170 strategies, 0 duplicates.
-- **OPEN:** continue prospective V2 evidence collection; do not claim uplift from small settled snapshots.
+## M2 — Bitget Demo/Testnet
 
-## P0 — Storage / retention
+Status: **BLOCKED_BY_M1 / NOT STARTED**
 
-- **CLOSED FUTURE-WRITE FIX:** no duplicate decoded + *_json aliases in future snapshots.
-- **CLOSED CONTRACT:** future summary identity / retention metadata added.
-- **OPEN:** natural future-run proof for new summary identity.
-- **BLOCKED:** legacy compaction; no automatic compaction eligibility proven.
-- **NO ACTION:** no historical DELETE / VACUUM / broad migration.
+After M1 closes:
 
-## P1 — WebUI
-
-- **CLOSED:** CURRENT / CONTEXT_V2 separation and stable filter/variant state.
-- **CLOSED:** same accepted build across local IP and aliases at latest proof.
-- **OPEN:** pagination / virtualization for large histories.
-- **OPEN:** reduce dense header/filter/card regions.
-- **OPEN:** finish product-style information architecture before Demo release.
-
-## P1 — OpenAI AI-only
-
-- **CLOSED:** OpenAI remains final decision layer inside AI-only lane.
-- **CLOSED:** open positions monitored locally without periodic reprompting.
-- **OPEN:** normal forward proof for compact single-plan request.
-- **OPEN:** causal decision-quality evidence.
-- **OPEN:** trusted cost reporting before public exact-cost claims.
-
-## P1 — Demo / Packaging / Release
-
-- **OPEN/BLOCKED:** define and prove Offline Demo isolation.
-- **OPEN/BLOCKED:** define and prove Connected Demo isolation.
-- **OPEN/BLOCKED:** approved/signed model-bundle release contract.
-- **OPEN/BLOCKED:** Bitget Demo/Testnet E2E.
-- **OPEN/BLOCKED:** Decision → Entry → Exit → Outcome → reconnect/recovery E2E.
-- **OPEN/BLOCKED:** product-ready Demo WebUI/client.
-- **OPEN:** installer / update / rollback / config / logs.
-- **OPEN:** local-PC vs remote WebUI/server deployment model.
-- **OPEN:** secure credential store and read-only permission enforcement.
-- **OPEN:** release integrity + license/terms/disclaimer.
-- **DEFERRED:** server/webspace deployment until the client model is settled.
+- define/verify simulated vs Bitget Demo execution routing
+- prove credentials and permissions remain Demo-only
+- execute one complete Demo Futures E2E cycle
+- reconcile order → fill → position → exit → fees → outcome
+- prove reconnect/restart recovery
+- prove Paper/TLC/OpenAI handoff to Demo separately
+- prove safe fallback to simulated mode
 
 ## Later — Live
 
-- **DEFERRED:** Normal Futures live readiness until Demo/stability proof.
-- **DEFERRED:** Paper↔Live execution parity proof.
-- **DEFERRED:** Live risk/sizing/exit failover.
-- **DEFERRED:** Elite / UTA until Normal Futures is stable.
+- Normal Futures only after Demo/stability proof.
+- Elite / UTA remains deferred beyond stable Normal Futures.
+- Real capital remains disabled.
 
 ## Verification principles
 
-- backend PASS ≠ user-visible PASS
-- process running ≠ service healthy ≠ scientific activity
-- QUICK PASS ≠ promotion
-- technical abort ≠ scientific reject
-- Demo Connected ≠ Live
-- LAST_APPROVED_MODEL_BUNDLE ≠ latest trained model
-
-## Safety boundary
-
-LIVE=false · REAL_CAPITAL=0 · automatic promotion disabled · Demo not ready.
-
-[Current status](../../CURRENT_STATUS.md) · [September 21 update](../../updates/2026-09-21-public-status.md) · [Completed work](COMPLETED_WORK.md) · [Test results](../verification/TEST_RESULTS.md)
+- already-proven scope is not reopened without evidence of regression
+- source patch ≠ runtime-active patch
+- current writer trust ≠ historical archive completeness
+- technical PASS ≠ scientific uplift
+- Demo ≠ Live
