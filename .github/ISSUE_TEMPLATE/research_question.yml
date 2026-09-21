@@ -1,0 +1,34 @@
+name: Research question or idea
+description: Propose a research question that can be tested against existing evidence
+title: "[Research] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A useful research issue starts with a falsifiable question, not only a preferred model or indicator.
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: What do you think may be true, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Existing evidence or reference
+      description: Link a paper, dataset, result, or explain the observation that motivated the idea.
+  - type: textarea
+    id: comparison
+    attributes:
+      label: Fair comparison
+      description: How should this be compared with the current Rule / ML baseline on causal OOS evidence?
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: What result would support or reject the idea?
+    validations:
+      required: true
