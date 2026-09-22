@@ -15,7 +15,7 @@ The 23:45 nightly correctly published the current runtime snapshot, but its deve
 
 - The v117 separation remains the foundation: `LOCAL_ML_AUTOPILOT` is the normal training authority; Codex/Chat are not runtime prerequisites.
 - v122/v123 corrected a real P0 gap: generation of new adaptive hypotheses must no longer depend indirectly on a separate Research Evaluator. The Local-ML daemon reads persistent memory, semantically deduplicates previous work, creates new admissible hypotheses itself and can launch QUICK.
-- `factory_exhausted -> WAITING FOR JOB` is no longer accepted as a normal operating state. Adaptive mutation followed by bounded family discovery is expected to produce genuinely new work; only real search-space exhaustion may wait.
+- `private terminal research state -> WAITING FOR JOB` is no longer accepted as a normal operating state. Adaptive mutation followed by bounded family discovery is expected to produce genuinely new work; only real search-space exhaustion may wait.
 - New semantic factory generations were added to the `COIN_DONE`/`RUN_COMPLETE` resume compatibility contract so that new scientific work cannot be hidden by an older completed checkpoint.
 - The intended autonomous loop remains QUICK → result → memory → BALANCED on promising evidence, otherwise the next novel hypothesis.
 
