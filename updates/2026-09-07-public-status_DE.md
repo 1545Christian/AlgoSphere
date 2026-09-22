@@ -24,9 +24,9 @@ Der vorherige Nachtbericht behauptete sinngemäß, es habe heute keinen neuen En
 - Der 23:45-Nachtlauf beobachtete `ML AUTOPILOT QUICK RUNNING`.
 - Profil: `quick`.
 - Phase: `MODEL_TRAIN`.
-- Aktuelles Symbol: `MYXUSDT`.
+- Aktuelles Symbol: `ein aktueller Research-Markt`.
 - Fortschritt: `3/5` Coins.
-- Zustandsquelle: `LIVE_STAGE_HEARTBEAT`.
+- Zustandsquelle: `interner Runtime-Status`.
 - Freshness: `CURRENT_REPORT`.
 - Quellzeitpunkt: `2026-09-07T22:45:00.432722Z`.
 
@@ -58,8 +58,8 @@ Das ist aktueller Runtime-Nachweis, aber noch kein Beweis dafür, dass der Lauf 
 - Paket-/Update-Manifest: `not verified`.
 - Anwendungs-Quellversion: `v90_8_5`.
 - Historische Source-Hotfix-Kennung: `v90_8_5_23`.
-- ML: `ML AUTOPILOT QUICK RUNNING` · `quick` · `MODEL_TRAIN` · `MYXUSDT` · `3/5`.
-- Zustandsquelle: `LIVE_STAGE_HEARTBEAT`.
+- ML: `ML AUTOPILOT QUICK RUNNING` · `quick` · `MODEL_TRAIN` · `ein aktueller Research-Markt` · `3/5`.
+- Zustandsquelle: `interner Runtime-Status`.
 - Freshness: `CURRENT_REPORT`.
 - Live-Trading laut Quelle: `Nein`.
 - Real Capital: `0`.
