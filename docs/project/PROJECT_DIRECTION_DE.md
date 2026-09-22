@@ -2,7 +2,7 @@
 
 AlgoSphere hat als Trading-Analyse- und Automatisierungsprojekt begonnen. Das langfristige Ziel ist aber größer als eine einzelne Strategie oder ein einzelnes Modell.
 
-Das Projekt wird zu einem konfigurierbaren quantitativen Research- und Trading-Analyse-System für Kryptomärkte entwickelt, das über ein breites Coin-Universum arbeiten und seine Entscheidungen anhand messbarer Evidence verbessern soll — nicht durch blindes Retraining oder beliebige Parameteränderungen.
+Das Projekt wird zu einem konfigurierbaren quantitativen Research- und Trading-Analyse-System für Kryptomärkte entwickelt, das über ein breites Markt-Universum arbeiten und seine Entscheidungen anhand messbarer Evidence verbessern soll — nicht durch blindes Retraining oder beliebige Parameteränderungen.
 
 ## Was das System langfristig können soll
 
@@ -14,7 +14,7 @@ AlgoSphere soll mit der Zeit:
 - Machine-Learning-Modelle trainieren und gegen erhaltene Rule-Baselines validieren
 - Decisions → Trades → Outcomes konsistent verfolgen
 - aus profitablen, schlechten und NO_TRADE-Entscheidungen lernen
-- erkennen, welche Ansätze bei welchem Coin, welcher Seite, Marktphase und welchem Horizont funktionieren
+- erkennen, welche Klassen von Ansätzen unter unterschiedlichen Marktbedingungen funktionieren
 - Strategien und Modelle neu bewerten, wenn genügend neue Evidence vorliegt
 - fehlgeschlagene und negative Experimente erhalten statt sie auszublenden
 - Research nur dann weiter durch den Lifecycle bewegen, wenn die Evidence es trägt
@@ -25,13 +25,13 @@ HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
 
 Ein neueres Modell soll nicht allein deshalb aktiv werden, weil es neuer ist. Promotion soll von reproduzierbarer Evidence, Robustheit und kontrolliertem Vergleich abhängen.
 
-## Konfigurierbar statt auf wenige Coins begrenzt
+## Konfigurierbar statt auf wenige Märkte begrenzt
 
-Die Coins, die aktuell in Runtime- oder Research-Berichten auftauchen, sind Arbeits-Populationen und nicht das spätere Limit des Systems.
+Die aktuell in Runtime- oder Research-Berichten sichtbaren Märkte sind Arbeits-Populationen und nicht das spätere Limit des Systems.
 
-Langfristig soll das Coin-Universum einstellbar sein: so viele unterstützte Märkte, wie unter Daten-, Rechen-, Liquiditäts-, Qualitäts- und Exchange-Grenzen zuverlässig verarbeitet werden können.
+Langfristig soll das Markt-Universum innerhalb von Daten-, Rechen-, Liquiditäts-, Qualitäts- und Venue-Grenzen konfigurierbar sein. Exakte Regeln zur Universumswahl bleiben bewusst privat.
 
-Unterschiedliche Coins können unterschiedliche Strategien, Schwellen, Horizonte oder auch gar keinen Trade brauchen.
+Unterschiedliche Marktbedingungen können unterschiedliche Ansätze oder gar keine Aktion erfordern. Exakte Schwellen und Auswahlregeln bleiben bewusst privat.
 
 Das Ziel ist deshalb nicht:
 
