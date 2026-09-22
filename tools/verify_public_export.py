@@ -36,6 +36,24 @@ SECRET_PATTERNS = {
     "unc_path": re.compile(r"\\\\[^\\\s]+\\"),
     "object_dump": re.compile(r"\$\(@\{|System\.Object", re.I),
     "proprietary_metrics": re.compile(r"profit factor|open_positions|research_code_fingerprint", re.I),
+    "private_strategy_config": re.compile(
+        r"delta_pct|basis_z_min|volume_z_min|risk_per_trade|max_open_per_coin|"
+        r"take[_ -]?profit|stop[_ -]?loss|position[_ -]?size|leverage_target",
+        re.I,
+    ),
+    "private_internal_identifiers": re.compile(
+        r"basis_dislocation|source_margin_usdt|entry_price_raw|opened_at|"
+        r"openai_market_evaluations|LIVE_STAGE_HEARTBEAT|factory_exhausted",
+        re.I,
+    ),
+    "implementation_model_family": re.compile(
+        r"\\b(?:XGBoost|HistGradientBoosting|Logistic Regression)\\b",
+        re.I,
+    ),
+    "exact_trade_price": re.compile(
+        r"\\b(?:entry|entry[-_ ]price)\\b[^\\n]{0,40}\\b0\\.\\d{3,}\\b",
+        re.I,
+    ),
 }
 
 BASE_EXPORT_MANIFEST_FILES = {
