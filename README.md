@@ -22,17 +22,17 @@ The project focuses on reproducibility, causal evaluation, explicit lineage and 
 
 AlgoSphere is being developed toward a configurable quantitative research and trading-analysis system that can work across a broad universe of crypto markets.
 
-The long-term goal is not to force one model or strategy across every coin. It is to learn, with measurable evidence:
+The long-term goal is not to force one model or strategy across every market. It is to learn, with measurable evidence:
 
-- what works for a particular coin, side, market state and horizon
+- what classes of approaches work under different market conditions
 - when a Rule approach is stronger than ML
-- when a model should be retrained or revalidated
+- when a model should be revalidated
 - when a strategy should remain in research instead of being promoted
 - and when the best decision is simply **NO_TRADE**
 
 The intended system should increasingly automate market analysis, strategy research, ML training, validation and evidence-driven adaptation while keeping promotion, execution permissions and any future real-capital use explicitly governed.
 
-The coins visible in current reports are working populations, not the intended system limit. The longer-term direction is a configurable coin universe within data, compute, liquidity, quality and exchange constraints.
+Markets visible in current reports are working populations, not the intended system limit. Exact universe-selection rules are intentionally private.
 
 Read the fuller [Project Direction](docs/project/PROJECT_DIRECTION.md).
 
@@ -40,7 +40,7 @@ Read the fuller [Project Direction](docs/project/PROJECT_DIRECTION.md).
 
 HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
 
-candidate_eligible is eligibility metadata, not a separate operating stage. Rule evidence remains preserved independently from ML-selector performance.
+Eligibility metadata is kept separate from operating stages. Rule evidence remains preserved independently from ML-selector performance; exact gating fields are intentionally private.
 
 A newer model does not become active simply because it is newer. Promotion is intended to depend on reproducible evidence and controlled comparison.
 
@@ -52,15 +52,15 @@ A newer model does not become active simply because it is newer. Promotion is in
 | Paper Context V2 Shadow | Active |
 | Research Watch | Running / no-capital research path |
 | Research Forward / Trade Like Che CURRENT | Running |
-| Trade Like Che Context V2 | Active Shadow / runtime hash proof available |
-| CONTEXT_V2 learning | Canonical Learning Delta connected to selector |
-| Canonical Memory current writer | **PASS**; historical/global trust still incomplete |
+| Context research variant | Active Shadow / runtime proof available |
+| Context learning | Evidence feedback connected to research selection |
+| Evidence memory path | **PASS** for the current path; historical trust still incomplete |
 | OpenAI exact memory repair | **Blocked** by target-set drift (3 authorized / 4 discovered) + maintenance-state proof |
 | Market Intelligence V2.1 | Research baseline available |
-| ENA one-coin pilot | Completed; Rule vs ML = DEGRADED; no promotion |
+| Single-market pilot | Completed; ML did not beat preserved Rule baseline; no promotion |
 | Robustness Gate | Implemented / evidence-gated |
 | Research handoff | Future compact Candidate/Rule evidence projection fixed; awaiting natural-run proof |
-| Research storage | Future writer + summary identity improved; legacy compaction not authorized |
+| Research storage | Future evidence-writing and identity handling improved; legacy compaction not authorized |
 | OpenAI AI-only | Active; paper-loop patch 49 PASS on disk, runtime activation + number reconciliation pending |
 | WebUI | Latest accepted browser scope: **v90.8.10.239** |
 | Demo / Packaging / Release | **M2 BLOCKED_BY_M1 / Bitget Demo not started** |
