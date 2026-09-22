@@ -6,33 +6,22 @@ This page summarizes selected public verification evidence. It does not certify 
 
 ## Latest focused verification
 
-Latest internal handoff reports:
+The latest internal handoff reports PASS/PROVEN results for the reviewed browser path, current evidence-writing path, single-writer governance and the focused external-analysis patch scope.
 
-- WebUI B37 Exit Label Semantics: **PASS**
-- WebUI B38 NO_TRADE Current Truth: **PASS**
-- WebUI B39 Full WebUI Sweep: **PASS**
-- Browser acceptance on WebUI **90.8.10.239**: **PASS**
-- OpenAI paper-loop patch focused suite: **49 PASS**
-- current memory writer: **PASS**
-- single learning writer: **PROVEN**
-- parallel learning engine: **NOT FOUND**
+Earlier focused evidence for research composition and learning integration remains valid at a high level.
 
-Earlier still-valid focused evidence includes:
-
-- Canonical Learning → CONTEXT_V2 selector: **75 PASS**
-- Research Forward runtime composition: **35/35 PASS**
-- Research Forward strategies: **170/170**, 0 duplicates
+Exact internal check IDs, test counts, strategy counts, build IDs and component names are intentionally not published because they add implementation fingerprinting without improving public scientific interpretation.
 
 ## What remains unproven
 
 The green checks above do not prove:
 
 - historical Canonical Memory completeness
-- successful exact-only OpenAI backfill
-- runtime activation of the latest OpenAI patch
-- reconciliation of the older ~+43.49 USDT view
-- OpenAI profitability
-- Bitget Demo/Testnet E2E
+- successful narrowly scoped historical repair
+- runtime activation of the latest external-analysis patch
+- reconciliation of the older positive public interpretation
+- external-analysis profitability
+- connected Demo/Testnet end-to-end proof
 - live readiness
 
 ## Evidence layers
