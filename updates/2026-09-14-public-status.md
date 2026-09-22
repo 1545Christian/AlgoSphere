@@ -76,7 +76,7 @@ The same audit also showed that edge is not uniform across market phases.
 
 Examples from the current limited sample:
 
-- Range regimes were positive overall and `basis_dislocation` was especially strong in the recorded range sample.
+- Range regimes were positive overall and `private rule candidate` was especially strong in the recorded range sample.
 - Up regimes were positive overall in the recorded sample.
 - Down regimes were weaker overall; `volatility_scaled_momentum` held up better than `relative_strength_pullback`.
 - Strong-down had little data and weak results.
