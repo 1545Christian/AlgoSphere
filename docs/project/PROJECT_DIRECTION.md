@@ -2,7 +2,7 @@
 
 AlgoSphere started as a trading-analysis and automation project, but the long-term goal is broader than running a single strategy or model.
 
-The project is being developed toward a configurable quantitative research and trading-analysis system for crypto markets that can work across a broad coin universe and improve its decisions through measured evidence rather than by blindly retraining or changing parameters.
+The project is being developed toward a configurable quantitative research and trading-analysis system for crypto markets that can work across a broad market universe and improve its decisions through measured evidence rather than by blindly retraining or changing parameters.
 
 ## What the system is meant to do
 
@@ -14,7 +14,7 @@ Over time, AlgoSphere should be able to:
 - train and validate machine-learning models against preserved Rule baselines
 - track Decisions → Trades → Outcomes consistently
 - learn from profitable, losing and NO_TRADE decisions
-- identify which approaches work by coin, side, market state and horizon
+- identify which classes of approaches work under different market conditions
 - re-evaluate strategies and models when enough new evidence exists
 - preserve failed and negative experiments instead of hiding them
 - move research forward only when the evidence supports it
@@ -25,13 +25,13 @@ HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
 
 A later model should not become active simply because it is newer. Promotion is meant to depend on reproducible evidence, robustness and controlled comparison.
 
-## Configurable, not tied to a handful of coins
+## Configurable, not tied to a handful of markets
 
-The coins visible in current runtime or research reports are working populations, not the intended product limit.
+Markets visible in current runtime or research reports are working populations, not the intended product limit.
 
-The long-term direction is a configurable coin universe: as many supported markets as can be processed reliably within data, compute, liquidity, quality and exchange constraints.
+The long-term direction is a configurable market universe within data, compute, liquidity, quality and venue constraints. Exact universe-selection rules are intentionally private.
 
-Different coins may require different strategies, thresholds, horizons or no trade at all.
+Different market conditions may require different approaches or no action at all. Exact thresholds and selection rules are intentionally private.
 
 The goal is therefore not:
 
