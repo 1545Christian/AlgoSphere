@@ -458,6 +458,30 @@ class VerifyPublicExportTests(unittest.TestCase):
     def test_proprietary_metric_phrase_fails(self) -> None:
         self.assert_error(lambda: write_lf(self.root / "CURRENT_STATUS.md", "profit factor was high\n"), "proprietary_metrics")
 
+    def test_private_strategy_config_fails(self) -> None:
+        self.assert_error(
+            lambda: write_lf(self.root / "CURRENT_STATUS.md", "basis_z_min = 2.5\n"),
+            "private_strategy_config",
+        )
+
+    def test_private_internal_identifier_fails(self) -> None:
+        self.assert_error(
+            lambda: write_lf(self.root / "CURRENT_STATUS.md", "source_margin_usdt is populated\n"),
+            "private_internal_identifiers",
+        )
+
+    def test_model_family_disclosure_fails(self) -> None:
+        self.assert_error(
+            lambda: write_lf(self.root / "CURRENT_STATUS.md", "XGBoost is the selected family\n"),
+            "implementation_model_family",
+        )
+
+    def test_exact_entry_price_disclosure_fails(self) -> None:
+        self.assert_error(
+            lambda: write_lf(self.root / "CURRENT_STATUS.md", "entry price was 0.3391\n"),
+            "exact_trade_price",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
