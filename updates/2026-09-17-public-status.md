@@ -6,7 +6,7 @@ Deutsch: [Öffentliches Status-Update](./2026-09-17-public-status_DE.md)
 
 The nightly publisher remains paused. This is a human-reviewed update covering the work from September 15–16 and the current early-September-17 state.
 
-The project made real progress in three areas: the OpenAI AI-only path is now materially more independent and usable, the trade-memory contract has been unified across Paper / Watch / Research / OpenAI, and several WebUI projection defects were fixed. At the same time, one important runtime problem is still open: Research Forward can fail on a direct Bitget socket refresh with `WinError 10013` even while the central market-data loader already has fresh 1-minute Futures data. A strict fresh-data fallback through the existing shared reader was being implemented, but the attached work log does not yet contain a final acceptance proof for that repair.
+The project made real progress in three areas: the OpenAI AI-only path is now materially more independent and usable, the trade-memory contract has been unified across Paper / Watch / Research / OpenAI, and several WebUI projection defects were fixed. At the same time, one important runtime problem is still open: a research runtime data-refresh path can fail even while a shared market-data source remains fresh. A strict fallback through the existing shared reader was being implemented, but final acceptance proof was still pending.
 
 Training and Factory remain intentionally paused. Live trading remains disabled and real capital remains zero.
 
@@ -16,89 +16,51 @@ The OpenAI path was substantially revised without creating a second architecture
 
 ### Fixed data-freshness root cause
 
-A real defect was found in the freshness check: the age of an already-computed signal was mixed up with the freshness of the underlying Bitget candles. This could mark genuinely fresh Futures data as `TECHNICAL_UNAVAILABLE` simply because the signal object itself was around 100 seconds old.
+A real defect was found in the freshness check: signal age and underlying market-data freshness were not sufficiently separated.
 
 The repaired V2 path separates those concepts and uses current Futures market data for technical availability.
 
 ### Independent analysis contract
 
-The V2 acceptance report records:
+The V2 acceptance report records independent analysis, rejection of local directional hints before the external-model call, and use of broader-market context only. Exact market lists and prompt-field contracts are intentionally omitted.
 
-- independent analysis: PASS
-- local direction included in prompt: NO
-- Rule / ML / Watch / Research / Trade-Like-CHE / Paper direction fields are rejected before the API call
-- BTC and ETH are context only
-- active analysis universe: ADA, ENA, MYX, ONDO, TUT
 
 The flow is now:
 
-`fresh Futures data → independent OpenAI analysis → conditional scenarios → existing local Paper monitor → confirmed trigger → local position management → settlement → existing OpenAI memory`
+`fresh market data → independent analysis → conditional scenarios → controlled simulation → outcome → evidence`
 
 ### Multi-scenario model
 
-The new `OPENAI_AI_MARKET_ANALYST_V2` / `STRICT_INDEPENDENT_MULTI_SCENARIO_JSON_SCHEMA_V2` contract can express multiple machine-readable scenarios such as range fades, trend pullbacks, continuations, breakout/breakdown, failed breakout/breakdown, reversals and NO_TRADE.
+The current private analysis contract can express multiple machine-readable scenarios such as range fades, trend pullbacks, continuations, breakout/breakdown, failed breakout/breakdown, reversals and NO_TRADE.
 
-Each scenario carries trigger logic, entry zone, invalidation, emergency stop, two targets, runner condition, expiry and stable identity.
+Each scenario carries machine-readable conditions and lifecycle metadata; exact execution fields are intentionally not published.
 
-The first real V2 proof reported:
+The first real V2 proof completed without schema errors or real orders. Exact market/scenario counts are intentionally omitted.
 
-- 5 coin analyses
-- 9 scenarios in the cycle
-- 6 armed scenarios under local monitoring
-- 0 schema errors
-- 0 real orders
 
-Later in the same work session, the unified-memory audit reported three current executed OpenAI AI-only trades in the current-trade set and one open TUTUSDT position under monitoring. The exact profitability of the new V2 contract is still not proven; several completed causal V2 outcomes are required before making a performance claim.
+Later in the same work session, additional simulated outcomes were observed. Exact symbols, trade counts and position details are intentionally omitted.
 
 ### Cadence / cost control
 
-The new cadence is event-aware:
+The new cadence is event-aware and rate-limited. Exact timing thresholds, retry markers and paid-call scheduling rules are intentionally not published.
 
-- local check about every 5 minutes
-- paid call on a relevant event or at most after 30 minutes
-- minimum 5-minute gap between paid calls
-- blocked attempts update `last_blocked_attempt` only
-- refresh timing is based on `last_successful_paid_call`
 
 This prevents a blocked attempt from postponing the next required analysis.
 
-The model reported in the V2 acceptance state is `gpt-5.6-luna`. Call and token budgets remain active. A trustworthy USD cost estimate is not shown because no confirmed local model-price configuration existed in the project at that checkpoint.
+The external-model integration remained budget-controlled. Exact model-routing and cost configuration are intentionally not published.
 
 ### Open-position exclusion
 
-The OpenAI path now enforces at most one open OpenAI position per symbol. Once a symbol enters, competing scenarios from that analysis cycle are blocked and the symbol is excluded from new OpenAI entry analysis until close/settlement. Local monitoring continues during the open position.
+The OpenAI path enforces duplicate-exposure controls during simulated monitoring; exact symbol-level rules are intentionally not published.
 
 ## Unified trade-memory contract
 
 Paper, Watch, Research Forward and OpenAI now use the same existing capture path for the information needed to compare and learn from executed trades.
 
-The contract includes:
+The unified evidence contract preserves enough identity, provenance, outcome and cost context for later comparison, while exact field names and schema details are intentionally not published.
 
-- stable trade / strategy / setup identifiers
-- role / strategy family
-- symbol / side
-- entry and exit timestamps and real prices
-- market phase
-- expected net with source and status
-- MFE / MAE and timestamps
-- fees, slippage, funding and net result
-- stop, target and exit reason
-- entry / exit data quality
-- market-data provenance
-- margin / notional where source evidence exists
 
-At the recorded checkpoint, the current executed-trade sets had zero missing required core fields:
-
-- Paper market-context: 35
-- Watch: 19
-- Research Forward: 28
-- OpenAI AI-only: 3
-
-All 66 previously executed OpenAI AI-only outcomes were also reported with trade identity, strategy, setup, market phase and MFE/MAE timing.
-
-For 38 very old OpenAI trades, `source_margin_usdt` remains unknown because the original entry evidence contained no margin, notional or leverage. Those values are intentionally not invented. Unknown values now carry explicit states such as `PENDING_PATH_SETTLEMENT`, `NOT_APPLICABLE` or `NOT_RECONSTRUCTABLE` instead of silently becoming zero.
-
-The 854 `openai_market_evaluations` remain analyses/counterfactuals, not executed trades, and therefore do not receive fake execution fields.
+At the recorded checkpoint, the checked evidence populations had the required public-facing integrity. Historical unknowns remain explicitly unknown rather than being invented. Exact row counts, field names, schema labels and internal ledger names are intentionally not published.
 
 ## WebUI / Trade-Like-CHE improvements
 
@@ -106,37 +68,28 @@ Several visible defects were real projection/UI problems rather than missing tra
 
 ### Trade-Like-CHE entry price
 
-The ONDOUSDT entry existed in storage (`0.3391`), but the repository exposed `entry_price` / `opened_at` while the UI expected `entry_price_raw` / `entry_time`. The projection now exposes the expected aliases and keeps safe fallbacks.
+A stored entry existed but a projection alias mismatch prevented the UI from reading it correctly. The projection was corrected; the exact symbol, price and field names are intentionally not published.
 
 ### ADX / indicator display
 
-A negative Volume-Z value previously colored the entire indicator cell red, incorrectly making ADX / ATR / RSI look negative. Indicator presentation was separated. ADX was also added as a causal display/analysis metric from closed 5-minute Futures candles. It is not currently an ML or entry feature.
+An indicator-presentation defect was corrected and a causal display metric was added for analysis. Exact indicator wiring and feature eligibility are intentionally not published.
 
-A natural cycle reported 40/40 current variants with numeric ADX and zero missing ADX values.
+A natural cycle confirmed the corrected display path across the checked variants.
 
 ### Compact IDs / table layout
 
-Full SHA / decision / trade / outcome IDs remain available for audit, tooltip and detail views, while visible tables now show compact suffixes. The same rendering rule was applied across active/closed trades, Watch/Research, OpenAI, strategies and candidates.
+Audit identifiers remain available internally while public tables use compact display forms. Exact identifier layouts and internal table mappings are intentionally not published.
 
 ### Capture and NO_TRADE projection
 
-Two additional display/data-projection bugs were found late in the session:
+Two additional projection defects were found and corrected in the existing path. Exact internal aliases and ledger mappings are intentionally not published.
 
-- Trade-Like-CHE `Capture` used an unpopulated alias even though the canonical net-return value existed.
-- OpenAI `NO_TRADE` read only the evaluations ledger while many valid NO_TRADE predictions were stored in the canonical prediction ledger.
 
 Both were corrected in the existing projection path and regression tests were reported green. Final end-to-end browser verification was interrupted by the subsequent start/runtime problem described below.
 
 ## Runtime / start-path issue still open
 
-The user-visible start problem had two layers:
-
-1. `START_ALGOSPHERE.cmd` can appear to do nothing when the supervisor is already healthy because duplicate startup is intentionally refused. The start path was being adjusted to make that state visible and open the WebUI instead of failing silently.
-2. More importantly, Research Forward was observed starting and then failing on the first ADAUSDT direct Bitget refresh with `WinError 10013`.
-
-At the same time, the central market-data loader already had fresh 1-minute Futures data. The intended repair is to keep one shared reader and, only when the direct socket fails, allow the existing reader to use the centrally confirmed hot-file tail after strict freshness/availability checks. Stale files must still be rejected.
-
-The attached work log ends while this fallback is being designed. **This runtime/data-source repair must therefore remain OPEN until a fresh restart plus Research Forward cycle proves it.**
+A runtime/start-path issue remained open. The repair keeps a single governed data path and requires fresh restart plus forward-cycle proof before closure. Exact executable names, transport errors and fallback mechanics are intentionally not published.
 
 ## Project independence / Codex boundary
 
@@ -150,7 +103,7 @@ Broad training and Factory remain paused. The existing lifecycle contract remain
 
 Rule evidence must remain independent from ML-selector success: ML selector collapse is not Rule failure.
 
-The focused regression suites from the September 16 work were strong (263/263 around OpenAI V2, 264 relevant tests around unified memory, 154 focused tests around ADX/display, plus smaller focused suites). These are meaningful checks, but they do **not** prove that the earlier full-suite checkpoint of 1,307 tests / 64 failures has been completely closed. Full-suite hygiene remains an explicit open verification item until the complete suite is rerun and every previous failure is resolved or intentionally classified.
+Focused regression suites passed across the affected areas. A complete project-wide suite still remained an explicit verification item; exact test counts are intentionally omitted.
 
 ## What is materially better now
 
@@ -168,8 +121,8 @@ The focused regression suites from the September 16 work were strong (263/263 ar
 
 ## What remains open
 
-1. Finish and prove the Research Forward `WinError 10013` market-data fallback without introducing a second data path.
-2. Prove `START_ALGOSPHERE.cmd` behavior clearly for both already-running and stopped/orphaned states.
+1. Finish and prove the Research Forward market-data fallback without introducing a second data path.
+2. Prove start-path behavior clearly for both already-running and stopped/orphaned states.
 3. Complete the broad isolated-browser audit of Cockpit, Trading, OpenAI and Research after the runtime is stable.
 4. Recheck Forecast propagation and Research open-position visibility after restart; the work log had not yet recorded final closure.
 5. Re-verify Capture and NO_TRADE in the running browser after the runtime fix.
