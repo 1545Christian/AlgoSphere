@@ -22,17 +22,17 @@ Im Mittelpunkt stehen Reproduzierbarkeit, kausale Auswertung, eindeutige Lineage
 
 AlgoSphere wird zu einem konfigurierbaren quantitativen Research- und Trading-Analyse-System entwickelt, das über ein breites Universum von Kryptomärkten arbeiten kann.
 
-Das langfristige Ziel ist nicht, ein Modell oder eine Strategie auf jeden Coin zu zwingen. Das System soll anhand messbarer Evidence lernen:
+Das langfristige Ziel ist nicht, ein Modell oder eine Strategie auf jeden Markt zu zwingen. Das System soll anhand messbarer Evidence lernen:
 
-- was bei einem bestimmten Coin, einer Side, Marktphase und einem Horizont funktioniert
+- welche Klassen von Ansätzen unter unterschiedlichen Marktbedingungen funktionieren
 - wann eine Rule-Strategie stärker ist als ML
-- wann ein Modell neu trainiert oder revalidiert werden sollte
+- wann ein Modell revalidiert werden sollte
 - wann eine Strategie im Research bleiben muss statt promotet zu werden
 - und wann **NO_TRADE** die bessere Entscheidung ist
 
 Marktanalyse, Strategie-Research, ML-Training, Validierung und evidenzbasierte Anpassung sollen mit der Zeit stärker automatisiert werden. Promotion, Execution-Berechtigungen und jede spätere Echtgeld-Nutzung bleiben trotzdem ausdrücklich geregelt.
 
-Die Coins in aktuellen Berichten sind Arbeits-Populationen und nicht das spätere Limit. Langfristig soll das Coin-Universum einstellbar sein — innerhalb der Grenzen von Daten, Rechenleistung, Liquidität, Qualität und Exchange-Unterstützung.
+Die in aktuellen Berichten sichtbaren Märkte sind Arbeits-Populationen und nicht das spätere Limit. Exakte Regeln zur Universumswahl bleiben bewusst privat.
 
 Mehr dazu: [Projektrichtung](docs/project/PROJECT_DIRECTION_DE.md).
 
@@ -40,7 +40,7 @@ Mehr dazu: [Projektrichtung](docs/project/PROJECT_DIRECTION_DE.md).
 
 HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
 
-candidate_eligible ist Eligibility-Metadatum und keine eigene operative Stufe. Rule-Evidence bleibt unabhängig vom Erfolg des ML-Selectors erhalten.
+Eligibility-Metadaten bleiben von operativen Stufen getrennt. Rule-Evidence bleibt unabhängig vom ML-Selector erhalten; exakte Gate-Felder bleiben bewusst privat.
 
 Ein neueres Modell wird nicht allein deshalb aktiv, weil es neuer ist. Promotion soll von reproduzierbarer Evidence und kontrolliertem Vergleich abhängen.
 
@@ -52,15 +52,15 @@ Ein neueres Modell wird nicht allein deshalb aktiv, weil es neuer ist. Promotion
 | Paper Context V2 Shadow | Aktiv |
 | Research Watch | Läuft / No-Capital-Research-Pfad |
 | Research Forward / Trade Like Che CURRENT | Läuft |
-| Trade Like Che Context V2 | Active Shadow / Runtime-Hash-Proof vorhanden |
-| CONTEXT_V2 Learning | Canonical Learning Delta an Selector angeschlossen |
-| Canonical Memory aktueller Writer | **PASS**; historischer/globaler Trust noch unvollständig |
+| Kontext-Research-Variante | Active Shadow / Runtime-Proof vorhanden |
+| Kontext-Learning | Evidence-Feedback an Research-Auswahl angeschlossen |
+| Evidence-Memory-Pfad | **PASS** für den aktuellen Pfad; historischer Trust noch unvollständig |
 | OpenAI Exact-Memory-Repair | **Blockiert** durch Target-Set-Drift (3 autorisiert / 4 gefunden) + Maintenance-State-Proof |
 | Market Intelligence V2.1 | Research-Baseline vorhanden |
-| ENA 1-Coin-Pilot | Abgeschlossen; Rule vs ML = DEGRADED; keine Promotion |
+| Single-Market-Pilot | Abgeschlossen; ML schlug die erhaltene Rule-Baseline nicht; keine Promotion |
 | Robustness Gate | Implementiert / evidenzgesteuert |
 | Research Handoff | Future-Projektion kompakter Candidate-/Rule-Evidence repariert; natürlicher Run-Proof steht aus |
-| Research Storage | Future-Writer + Summary-Identity verbessert; Legacy-Compaction nicht freigegeben |
+| Research Storage | Zukünftiger Evidence-Write-Pfad und Identity-Handling verbessert; Legacy-Compaction nicht freigegeben |
 | OpenAI AI-only | Aktiv; Paper-Loop-Patch 49 PASS on-disk, Runtime-Aktivierung + Zahlen-Reconciliation offen |
 | WebUI | letzter akzeptierter Browser-Scope: **v90.8.10.239** |
 | Demo / Packaging / Release | **M2 BLOCKED_BY_M1 / Bitget Demo nicht gestartet** |
