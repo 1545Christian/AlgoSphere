@@ -11,7 +11,7 @@ It does not publish:
 - wallet or exchange account information
 - private databases or raw operational logs
 - trained private model bundles/checkpoints
-- proprietary strategy parameters
+- proprietary strategy names, parameters, thresholds, feature/label definitions, scoring/ranking logic and execution rules
 - private deployment paths or infrastructure details
 
 ## Public repository checks
@@ -29,7 +29,7 @@ Automated checks reduce risk; they cannot prove that every possible sensitive in
 
 ## Responsible reporting
 
-Please do not publish credentials, tokens, private keys, account data or exploitable security details in a public issue.
+Please do not publish credentials, tokens, private keys, account data, private strategy/model details, internal field mappings, exact trade parameters or exploitable security details in a public issue.
 
 For a normal public documentation or tooling problem, use the structured GitHub issue forms.
 
