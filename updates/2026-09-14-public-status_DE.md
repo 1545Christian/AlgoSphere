@@ -159,9 +159,9 @@ Diese Erweiterungen wurden bewusst nicht in die letzten Paper-/Research-Reparatu
 
 Das jüngste ML-Problem war nicht einfach „das Modell hat eine schlechte Strategie abgelehnt“.
 
-Der Trainings-/Research-Pfad war vom früheren Rule-Vertrag abgedriftet. Änderungen bei History-Länge, Schwellen und frühem Filtering konnten aus einer historisch aktiven Rule nur noch wenige Signale machen, bevor ML sie überhaupt sah.
+Der Trainings-/Research-Pfad war vom früheren privaten Rule-Vertrag abgedriftet. Änderungen bei History-Länge, Schwellen und frühem Filtering konnten aus einer historisch aktiven Rule nur noch wenige Signale machen, bevor ML sie überhaupt sah.
 
-ENAUSDT LONG `basis_dislocation` ist dafür der wichtigste Referenzfall. Der ältere Rule-Vertrag wurde mit deutlich mehr kausalen Signalen und einem reproduzierbaren OOS-Trade-Set wiederhergestellt. Daraus folgt verbindlich:
+ein privater Referenzkandidat ist dafür der wichtigste Referenzfall. Der ältere privaten Rule-Vertrag wurde mit deutlich mehr kausalen Signalen und einem reproduzierbaren OOS-Trade-Set wiederhergestellt. Daraus folgt verbindlich:
 
 **ML-Selector-Kollaps ist nicht dasselbe wie Rule-Failure.**
 
