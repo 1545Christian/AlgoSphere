@@ -24,9 +24,9 @@ The previous nightly text incorrectly said that no new development proof existed
 - The 23:45 publisher observed `ML AUTOPILOT QUICK RUNNING`.
 - Profile: `quick`.
 - Phase: `MODEL_TRAIN`.
-- Current symbol: `MYXUSDT`.
+- Current symbol: `a current research market`.
 - Progress: `3/5` coins.
-- State source: `LIVE_STAGE_HEARTBEAT`.
+- State source: `internal runtime state`.
 - Freshness classification: `CURRENT_REPORT`.
 - Source timestamp: `2026-09-07T22:45:00.432722Z`.
 
@@ -58,8 +58,8 @@ This is current runtime evidence, but it is not the same as proof that the run w
 - Explicit package/update manifest: `not verified`.
 - Application source version: `v90_8_5`.
 - Historical source-hotfix identifier: `v90_8_5_23`.
-- ML: `ML AUTOPILOT QUICK RUNNING` · `quick` · `MODEL_TRAIN` · `MYXUSDT` · `3/5`.
-- State source: `LIVE_STAGE_HEARTBEAT`.
+- ML: `ML AUTOPILOT QUICK RUNNING` · `quick` · `MODEL_TRAIN` · `a current research market` · `3/5`.
+- State source: `internal runtime state`.
 - Freshness classification: `CURRENT_REPORT`.
 - Live trading reported by source: `No`.
 - Real capital: `0`.
