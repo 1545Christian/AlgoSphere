@@ -76,7 +76,7 @@ Der Audit zeigt außerdem, dass Edge nicht in jeder Marktphase gleich ist.
 
 Beispiele aus dem derzeit noch begrenzten Sample:
 
-- Range-Regime waren insgesamt positiv; `basis_dislocation` war im dokumentierten Range-Sample besonders stark.
+- Range-Regime waren insgesamt positiv; `privater Rule-Kandidat` war im dokumentierten Range-Sample besonders stark.
 - Up-Regime waren im dokumentierten Sample ebenfalls positiv.
 - Down-Regime waren insgesamt schwächer; `volatility_scaled_momentum` hielt sich besser als `relative_strength_pullback`.
 - Strong-Down hatte wenig Daten und schwache Ergebnisse.
