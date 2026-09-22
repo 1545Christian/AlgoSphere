@@ -75,17 +75,8 @@ The Market Intelligence V2.1 research path remains based on:
 - causal OOS evaluation
 - Rule-baseline preservation
 
-The explicit ENA one-coin pilot completed with:
+The explicit single-market pilot completed with full-history readiness, causal OOS evaluation and matched Rule/ML comparison. Exact row counts, architecture counts, horizon counts, folds and registry identifiers are intentionally not published.
 
-- full-history readiness confirmed
-- feature provenance revalidated
-- 756 OOS result rows
-- 126 Rule-baseline result rows
-- 3 feature arms
-- 4 architectures
-- 7 horizons
-- identical fold basis for Rule and ML: 2026-07, 2026-08, 2026-09
-- Registry ID 7
 
 The scientific result is intentionally not presented as a success:
 
@@ -108,7 +99,7 @@ It checks evidence dimensions including multi-fold walk-forward, recent OOS, coi
 
 No automatic promotion is performed.
 
-The gate must now be evaluated against the newer full-history ENA pilot evidence. A completed training run is not automatically equivalent to `ROBUST_OOS_READY`.
+The gate must now be evaluated against the newer full-history single-market pilot evidence. A completed training run is not automatically equivalent to `ROBUST_OOS_READY`.
 
 ## Canonical Memory and lifecycle
 
@@ -142,7 +133,7 @@ The current implementation was judged stronger for:
 - signal/trade identity
 - exit / MFE / MAE tracking
 
-No mandatory legacy capability was found that blocks the completed ENA one-coin pilot.
+No mandatory legacy capability was found that blocks the completed single-market pilot.
 
 Still partial and worth later research:
 
@@ -156,24 +147,16 @@ Old model artifacts remain historical evidence and are not treated as current co
 
 ## OpenAI AI-only
 
-The OpenAI input-contract audit identified that the actual request had been missing 3D, 7D, explicit support/resistance and open-position context.
+The OpenAI input-contract audit identified missing higher-timeframe, structure and position-context information. Exact timeframe and prompt-field composition are intentionally not published.
 
-The minimal input patch now provides:
+The minimal input patch now provides multi-timeframe context, broader-market context, structure, volatility, news, aggregated learning context and current simulated-position context where applicable. Exact field composition is intentionally not published.
 
-- 1m / 5m / 15m / 1h / 1D / 3D / 7D context
-- BTC / ETH context
-- market regime and range position
-- explicit structure / support-resistance summary
-- volume / volatility
-- news
-- aggregated learning memory
-- current OpenAI position context when present
 
 A reliable Futures/Spot basis source was not available and is therefore not fabricated.
 
 A redacted request export was produced without a new paid call.
 
-One important efficiency issue remains: the measured pre-compaction request was about 73,933 input tokens and 4,438 output tokens for the five-coin call. A compact request / single-plan-per-symbol contract is currently being implemented and locally tested. It should not be described as forward-proven until a normal future paid call confirms it.
+One important efficiency issue remains: the pre-compaction request was unnecessarily large. Exact token counts and per-market batching details are intentionally not published.
 
 ## What remains open
 
