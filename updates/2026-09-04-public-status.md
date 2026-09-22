@@ -23,8 +23,8 @@ The 23:45 nightly correctly published the current runtime snapshot, but its deve
 
 - A QUICK run reached terminal completion at `2026-09-04T18:42:15Z`.
 - Its standardized experiment-memory record was persisted (`status=RECORDED`, `scientific_result=COMPLETED`).
-- This was **not a performance PASS**: the stored best-candidate entry for `ENAUSDT / basis_dislocation / logistic / long` remained `factory_exhausted` and contained no reliable PF/PnL/trade metrics. This is a scientific completion/reject state, not a trading success.
-- Autonomous QUICK work later continued. At the nightly snapshot, runtime `v90_8_10_125` was active in `CHECKPOINT` on `MYXUSDT`, with `3/5 coins` completed and `LIVE_STAGE_HEARTBEAT` as the current truth source.
+- This was **not a performance PASS**: the stored best-candidate entry for `a private rule/ML research candidate` remained `factory_exhausted` and contained no reliable PF/PnL/trade metrics. This is a scientific completion/reject state, not a trading success.
+- Autonomous QUICK work later continued. At the nightly snapshot, runtime `v90_8_10_125` was active in `CHECKPOINT` on `a current research market`, with `3/5 coins` completed and `LIVE_STAGE_HEARTBEAT` as the current truth source.
 - The research autopilot reported `eligible experiments = 1`; automatic promotion remained disabled.
 
 ### Research Forward / Watch
@@ -66,7 +66,7 @@ The 23:45 nightly correctly published the current runtime snapshot, but its deve
 - ML autopilot: `QUICK_RUNNING`
 - Profile: `quick`
 - Phase: `CHECKPOINT`
-- Symbol: `MYXUSDT`
+- Symbol: `a current research market`
 - Progress: `3/5 coins`
 - Stage truth: `LIVE_STAGE_HEARTBEAT`
 - Live trading: `No`
