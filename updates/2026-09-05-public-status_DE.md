@@ -155,7 +155,7 @@ Klassifikation:
 TECHNICAL FAILED
 ```
 
-Das ist **kein** wissenschaftlicher Reject. Evidence bleibt erhalten. Der GPU-/CUDA-/Watchdog-Root-Cause muss gezielt isoliert werden, ohne Folds, Samples oder Qualitätsgates zu lockern und ohne XGBoost künstlich auf CPU zurückzuzwingen.
+Das ist **kein** wissenschaftlicher Reject. Evidence bleibt erhalten. Der GPU-/CUDA-/Watchdog-Root-Cause muss gezielt isoliert werden, ohne Folds, Samples oder Qualitätsgates zu lockern und ohne die GPU-beschleunigte Modellfamilie künstlich auf CPU zurückzuzwingen.
 
 ### Ungebundener QUICK braucht Klassifikation
 
