@@ -70,8 +70,8 @@ The Market Intelligence V2.1 research path remains based on:
 - 3 existing feature arms
 - 4 architecture variants
 - 7 horizons
-- Logistic Regression
-- HistGradientBoosting
+- a private model family
+- a private model family
 - causal OOS evaluation
 - Rule-baseline preservation
 
