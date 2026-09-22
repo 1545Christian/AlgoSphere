@@ -23,15 +23,15 @@ The 23:45 nightly correctly published the current runtime snapshot, but its deve
 
 - A QUICK run reached terminal completion at `2026-09-04T18:42:15Z`.
 - Its standardized experiment-memory record was persisted (`status=RECORDED`, `scientific_result=COMPLETED`).
-- This was **not a performance PASS**: the stored best-candidate entry for `a private rule/ML research candidate` remained `factory_exhausted` and contained no reliable PF/PnL/trade metrics. This is a scientific completion/reject state, not a trading success.
-- Autonomous QUICK work later continued. At the nightly snapshot, runtime `v90_8_10_125` was active in `CHECKPOINT` on `a current research market`, with `3/5 coins` completed and `LIVE_STAGE_HEARTBEAT` as the current truth source.
+- This was **not a performance PASS**: the stored best-candidate entry for `a private rule/ML research candidate` remained `private terminal research state` and contained no reliable PF/PnL/trade metrics. This is a scientific completion/reject state, not a trading success.
+- Autonomous QUICK work later continued. At the nightly snapshot, runtime `v90_8_10_125` was active in `CHECKPOINT` on `a current research market`, with `3/5 coins` completed and `internal runtime state` as the current truth source.
 - The research autopilot reported `eligible experiments = 1`; automatic promotion remained disabled.
 
 ### Research Forward / Watch
 
 - Research Forward is functionally separated from the Research Evaluator: it has its own supervisor service and no-capital child trader while the evaluator remains separate.
 - Health no longer means only “a process exists”; the contract includes child heartbeat and functional no-capital state.
-- v123 validate-only: PASS with 90 strategies, 18 each for ADA/ENA/MYX/ONDO/TUT, `capital_allowed=false`.
+- v123 validate-only: PASS with 90 strategies, 18 each for research market/research market/research market/research market/research market, `capital_allowed=false`.
 - Watch/Research remain exploration and evidence roles. Their lessons must later feed segmented eligibility/memory and only reach Paper after additional prospective confirmation.
 
 ### WebUI / runtime recovery
@@ -56,7 +56,7 @@ The 23:45 nightly correctly published the current runtime snapshot, but its deve
 - Earlier code-PASS conclusions were partly too optimistic: real Windows operation showed that Local ML could remain in `WAITING FOR JOB` even though the code contract claimed autonomy.
 - New factory work could be hidden by old `COIN_DONE`/`RUN_COMPLETE` checkpoints. This was treated as a resume/novelty defect.
 - Research Forward could appear “started” while its actual no-capital child trader was not functionally healthy. The health contract was tightened accordingly.
-- A running or completed QUICK is not automatically a good candidate. `scientific_result=COMPLETED` and `factory_exhausted` must remain separate from performance or promotion success.
+- A running or completed QUICK is not automatically a good candidate. `scientific_result=COMPLETED` and `private terminal research state` must remain separate from performance or promotion success.
 - WebUI “running” truth may no longer be inferred from a launcher PID; actual HTTP health is required.
 - These failed attempts remain part of the evidence and are not relabeled as completed progress.
 
@@ -68,7 +68,7 @@ The 23:45 nightly correctly published the current runtime snapshot, but its deve
 - Phase: `CHECKPOINT`
 - Symbol: `a current research market`
 - Progress: `3/5 coins`
-- Stage truth: `LIVE_STAGE_HEARTBEAT`
+- Stage truth: `internal runtime state`
 - Live trading: `No`
 - Real capital: `0`
 - automatic promotion: `disabled`
