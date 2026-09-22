@@ -159,9 +159,9 @@ These extensions were intentionally not mixed into the recent Paper/Research rep
 
 The recent ML problem was not simply "the model rejected a bad strategy".
 
-The training/research path had drifted away from the earlier Rule contract. Changes in history length, thresholds and early filtering could reduce a historically active Rule to only a handful of usable signals before ML even saw it.
+The training/research path had drifted away from the earlier private Rule contract. Changes in research-contract and pre-filtering details could reduce a historically active Rule to only a handful of usable signals before ML even saw it.
 
-ENAUSDT LONG `basis_dislocation` is the key reference case. The older Rule contract was reproduced with a materially larger causal signal set and a reproducible OOS trade set. The lesson is now explicit:
+a private reference candidate is the key reference case. The older private Rule contract was reproduced with a materially larger causal signal set and a reproducible OOS trade set. The lesson is now explicit:
 
 **ML selector collapse is not the same as Rule failure.**
 
