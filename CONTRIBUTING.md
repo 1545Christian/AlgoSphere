@@ -44,7 +44,7 @@ Please do not post:
 
 - API keys, account IDs or credentials
 - private trading configuration
-- proprietary strategy parameters
+- proprietary strategy/model/execution details or reconstructable combinations of them
 - personal financial information
 - requests for guaranteed returns or trading signals
 - claims of profitability without reproducible evidence
