@@ -151,7 +151,7 @@ Classification:
 TECHNICAL FAILED
 ```
 
-This is **not** a scientific reject. Evidence is preserved and the GPU/CUDA/watchdog root cause must be isolated without weakening folds, samples, quality gates or forcing a CPU fallback for XGBoost.
+This is **not** a scientific reject. Evidence is preserved and the GPU/CUDA/watchdog root cause must be isolated without weakening folds, samples, quality gates or forcing a CPU fallback for the GPU-accelerated model family.
 
 ### Unbound QUICK still needs classification
 
