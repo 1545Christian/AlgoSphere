@@ -118,7 +118,7 @@ WATCH_SETUP_EVALUATION            PASS / aktiv
 WATCH_CLOSED_OUTCOMES             keine neuen sichtbaren seit ~18:59
 ```
 
-TUT, ADA, ONDO, MYX und ENA wurden weiter mit echten Setup-Gates ausgewertet. Viele aktuelle Entscheidungen waren legitime `GATE_SETUP_BLOCKED / NO TRADE`-Ergebnisse, unter anderem wegen Regime, fehlendem Setup, Range-Position, Expected Return, Volumen-Z oder Spot/Futures-Basis.
+Research-Markt, Research-Markt, Research-Markt, Research-Markt und Research-Markt wurden weiter mit echten Setup-Gates ausgewertet. Viele aktuelle Entscheidungen waren legitime `GATE_SETUP_BLOCKED / NO TRADE`-Ergebnisse, unter anderem wegen Regime, fehlendem Setup, Range-Position, Expected Return, Volumen-Z oder Spot/Futures-Basis.
 
 Offen bleibt die Closed-Outcome-Liveness und die korrekte WebUI-Wahrheit. Die Regel bleibt verbindlich:
 
@@ -193,7 +193,7 @@ Harte Regeln:
 - keine doppelten rebuilt Outcomes erzeugen
 - WebUI muss exakt das rebuilt Ledger zeigen
 
-Spät am Abend erschien ein neuer TUTUSDT AI-only Outcome von ungefähr `+2.20 USDT`. Das zeigt, dass wieder neue Evaluationseinträge entstehen können. Die konkrete Settlement-Preisquelle dieses Outcomes ist aber **noch nicht vollständig verifiziert** und zählt deshalb noch nicht als belastbarer Performance-Beweis.
+Spät am Abend erschien ein neuer ein überwachter Research-Markt AI-only Outcome von ungefähr `+2.20 USDT`. Das zeigt, dass wieder neue Evaluationseinträge entstehen können. Die konkrete Settlement-Preisquelle dieses Outcomes ist aber **noch nicht vollständig verifiziert** und zählt deshalb noch nicht als belastbarer Performance-Beweis.
 
 ### Codex-Budget ausgeschöpft
 
