@@ -92,7 +92,7 @@ Beide Fehler wurden im bestehenden Projektionspfad korrigiert und die Regression
 Das sichtbare Startproblem hat zwei Ebenen:
 
 1. `START_ALGOSPHERE.cmd` kann scheinbar nichts tun, wenn der Supervisor bereits gesund läuft, weil ein Doppelstart absichtlich verhindert wird. Der Startpfad wurde so angepasst, dass dieser Zustand sichtbarer wird und die WebUI geöffnet wird, statt still zu wirken.
-2. Wichtiger: Research Forward wurde beim Start beobachtet, brach aber beim ersten ADAUSDT-Refresh am direkten Bitget-Socket mit `WinError 10013` ab.
+2. Wichtiger: Research Forward wurde beim Start beobachtet, brach aber beim ersten ein Research-Markt-Refresh am direkten Bitget-Socket mit `WinError 10013` ab.
 
 Gleichzeitig hatte der zentrale Market-Data-Loader bereits frische 1-Minuten-Futuresdaten. Die geplante Reparatur bleibt innerhalb des bestehenden gemeinsamen Readers: Nur wenn der direkte Socket ausfällt, darf nach strenger Frische-/Verfügbarkeitsprüfung der vom zentralen Loader bestätigte Hot-File-Tail verwendet werden. Veraltete Dateien müssen weiterhin abgewiesen werden.
 
