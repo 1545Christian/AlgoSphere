@@ -9,7 +9,7 @@ Market data
    ↓
 Market context / state / structure
    ↓
-Strategy & model candidates
+Research candidates
    ↓
 Decision lanes
    ↓
@@ -31,7 +31,7 @@ AlgoSphere works with market information across several horizons.
 
 Public documentation distinguishes between:
 
-- execution truth used for entries/exits
+- execution truth used for outcome measurement
 - context/features used for analysis
 - broader market context such as BTC/ETH, structure, volatility and news where relevant
 
@@ -41,19 +41,14 @@ The project avoids treating future information as if it were available at decisi
 
 Before a strategy or model is judged, AlgoSphere tries to describe the environment it is operating in.
 
-Examples include:
+Public examples stay intentionally broad: regime, structure, volatility and transition context. Exact indicators, thresholds, feature definitions and combinations are private.
 
-- range vs trend behavior
-- directional state
-- transition / volatility expansion / shock conditions
-- support/resistance and structural context
-- multi-timeframe alignment
 
 The goal is not to assume that one strategy works equally well in every market state.
 
 ## 3. Rule and ML research
 
-Rule evidence is preserved separately from ML-selector performance.
+Rule evidence is preserved separately from ML research performance. Exact selector design, feature sets and scoring logic are private.
 
 That matters because ML should have to demonstrate value against a real baseline rather than replacing a working rule system by default.
 
@@ -67,36 +62,23 @@ A candidate can fail, remain inconclusive or be preserved without promotion.
 
 AlgoSphere intentionally separates different decision populations.
 
-Examples in the current public documentation include:
+Public documentation separates simulated, research and counterfactual populations. Exact lane names, routing rules and eligibility logic are private.
 
-- Paper
-- Research Watch / Forward
-- Trade Like Che CURRENT
-- Trade Like Che CONTEXT_V2 Shadow
-- OpenAI AI-only
-- Counterfactual evidence
 
 These lanes are not silently mixed because their decisions may be produced under different contracts.
 
 ## 5. Canonical Memory
 
-Canonical Memory is the common evidence layer that links:
+Canonical Memory is the common evidence layer linking decisions, outcomes and learning. Exact schema, identity fields and joins are private.
 
-`Decision → Trade / NO_TRADE → Outcome → Learning`
+It preserves enough identity and provenance for later causal analysis without publishing internal schema or field names.
 
-It is designed to preserve identity and provenance so later analysis can ask:
-
-- which decision produced this outcome?
-- which strategy, side and market state were involved?
-- what happened after entry?
-- what evidence was learned?
-- did later selection actually change?
 
 ## 6. Learning and adaptation
 
 AlgoSphere's intended learning loop is controlled rather than self-modifying without limits:
 
-`new evidence → evaluation → Learning Delta → revalidation → lifecycle decision`
+`new evidence → evaluation → revalidation → lifecycle decision`
 
 Learning may influence future strategy selection, but promotion and execution permissions remain governed separately.
 
@@ -120,13 +102,13 @@ Demo / Packaging / Release is a separate workstream.
 A future Connected Demo is still not Live trading, and a future public/client package must have its own:
 
 - permission boundaries
-- approved model bundle
+- approved model package
 - configuration handling
 - reconnect/recovery behavior
 - integrity/update/rollback path
 - credential protection
 
-Normal Futures live-readiness remains later work, and Elite/UTA is deferred beyond stable Normal Futures.
+Live-readiness remains later work behind controlled simulation and stability proof. Exact venue/account rollout order is private.
 
 ## Why the architecture is built this way
 
