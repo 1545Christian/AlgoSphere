@@ -59,6 +59,6 @@ Bis dahin bedeutet die öffentliche Sichtbarkeit des Repositorys weder Produktve
 
 Die kleinen öffentlichen Verifikationswerkzeuge unter `tools/` und `tests/` stehen unter der **MIT License**.
 
-Diese Lizenzen gelten nur für tatsächlich in diesem Repository veröffentlichte Inhalte. Sie geben weder die private AlgoSphere-Anwendung noch nicht veröffentlichte Modelle, Strategieinhalte, Zugangsdaten, Kontodaten oder Infrastruktur frei.
+Diese Lizenzen gelten nur für tatsächlich in diesem Repository veröffentlichte Inhalte. Die öffentliche Dokumentation ist bewusst beschreibend und nicht implementierungsvollständig. Sie geben weder die private AlgoSphere-Anwendung noch nicht veröffentlichte Modelle, Strategieinhalte, Zugangsdaten, Kontodaten oder Infrastruktur frei.
 
 Siehe [Lizenzierung](../legal/LICENSING.md).
