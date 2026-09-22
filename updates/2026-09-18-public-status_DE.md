@@ -24,14 +24,8 @@ Live-Trading bleibt deaktiviert. Echtgeld bleibt 0. Automatische Promotion bleib
 
 Context V2 ist jetzt im Runtime-Vertrag aktiv.
 
-Aktueller Vertrag:
+Der aktuelle Shadow-Vertrag ist aktiv und hat den Health Check bestanden. Exakte Auswertungszahlen pro Markt und Größen der aktiven Population werden bewusst nicht veröffentlicht.
 
-- 5 aktive Coins
-- 26 CURRENT-Auswertungen je Coin
-- 8 CONTEXT_V2-Auswertungen je Coin
-- 34 Auswertungen je Coin insgesamt
-- 170 erwartet
-- 170 aktiv bestätigt
 
 Health Check: **PASS**
 
@@ -50,14 +44,10 @@ Eine größere Projektions- und Performance-Reparatur wurde abgeschlossen.
 - Research Forward
 - OpenAI
 
-Beim Browser-Checkpoint waren 2 Paper-, 1 Watch-, 2 Research-Forward- und 0 OpenAI-Positionen offen.
+Beim Browser-Checkpoint waren die geprüften Open-Position-Ansichten über die relevanten simulierten Lanes konsistent. Exakte Positionszahlen werden bewusst nicht veröffentlicht.
 
-Auch die Ladezeit wurde deutlich reduziert:
+Overview-Payload und Ladepfad wurden deutlich reduziert. Exakte Zeiten, Byte-Größen und Prozentwerte werden bewusst nicht veröffentlicht.
 
-- 24h-Übersicht kalt: ca. 2,61 s
-- 24h-Übersicht warm: ca. 0,03 s
-- 24h-Payload: ca. 0,74 MB statt 4,79 MB
-- damit rund 84,5 % weniger Übersichtsdaten
 
 Umfangreiche Rohbelege werden jetzt erst auf Detailseiten geladen.
 
@@ -65,27 +55,11 @@ Die Gesamtstruktur der WebUI bleibt teilweise zu dicht und soll später weiter v
 
 ## Market Intelligence und ENA-Pilot
 
-Der Market-Intelligence-V2.1-Pfad arbeitet weiter mit:
+Der Market-Intelligence-Pfad bewertet mehrere Feature-Gruppen, Modellfamilien und Horizonte unter kausaler OOS-Auswertung bei erhaltener Rule-Baseline. Exakte Modellfamilien, Feature-Gruppen-Anzahlen und Horizon-Anzahlen werden bewusst nicht veröffentlicht.
 
-- 3 bestehenden Feature-Arms
-- 4 Architekturvarianten
-- 7 Horizonten
-- Logistic Regression
-- HistGradientBoosting
-- kausaler OOS-Auswertung
-- Erhalt der Rule-Baseline
 
-Der explizite ENA-1-Coin-Pilot wurde abgeschlossen mit:
+Der explizite Single-Market-Pilot wurde mit Full-History-Readiness, kausaler OOS-Auswertung und vergleichbarer Rule-/ML-Basis abgeschlossen. Exakte Zeilenzahlen, Architekturanzahlen, Horizonte, Folds und Registry-IDs werden bewusst nicht veröffentlicht.
 
-- bestätigtem Full-History-Vertrag
-- revalidierter Feature-Provenienz
-- 756 OOS-Ergebniszeilen
-- 126 Rule-Baseline-Ergebniszeilen
-- 3 Feature-Arms
-- 4 Architekturen
-- 7 Horizonten
-- identischer Fold-Basis für Rule und ML: 2026-07, 2026-08, 2026-09
-- Registry-ID 7
 
 Das fachliche Ergebnis wird bewusst nicht als Erfolg dargestellt:
 
@@ -108,7 +82,7 @@ Er bewertet u. a. Multi-Fold-Walk-Forward, Recent OOS, Coin-/State-/Horizon-/Fea
 
 Es gibt keine automatische Promotion.
 
-Der neue Full-History-ENA-Pilot muss nun gegen diesen Gate ausgewertet werden. Ein abgeschlossener Trainingslauf ist nicht automatisch `ROBUST_OOS_READY`.
+Der neue Full-History-Single-Market-Pilot muss nun gegen diesen Gate ausgewertet werden. Ein abgeschlossener Trainingslauf ist nicht automatisch `ROBUST_OOS_READY`.
 
 ## Canonical Memory und Lifecycle
 
@@ -144,7 +118,7 @@ Der aktuelle Stand ist stärker bei:
 - Signal-/Trade-Identität
 - Exit-/MFE-/MAE-Erfassung
 
-Kein alter Pflichtbaustein blockiert den abgeschlossenen ENA-1-Coin-Pilot.
+Kein alter Pflichtbaustein blockiert den abgeschlossenen Single-Market-Pilot.
 
 Weiterhin nur teilweise abgedeckt und später prüfenswert:
 
@@ -158,24 +132,16 @@ Alte Modellartefakte bleiben historische Evidence und werden nicht als aktuelle 
 
 ## OpenAI AI-only
 
-Der OpenAI-Input-Audit zeigte, dass im tatsächlich gesendeten Request 3D, 7D, explizite Support/Resistance-Struktur und Open-Position-Context fehlten.
+Der OpenAI-Input-Audit zeigte fehlenden höheren Zeitrahmen-, Struktur- und Positionskontext. Exakte Timeframes und Prompt-Felder werden bewusst nicht veröffentlicht.
 
-Der Minimal-Patch liefert jetzt:
+Der Minimal-Patch liefert jetzt Multi-Timeframe-Kontext, breiteren Marktkontext, Struktur, Volatilität, News, aggregierten Learning-Kontext und gegebenenfalls aktuellen simulierten Positionskontext. Exakte Feldzusammensetzung wird bewusst nicht veröffentlicht.
 
-- 1m / 5m / 15m / 1h / 1D / 3D / 7D
-- BTC-/ETH-Kontext
-- Regime und Range Position
-- explizite Structure-/Support-Resistance-Zusammenfassung
-- Volume / Volatility
-- News
-- aggregierte Learning-Memory
-- aktuelle OpenAI-Position, falls vorhanden
 
 Eine belastbare Futures-/Spot-Basisquelle war nicht vorhanden und wird deshalb nicht erfunden.
 
 Ein redigierter Request-Export wurde ohne zusätzlichen Paid Call erzeugt.
 
-Ein Effizienzproblem bleibt offen: Der gemessene Request vor der Kompaktierung umfasste etwa 73.933 Input-Tokens und 4.438 Output-Tokens für fünf Coins. Der Compact-Request-/Single-Plan-Contract wird derzeit lokal umgesetzt und getestet. Er gilt erst nach einem normalen zukünftigen Paid Call als Forward-bewiesen.
+Ein Effizienzproblem bleibt offen: Der Request vor der Kompaktierung war unnötig groß. Exakte Tokenzahlen und Batching-Details werden bewusst nicht veröffentlicht.
 
 ## Was offen bleibt
 
