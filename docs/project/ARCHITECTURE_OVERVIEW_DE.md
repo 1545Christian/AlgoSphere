@@ -9,7 +9,7 @@ Marktdaten
    ↓
 Market Context / State / Struktur
    ↓
-Strategie- & Modell-Kandidaten
+Research-Kandidaten
    ↓
 Decision-Lanes
    ↓
@@ -31,7 +31,7 @@ AlgoSphere arbeitet mit Marktinformationen über mehrere Horizonte.
 
 Die öffentliche Dokumentation trennt zwischen:
 
-- Execution Truth für Entry/Exit
+- Execution Truth zur Outcome-Messung
 - Context/Features für Analyse
 - breiterem Marktumfeld wie BTC/ETH, Struktur, Volatilität und News, soweit relevant
 
@@ -53,7 +53,7 @@ Ziel ist nicht anzunehmen, dass eine Strategie in jeder Marktphase gleich gut fu
 
 ## 3. Rule- und ML-Research
 
-Rule-Evidence bleibt getrennt vom Erfolg eines ML-Selectors erhalten.
+Rule-Evidence bleibt getrennt von der ML-Research-Performance erhalten. Exaktes Selector-Design, Feature-Sets und Scoring-Logik bleiben privat.
 
 ML soll einen echten Mehrwert gegenüber einer nachvollziehbaren Baseline beweisen müssen und nicht allein deshalb übernehmen, weil es moderner ist.
 
@@ -96,7 +96,7 @@ Sie soll Identity und Provenienz so erhalten, dass später nachvollziehbar bleib
 
 Der beabsichtigte Lernkreislauf ist kontrolliert:
 
-`neue Evidence → Evaluation → Learning Delta → Revalidierung → Lifecycle-Entscheidung`
+`neue Evidence → Evaluation → Revalidierung → Lifecycle-Entscheidung`
 
 Learning darf spätere Strategieauswahl beeinflussen. Promotion und Execution-Berechtigungen bleiben trotzdem separat geregelt.
 
@@ -120,7 +120,7 @@ Demo / Packaging / Release ist ein eigener Arbeitsbereich.
 Eine spätere Connected Demo ist weiterhin kein Live-Trading. Ein öffentliches/clientseitiges Paket braucht eigene Regeln für:
 
 - Berechtigungen
-- Approved Model Bundle
+- freigegebenes Modellpaket
 - Konfiguration
 - Reconnect/Recovery
 - Integrity/Update/Rollback
