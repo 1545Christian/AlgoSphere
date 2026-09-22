@@ -15,33 +15,19 @@ Publication date: **2026-09-21**. Human-reviewed from the latest internal projec
 
 ## Latest WebUI / current-truth proof
 
-The latest reviewed WebUI checkpoint has moved beyond the earlier 90.8.10.199 proof.
+The latest reviewed WebUI checkpoint passed the current browser-acceptance scope. Exact internal build identifiers are intentionally not published.
 
-Latest accepted build in the internal handoff: **90.8.10.239**.
+Reported browser-accepted scope: current UI truth, separation of research populations, and browser delivery checks passed. Internal check IDs are intentionally omitted.
 
-Reported browser-accepted scope:
 
-- B37_EXIT_LABEL_SEMANTICS = PASS
-- B38_NO_TRADE_CURRENT_TRUTH = PASS
-- B39_FULL_WEBUI_SWEEP = PASS
-- BROWSER_ACCEPTANCE_PASS = PASS
-- friendly host/private browser path = PASS
-- no Failed to fetch
-- Paper CURRENT and CONTEXT_V2 remain separated
-
-At that checkpoint, Paper CURRENT showed **124 settled / +4.03 USDT / PF 1.09 / 0 open**, with API ↔ DOM matching for the checked scope.
-
-CONTEXT_V2 showed **501 decisions / 0 settled / 0 open** at that same checkpoint.
+At that checkpoint, the checked Paper and Shadow populations matched the accepted UI/runtime truth. Exact population sizes and performance figures are intentionally kept out of the public documentation.
 
 These figures describe current UI/runtime truth for the checked population. They are not a claim of predictive superiority or live profitability.
 
 ## Canonical Memory / learning
 
-The **current writer path** is clean:
+The current evidence-writing path passed its consistency checks. Exact internal component names and topology are intentionally not published.
 
-- CURRENT_MEMORY_WRITER = PASS
-- SINGLE_LEARNING_WRITER = PROVEN
-- PARALLEL_LEARNING_ENGINE = NOT_FOUND
 
 However, the latest trust review does **not** treat the entire historical/canonical memory population as closed.
 
@@ -59,22 +45,13 @@ The current writer can therefore be trusted separately from the unresolved histo
 
 A small OpenAI canonical repair remains blocked.
 
-The intended 3-row repair discovered 4 possible rows during re-check:
+A narrowly scoped historical repair detected target-set drift during re-check and therefore remained blocked.
 
-- authorized target rows: 3
-- discovered target rows: 4
-- target-set drift: YES
 
 The apply was correctly **not** forced because a writer-free maintenance state was also not safely proven.
 
-The next valid step is:
+The next valid step is a controlled maintenance window, exact target revalidation, a narrowly scoped transaction, integrity verification, and a clean restart. Internal row counts and storage implementation details are intentionally omitted.
 
-1. establish a writer-free maintenance window
-2. classify the fourth row
-3. explicitly re-authorize the exact target IDs
-4. execute one exact-only transaction
-5. verify target/non-target mutation and SQLite integrity
-6. restart runtime cleanly
 
 No synthetic or broad historical repair is authorized.
 
@@ -84,26 +61,26 @@ A concrete OpenAI paper-loop bug was found and patched on disk.
 
 The bug could allow a valid OPEN observation to be overwritten after a temporary Futures BBO/history failure.
 
-Focused patch validation: **49 PASS**.
+Focused patch validation passed. Exact internal test counts are intentionally omitted.
 
 The remaining work is:
 
 - activate the patch in the controlled runtime
 - verify the old failure mode no longer reproduces
-- reconcile the earlier approximately **+43.49 USDT** interpretation against the current canonical source, population, date range and cost contract
+- reconcile the earlier positive historical interpretation against the current canonical source, population, date range and cost contract
 - define one trusted current OpenAI number for the UI
 
 Therefore:
 
 - OpenAI decision path: active
 - runtime patch activation: pending
-- historical +43.49 reconciliation: pending
+- historical result reconciliation: pending
 - OpenAI number trust: not closed
 - OpenAI profitability: not proven
 
 ## Market Intelligence / training
 
-The ENA full-history one-coin pilot remains the important model-quality result:
+The latest full-history single-market pilot remains the important model-quality result:
 
 - Rule vs ML = DEGRADED
 - candidate_eligible = false
@@ -123,9 +100,9 @@ No broad historical compaction/delete/vacuum is authorized.
 
 ## Demo / Packaging / Release
 
-Bitget Demo/Testnet has **not started**.
+exchange Demo/Testnet has **not started**.
 
-Current gate: **M2 = BLOCKED_BY_M1**.
+The Demo/Testnet stage remains blocked by the preceding trust gate.
 
 M1 is not closed because Memory trust and OpenAI number trust are still incomplete.
 
@@ -154,10 +131,10 @@ The project should not return to broad WebUI re-audits unless a new regression i
 2. create safe maintenance state
 3. exact-only canonical apply
 4. controlled runtime restart
-5. activate CH06 OpenAI patch
+5. activate the pending OpenAI patch
 6. reconcile current/historical OpenAI numbers
-7. close M1 if current Memory/UI/OpenAI trust gates pass
-8. only then start Bitget Demo/Testnet M2
+7. close the current trust gate if Memory/UI/OpenAI checks pass
+8. only then start exchange Demo/Testnet M2
 
 ## Scientific boundary
 
