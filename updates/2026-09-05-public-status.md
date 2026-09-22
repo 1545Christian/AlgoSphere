@@ -118,7 +118,7 @@ WATCH_SETUP_EVALUATION            PASS / active
 WATCH_CLOSED_OUTCOMES             no new visible outcomes since ~18:59
 ```
 
-TUT, ADA, ONDO, MYX and ENA continued to receive real setup evaluations. Many current decisions were legitimate `GATE_SETUP_BLOCKED / NO TRADE` results caused by regime, missing setup, range position, expected return, volume-Z or spot/futures basis conditions.
+research market, research market, research market, research market and research market continued to receive real setup evaluations. Many current decisions were legitimate `GATE_SETUP_BLOCKED / NO TRADE` results caused by regime, missing setup, range position, expected return, volume-Z or spot/futures basis conditions.
 
 The remaining issue is closed-outcome liveness and WebUI truth: `PROCESS RUNNING != OUTCOME ACTIVITY` remains a binding rule.
 
@@ -189,7 +189,7 @@ Hard rules:
 - do not create duplicate rebuilt outcomes
 - WebUI must show the rebuilt ledger exactly
 
-A new TUTUSDT AI-only outcome of about `+2.20 USDT` appeared late today, which shows that new evaluation rows can be produced again, but its settlement-price source is **not yet fully verified** and therefore is not treated as trusted performance proof.
+A new a monitored research market AI-only outcome of about `+2.20 USDT` appeared late today, which shows that new evaluation rows can be produced again, but its settlement-price source is **not yet fully verified** and therefore is not treated as trusted performance proof.
 
 ### Codex budget exhausted
 
