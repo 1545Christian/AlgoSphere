@@ -23,15 +23,15 @@ Der 23:45-Nachtlauf hat den aktuellen Runtime-Snapshot korrekt veröffentlicht, 
 
 - Ein QUICK-Lauf erreichte am `2026-09-04T18:42:15Z` einen terminalen Abschluss.
 - Der standardisierte Experiment-Memory-Datensatz wurde persistiert (`status=RECORDED`, `scientific_result=COMPLETED`).
-- Das war **kein Performance-PASS**: Der gespeicherte Best-Candidate-Eintrag für `ein privater Rule-/ML-Research-Kandidat` blieb `factory_exhausted` und enthielt keine belastbaren PF-/PnL-/Trade-Kennzahlen. Das ist ein wissenschaftlich abgeschlossener Reject-/Erschöpfungszustand und kein Trading-Erfolg.
-- Danach lief autonome QUICK-Arbeit weiter. Beim Nachtlauf war `v90_8_10_125` aktiv in `CHECKPOINT` auf `ein aktueller Research-Markt`, mit `3/5 Coins` abgeschlossen und `LIVE_STAGE_HEARTBEAT` als aktueller Zustandsquelle.
+- Das war **kein Performance-PASS**: Der gespeicherte Best-Candidate-Eintrag für `ein privater Rule-/ML-Research-Kandidat` blieb `privater terminaler Research-Status` und enthielt keine belastbaren PF-/PnL-/Trade-Kennzahlen. Das ist ein wissenschaftlich abgeschlossener Reject-/Erschöpfungszustand und kein Trading-Erfolg.
+- Danach lief autonome QUICK-Arbeit weiter. Beim Nachtlauf war `v90_8_10_125` aktiv in `CHECKPOINT` auf `ein aktueller Research-Markt`, mit `3/5 Coins` abgeschlossen und `interner Runtime-Status` als aktueller Zustandsquelle.
 - Der Research-Autopilot meldete `eligible experiments = 1`; automatische Promotion blieb deaktiviert.
 
 ### Research Forward / Watch
 
 - Research Forward ist fachlich vom Research-Evaluator getrennt: eigener Supervisor-Service und eigener no-capital Child-Trader; der Evaluator bleibt separat.
 - Health bedeutet nicht mehr nur „Prozess existiert“, sondern umfasst Child-Heartbeat und funktionalen no-capital-Zustand.
-- v123 Validate-only: PASS mit 90 Strategien, je 18 für ADA/ENA/MYX/ONDO/TUT, `capital_allowed=false`.
+- v123 Validate-only: PASS mit 90 Strategien, je 18 für Research-Markt/Research-Markt/Research-Markt/Research-Markt/Research-Markt, `capital_allowed=false`.
 - Watch/Research bleiben Explorations- und Evidence-Rollen. Erkenntnisse daraus müssen segmentiert in Eligibility/Memory zurückfließen und dürfen Paper erst nach weiterer prospektiver Bestätigung beeinflussen.
 
 ### WebUI / Runtime-Recovery
@@ -56,7 +56,7 @@ Der 23:45-Nachtlauf hat den aktuellen Runtime-Snapshot korrekt veröffentlicht, 
 - Frühere Code-PASS-Bewertungen waren teilweise zu optimistisch: Der reale Windows-Betrieb zeigte, dass Local ML trotz vermeintlich fertigem Autonomie-Vertrag in `WAITING FOR JOB` hängen konnte.
 - Neue Factory-Arbeit konnte hinter alten `COIN_DONE`-/`RUN_COMPLETE`-Checkpoints verschwinden. Das wurde als Resume-/Novelty-Fehler behandelt.
 - Research Forward konnte äußerlich als gestartet erscheinen, obwohl der eigentliche no-capital Child-Trader fachlich nicht gesund war. Der Health-Vertrag wurde deshalb verschärft.
-- Ein laufender oder abgeschlossener QUICK ist nicht automatisch ein guter Kandidat. `scientific_result=COMPLETED` und `factory_exhausted` müssen klar von Performance-/Promotion-Erfolg getrennt bleiben.
+- Ein laufender oder abgeschlossener QUICK ist nicht automatisch ein guter Kandidat. `scientific_result=COMPLETED` und `privater terminaler Research-Status` müssen klar von Performance-/Promotion-Erfolg getrennt bleiben.
 - WebUI-„Running“ darf nicht mehr aus einer Launcher-PID abgeleitet werden; echter HTTP-Health ist erforderlich.
 - Fehlversuche und Blocker bleiben Teil der Evidence und werden nicht nachträglich als Fortschritt umetikettiert.
 
@@ -68,7 +68,7 @@ Der 23:45-Nachtlauf hat den aktuellen Runtime-Snapshot korrekt veröffentlicht, 
 - Phase: `CHECKPOINT`
 - Symbol: `ein aktueller Research-Markt`
 - Fortschritt: `3/5 Coins`
-- Stage-Wahrheit: `LIVE_STAGE_HEARTBEAT`
+- Stage-Wahrheit: `interner Runtime-Status`
 - Live-Trading: `Nein`
 - Real Capital: `0`
 - automatische Promotion: `deaktiviert`
