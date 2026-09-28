@@ -1,52 +1,54 @@
 # Current public roadmap
 
-Publication: **2026-09-21**. Human-reviewed.
+Publication: **2026-09-28**. Human-reviewed.
 
-## Immediate P0 — close current trust gate without reopening proven work
+## P0 — current trust and runtime closure
 
-- **CLOSED for current scope:** browser acceptance for the reviewed UI path.
-- **OPEN:** complete a narrowly scoped historical repair only in a safe maintenance state.
-- **OPEN:** activate and prove the pending external-analysis runtime patch.
-- **OPEN:** reconcile older public performance interpretation against current evidence.
-- **OPEN:** close the trust gate only when current Memory/UI/external-analysis checks agree.
+- **OPEN:** prove the latest external-analysis source correction in the loaded runtime and on natural forward evidence.
+- **OPEN:** complete current WebUI/Cockpit end-to-end acceptance under the current authentication/session state.
+- **OPEN:** keep historical and current evidence populations separated and explicitly classified.
+- **RULE:** already-proven scope is not reopened without evidence of regression.
 
-Exact internal build IDs, row counts, repair targets, gate names and performance figures are intentionally not published.
+## P0 — product access
 
-## P0 — Memory
+- **PASSED for reviewed scope:** local operator login / single-session contract.
+- **OPEN:** Demo registration / first-time onboarding.
+- **OPEN:** connected Demo authentication/bootstrap proof.
+- **OPEN:** broader account administration / multi-user productization.
 
-- **PROVEN CURRENT PATH:** current evidence-writing path.
-- **OPEN LEGACY/RECONCILIATION:** incomplete historical lineage remains.
-- **RULE:** non-reconstructable legacy gaps must not be synthesized.
+## P0 — storage
 
-Exact writer topology, schema details and internal field names are intentionally private.
+- **DONE at logical level:** major compaction step with evidence references preserved.
+- **OPEN:** physical database shrink/maintenance in a safe quiescent state.
+- **RULE:** no destructive historical cleanup without evidence-preserving proof.
 
-## P0 — External analysis
+## P0 — research quality
 
-- **PATCHED ON DISK:** OPEN-observation overwrite bug.
-- **FOCUSED TESTS:** 49 PASS.
-- **OPEN:** controlled runtime activation.
-- **OPEN:** number reconciliation and current canonical UI truth.
-- **OPEN:** causal profitability evidence.
-
-## P0 — model quality
-
-- **OPEN:** improve/explain Rule-vs-ML degradation before broad training.
-- **OPEN:** collect enough prospective CONTEXT_V2 evidence.
+- **OPEN:** collect enough natural prospective evidence to judge newer research paths.
 - **OPEN:** preserve Rule evidence independently from ML.
+- **OPEN:** require evidence before any Challenger/Champion promotion claim.
+- **NO CLAIM:** infrastructure progress is not predictive uplift.
 
 ## Demo / Testnet
 
-Status: **BLOCKED / NOT STARTED**
+Status: **OPEN / NOT READY**
 
-After the preceding trust gate closes:
+Before connected Demo can be called ready:
 
-- prove strict separation between simulation and connected demo
-- prove permissions remain demo-only
-- execute and reconcile a complete demo lifecycle
-- prove reconnect/restart recovery
-- prove safe fallback to simulation
+- Demo registration/onboarding must work as a user-facing flow
+- connected authentication/bootstrap must be proven
+- a complete Decision → Execution → Outcome → Recovery cycle must be proven
+- permissions and credential boundaries must remain safe
+- fallback/recovery behavior must be proven
+- release/distribution boundaries must be ready
 
-Exact venue routing, permission layout and execution mechanics are intentionally private.
+Exact venue routing, private permission layout and execution mechanics are intentionally private.
+
+## Multi-venue
+
+- Continue building venue-independent execution contracts and capability boundaries.
+- Keep failure handling and reconciliation evidence-gated.
+- Do not describe connected multi-venue execution as production-ready before proof.
 
 ## Later — Live
 
@@ -56,8 +58,8 @@ Exact venue routing, permission layout and execution mechanics are intentionally
 
 ## Verification principles
 
-- already-proven scope is not reopened without evidence of regression
-- source patch ≠ runtime-active patch
-- current writer trust ≠ historical archive completeness
+- source patch ≠ runtime-active proof
 - technical PASS ≠ scientific uplift
+- local operator login ≠ Demo onboarding
+- current-path trust ≠ historical archive completeness
 - Demo ≠ Live
