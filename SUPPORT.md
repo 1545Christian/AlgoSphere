@@ -1,6 +1,6 @@
 # Support and Questions
 
-If you have a question about AlgoSphere, the fastest route depends on the topic.
+If you have a question about MIOIQ, the fastest route depends on the topic.
 
 ## General questions
 
@@ -27,10 +27,10 @@ Do not publish credentials, private account data or security-sensitive informati
 
 ## Trading / investment requests
 
-AlgoSphere is not a signal service and this repository does not provide personal investment advice.
+MIOIQ is not a signal service and this repository does not provide personal investment advice.
 
 ## Public updates
 
 Shorter updates are published on Telegram:
 
-https://t.me/AlgoSphereOfficial
+https://t.me/MIOIQOfficial
