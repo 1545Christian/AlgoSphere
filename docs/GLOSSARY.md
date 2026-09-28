@@ -1,6 +1,6 @@
-# AlgoSphere glossary
+# MIOIQ glossary
 
-AlgoSphere uses a few project-specific terms repeatedly. This page gives the short public meaning without exposing private implementation details.
+MIOIQ uses a few project-specific terms repeatedly. This page gives the short public meaning without exposing private implementation details.
 
 | Term | Meaning |
 |---|---|
