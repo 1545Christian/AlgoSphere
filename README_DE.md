@@ -1,46 +1,45 @@
-# AlgoSphere
+# MIOIQ
 
-**AI × Quant Research für Kryptomärkte**
+**Evidence-Driven Quant Intelligence**  
+**AI • Quant Research • Trading Systems**
 
-Unabhängiges Forschungs- und Engineering-Projekt für datengetriebene Marktanalyse, Machine Learning, Decision Intelligence, kanonisches Learning und kontrollierte Research-to-Execution-Workflows.
+MIOIQ ist ein unabhängiges Research- und Engineering-Projekt rund um AI-gestützte Quant-Research, Market Intelligence, evidenzbasiertes Learning und kontrollierte Research-to-Execution-Workflows.
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes geprüftes Update: [21. September 2026](updates/2026-09-21-public-status_DE.md)<br>
-Telegram: https://t.me/AlgoSphereOfficial<br>
+Neuestes geprüftes Update: [28. September 2026](updates/2026-09-28-public-status_DE.md)<br>
+Telegram: https://t.me/+BXzjABr9iQpjMTgy<br>
 Neu hier? [Hier anfangen](docs/START_HERE_DE.md) · [Architektur](docs/project/ARCHITECTURE_OVERVIEW_DE.md) · [Dokumentationsübersicht](docs/README.md)
 
-> **Hinweis zum öffentlichen Repository:** Hier werden das Projekt und ausgewählte Evidence dokumentiert. Dieses Repository ist kein Download der privaten AlgoSphere-Trading-Anwendung.
+> **Hinweis zur Umbenennung:** AlgoSphere heißt jetzt **MIOIQ**. Es ist dasselbe fortlaufende Projekt mit derselben Research-Historie und Evidence-Basis. Historische Dateien und Screenshots können den früheren Namen weiterhin tragen, wenn das für Provenienz notwendig ist.
+
+> **Hinweis zum öffentlichen Repository:** Dieses Repository dokumentiert das Projekt und ausgewählte Evidence. Es ist kein Download der privaten MIOIQ-Trading-Anwendung.
 
 ## Überblick
 
-AlgoSphere verbindet quantitative Marktanalyse, Market-State- und Regime-Research, Rule- und ML-Validierung, kanonische Decision → Outcome → Learning-Evidence, OpenAI-gestützte Analyse, Paper-/Shadow-Ausführung, Lifecycle-Governance und spätere Demo-/Packaging-/Release-Arbeit.
+MIOIQ verbindet quantitative Marktanalyse, Market-State- und Regime-Research, Rule- und ML-Validierung, evidence-verknüpfte Decision → Outcome → Learning-Workflows, externe AI-gestützte Analyse, Paper-/Shadow-Ausführung, Lifecycle-Governance und spätere Demo-/Packaging-/Release-Arbeit.
 
-Im Mittelpunkt stehen Reproduzierbarkeit, kausale Auswertung, eindeutige Lineage und der Erhalt positiver wie negativer Evidence.
+Im Mittelpunkt stehen Reproduzierbarkeit, kausale Auswertung, klare Lineage und der Erhalt positiver wie negativer Evidence.
 
-## Wohin sich AlgoSphere entwickeln soll
+## Wohin sich MIOIQ entwickeln soll
 
-AlgoSphere wird zu einem konfigurierbaren quantitativen Research- und Trading-Analyse-System entwickelt, das über ein breites Universum von Kryptomärkten arbeiten kann.
+MIOIQ wird zu einem konfigurierbaren quantitativen Research- und Trading-Analyse-System entwickelt, das über ein breites Universum von Kryptomärkten arbeiten kann.
 
-Das langfristige Ziel ist nicht, ein Modell oder eine Strategie auf jeden Markt zu zwingen. Das System soll anhand messbarer Evidence lernen:
+Das Ziel ist nicht, ein Modell oder eine Strategie auf jeden Markt zu zwingen. Das System soll anhand messbarer Evidence lernen:
 
 - welche Klassen von Ansätzen unter unterschiedlichen Marktbedingungen funktionieren
 - wann eine Rule-Strategie stärker ist als ML
 - wann ein Modell revalidiert werden sollte
-- wann eine Strategie im Research bleiben muss statt promotet zu werden
+- wann eine Strategie im Research bleiben muss
 - und wann **NO_TRADE** die bessere Entscheidung ist
 
-Marktanalyse, Strategie-Research, ML-Training, Validierung und evidenzbasierte Anpassung sollen mit der Zeit stärker automatisiert werden. Promotion, Execution-Berechtigungen und jede spätere Echtgeld-Nutzung bleiben trotzdem ausdrücklich geregelt.
+Research, Validierung und Evidence-Handling sollen stärker automatisiert werden, während Promotion, Execution-Berechtigungen und jede spätere Echtgeld-Nutzung ausdrücklich geregelt bleiben.
 
-Die in aktuellen Berichten sichtbaren Märkte sind Arbeits-Populationen und nicht das spätere Limit. Exakte Regeln zur Universumswahl bleiben bewusst privat.
-
-Mehr dazu: [Projektrichtung](docs/project/PROJECT_DIRECTION_DE.md).
+Exakte private Strategielogik, Modellinternas und Execution-Regeln werden bewusst nicht veröffentlicht.
 
 ## Research-Lifecycle
 
 HYPOTHESIS → QUICK → ROBUST_OOS → CHALLENGER → PAPER → CHAMPION
-
-Eligibility-Metadaten bleiben von operativen Stufen getrennt. Rule-Evidence bleibt unabhängig vom ML-Selector erhalten; exakte Gate-Felder bleiben bewusst privat.
 
 Ein neueres Modell wird nicht allein deshalb aktiv, weil es neuer ist. Promotion soll von reproduzierbarer Evidence und kontrolliertem Vergleich abhängen.
 
@@ -48,90 +47,58 @@ Ein neueres Modell wird nicht allein deshalb aktiv, weil es neuer ist. Promotion
 
 | Bereich | Aktueller Stand |
 |---|---|
-| Active Paper | Läuft / fail-closed |
-| Paper Context V2 Shadow | Aktiv |
-| Research Watch | Läuft / No-Capital-Research-Pfad |
-| Research Forward / Trade Like Che CURRENT | Läuft |
-| Kontext-Research-Variante | Active Shadow / Runtime-Proof vorhanden |
-| Kontext-Learning | Evidence-Feedback an Research-Auswahl angeschlossen |
-| Evidence-Memory-Pfad | **PASS** für den aktuellen Pfad; historischer Trust noch unvollständig |
-| OpenAI Exact-Memory-Repair | **Blockiert** durch Target-Set-Drift (3 autorisiert / 4 gefunden) + Maintenance-State-Proof |
-| Market Intelligence V2.1 | Research-Baseline vorhanden |
-| Single-Market-Pilot | Abgeschlossen; ML schlug die erhaltene Rule-Baseline nicht; keine Promotion |
-| Robustness Gate | Implementiert / evidenzgesteuert |
-| Research Handoff | Future-Projektion kompakter Candidate-/Rule-Evidence repariert; natürlicher Run-Proof steht aus |
-| Research Storage | Zukünftiger Evidence-Write-Pfad und Identity-Handling verbessert; Legacy-Compaction nicht freigegeben |
-| OpenAI AI-only | Aktiv; Paper-Loop-Patch 49 PASS on-disk, Runtime-Aktivierung + Zahlen-Reconciliation offen |
-| WebUI | letzter akzeptierter Browser-Scope: **v90.8.10.239** |
-| Demo / Packaging / Release | **M2 BLOCKED_BY_M1 / Bitget Demo nicht gestartet** |
+| Research & Engineering | Aktiv |
+| Paper / Shadow | Aktiv / fail-closed |
+| Evidence-Memory-Pfad | Aktueller Core technisch vorhanden; historische Reconciliation bleibt separat |
+| Historische Performance-Reconciliation | Historische Interpretation reconciled; kein aktueller Profit-Claim |
+| Externe AI-Analyse | Aktiv; letzter Source-Fix braucht noch Loaded-Runtime-/Forward-Proof |
+| Lokaler Operator-Login/Session | Geprüfter Scope bestanden |
+| Demo-Registrierung / Onboarding | **Offen** |
+| Vollständige aktuelle WebUI-Abnahme | **Offen** |
+| Research Storage | Logische Compaction weiter; physischer Shrink noch offen |
+| Multi-Venue-Richtung | Architektur/Contracts im Aufbau; verbundene Multi-Venue-Execution nicht behauptet |
+| Demo / Testnet E2E | **Nicht bewiesen** |
 | Live-Trading | Deaktiviert |
 | Echtgeld | 0 |
 | Automatische Promotion | Deaktiviert |
 
-Details zu Status und offenen Punkten stehen in [CURRENT_STATUS.md](CURRENT_STATUS.md).
+Details: [CURRENT_STATUS.md](CURRENT_STATUS.md).
 
 ## Evidence und Transparenz
 
-AlgoSphere veröffentlicht ausgewählte geprüfte Projektstände, Research-Zusammenfassungen, Verifikationsergebnisse, Evidence, Entwicklungshistorie und bekannte Grenzen.
+MIOIQ veröffentlicht ausgewählte geprüfte Projektstände, Research-Zusammenfassungen, Verifikationsergebnisse, Evidence, Entwicklungshistorie und bekannte Grenzen.
 
-Negative Ergebnisse bleiben sichtbar. Technischer Abschluss wird nicht als Beweis für Modellqualität, Profitabilität oder Live-Readiness dargestellt.
+Negative Ergebnisse bleiben sichtbar. Technischer Abschluss ist kein Beweis für Modellqualität, Profitabilität oder Live-Readiness.
 
 ## Öffentlich / privat
 
-Dieses Repository ist die **öffentliche Dokumentations- und Evidence-Schicht** von AlgoSphere.
+Dieses Repository ist die **öffentliche Dokumentations- und Evidence-Schicht** von MIOIQ.
 
-Es enthält Projektdokumentation, ausgewählte öffentliche Evidence-Exporte und kleine öffentliche Verifikationswerkzeuge. Es enthält **nicht** den privaten Anwendungs-/Runtime-Code, Zugangsdaten, Kontokonfiguration, private Marktdatenbanken, trainierte Model Bundles oder proprietäre Strategieparameter.
+Nicht enthalten sind privater Anwendungscode, Zugangsdaten, Kontokonfiguration, private Marktdatenbanken, private Model Bundles, proprietäre Strategieparameter, exakte Schwellen, Feature-/Label-Definitionen, Scoring-Logik, private Prompts, Execution-Formeln, Venue-Routing oder andere rekonstruktionssensitive Implementierungsdetails.
 
-Eine öffentliche AlgoSphere-Anwendung wird derzeit nicht über dieses Repository zum Download angeboten.
-
-Die öffentliche Dokumentation/Evidence steht unter CC BY-SA 4.0; die kleinen öffentlichen Verifikationswerkzeuge unter MIT. Keine dieser Lizenzen gilt für die private AlgoSphere-Anwendung oder nicht veröffentlichte Projektinhalte.
+Eine öffentliche MIOIQ-Anwendung wird derzeit nicht über dieses Repository zum Download angeboten.
 
 Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md) und [Lizenzierung](docs/legal/LICENSING.md).
 
 ## Dokumentation
 
-| Thema | Dokument |
-|---|---|
-| Hier anfangen | [docs/START_HERE_DE.md](docs/START_HERE_DE.md) |
-| Architekturüberblick | [docs/project/ARCHITECTURE_OVERVIEW_DE.md](docs/project/ARCHITECTURE_OVERVIEW_DE.md) |
-| Projektrichtung | [docs/project/PROJECT_DIRECTION_DE.md](docs/project/PROJECT_DIRECTION_DE.md) |
-| Öffentlicher Repository-Umfang | [docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md](docs/project/PUBLIC_REPOSITORY_SCOPE_DE.md) |
-| Aktueller Status | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Neuestes geprüftes Update | [Update vom 21. September](updates/2026-09-21-public-status_DE.md) |
-| Roadmap | [docs/progress/ROADMAP.md](docs/progress/ROADMAP.md) |
-| Dokumentierte Arbeiten | [docs/progress/COMPLETED_WORK.md](docs/progress/COMPLETED_WORK.md) |
-| Projektgeschichte | [docs/project/PROJECT_HISTORY.md](docs/project/PROJECT_HISTORY.md) |
-| FAQ | [docs/FAQ_DE.md](docs/FAQ_DE.md) |
-| Glossar | [docs/GLOSSARY_DE.md](docs/GLOSSARY_DE.md) |
-| Verifikation | [docs/verification/TEST_RESULTS.md](docs/verification/TEST_RESULTS.md) |
-| Evidence-Übersicht | [evidence/EVIDENCE_SUMMARY.md](evidence/EVIDENCE_SUMMARY.md) |
-| Mitmachen | [CONTRIBUTING.md](CONTRIBUTING.md) |
-| Support | [SUPPORT.md](SUPPORT.md) |
-| Security | [SECURITY.md](SECURITY.md) |
-| Lizenzierung | [docs/legal/LICENSING.md](docs/legal/LICENSING.md) |
-| Zitierhinweis | [CITATION.cff](CITATION.cff) |
-| Disclaimer | [docs/legal/DISCLAIMER.md](docs/legal/DISCLAIMER.md) |
-
-Datierte [Updates im Archiv](updates/README.md) ansehen.
-
-## Fragen, Ideen und Feedback
-
-AlgoSphere ist auch deshalb öffentlich dokumentiert, damit Research nachvollzogen, hinterfragt und verbessert werden kann.
-
-Hilfreich sind reproduzierbare Bugreports, Dokumentationskorrekturen, Research-Fragen, relevante Papers/Methoden und Verbesserungsideen, die sich fair testen lassen.
-
-Für Bugs, Research-Fragen und Ideen gibt es strukturierte GitHub-Issue-Vorlagen. Bitte vorher [CONTRIBUTING.md](CONTRIBUTING.md) lesen.
+- [Hier anfangen](docs/START_HERE_DE.md)
+- [Architektur](docs/project/ARCHITECTURE_OVERVIEW_DE.md)
+- [Projektrichtung](docs/project/PROJECT_DIRECTION_DE.md)
+- [Aktueller Status](CURRENT_STATUS.md)
+- [Update vom 28. September](updates/2026-09-28-public-status_DE.md)
+- [Roadmap](docs/progress/ROADMAP.md)
+- [Dokumentierte Arbeiten](docs/progress/COMPLETED_WORK.md)
+- [FAQ](docs/FAQ_DE.md)
+- [Glossar](docs/GLOSSARY_DE.md)
+- [Verifikation](docs/verification/TEST_RESULTS.md)
 
 ## Öffentliche Updates
 
-Kürzere Entwicklungs- und Research-Updates erscheinen auch auf Telegram:
+Kürzere Entwicklungs- und Research-Updates erscheinen auf Telegram:
 
-https://t.me/AlgoSphereOfficial
+https://t.me/+BXzjABr9iQpjMTgy
 
 ## Disclaimer
 
-AlgoSphere ist ein Forschungs- und Engineering-Projekt. Nichts in diesem Repository ist Finanz- oder Anlageberatung. Krypto- und Derivatehandel sind mit erheblichen Risiken verbunden. Historische, simulierte oder Paper-Ergebnisse garantieren keine zukünftigen Ergebnisse.
-
-Siehe den vollständigen [Disclaimer](docs/legal/DISCLAIMER.md).
-
-Freiwillige Unterstützung: [GitHub Sponsors](https://github.com/sponsors/1545Christian). Sponsoring ist keine Investition und vermittelt keine Trading-Signale, Eigentumsrechte, Rendite oder Ergebnisgarantie.
+MIOIQ ist ein Research- und Engineering-Projekt. Nichts in diesem Repository ist Finanz- oder Anlageberatung. Krypto- und Derivatehandel sind mit erheblichen Risiken verbunden. Historische, simulierte oder Paper-Ergebnisse garantieren keine zukünftigen Ergebnisse.
