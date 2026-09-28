@@ -1,22 +1,22 @@
-# AlgoSphere FAQ
+# MIOIQ FAQ
 
 English: [FAQ.md](FAQ.md)
 
 Kurze, verständliche Antworten auf Fragen, die zum Projekt häufig auftauchen.
 
-## Was ist AlgoSphere?
+## Was ist MIOIQ?
 
-AlgoSphere ist ein unabhängiges AI-×-Quant-Forschungs- und Engineering-Projekt für Kryptomärkte.
+MIOIQ ist ein unabhängiges AI-×-Quant-Forschungs- und Engineering-Projekt für Kryptomärkte.
 
 Untersucht wird, wie Market Context, regelbasierte Strategien, Machine Learning, OpenAI-gestützte Analyse, Canonical Memory sowie Paper-/Shadow-Ausführung so zusammenarbeiten können, dass Ergebnisse messbar und nachvollziehbar bleiben.
 
 Langfristig soll daraus ein konfigurierbares Research- und Trading-Analyse-System entstehen, das über ein breites Coin-Universum arbeiten, Strategien und Modelle vergleichen, aus Outcomes lernen und sich nur über evidenzbasierte Revalidierung verbessern kann.
 
-AlgoSphere wird nicht als fertiges Trading-Produkt dargestellt.
+MIOIQ wird nicht als fertiges Trading-Produkt dargestellt.
 
 Mehr dazu: [Projektrichtung](project/PROJECT_DIRECTION_DE.md).
 
-## Gibt es hier AlgoSphere zum Download?
+## Gibt es hier MIOIQ zum Download?
 
 Nein, derzeit nicht.
 
@@ -24,7 +24,7 @@ Dieses GitHub-Repository ist die öffentliche Dokumentations- und Evidence-Schic
 
 Siehe [Umfang des öffentlichen Repositorys](project/PUBLIC_REPOSITORY_SCOPE_DE.md).
 
-## Handelt AlgoSphere bereits live mit Echtgeld?
+## Handelt MIOIQ bereits live mit Echtgeld?
 
 Nein.
 
@@ -49,7 +49,7 @@ Nein.
 
 Privater Anwendungscode, Zugangsdaten, Kontokonfiguration, Marktdatenbanken, trainierte Model Bundles und proprietäre Strategieparameter werden nicht veröffentlicht.
 
-## Soll AlgoSphere später autonom arbeiten?
+## Soll MIOIQ später autonom arbeiten?
 
 Im Research und bei der Validierung zunehmend ja — aber nicht unkontrolliert.
 
@@ -59,7 +59,7 @@ neue Evidence → Evaluation → Learning Delta → Revalidierung → Lifecycle-
 
 Marktanalyse, Strategie-Research, ML-Training und evidenzbasierte Anpassung sollen mit der Zeit stärker automatisiert werden. Promotion, Execution-Berechtigungen und jede spätere Echtgeld-Nutzung bleiben trotzdem ausdrücklich geregelt.
 
-## Ist AlgoSphere auf die aktuell sichtbaren Coins begrenzt?
+## Ist MIOIQ auf die aktuell sichtbaren Coins begrenzt?
 
 Nein.
 
@@ -69,7 +69,7 @@ Diese Coins sind Arbeits-Populationen. Langfristig soll das Coin-Universum einst
 
 Nicht bewiesen.
 
-Der aktuelle ENA-1-Coin-Pilot lief technisch vollständig durch, aber der ML-Selector war schwächer als die erhaltene Rule-Baseline. Deshalb erfolgte keine Promotion.
+Der zuletzt geprüfte Single-Market-Pilot lief technisch vollständig durch, aber ML schlug die erhaltene Rule-Baseline nicht. Deshalb erfolgte keine Promotion.
 
 Dieses negative Ergebnis bleibt bewusst sichtbar.
 
@@ -115,7 +115,7 @@ FAILED_OOS, unzureichende Evidence, degradierte ML-Ergebnisse und offene Grenzen
 
 ## Was bedeutet Demo / Packaging / Release?
 
-Das ist ein eigener zukünftiger Arbeitsbereich, um Teile von AlgoSphere kontrolliert als Demo-/Client-Erlebnis bereitzustellen.
+Das ist ein eigener Arbeitsbereich, um ausgewählte Teile von MIOIQ kontrolliert als Demo-/Client-Erlebnis bereitzustellen. Der lokale Operator-Login hat seinen geprüften Scope bestanden; Demo-Registrierung/Onboarding und Connected-Demo-End-to-End-Proof bleiben offen.
 
 Demo bedeutet nicht Live.
 
@@ -138,6 +138,6 @@ Bitte vorher [CONTRIBUTING.md](../CONTRIBUTING.md) lesen.
 - [README](../README_DE.md)
 - [Projektrichtung](project/PROJECT_DIRECTION_DE.md)
 - [Aktueller Status](../CURRENT_STATUS.md)
-- [Neuestes Update](../updates/2026-09-21-public-status_DE.md)
+- [Neuestes Update](../updates/2026-09-28-public-status_DE.md)
 - [Roadmap](progress/ROADMAP.md)
 - [Evidence-Übersicht](../evidence/EVIDENCE_SUMMARY.md)
