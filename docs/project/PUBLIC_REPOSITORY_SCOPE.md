@@ -1,6 +1,6 @@
 # Public repository scope
 
-This repository is the public documentation and evidence layer for AlgoSphere.
+This repository is the public documentation and evidence layer for MIOIQ.
 
 It is not a downloadable release of the private trading application.
 
@@ -35,7 +35,7 @@ The repository intentionally excludes:
 - combinations of otherwise harmless details that materially reduce the work needed to reconstruct the private system
 
 
-The presence of small public verification tools under tools/ or tests/ does not mean the AlgoSphere trading application is open source.
+The presence of small public verification tools under tools/ or tests/ does not mean the MIOIQ trading application is open source.
 
 ## Why publish the documentation at all?
 
@@ -66,6 +66,6 @@ Public documentation and public evidence authored for this repository are licens
 
 The small public verification tools under `tools/` and `tests/` use the **MIT License**.
 
-These licenses apply only to material actually published in this repository. Public documentation is intentionally descriptive rather than implementation-complete. They do not license the private AlgoSphere application, unpublished models, private strategy material, credentials, account data or infrastructure.
+These licenses apply only to material actually published in this repository. Public documentation is intentionally descriptive rather than implementation-complete. They do not license the private MIOIQ application, unpublished models, private strategy material, credentials, account data or infrastructure.
 
 See [Licensing](../legal/LICENSING.md).
