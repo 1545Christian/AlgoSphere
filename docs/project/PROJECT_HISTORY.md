@@ -1,4 +1,4 @@
-# AlgoSphere project history
+# MIOIQ project history
 
 <!-- HUMAN_TEXT_START -->
 
@@ -22,16 +22,18 @@ The development direction expanded into Paper, Watch, Research Forward, OpenAI A
 
 A major later focus became the Decision → Trade → Outcome → Canonical Memory → Learning chain, including provenance, before/delta/after evidence and variant-safe comparison.
 
-## Current direction
+## Rename and current direction
 
-AlgoSphere is now being developed toward a configurable research and trading-analysis environment that can work across a broad crypto universe, train and compare models and strategies, learn from outcomes and move through an evidence-gated lifecycle.
+The project was publicly documented as **AlgoSphere** until September 2026 and now continues under the name **MIOIQ**. Historical references keep the former name where needed for provenance.
 
-The public GitHub repository documents this work. The private operational trading application is not published here.
+MIOIQ is now being developed toward a configurable research and trading-analysis environment that can work across a broad crypto universe, train and compare models and strategies, learn from outcomes and move through an evidence-gated lifecycle.
+
+The public GitHub repository documents this continuing work. The private operational trading application is not published here.
 
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
-**Public technical evidence window:** 9 September 2025 to 21 September 2026.
+**Public technical evidence window:** 9 September 2025 to 28 September 2026.
 
 The approximately three-year personal development history is not independently proven in full by the public repository; the dated technical record covers the period above.
 
@@ -44,4 +46,4 @@ The approximately three-year personal development history is not independently p
 | Current direction | configurable multi-coin research, ML training, validation and later controlled execution |
 <!-- AUTO_VALUES_END -->
 
-[Project direction](PROJECT_DIRECTION.md) · [Current status](../../CURRENT_STATUS.md) · [Latest update](../../updates/2026-09-21-public-status.md)
+[Project direction](PROJECT_DIRECTION.md) · [Current status](../../CURRENT_STATUS.md) · [Latest update](../../updates/2026-09-28-public-status.md)
