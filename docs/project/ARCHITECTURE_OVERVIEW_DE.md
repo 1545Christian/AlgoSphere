@@ -1,6 +1,6 @@
 # Architekturüberblick
 
-Dies ist eine öffentliche, bewusst grobe Übersicht darüber, wie AlgoSphere zusammenspielen soll. Sie beschreibt die Research-Architektur, ohne privaten Anwendungscode, proprietäre Strategieparameter oder Deployment-Details zu veröffentlichen.
+Dies ist eine öffentliche, bewusst grobe Übersicht darüber, wie MIOIQ zusammenspielen soll. Sie beschreibt die Research-Architektur, ohne privaten Anwendungscode, proprietäre Strategieparameter oder Deployment-Details zu veröffentlichen.
 
 ## Der Hauptkreislauf
 
@@ -27,7 +27,7 @@ Entscheidend ist der Kreislauf: Eine spätere Entscheidung soll auf die Evidence
 
 ## 1. Marktinputs
 
-AlgoSphere arbeitet mit Marktinformationen über mehrere Horizonte.
+MIOIQ arbeitet mit Marktinformationen über mehrere Horizonte.
 
 Die öffentliche Dokumentation trennt zwischen:
 
@@ -39,7 +39,7 @@ Future Information soll nicht so behandelt werden, als wäre sie zum Decision-Ze
 
 ## 2. Marktverständnis
 
-Bevor eine Strategie oder ein Modell bewertet wird, versucht AlgoSphere die Marktumgebung zu beschreiben.
+Bevor eine Strategie oder ein Modell bewertet wird, versucht MIOIQ die Marktumgebung zu beschreiben.
 
 Dazu gehören beispielsweise:
 
@@ -65,7 +65,7 @@ Ein Kandidat darf scheitern, unklar bleiben oder ohne Promotion erhalten werden.
 
 ## 4. Decision-Lanes
 
-AlgoSphere trennt unterschiedliche Decision-Populationen bewusst.
+MIOIQ trennt unterschiedliche Decision-Populationen bewusst.
 
 Beispiele im aktuellen öffentlichen Stand:
 
@@ -126,11 +126,11 @@ Eine spätere Connected Demo ist weiterhin kein Live-Trading. Ein öffentliches/
 - Integrity/Update/Rollback
 - Schutz von Credentials
 
-Normal-Futures-Live-Readiness bleibt spätere Arbeit. Elite/UTA bleibt bis nach stabilem Normal Futures zurückgestellt.
+Live-Readiness bleibt spätere Arbeit hinter kontrollierter Demo-/Stabilitäts-Evidence. Exakte Venue-/Account-Rollout-Reihenfolge bleibt privat.
 
 ## Warum diese Architektur?
 
-AlgoSphere soll eine schwierigere Frage beantworten als nur „kann ein Modell den Preis vorhersagen?“
+MIOIQ soll eine schwierigere Frage beantworten als nur „kann ein Modell den Preis vorhersagen?“
 
 Die eigentliche Frage ist:
 
