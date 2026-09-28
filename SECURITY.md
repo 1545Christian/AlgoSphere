@@ -2,7 +2,7 @@
 
 ## Public / private boundary
 
-AlgoSphere's public repository is intentionally limited to documentation, selected evidence exports and small verification tooling.
+MIOIQ's public repository is intentionally limited to documentation, selected evidence exports and small verification tooling.
 
 It does not publish:
 
