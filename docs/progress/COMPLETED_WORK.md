@@ -1,47 +1,68 @@
 # Documented engineering work
 
-Items below are reviewed engineering results, not claims of profitability or live readiness.
+Reviewed through **2026-09-28**.
 
-## September 21 — latest internal handoff
+Items below are engineering results, not claims of profitability or live readiness.
 
-### WebUI current truth
+## September 28 — current reviewed progress
 
-- The latest reviewed browser-acceptance scope passed.
-- Current and shadow research populations remain separated.
-- API/UI projection matched for the checked scope.
-- Exact build IDs, check IDs, population counts and performance figures are intentionally not published.
-- No claim is made that UI correctness proves predictive edge.
+### Project identity
 
-### Canonical Memory
+- AlgoSphere is now **MIOIQ**.
+- The project history and evidence base continue unchanged.
+- Historical files may retain the former name for provenance.
 
-- Current evidence-writing path: PASS.
-- Historical/cross-population trust is still incomplete.
-- A narrowly scoped historical repair detected target drift and was not forced.
-- A safe maintenance state is required before exact mutation.
-- Exact row counts, writer topology and schema details are intentionally not published.
+### Evidence and historical reconciliation
 
-### External analysis
+- One previously unresolved historical positive OpenAI performance interpretation has been reconciled against its original evidence population and contract.
+- The result is now treated as historical evidence, not current performance.
+- Historical/cross-population gaps remain separately classified rather than silently repaired.
 
-- Root cause found for one paper-loop failure mode: a temporary Futures BBO/history failure could overwrite a valid OPEN observation.
-- Patch exists on disk.
-- Focused validation: 49 PASS.
-- Runtime activation still pending.
-- Historical ~+43.49 USDT interpretation still requires source/population/time-window/cost-contract reconciliation.
-- OpenAI profitability is not claimed.
+### External AI analysis
+
+- A concrete handoff defect between valid analysis and later simulated execution handling was isolated.
+- A source-level correction and focused regression checks are in place.
+- Loaded-runtime and natural-forward proof remain open.
+
+### Login and settings
+
+- Local operator login / single-session behavior passed its reviewed scope.
+- Demo registration / first-time onboarding is **not** complete and remains open.
+- The current Settings profile presentation was corrected so the operator is no longer shown with the wrong role/profile label.
+
+### WebUI
+
+- Earlier reviewed UI contracts remain useful.
+- Complete current WebUI/Cockpit acceptance is still open under the current authentication/session state.
+- Responsive/browser/device acceptance is not yet treated as globally closed.
+
+### Storage
+
+- A major logical compaction step has been completed while preserving evidence references.
+- Future-write behavior reduces avoidable duplication.
+- Physical database shrink remains open and requires a safe maintenance state.
+
+### Multi-venue direction
+
+- Execution architecture work continues toward venue-independent contracts and capability boundaries.
+- Failure handling and reconciliation are being built before broader connected execution.
+- Connected multi-venue production readiness is not claimed.
 
 ### Demo / Testnet
 
-- Connected Demo/Testnet execution has not started.
-- The Demo/Testnet stage remains blocked by the preceding trust gate.
-- No complete connected-demo lifecycle/recovery proof exists yet.
+- Selected supporting security boundaries passed focused technical checks.
+- Demo registration/onboarding remains open.
+- Connected Demo/Testnet end-to-end execution/recovery proof does not yet exist.
 - Live remains disabled.
-
-## Earlier reviewed work
-
-Earlier runtime composition, research, storage, handoff, single-market training and evidence-memory work remains documented in the dated updates and project history.
 
 ## Interpretation
 
 A focused green suite proves only the tested contract.
-A completed training run proves execution, not model quality.
-A browser-correct UI proves current projection for that scope, not profitability.
+
+A source-level fix proves code state, not loaded-runtime behavior.
+
+A working local operator login does not prove Demo onboarding.
+
+A completed training run does not prove model quality.
+
+A browser-correct UI does not prove profitability.
