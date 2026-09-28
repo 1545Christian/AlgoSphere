@@ -1,6 +1,6 @@
 # Umfang des öffentlichen Repositorys
 
-Dieses Repository ist die öffentliche Dokumentations- und Evidence-Schicht von AlgoSphere.
+Dieses Repository ist die öffentliche Dokumentations- und Evidence-Schicht von MIOIQ.
 
 Es ist kein Download-Release der privaten Trading-Anwendung.
 
@@ -25,10 +25,16 @@ Bewusst nicht enthalten sind:
 - Exchange-Kontodaten
 - private Marktdatenbanken und rohe operative Logs
 - trainierte Model Bundles/Checkpoints
-- proprietäre Strategieparameter und private Execution-Konfiguration
-- private Deployment- und Infrastrukturdetails
+- proprietäre Strategienamen, Parameter, Schwellen und Signalformeln
+- exakte Feature-Sets, Labels, Gewichte, Scoring-/Ranking-Logik und Modell-Hyperparameter
+- exakte Entry-/Exit-Regeln, Preise, Positionsgrößen, Hebel, Stop-/Target-Logik und Risk-Konfiguration
+- private Venue-Auswahl-, Retry-, Failover- und Execution-Routing-Logik
+- interne Schema-/Tabellen-/Spaltennamen, wenn sie Implementierungsstruktur verraten
+- private Prompts/Contracts, Feld-Mappings, Queue-Namen und Runtime-Topologie
+- Deployment-, Infrastruktur- und Operational-Security-Details
+- Kombinationen ansonsten harmloser Details, die eine Rekonstruktion des privaten Systems wesentlich erleichtern
 
-Dass kleine öffentliche Verifikationswerkzeuge unter tools/ oder tests/ liegen, bedeutet nicht, dass die AlgoSphere-Trading-Anwendung Open Source ist.
+Dass kleine öffentliche Verifikationswerkzeuge unter tools/ oder tests/ liegen, bedeutet nicht, dass die MIOIQ-Trading-Anwendung Open Source ist.
 
 ## Warum die Dokumentation öffentlich ist
 
@@ -59,6 +65,6 @@ Bis dahin bedeutet die öffentliche Sichtbarkeit des Repositorys weder Produktve
 
 Die kleinen öffentlichen Verifikationswerkzeuge unter `tools/` und `tests/` stehen unter der **MIT License**.
 
-Diese Lizenzen gelten nur für tatsächlich in diesem Repository veröffentlichte Inhalte. Die öffentliche Dokumentation ist bewusst beschreibend und nicht implementierungsvollständig. Sie geben weder die private AlgoSphere-Anwendung noch nicht veröffentlichte Modelle, Strategieinhalte, Zugangsdaten, Kontodaten oder Infrastruktur frei.
+Diese Lizenzen gelten nur für tatsächlich in diesem Repository veröffentlichte Inhalte. Die öffentliche Dokumentation ist bewusst beschreibend und nicht implementierungsvollständig. Sie geben weder die private MIOIQ-Anwendung noch nicht veröffentlichte Modelle, Strategieinhalte, Zugangsdaten, Kontodaten oder Infrastruktur frei.
 
 Siehe [Lizenzierung](../legal/LICENSING.md).
