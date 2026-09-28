@@ -1,6 +1,6 @@
 # Code of Conduct
 
-AlgoSphere is a technical research project. Questions, criticism and disagreement are welcome when they help make the work clearer, safer or more reliable.
+MIOIQ is a technical research project. Questions, criticism and disagreement are welcome when they help make the work clearer, safer or more reliable.
 
 ## How to take part
 
@@ -25,6 +25,6 @@ For harassment or abuse that should not be handled in a public thread, use GitHu
 
 ## Why this exists
 
-The goal is simple: keep the public project useful for people interested in quantitative research, machine learning, market analysis and the engineering behind AlgoSphere.
+The goal is simple: keep the public project useful for people interested in quantitative research, machine learning, market analysis and the engineering behind MIOIQ.
 
 Constructive disagreement is part of that. Personal attacks are not.
