@@ -1,6 +1,6 @@
-# AlgoSphere Glossar
+# MIOIQ Glossar
 
-AlgoSphere verwendet einige projektinterne Begriffe immer wieder. Hier steht die kurze öffentliche Bedeutung, ohne private Implementierungsdetails offenzulegen.
+MIOIQ verwendet einige projektinterne Begriffe immer wieder. Hier steht die kurze öffentliche Bedeutung, ohne private Implementierungsdetails offenzulegen.
 
 | Begriff | Bedeutung |
 |---|---|
