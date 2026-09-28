@@ -1,8 +1,8 @@
-# AlgoSphere documentation
+# MIOIQ documentation
 
-This directory is the public documentation map for AlgoSphere.
+This directory is the public documentation map for MIOIQ.
 
-If you are new to the project, start with [START_HERE.md](START_HERE.md). It explains which documents matter first and how AlgoSphere uses terms such as implemented, tested, runtime proven and insufficient evidence.
+If you are new to the project, start with [START_HERE.md](START_HERE.md). It explains which documents matter first and how MIOIQ uses terms such as implemented, tested, runtime proven and insufficient evidence.
 
 ## Core project documents
 
