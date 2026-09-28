@@ -1,18 +1,18 @@
 # Start here
 
-If you are new to AlgoSphere, you do not need to read every file in this repository.
+If you are new to MIOIQ, you do not need to read every file in this repository.
 
 The quickest path is:
 
-1. **[Project Direction](project/PROJECT_DIRECTION.md)** — what AlgoSphere is being built toward.
+1. **[Project Direction](project/PROJECT_DIRECTION.md)** — what MIOIQ is being built toward.
 2. **[Current Status](../CURRENT_STATUS.md)** — what is actually working, proven or still open today.
-3. **[Latest Update](../updates/2026-09-21-public-status.md)** — what changed most recently.
+3. **[Latest Update](../updates/2026-09-28-public-status.md)** — what changed most recently.
 4. **[Evidence Summary](../evidence/EVIDENCE_SUMMARY.md)** — how public evidence is recorded and what its limits are.
 5. **[Roadmap](progress/ROADMAP.md)** — what comes next.
 
-## How to read AlgoSphere status language
+## How to read MIOIQ status language
 
-AlgoSphere deliberately separates several kinds of “done”.
+MIOIQ deliberately separates several kinds of “done”.
 
 | Term | What it means here |
 |---|---|
@@ -36,7 +36,7 @@ This repository is the public documentation and evidence layer.
 
 It includes status, methodology, selected evidence, verification summaries and small tools that verify the public export itself.
 
-It does not include the private AlgoSphere trading/runtime application, private model bundles, proprietary strategy parameters, credentials or account data.
+It does not include the private MIOIQ trading/runtime application, private model bundles, proprietary strategy parameters, credentials or account data.
 
 See [Public Repository Scope](project/PUBLIC_REPOSITORY_SCOPE.md) and [Licensing](legal/LICENSING.md).
 
@@ -48,4 +48,4 @@ See [Public Repository Scope](project/PUBLIC_REPOSITORY_SCOPE.md) and [Licensing
 - Contribution guidance: [CONTRIBUTING.md](../CONTRIBUTING.md)
 - Security-sensitive issue: [SECURITY.md](../SECURITY.md)
 
-Short public updates are also posted on Telegram: https://t.me/AlgoSphereOfficial
+Short public updates are also posted on Telegram: https://t.me/MIOIQOfficial
