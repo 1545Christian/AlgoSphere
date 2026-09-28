@@ -1,6 +1,6 @@
 # Architecture overview
 
-This is a public, high-level view of how AlgoSphere is intended to fit together. It describes the research architecture without publishing private application code, proprietary strategy parameters or deployment details.
+This is a public, high-level view of how MIOIQ is intended to fit together. It describes the research architecture without publishing private application code, proprietary strategy parameters or deployment details.
 
 ## The main loop
 
@@ -27,7 +27,7 @@ The important part is the loop: a later decision should be able to trace back to
 
 ## 1. Market inputs
 
-AlgoSphere works with market information across several horizons.
+MIOIQ works with market information across several horizons.
 
 Public documentation distinguishes between:
 
@@ -39,7 +39,7 @@ The project avoids treating future information as if it were available at decisi
 
 ## 2. Market understanding
 
-Before a strategy or model is judged, AlgoSphere tries to describe the environment it is operating in.
+Before a strategy or model is judged, MIOIQ tries to describe the environment it is operating in.
 
 Public examples stay intentionally broad: regime, structure, volatility and transition context. Exact indicators, thresholds, feature definitions and combinations are private.
 
@@ -60,7 +60,7 @@ A candidate can fail, remain inconclusive or be preserved without promotion.
 
 ## 4. Decision lanes
 
-AlgoSphere intentionally separates different decision populations.
+MIOIQ intentionally separates different decision populations.
 
 Public documentation separates simulated, research and counterfactual populations. Exact lane names, routing rules and eligibility logic are private.
 
@@ -76,7 +76,7 @@ It preserves enough identity and provenance for later causal analysis without pu
 
 ## 6. Learning and adaptation
 
-AlgoSphere's intended learning loop is controlled rather than self-modifying without limits:
+MIOIQ's intended learning loop is controlled rather than self-modifying without limits:
 
 `new evidence → evaluation → revalidation → lifecycle decision`
 
