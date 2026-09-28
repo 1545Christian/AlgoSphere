@@ -1,147 +1,121 @@
 # Current public status
 
-Publication date: **2026-09-21**. Human-reviewed from the latest internal project handoff.
+Publication date: **2026-09-28**. Human-reviewed against the current project handoff and master open-points state.
+
+> **Rename note:** AlgoSphere is now **MIOIQ**. Historical files may retain the former name where that is required for provenance.
 
 ## Operating boundary
 
-- Live trading: **No**
+- Research & engineering: **active**
+- Paper / Shadow research: **active**
+- Local operator login/session: **reviewed scope passed**
+- Demo registration / first-time onboarding: **open**
+- Connected Demo/Testnet end-to-end proof: **not proven**
+- Full current WebUI acceptance: **open**
+- Live trading: **disabled**
 - Real capital: **0**
-- Automatic promotion: **No**
-- Demo / Testnet: **Not started**
-- Elite / UTA: **Deferred**
-- Paper / Shadow research: active
-- Training: operator-controlled
-- Safety boundary: fail-closed
+- Automatic promotion: **disabled**
+- Safety boundary: **fail-closed**
 
-## Latest WebUI / current-truth proof
+## Evidence and historical reconciliation
 
-The latest reviewed WebUI checkpoint passed the current browser-acceptance scope. Exact internal build identifiers are intentionally not published.
+The current evidence-writing core remains technically established for the reviewed path.
 
-Reported browser-accepted scope: current UI truth, separation of research populations, and browser delivery checks passed. Internal check IDs are intentionally omitted.
+A previously unresolved historical positive OpenAI performance interpretation has now been reconciled against its original evidence population and contract. That closes a historical trust question, but it is **not** a claim of current profitability.
 
+Historical/cross-population reconciliation remains separate from current-path trust. Older incomplete evidence is not silently reconstructed or invented.
 
-At that checkpoint, the checked Paper and Shadow populations matched the accepted UI/runtime truth. Exact population sizes and performance figures are intentionally kept out of the public documentation.
+## External AI analysis
 
-These figures describe current UI/runtime truth for the checked population. They are not a claim of predictive superiority or live profitability.
+The independent AI-analysis path remains active.
 
-## Canonical Memory / learning
+A concrete defect was isolated in the handoff between a valid analysis and later simulated execution handling. A source-level correction and focused regression checks are in place.
 
-The current evidence-writing path passed its consistency checks. Exact internal component names and topology are intentionally not published.
+This item remains **partially open** until the currently loaded runtime and naturally arriving forward evidence prove the corrected path end-to-end.
 
+AI-analysis quality and profitability are **not proven**.
 
-However, the latest trust review does **not** treat the entire historical/canonical memory population as closed.
+## Login, sessions and Demo access
 
-Open historical/current reconciliation issues still include:
+The local operator login / single-session contract passed its reviewed scope.
 
-- Paper CURRENT rows where Delta exists but Contribution/lane lineage is incomplete
-- Paper CONTEXT_V2 with no comparable settled canonical outcome population
-- TLC CONTEXT_V2 rows with Outcome but incomplete Contribution/Delta
-- Research Forward join mismatches around identity/lane/state
-- OpenAI lacking a fully trusted settled learning chain in the checked sample
+That does **not** mean the Demo access product is complete.
 
-The current writer can therefore be trusted separately from the unresolved historical archive.
+Still open:
 
-## Exact-only OpenAI memory repair
+- Demo registration / first-time onboarding
+- connected Demo authentication/bootstrap proof
+- complete connected Demo execution/recovery proof
+- broader account administration / multi-user productization
 
-A small OpenAI canonical repair remains blocked.
+The Settings profile presentation was corrected so the current operator profile no longer shows the wrong role/profile label.
 
-A narrowly scoped historical repair detected target-set drift during re-check and therefore remained blocked.
+## WebUI current truth
 
+Several previously reviewed UI contracts remain useful, but the complete current WebUI acceptance is **not globally closed**.
 
-The apply was correctly **not** forced because a writer-free maintenance state was also not safely proven.
+The current Cockpit/data-state path still needs a fresh end-to-end acceptance pass under the current authentication/session state.
 
-The next valid step is a controlled maintenance window, exact target revalidation, a narrowly scoped transaction, integrity verification, and a clean restart. Internal row counts and storage implementation details are intentionally omitted.
+Broader responsive/browser/device acceptance also remains open.
 
+An older browser PASS is therefore not treated as proof that every current screen, filter, chart and state is now accepted.
 
-No synthetic or broad historical repair is authorized.
+## Storage and database
 
-## OpenAI AI-only
+The research-storage problem has moved forward materially.
 
-A concrete OpenAI paper-loop bug was found and patched on disk.
+A substantial logical compaction step has been completed while preserving evidence references. Future-write improvements also reduce avoidable duplication.
 
-The bug could allow a valid OPEN observation to be overwritten after a temporary Futures BBO/history failure.
+Physical database shrink has **not** been executed yet. It remains intentionally separated from logical compaction and requires a safe maintenance/quiescent state.
 
-Focused patch validation passed. Exact internal test counts are intentionally omitted.
+Private schema, row-level implementation details and reconstruction-sensitive storage internals are not published.
 
-The remaining work is:
+## Multi-venue direction
 
-- activate the patch in the controlled runtime
-- verify the old failure mode no longer reproduces
-- reconcile the earlier positive historical interpretation against the current canonical source, population, date range and cost contract
-- define one trusted current OpenAI number for the UI
+The execution architecture continues to move toward a venue-independent design.
 
-Therefore:
+Shared contracts, capability boundaries, failure handling and reconciliation behavior are being developed before broader connected execution is enabled.
 
-- OpenAI decision path: active
-- runtime patch activation: pending
-- historical result reconciliation: pending
-- OpenAI number trust: not closed
-- OpenAI profitability: not proven
+This is architecture and engineering progress — not a claim that multiple connected exchange execution paths are already production-ready.
 
-## Market Intelligence / training
+## Demo / Testnet
 
-The latest full-history single-market pilot remains the important model-quality result:
+Selected supporting security boundaries have passed focused technical checks.
 
-- Rule vs ML = DEGRADED
-- candidate_eligible = false
-- no Challenger promotion
-- no automatic promotion
-- Rule evidence preserved
+The overall Demo track remains:
 
-Broad training remains blocked until model-quality evidence improves.
+**OPEN / NOT READY**
 
-## Research handoff / storage
+A working local operator login must not be confused with a complete Demo registration/onboarding flow.
 
-The future Research → Memory projection and future snapshot writer improvements remain in place.
+Connected Demo/Testnet end-to-end execution, recovery and release readiness remain unproven.
 
-Natural forward proof for some future handoff/storage contracts is still pending.
+## Research and model quality
 
-No broad historical compaction/delete/vacuum is authorized.
+No new public claim of predictive superiority is being made.
 
-## Demo / Packaging / Release
+Infrastructure, evidence integrity and product work have progressed, but newer research paths still require natural prospective outcomes before any claim of improved trading quality.
 
-exchange Demo/Testnet has **not started**.
-
-The Demo/Testnet stage remains blocked by the preceding trust gate.
-
-M1 is not closed because Memory trust and OpenAI number trust are still incomplete.
-
-Still not done:
-
-- Demo execution router proof
-- real Bitget Demo order ACK/fill/position/exit cycle
-- fees and reconciliation
-- restart/reconnect recovery
-- Paper → Demo handoff
-- TLC → Demo handoff
-- OpenAI → Demo handoff
-- fallback to current simulated path
-
-Important boundaries:
-
-- Demo Connected ≠ Live
-- Demo/Testnet ≠ real capital
-- Live remains disabled
-
-## Current critical path
-
-The project should not return to broad WebUI re-audits unless a new regression is observed.
-
-1. classify OpenAI target-set drift (3 vs 4)
-2. create safe maintenance state
-3. exact-only canonical apply
-4. controlled runtime restart
-5. activate the pending OpenAI patch
-6. reconcile current/historical OpenAI numbers
-7. close the current trust gate if Memory/UI/OpenAI checks pass
-8. only then start exchange Demo/Testnet M2
+The preserved Rule baseline remains an important comparison boundary, and automatic promotion remains disabled.
 
 ## Scientific boundary
 
 Infrastructure progress does not prove trading edge.
 
-Still not proven: durable ML uplift, CONTEXT_V2 uplift, OpenAI profitability, a new Challenger → Paper → Champion cycle, or Demo/live readiness.
+Still not proven:
+
+- durable ML uplift
+- meaningful shadow-path uplift from natural comparable outcomes
+- external AI-analysis profitability
+- a new evidence-complete Challenger → Paper → Champion cycle
+- connected Demo/live readiness
+
+## Public/private boundary
+
+MIOIQ publishes project direction, reviewed progress, methodology and selected evidence.
+
+It does not publish the private trading application, credentials, account data, trained private models, exact strategy logic, thresholds, feature/label definitions, scoring/ranking rules, execution formulas, private prompts, internal schemas, private venue-routing logic or combinations of details that would materially reduce the work required to reconstruct the private system.
 
 ## Safety boundary
 
-LIVE=false · REAL_CAPITAL=0 · automatic promotion disabled · Demo/Testnet not started.
+LIVE=false · REAL_CAPITAL=0 · automatic promotion disabled · Demo/Testnet end-to-end not proven.
