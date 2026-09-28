@@ -1,31 +1,47 @@
 # Test results and verification limits
 
-Reviewed: **2026-09-21**
+Reviewed: **2026-09-28**
 
 This page summarizes selected public verification evidence. It does not certify profitability, live readiness or a globally clean private test suite.
 
-## Latest focused verification
+## Latest reviewed verification
 
-The latest internal handoff reports PASS/PROVEN results for the reviewed browser path, current evidence-writing path, single-writer governance and the focused external-analysis patch scope.
+The current project handoff reports focused PASS/PROVEN evidence for:
 
-Earlier focused evidence for research composition and learning integration remains valid at a high level.
+- the reviewed local operator login / single-session scope
+- selected current evidence-writing contracts
+- the latest source-level external-analysis correction
+- selected credential and HTTP/WebUI safety boundaries
+- the logical storage-compaction path
 
-Exact internal check IDs, test counts, strategy counts, build IDs and component names are intentionally not published because they add implementation fingerprinting without improving public scientific interpretation.
+Earlier focused evidence for research composition, causal evaluation and learning integration remains valid at a high level where not superseded by later findings.
 
-## What remains unproven
+Exact internal test IDs, counts, build identifiers, private schema details and component names are intentionally not published because they add implementation fingerprinting without improving public scientific interpretation.
 
-The green checks above do not prove:
+## Still open / not proven
 
-- historical Canonical Memory completeness
-- successful narrowly scoped historical repair
-- runtime activation of the latest external-analysis patch
-- reconciliation of the older positive public interpretation
-- external-analysis profitability
-- connected Demo/Testnet end-to-end proof
+The checks above do **not** prove:
+
+- Demo registration / first-time onboarding
+- connected Demo authentication/bootstrap
+- connected Demo/Testnet end-to-end execution/recovery
+- loaded-runtime + natural-forward closure of the latest external-analysis fix
+- complete current WebUI/Cockpit acceptance
+- full responsive/browser/device acceptance
+- physical database shrink
+- external AI-analysis profitability
+- durable ML/shadow-path uplift
 - live readiness
 
 ## Evidence layers
 
-AlgoSphere distinguishes code/source state, focused tests, runtime/process proof, API/UI proof, browser proof and prospective outcome proof.
+MIOIQ distinguishes:
+
+- source/code state
+- focused tests
+- loaded runtime/process proof
+- API/UI projection proof
+- browser acceptance
+- prospective outcome proof
 
 A later layer is not inferred automatically from an earlier one.
