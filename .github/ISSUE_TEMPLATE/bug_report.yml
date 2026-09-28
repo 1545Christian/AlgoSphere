@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting this. Please keep private credentials, account data and proprietary strategy parameters out of public issues.
+        Thanks for reporting this. Please keep private credentials, account data, strategy/model/execution details, internal field mappings and other reconstruction-sensitive information out of public issues.
   - type: textarea
     id: problem
     attributes:
