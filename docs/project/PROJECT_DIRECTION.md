@@ -1,12 +1,12 @@
 # Project direction
 
-AlgoSphere started as a trading-analysis and automation project, but the long-term goal is broader than running a single strategy or model.
+MIOIQ started as a trading-analysis and automation project, but the long-term goal is broader than running a single strategy or model.
 
 The project is being developed toward a configurable quantitative research and trading-analysis system for crypto markets that can work across a broad market universe and improve its decisions through measured evidence rather than by blindly retraining or changing parameters.
 
 ## What the system is meant to do
 
-Over time, AlgoSphere should be able to:
+Over time, MIOIQ should be able to:
 
 - monitor a configurable universe of crypto markets
 - understand market structure, regime and state across several time horizons
@@ -43,7 +43,7 @@ but rather:
 
 ## Learning without uncontrolled self-modification
 
-“Self-improving” in AlgoSphere does not mean allowing the system to rewrite or promote itself without evidence.
+“Self-improving” in MIOIQ does not mean allowing the system to rewrite or promote itself without evidence.
 
 The intended loop is controlled:
 
@@ -53,7 +53,7 @@ Research automation may become increasingly autonomous, while runtime permission
 
 ## Analysis, training and execution are separate concerns
 
-AlgoSphere is intended to become useful as:
+MIOIQ is intended to become useful as:
 
 1. a market-analysis environment,
 2. an ML and strategy research/training system,
