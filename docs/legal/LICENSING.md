@@ -1,6 +1,6 @@
 # Licensing
 
-AlgoSphere has a deliberately split public/private licensing boundary.
+MIOIQ has a deliberately split public/private licensing boundary.
 
 ## Public documentation and evidence
 
@@ -14,8 +14,8 @@ In practical terms, this means the public documentation may be shared and adapte
 
 When reusing material, please attribute:
 
-**AlgoSphere / Christian Heftenberger**  
-Source: https://github.com/1545Christian/AlgoSphere
+**MIOIQ / Christian Heftenberger**  
+Source: https://github.com/1545Christian/MIOIQ
 
 Please also indicate when material has been changed.
 
@@ -30,7 +30,7 @@ are licensed under the **MIT License**.
 
 See [LICENSE-CODE](../../LICENSE-CODE).
 
-These files verify the public documentation/evidence export. They are **not** the private AlgoSphere trading application.
+These files verify the public documentation/evidence export. They are **not** the private MIOIQ trading application.
 
 ## What these licenses do not cover
 
@@ -38,7 +38,7 @@ Neither public license grants rights to material that is not published in this r
 
 In particular, they do **not** license or release:
 
-- the private AlgoSphere application/runtime source code
+- the private MIOIQ application/runtime source code
 - private trading or execution logic
 - proprietary strategy parameters
 - private model bundles, checkpoints or training artifacts
@@ -47,7 +47,7 @@ In particular, they do **not** license or release:
 - private deployment/infrastructure material
 - third-party material that carries its own rights or license
 
-Public visibility does not convert private AlgoSphere assets into open-source or Creative Commons material.
+Public visibility does not convert private MIOIQ assets into open-source or Creative Commons material.
 
 ## No trading or investment rights
 
@@ -59,7 +59,7 @@ They do not provide:
 - investment advice
 - account access
 - execution permission
-- ownership in AlgoSphere
+- ownership in MIOIQ
 - a financial return
 - a warranty of correctness, profitability or fitness for trading
 
