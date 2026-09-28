@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to suggest an improvement.
-        AlgoSphere is a research project, so useful ideas should be testable and evidence-oriented rather than framed as guaranteed trading improvements.
+        MIOIQ is a research project, so useful ideas should be testable and evidence-oriented rather than framed as guaranteed trading improvements.
   - type: textarea
     id: idea
     attributes:
