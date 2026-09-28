@@ -1,12 +1,12 @@
-# Contributing to AlgoSphere
+# Contributing to MIOIQ
 
 Thanks for taking an interest in the project.
 
-AlgoSphere is currently an independent research project, not an open-source trading product. The private trading/runtime code, credentials, trained models and proprietary strategy parameters are not part of this repository.
+MIOIQ is currently an independent research project, not an open-source trading product. The private trading/runtime code, credentials, trained models and proprietary strategy parameters are not part of this repository.
 
 That said, useful public contributions are welcome.
 
-Before contributing, please read the [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md) so it is clear which parts of AlgoSphere are public and which remain private.
+Before contributing, please read the [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md) so it is clear which parts of MIOIQ are public and which remain private.
 
 ## Good ways to contribute
 
@@ -77,7 +77,7 @@ For short public project updates, see the Telegram channel linked in the README.
 
 ## Before you submit
 
-A good public contribution should be understandable without access to the private AlgoSphere application.
+A good public contribution should be understandable without access to the private MIOIQ application.
 
 Before opening an issue or pull request, check that:
 
