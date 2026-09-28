@@ -12,7 +12,7 @@ If the change affects a factual project claim, link the public evidence or expla
 
 ## Checklist
 
-- [ ] I did not include credentials, private account data or proprietary strategy parameters.
+- [ ] I did not include credentials, private account data, proprietary strategy/model/execution details or reconstructable combinations of them.
 - [ ] I did not turn a technical result into an unsupported performance claim.
 - [ ] I kept Paper / Shadow / Research / OpenAI / Live boundaries clear where relevant.
 - [ ] Links and referenced public files are valid.
