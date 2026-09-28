@@ -1,17 +1,19 @@
 # Versions and build identifiers
 
-Reviewed: **2026-09-21**
+Reviewed: **2026-09-28**
 
-This page records identifiers useful for the public documentation. It is not a private application release manifest.
+This page records public verification categories useful for documentation. It is not a private application release manifest.
 
-| Scope | Latest public identifier / proof |
+| Scope | Current public interpretation |
 |---|---|
-| WebUI latest accepted browser scope | `90.8.10.239` |
-| WebUI B37/B38/B39 acceptance | PASS |
-| Earlier Research Forward composition proof | `35/35 PASS` |
-| Earlier Research Forward strategies | `170 / 170`, 0 duplicates |
-| OpenAI paper-loop patch | on disk; 49 focused tests PASS; runtime activation pending |
-| Public Demo/Testnet execution | not started |
-| Live release | not available |
+| WebUI / browser scope | Earlier reviewed contracts exist; full current acceptance remains open |
+| Local operator login/session | Reviewed scope passed |
+| Demo registration/onboarding | Open |
+| External AI-analysis correction | Source-level fix + focused checks; loaded-runtime / natural-forward proof open |
+| Research storage | Logical compaction progressed; physical shrink open |
+| Connected Demo/Testnet execution | Not proven end-to-end |
+| Live release | Not available |
 
-A source version, WebUI label or test label is not treated as runtime proof by itself.
+Exact private build IDs, test IDs and implementation fingerprints are intentionally omitted from the current public documentation.
+
+A source version, UI label or focused test result is not treated as runtime or prospective proof by itself.
