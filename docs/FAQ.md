@@ -1,12 +1,12 @@
-# AlgoSphere FAQ
+# MIOIQ FAQ
 
 Deutsch: [FAQ_DE.md](FAQ_DE.md)
 
 A short, plain-language answer to the questions that come up most often around the project.
 
-## What is AlgoSphere?
+## What is MIOIQ?
 
-AlgoSphere is an independent AI × Quant research and engineering project for crypto markets.
+MIOIQ is an independent AI × Quant research and engineering project for crypto markets.
 
 The project explores how market context, rules, machine learning, OpenAI-assisted analysis, canonical memory and Paper/Shadow execution can be combined in a way that is measurable and auditable.
 
@@ -16,7 +16,7 @@ It is not presented as a finished trading product.
 
 More detail: [Project Direction](project/PROJECT_DIRECTION.md).
 
-## Is there an AlgoSphere download here?
+## Is there an MIOIQ download here?
 
 No public application download is currently offered from this repository.
 
@@ -24,7 +24,7 @@ This GitHub repository is the public documentation and evidence layer. It also c
 
 See [Public Repository Scope](project/PUBLIC_REPOSITORY_SCOPE.md).
 
-## Is AlgoSphere live trading with real money?
+## Is MIOIQ live trading with real money?
 
 No.
 
@@ -49,7 +49,7 @@ No.
 
 Private application source code, credentials, account configuration, market databases, trained model bundles and proprietary strategy parameters are not published here.
 
-## Is AlgoSphere intended to become autonomous?
+## Is MIOIQ intended to become autonomous?
 
 Increasingly autonomous in research and validation, yes — but not uncontrolled.
 
@@ -69,7 +69,7 @@ Those coins are working populations. The long-term direction is a configurable c
 
 Not proven.
 
-The latest ENA one-coin pilot completed technically, but the ML selector performed worse than the preserved Rule baseline. It was therefore not promoted.
+The latest reviewed single-market pilot completed technically, but ML did not beat the preserved Rule baseline. It was therefore not promoted.
 
 That negative result is intentionally kept visible.
 
@@ -115,7 +115,7 @@ FAILED_OOS, insufficient evidence, degraded ML results and unresolved limitation
 
 ## What is the Demo / Packaging / Release track?
 
-It is a separate future workstream for turning parts of AlgoSphere into a controlled demo/client experience.
+It is a separate workstream for turning selected parts of MIOIQ into a controlled demo/client experience. Local operator login has passed its reviewed scope, but Demo registration/onboarding and connected Demo end-to-end proof remain open.
 
 Demo does not mean Live.
 
@@ -132,6 +132,6 @@ Please read [CONTRIBUTING.md](../CONTRIBUTING.md) before opening an issue.
 - [README](../README.md)
 - [Project Direction](project/PROJECT_DIRECTION.md)
 - [Current Status](../CURRENT_STATUS.md)
-- [Latest Update](../updates/2026-09-21-public-status.md)
+- [Latest Update](../updates/2026-09-28-public-status.md)
 - [Roadmap](progress/ROADMAP.md)
 - [Evidence Summary](../evidence/EVIDENCE_SUMMARY.md)
