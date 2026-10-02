@@ -1,59 +1,62 @@
 # Documented engineering work
 
-Reviewed through **2026-09-28**.
+Reviewed through **2026-10-01**.
 
 Items below are engineering results, not claims of profitability or live readiness.
 
-## September 28 — current reviewed progress
+## September 29 – October 1 — reviewed progress
 
-### Project identity
+### Demo access and product model
 
-- AlgoSphere is now **MIOIQ**.
-- The project history and evidence base continue unchanged.
-- Historical files may retain the former name for provenance.
+- Invite approval and first-time Demo registration completed end to end in the reviewed local product flow.
+- The product model was clarified toward one role/account-gated product rather than a separate Demo application/backend truth.
+- Broader connected Demo execution, recovery, distribution and multi-user acceptance remain open.
 
-### Evidence and historical reconciliation
+### Runtime
 
-- One previously unresolved historical positive OpenAI performance interpretation has been reconciled against its original evidence population and contract.
-- The result is now treated as historical evidence, not current performance.
-- Historical/cross-population gaps remain separately classified rather than silently repaired.
-
-### External AI analysis
-
-- A concrete handoff defect between valid analysis and later simulated execution handling was isolated.
-- A source-level correction and focused regression checks are in place.
-- Loaded-runtime and natural-forward proof remain open.
-
-### Login and settings
-
-- Local operator login / single-session behavior passed its reviewed scope.
-- Demo registration / first-time onboarding is **not** complete and remains open.
-- The current Settings profile presentation was corrected so the operator is no longer shown with the wrong role/profile label.
+- Startup/restart and dependency-boundary work progressed.
+- Scoped runtime/source receipts exist.
+- Durable autonomous lifecycle behavior remains partial rather than globally closed.
 
 ### WebUI
 
-- Earlier reviewed UI contracts remain useful.
-- Complete current WebUI/Cockpit acceptance is still open under the current authentication/session state.
-- Responsive/browser/device acceptance is not yet treated as globally closed.
+- Filter, identity and same-snapshot contracts were tightened.
+- Current browser/session/build divergence was surfaced instead of hidden by older acceptance evidence.
+- A focused performance investigation narrowed one suspected reader bottleneck; fresh end-to-end UI timing remains open.
+
+### Paper V2
+
+- The current Paper V2 context path was observed in runtime.
+- Natural simulated activity continued through the reviewed path.
+- This is adoption evidence only; V2 superiority over V1 is not claimed.
+
+### Memory / learning
+
+- The current memory path was re-adopted in runtime and natural evidence continued through the reviewed learning path.
+- Historical identity conflicts and the human-readable Brain/read-projection remain open.
 
 ### Storage
 
-- A major logical compaction step has been completed while preserving evidence references.
-- Future-write behavior reduces avoidable duplication.
-- Physical database shrink remains open and requires a safe maintenance state.
+- Additional bounded logical compaction work preserved evidence references.
+- A scoped maintenance pause/resume path was demonstrated.
+- Physical database shrink, retention closure and remaining legacy-reference cleanup remain open.
 
-### Multi-venue direction
+### Multi-venue
 
-- Execution architecture work continues toward venue-independent contracts and capability boundaries.
-- Failure handling and reconciliation are being built before broader connected execution.
-- Connected multi-venue production readiness is not claimed.
+- Execution-intent, journal and isolation contracts advanced.
+- Offline isolation work between simulated and Demo-oriented paths progressed.
+- Connected private Demo reads/orders and connected multi-venue production readiness remain unproven.
 
-### Demo / Testnet
+### Release / distribution
 
-- Selected supporting security boundaries passed focused technical checks.
-- Demo registration/onboarding remains open.
-- Connected Demo/Testnet end-to-end execution/recovery proof does not yet exist.
-- Live remains disabled.
+- Current manifest/path drift was explicitly identified as a release blocker.
+- Reproducible installer/update/rollback acceptance remains open.
+
+### Public project identity
+
+- Public GitHub/Telegram/LinkedIn references were aligned to **MIOIQ**.
+- The repository is now published as `1545Christian/MIOIQ`.
+- Historical AlgoSphere references are retained only where useful for provenance.
 
 ## Interpretation
 
@@ -61,8 +64,10 @@ A focused green suite proves only the tested contract.
 
 A source-level fix proves code state, not loaded-runtime behavior.
 
-A working local operator login does not prove Demo onboarding.
+A working registration flow does not prove connected Demo execution.
 
-A completed training run does not prove model quality.
+Runtime adoption does not prove model or strategy improvement.
+
+Logical compaction does not prove physical database shrink.
 
 A browser-correct UI does not prove profitability.
