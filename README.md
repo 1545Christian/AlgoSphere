@@ -7,7 +7,7 @@ MIOIQ is an independent research and engineering project exploring AI-assisted q
 
 Deutsch: [README_DE.md](README_DE.md)<br>
 Current status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Latest reviewed update: [September 28, 2026](updates/2026-09-28-public-status.md)<br>
+Latest reviewed update: [October 1, 2026](updates/2026-10-01-public-status.md)<br>
 Telegram: https://t.me/+BXzjABr9iQpjMTgy<br>
 New here? [Start here](docs/START_HERE.md) · [Architecture](docs/project/ARCHITECTURE_OVERVIEW.md) · [Documentation map](docs/README.md)
 
@@ -49,15 +49,17 @@ A newer model does not become active simply because it is newer. Promotion is in
 |---|---|
 | Research & engineering | Active |
 | Paper / Shadow | Active / fail-closed |
-| Evidence memory path | Current core technically established; historical reconciliation remains separate |
+| Paper V2 context path | Runtime adoption observed; performance uplift not proven |
+| Evidence memory path | Current core active; historical/read-projection gaps remain separate |
 | Historical performance reconciliation | Reviewed historical interpretation reconciled; not a current profit claim |
 | External AI analysis | Active; latest source correction still needs loaded-runtime / natural forward proof |
-| Local operator login/session | Reviewed scope passed |
-| Demo registration / onboarding | **Open** |
+| Demo invite + registration | **Reviewed E2E passed for this scoped path** |
+| Login/session/browser parity | **Partial / current revalidation open** |
 | Full current WebUI acceptance | **Open** |
 | Research storage | Logical compaction progressed; physical shrink still open |
-| Multi-venue direction | Architecture/contracts progressing; connected multi-venue execution not claimed |
-| Demo / Testnet E2E | **Not proven** |
+| Multi-venue direction | Contracts/isolation progressing; connected execution not claimed |
+| Demo / Testnet execution E2E | **Not proven** |
+| Release / distribution | **Open** |
 | Live trading | Disabled |
 | Real capital | 0 |
 | Automatic promotion | Disabled |
@@ -89,7 +91,7 @@ See [Public Repository Scope](docs/project/PUBLIC_REPOSITORY_SCOPE.md) and [Lice
 | Project direction | [docs/project/PROJECT_DIRECTION.md](docs/project/PROJECT_DIRECTION.md) |
 | Public repository scope | [docs/project/PUBLIC_REPOSITORY_SCOPE.md](docs/project/PUBLIC_REPOSITORY_SCOPE.md) |
 | Current status | [CURRENT_STATUS.md](CURRENT_STATUS.md) |
-| Latest reviewed update | [September 28 update](updates/2026-09-28-public-status.md) |
+| Latest reviewed update | [October 1 update](updates/2026-10-01-public-status.md) |
 | Roadmap | [docs/progress/ROADMAP.md](docs/progress/ROADMAP.md) |
 | Completed engineering work | [docs/progress/COMPLETED_WORK.md](docs/progress/COMPLETED_WORK.md) |
 | Project history | [docs/project/PROJECT_HISTORY.md](docs/project/PROJECT_HISTORY.md) |
