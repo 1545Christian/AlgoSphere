@@ -7,7 +7,7 @@ MIOIQ ist ein unabhängiges Research- und Engineering-Projekt rund um AI-gestüt
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes geprüftes Update: [28. September 2026](updates/2026-09-28-public-status_DE.md)<br>
+Neuestes geprüftes Update: [1. Oktober 2026](updates/2026-10-01-public-status_DE.md)<br>
 Telegram: https://t.me/+BXzjABr9iQpjMTgy<br>
 Neu hier? [Hier anfangen](docs/START_HERE_DE.md) · [Architektur](docs/project/ARCHITECTURE_OVERVIEW_DE.md) · [Dokumentationsübersicht](docs/README.md)
 
@@ -49,15 +49,17 @@ Ein neueres Modell wird nicht allein deshalb aktiv, weil es neuer ist. Promotion
 |---|---|
 | Research & Engineering | Aktiv |
 | Paper / Shadow | Aktiv / fail-closed |
-| Evidence-Memory-Pfad | Aktueller Core technisch vorhanden; historische Reconciliation bleibt separat |
+| Paper-V2-Context-Pfad | Runtime-Adoption beobachtet; Performance-Uplift nicht bewiesen |
+| Evidence-Memory-Pfad | Aktueller Core aktiv; historische/Read-Projection-Lücken bleiben separat |
 | Historische Performance-Reconciliation | Historische Interpretation reconciled; kein aktueller Profit-Claim |
 | Externe AI-Analyse | Aktiv; letzter Source-Fix braucht noch Loaded-Runtime-/Forward-Proof |
-| Lokaler Operator-Login/Session | Geprüfter Scope bestanden |
-| Demo-Registrierung / Onboarding | **Offen** |
+| Demo Invite + Registrierung | **Geprüftes E2E für diesen Scope bestanden** |
+| Login/Session/Browser-Parität | **Partial / aktuelle Revalidierung offen** |
 | Vollständige aktuelle WebUI-Abnahme | **Offen** |
 | Research Storage | Logische Compaction weiter; physischer Shrink noch offen |
-| Multi-Venue-Richtung | Architektur/Contracts im Aufbau; verbundene Multi-Venue-Execution nicht behauptet |
-| Demo / Testnet E2E | **Nicht bewiesen** |
+| Multi-Venue-Richtung | Contracts/Isolation im Aufbau; verbundene Execution nicht behauptet |
+| Demo / Testnet Execution E2E | **Nicht bewiesen** |
+| Release / Distribution | **Offen** |
 | Live-Trading | Deaktiviert |
 | Echtgeld | 0 |
 | Automatische Promotion | Deaktiviert |
@@ -86,7 +88,7 @@ Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOP
 - [Architektur](docs/project/ARCHITECTURE_OVERVIEW_DE.md)
 - [Projektrichtung](docs/project/PROJECT_DIRECTION_DE.md)
 - [Aktueller Status](CURRENT_STATUS.md)
-- [Update vom 28. September](updates/2026-09-28-public-status_DE.md)
+- [Update vom 1. Oktober](updates/2026-10-01-public-status_DE.md)
 - [Roadmap](docs/progress/ROADMAP.md)
 - [Dokumentierte Arbeiten](docs/progress/COMPLETED_WORK.md)
 - [FAQ](docs/FAQ_DE.md)
