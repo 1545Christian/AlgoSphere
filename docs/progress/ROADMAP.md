@@ -1,54 +1,56 @@
 # Current public roadmap
 
-Publication: **2026-09-28**. Human-reviewed.
+Publication: **2026-10-01**. Human-reviewed.
 
-## P0 — current trust and runtime closure
+## P0 — current runtime and product truth
 
-- **OPEN:** prove the latest external-analysis source correction in the loaded runtime and on natural forward evidence.
-- **OPEN:** complete current WebUI/Cockpit end-to-end acceptance under the current authentication/session state.
-- **OPEN:** keep historical and current evidence populations separated and explicitly classified.
-- **RULE:** already-proven scope is not reopened without evidence of regression.
+- **OPEN:** close current login/session/API/browser parity in one loaded product build.
+- **OPEN:** complete current WebUI/Cockpit end-to-end acceptance after that parity is stable.
+- **OPEN:** prove durable autonomous startup/restart/recovery behavior rather than isolated component success.
+- **RULE:** older browser/runtime passes are not reused as current acceptance after a material build/session change.
 
-## P0 — product access
+## P0 — Demo access and connected execution
 
-- **PASSED for reviewed scope:** local operator login / single-session contract.
-- **OPEN:** Demo registration / first-time onboarding.
-- **OPEN:** connected Demo authentication/bootstrap proof.
-- **OPEN:** broader account administration / multi-user productization.
+- **PASSED for scoped path:** invite approval + first-time Demo registration.
+- **OPEN:** connected private Demo authentication/account read.
+- **OPEN:** complete connected Decision → Execution → Outcome → Recovery proof.
+- **OPEN:** broader multi-user role/permission/product acceptance.
+- **OPEN:** release/distribution proof.
 
 ## P0 — storage
 
-- **DONE at logical level:** major compaction step with evidence references preserved.
-- **OPEN:** physical database shrink/maintenance in a safe quiescent state.
-- **RULE:** no destructive historical cleanup without evidence-preserving proof.
+- **IN PROGRESS:** bounded logical compaction with evidence references preserved.
+- **PROVEN for scoped maintenance:** controlled pause/resume window.
+- **OPEN:** retention/legacy-reference closure.
+- **OPEN:** durable physical database space recovery.
+- **RULE:** logical cleanup is not reported as physical shrink.
 
-## P0 — research quality
+## P0 — Paper V2 and research quality
 
-- **OPEN:** collect enough natural prospective evidence to judge newer research paths.
-- **OPEN:** preserve Rule evidence independently from ML.
-- **OPEN:** require evidence before any Challenger/Champion promotion claim.
-- **NO CLAIM:** infrastructure progress is not predictive uplift.
+- **RUNTIME ADOPTION OBSERVED:** reviewed Paper V2 context path is active in the research runtime.
+- **OPEN:** compare V2 and preserved baselines on comparable evidence.
+- **OPEN:** collect enough natural prospective evidence for scientific conclusions.
+- **NO CLAIM:** V2 superiority and predictive uplift are not proven.
+- **RULE:** automatic promotion remains disabled.
 
-## Demo / Testnet
+## P0 — external AI path
 
-Status: **OPEN / NOT READY**
-
-Before connected Demo can be called ready:
-
-- Demo registration/onboarding must work as a user-facing flow
-- connected authentication/bootstrap must be proven
-- a complete Decision → Execution → Outcome → Recovery cycle must be proven
-- permissions and credential boundaries must remain safe
-- fallback/recovery behavior must be proven
-- release/distribution boundaries must be ready
-
-Exact venue routing, private permission layout and execution mechanics are intentionally private.
+- **OPEN:** loaded-runtime + natural-forward proof for the latest source correction.
+- **OPEN:** deeper decision-quality analysis on comparable current outcomes.
+- **NO CLAIM:** profitability is not proven.
 
 ## Multi-venue
 
-- Continue building venue-independent execution contracts and capability boundaries.
-- Keep failure handling and reconciliation evidence-gated.
+- Continue venue-independent execution, journaling and capability contracts.
+- Prove connected private Demo reads before connected mutation.
+- Prove isolation/recovery in the loaded product, not only offline harnesses.
 - Do not describe connected multi-venue execution as production-ready before proof.
+
+## Release / distribution
+
+- Reconcile current source/artifact state and moved paths.
+- Restore a reproducible current installer/update/rollback boundary.
+- Keep component test success separate from release acceptance.
 
 ## Later — Live
 
@@ -59,7 +61,8 @@ Exact venue routing, private permission layout and execution mechanics are inten
 ## Verification principles
 
 - source patch ≠ runtime-active proof
-- technical PASS ≠ scientific uplift
-- local operator login ≠ Demo onboarding
-- current-path trust ≠ historical archive completeness
+- focused test PASS ≠ product acceptance
+- registration E2E ≠ connected Demo readiness
+- logical compaction ≠ physical shrink
+- runtime adoption ≠ performance uplift
 - Demo ≠ Live
