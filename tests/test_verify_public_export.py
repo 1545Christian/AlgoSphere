@@ -116,6 +116,7 @@ class VerifyPublicExportTests(unittest.TestCase):
         write_lf(self.root / ".gitattributes", "* text=auto\n")
         write_lf(self.root / ".gitignore", "__pycache__/\n*.pyc\n.pytest_cache/\n.env\n")
         write_lf(self.root / ".github/FUNDING.yml", "github: [1545Christian]\n")
+        write_lf(self.root / "AGENTS.md", "# MIOIQ agent guidance\n")
         write_lf(self.root / "tools/verify_public_export.py", "# public verifier fixture\n")
         write_lf(self.root / "tests/test_verify_public_export.py", "# public verifier tests fixture\n")
         write_lf(self.root / "updates/2026-08-30-initial-public-status.md", "# Initial public status\n")
