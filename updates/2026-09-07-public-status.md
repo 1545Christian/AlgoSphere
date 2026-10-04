@@ -15,7 +15,7 @@ The previous nightly text incorrectly said that no new development proof existed
 
 - A visible restart was completed successfully during the repair session.
 - The runtime supervisor was present as a single supervisor instance.
-- Point13 / ACTIVE_PAPER, Research Forward, Research Autopilot, Local ML Autopilot and WebUI were reported running after restart.
+- Core paper/research services and WebUI were reported running after restart.
 - The currently active QUICK run is a new runtime run identity (`run_f6cf…` in the repair session). The earlier run had been interrupted and work resumed under a new run id.
 - Because the resumed work did **not** preserve the same run id, `Same-Run-Resume` is still **not PASS**. Recovery worked, but exact same-run continuation remains an open acceptance item.
 
