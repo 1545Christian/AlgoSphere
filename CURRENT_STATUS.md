@@ -1,6 +1,6 @@
 # Current public status
 
-Publication date: **2026-10-01**. Human-reviewed against the current master open-points state.
+Publication date: **2026-10-03**. Human-reviewed against the current master open-points state.
 
 > **Rename note:** AlgoSphere is now **MIOIQ**. Historical files may retain the former name where required for provenance.
 
@@ -9,89 +9,92 @@ Publication date: **2026-10-01**. Human-reviewed against the current master open
 - Research & engineering: **active**
 - Paper / Shadow research: **active / fail-closed**
 - Demo invite approval + first-time registration path: **reviewed E2E passed**
-- Current login/session/browser parity: **partial / revalidation open**
+- Current one-session product parity: **open**
 - Connected Demo/Testnet execution end to end: **not proven**
 - Full current WebUI acceptance: **open**
+- Release / distribution: **open**
 - Live trading: **disabled**
 - Real capital: **0**
 - Automatic promotion: **disabled**
 - Safety boundary: **fail-closed**
 
-## Demo access and product model
-
-A reviewed invite-approval and first-time Demo registration path has now completed end to end.
-
-That is a scoped product-access proof, not broad Demo readiness.
-
-The product model has also been clarified: Demo is treated as a role/account-gated operating scope inside one product, not as a separate application or separate backend truth.
-
-Still open are connected venue authentication, connected execution/recovery, distribution/release readiness and broader multi-user acceptance.
-
 ## Runtime and autonomy
 
-Startup/restart and dependency-boundary work progressed.
+Fresh market-context evidence has been observed for the currently configured research set, and scoped service-health/singleton checks passed for the reviewed runtime snapshot.
 
-Scoped source/runtime evidence exists, but durable autonomous lifecycle behavior is not globally closed. A component or one successful lifecycle observation is not treated as proof that every restart, dependency and recovery path is now reliable.
+A complete independent all-service start → stop → restart → recovery acceptance is still open. Scoped recovery or one healthy snapshot is not treated as proof of global autonomous lifecycle reliability.
+
+## Demo access and session contract
+
+The invite-approval and first-time Demo registration path remains proven for its reviewed scope.
+
+The broader product session contract is not closed. Login and reload persistence have been observed, but one current session has not yet been accepted across all protected product surfaces in one loaded build.
+
+Demo access proof therefore remains separate from connected Demo execution, multi-user isolation and product-wide session acceptance.
 
 ## WebUI current truth
 
-Filtering, identity and same-snapshot contracts were tightened and tested.
+Source-level and focused regression evidence improved across trade visibility, filters, responsive behavior and memory/learning identity.
 
-A current browser/session/build mismatch nevertheless showed that an older browser PASS cannot be reused as current product acceptance.
+A bounded browser check confirmed current pagination and global symbol filtering on the loaded build.
 
-Full current WebUI acceptance remains **open**.
+Full WebUI acceptance remains **open**. Current session parity, global activity ordering, performance under current data volume, broader browser/device coverage and parts of the learning UI still need fresh acceptance.
 
-A separate performance investigation narrowed one suspected data-reader bottleneck, but current end-to-end UI timing and lane-switch behavior still need fresh measurement in the loaded product.
+## Paper V2 and research quality
 
-## Paper V2
+The current market-context path was corrected after stale-context behavior was isolated, and fresh natural context cycles were observed afterward.
 
-The current Paper V2 context path has been observed in runtime, and natural simulated activity continued through it.
+The V2 evidence reader now prefers valid linked evidence and excludes orphaned contributions. Natural current learning deltas are being stored.
 
-This proves adoption of the reviewed path, not superiority.
+This proves stronger adoption and evidence hygiene, not superiority.
 
-**V2 > V1 is not proven.**
-
-Historical and prospective outcome analysis remains necessary before any performance claim.
+**V2 > V1 is not proven.** Economic selection improvement and durable predictive uplift remain open.
 
 ## Evidence memory and learning
 
-The current memory path remains technically established and has continued to receive natural evidence in the reviewed runtime path.
+The current Decision → Outcome → Learning chain has stronger natural evidence than in the previous public update.
 
-Historical identity conflicts and the human-readable Brain/read-projection remain separate open work.
+Current linked learning deltas are being written, while historical identity/read-projection gaps remain separate work.
 
-Older incomplete evidence is not silently reconstructed or rewritten.
+The human-readable Brain/read-projection is not yet fully accepted end to end. Older incomplete evidence is not silently reconstructed or rewritten.
 
 ## External AI analysis
 
-Historical positive-performance evidence has been reconciled to its original population/contract and remains historical evidence only.
+Historical lineage and replay handling have been repaired further, and the decision-to-order funnel is better explained at a high level.
 
-A separate source-level correction in the later analysis-to-simulated-execution handoff has focused regression evidence, but loaded-runtime/natural-forward closure is still incomplete.
+The latest reviewed current outcomes do not support a positive profitability claim. Cost coverage and natural loaded post-fix evidence remain incomplete.
 
-External AI-analysis quality and profitability are **not proven**.
+External AI-analysis profitability is **not proven**.
 
 ## Storage and database
 
-Logical compaction continued in bounded batches while preserving references.
+Bounded logical compaction continued while preserving evidence references, and a short controlled maintenance pause/resume path has been demonstrated.
 
-A scoped maintenance pause/resume path has been demonstrated.
-
-Physical database shrink is still **open**. Logical bytes saved and reusable internal space are not presented as proof of durable physical file-size reduction.
+Physical database shrink is still **open**. Logical cleanup, low-yield batches and reusable internal space are not presented as durable physical file-size reduction.
 
 Retention, remaining legacy references and physical space recovery remain separate work.
 
-## Multi-venue direction
+## Multi-venue and cost truth
 
-Venue-independent execution contracts, journaling and isolation boundaries continue to mature.
+Venue-independent execution contracts and isolation work continue to mature.
 
-Offline isolation between simulated and Demo-oriented paths has progressed, but connected private Demo account reads, connected Demo orders and full recovery evidence remain unproven.
+Public/source-level fee estimation is supported for the reviewed venue path, but account-specific fees and complete connected per-trade cost truth remain unknown without an authorised private account read.
 
-Connected multi-venue execution is **not** claimed production-ready.
+Connected private Demo reads, connected Demo orders and full recovery evidence remain unproven. Connected multi-venue execution is **not** claimed production-ready.
 
 ## Release / distribution
 
 Release/distribution remains open.
 
-Current source/artifact changes and moved paths still need to be reconciled into a reproducible current installer/update/rollback proof.
+Current source/artifact paths and the release manifest are not yet aligned well enough for reproducible installer/update/rollback acceptance.
+
+This manifest/lineage drift is an explicit release blocker.
+
+## Codebase hygiene
+
+Research and WebUI reader responsibilities have continued moving toward clearer ownership boundaries with focused regression evidence.
+
+This is source/test progress only. Loaded-product parity, release parity and a complete codebase-cleanliness claim remain open.
 
 ## Scientific boundary
 
