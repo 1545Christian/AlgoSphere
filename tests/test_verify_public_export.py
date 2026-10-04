@@ -4,13 +4,14 @@ import csv
 import hashlib
 import importlib.util
 import shutil
+import tempfile
 import unittest
 import uuid
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-TMP_ROOT = Path("D:/Bot_research/AlgoSphere/.tmp_public_verify_tests")
+TMP_ROOT = Path(tempfile.gettempdir()) / "mioiq_public_verify_tests"
 MODULE_PATH = REPO_ROOT / "tools" / "verify_public_export.py"
 SPEC = importlib.util.spec_from_file_location("verify_public_export", MODULE_PATH)
 verify_public_export = importlib.util.module_from_spec(SPEC)
@@ -55,7 +56,7 @@ class VerifyPublicExportTests(unittest.TestCase):
             if relative == "README.md":
                 write_lf(
                     self.root / relative,
-                    "# AlgoSphere\n\nDeutsch: [README_DE.md](README_DE.md)\n\n"
+                    "# MIOIQ\n\nDeutsch: [README_DE.md](README_DE.md)\n\n"
                     "<!-- HUMAN_TEXT_START -->\nHuman maintained overview.\n<!-- HUMAN_TEXT_END -->\n\n"
                     "<!-- AUTO_VALUES_START:CURRENT_STATUS -->\n| Area | State |\n|---|---|\n| Runtime | BLOCKED |\n"
                     "<!-- AUTO_VALUES_END:CURRENT_STATUS -->\n",
@@ -63,7 +64,7 @@ class VerifyPublicExportTests(unittest.TestCase):
             elif relative == "README_DE.md":
                 write_lf(
                     self.root / relative,
-                    "# AlgoSphere\n\nEnglish: [README.md](README.md)\n\n"
+                    "# MIOIQ\n\nEnglish: [README.md](README.md)\n\n"
                     "<!-- HUMAN_TEXT_START -->\nMenschlich gepflegter Ueberblick.\n<!-- HUMAN_TEXT_END -->\n\n"
                     "<!-- AUTO_VALUES_START:CURRENT_STATUS -->\n| Bereich | Stand |\n|---|---|\n| Runtime | BLOCKIERT |\n"
                     "<!-- AUTO_VALUES_END:CURRENT_STATUS -->\n",
@@ -307,7 +308,7 @@ class VerifyPublicExportTests(unittest.TestCase):
         self.assert_error(lambda: write_lf(self.root / ".pytest_cache" / "state", "cache\n"), "cache artifact is forbidden")
 
     def test_private_windows_path_fails(self) -> None:
-        self.assert_error(lambda: write_lf(self.root / "CURRENT_STATUS.md", "Private path D:\\Bot_research\\AlgoSphere\n"), "windows_path")
+        self.assert_error(lambda: write_lf(self.root / "CURRENT_STATUS.md", "Private path C:\\private\\project\n"), "windows_path")
 
     def test_secret_assignment_fails(self) -> None:
         self.assert_error(lambda: write_lf(self.root / "SECURITY.md", "api_key = 'abcdefghi'\n"), "credential_assignment")
@@ -319,7 +320,7 @@ class VerifyPublicExportTests(unittest.TestCase):
         self.assert_error(lambda: write_lf(self.root / "README.md", "[escape](../private.md)\n"), "markdown link escapes repository")
 
     def test_missing_language_navigation_fails(self) -> None:
-        self.assert_error(lambda: write_lf(self.root / "README.md", "# AlgoSphere\n\nNo language link.\n"), "missing language navigation")
+        self.assert_error(lambda: write_lf(self.root / "README.md", "# MIOIQ\n\nNo language link.\n"), "missing language navigation")
 
     def test_missing_update_counterlink_fails(self) -> None:
         self.assert_error(
@@ -444,7 +445,7 @@ class VerifyPublicExportTests(unittest.TestCase):
 
     def test_crlf_markdown_bytes_fail(self) -> None:
         def mutate() -> None:
-            (self.root / "README.md").write_bytes(b"# AlgoSphere\r\n\r\nREADME_DE.md\r\n")
+            (self.root / "README.md").write_bytes(b"# MIOIQ\r\n\r\nREADME_DE.md\r\n")
             self.rewrite_manifest()
 
         self.assert_error(mutate, "file must use LF line endings")
