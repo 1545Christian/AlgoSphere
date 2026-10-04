@@ -33,4 +33,4 @@ MIOIQ is not a signal service and this repository does not provide personal inve
 
 Shorter updates are published on Telegram:
 
-https://t.me/MIOIQOfficial
+https://t.me/+BXzjABr9iQpjMTgy
