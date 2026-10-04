@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify the integrity of a public AlgoSphere documentation export.
+"""Verify the integrity of a public MIOIQ documentation export.
 
 This program uses only Python's standard library. It has no network, trading,
 exchange, wallet, Telegram or private-project dependency.
