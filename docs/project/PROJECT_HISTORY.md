@@ -33,7 +33,7 @@ The public GitHub repository documents this continuing work. The private operati
 <!-- HUMAN_TEXT_END -->
 
 <!-- AUTO_VALUES_START -->
-**Public technical evidence window:** 9 September 2025 to 28 September 2026.
+**Public technical evidence window:** 9 September 2025 to 3 October 2026.
 
 The approximately three-year personal development history is not independently proven in full by the public repository; the dated technical record covers the period above.
 
@@ -46,4 +46,4 @@ The approximately three-year personal development history is not independently p
 | Current direction | configurable multi-coin research, ML training, validation and later controlled execution |
 <!-- AUTO_VALUES_END -->
 
-[Project direction](PROJECT_DIRECTION.md) · [Current status](../../CURRENT_STATUS.md) · [Latest update](../../updates/2026-09-28-public-status.md)
+[Project direction](PROJECT_DIRECTION.md) · [Current status](../../CURRENT_STATUS.md) · [Latest update](../../updates/2026-10-03-public-status.md)
