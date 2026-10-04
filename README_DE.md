@@ -7,7 +7,7 @@ MIOIQ ist ein unabhängiges Research- und Engineering-Projekt rund um AI-gestüt
 
 English: [README.md](README.md)<br>
 Aktueller Status: [CURRENT_STATUS.md](CURRENT_STATUS.md)<br>
-Neuestes geprüftes Update: [1. Oktober 2026](updates/2026-10-01-public-status_DE.md)<br>
+Neuestes geprüftes Update: [3. Oktober 2026](updates/2026-10-03-public-status_DE.md)<br>
 Telegram: https://t.me/+BXzjABr9iQpjMTgy<br>
 Neu hier? [Hier anfangen](docs/START_HERE_DE.md) · [Architektur](docs/project/ARCHITECTURE_OVERVIEW_DE.md) · [Dokumentationsübersicht](docs/README.md)
 
@@ -49,15 +49,15 @@ Ein neueres Modell wird nicht allein deshalb aktiv, weil es neuer ist. Promotion
 |---|---|
 | Research & Engineering | Aktiv |
 | Paper / Shadow | Aktiv / fail-closed |
-| Paper-V2-Context-Pfad | Runtime-Adoption beobachtet; Performance-Uplift nicht bewiesen |
-| Evidence-Memory-Pfad | Aktueller Core aktiv; historische/Read-Projection-Lücken bleiben separat |
+| Paper-V2-Context-Pfad | Frischer Runtime-Context beobachtet; V2-Überlegenheit nicht bewiesen |
+| Evidence-Memory-Pfad | Natürliche verknüpfte Learning-Evidence beobachtet; Read-Projection bleibt offen |
 | Historische Performance-Reconciliation | Historische Interpretation reconciled; kein aktueller Profit-Claim |
-| Externe AI-Analyse | Aktiv; letzter Source-Fix braucht noch Loaded-Runtime-/Forward-Proof |
+| Externe AI-Analyse | Traceability/Funnel-Verständnis verbessert; Profitabilität nicht bewiesen |
 | Demo Invite + Registrierung | **Geprüftes E2E für diesen Scope bestanden** |
-| Login/Session/Browser-Parität | **Partial / aktuelle Revalidierung offen** |
+| One-Session-Produkt-Parität | **Offen** |
 | Vollständige aktuelle WebUI-Abnahme | **Offen** |
-| Research Storage | Logische Compaction weiter; physischer Shrink noch offen |
-| Multi-Venue-Richtung | Contracts/Isolation im Aufbau; verbundene Execution nicht behauptet |
+| Research Storage | Begrenzte logische Compaction läuft weiter; physischer Shrink noch offen |
+| Multi-Venue-Richtung | Contracts/Isolation im Aufbau; account-spezifische Kostenwahrheit offen |
 | Demo / Testnet Execution E2E | **Nicht bewiesen** |
 | Release / Distribution | **Offen** |
 | Live-Trading | Deaktiviert |
@@ -88,7 +88,7 @@ Siehe [Umfang des öffentlichen Repositorys](docs/project/PUBLIC_REPOSITORY_SCOP
 - [Architektur](docs/project/ARCHITECTURE_OVERVIEW_DE.md)
 - [Projektrichtung](docs/project/PROJECT_DIRECTION_DE.md)
 - [Aktueller Status](CURRENT_STATUS.md)
-- [Update vom 1. Oktober](updates/2026-10-01-public-status_DE.md)
+- [Update vom 3. Oktober](updates/2026-10-03-public-status_DE.md)
 - [Roadmap](docs/progress/ROADMAP.md)
 - [Dokumentierte Arbeiten](docs/progress/COMPLETED_WORK.md)
 - [FAQ](docs/FAQ_DE.md)
