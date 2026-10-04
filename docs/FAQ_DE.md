@@ -115,7 +115,7 @@ FAILED_OOS, unzureichende Evidence, degradierte ML-Ergebnisse und offene Grenzen
 
 ## Was bedeutet Demo / Packaging / Release?
 
-Das ist ein eigener Arbeitsbereich, um ausgewählte Teile von MIOIQ kontrolliert als Demo-/Client-Erlebnis bereitzustellen. Der lokale Operator-Login hat seinen geprüften Scope bestanden; Demo-Registrierung/Onboarding und Connected-Demo-End-to-End-Proof bleiben offen.
+Das ist ein eigener Arbeitsbereich, um ausgewählte Teile von MIOIQ kontrolliert als Demo-/Client-Erlebnis bereitzustellen. Der geprüfte Invite-/Registrierungsweg hat seinen begrenzten Scope bestanden; One-Session-Produktabnahme und Connected-Demo-End-to-End-Proof bleiben offen.
 
 Demo bedeutet nicht Live.
 
@@ -138,6 +138,6 @@ Bitte vorher [CONTRIBUTING.md](../CONTRIBUTING.md) lesen.
 - [README](../README_DE.md)
 - [Projektrichtung](project/PROJECT_DIRECTION_DE.md)
 - [Aktueller Status](../CURRENT_STATUS.md)
-- [Neuestes Update](../updates/2026-09-28-public-status_DE.md)
+- [Neuestes Update](../updates/2026-10-03-public-status_DE.md)
 - [Roadmap](progress/ROADMAP.md)
 - [Evidence-Übersicht](../evidence/EVIDENCE_SUMMARY.md)
