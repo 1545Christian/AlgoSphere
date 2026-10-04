@@ -79,6 +79,7 @@ EXPORT_MANIFEST_FILES = BASE_EXPORT_MANIFEST_FILES | {
 SUPPORT_FILES = {
     ".gitattributes",
     ".github/FUNDING.yml",
+    "AGENTS.md",
     ".gitignore",
     "evidence/EXPORT_CONTENTS.md",
     "tests/test_verify_public_export.py",
@@ -433,7 +434,7 @@ def verify(root: Path, *, export_only: bool = False) -> list[str]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Verify a public AlgoSphere documentation export.")
+    parser = argparse.ArgumentParser(description="Verify a public MIOIQ documentation export.")
     parser.add_argument(
         "--root",
         type=Path,
