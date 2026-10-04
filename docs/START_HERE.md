@@ -6,7 +6,7 @@ The quickest path is:
 
 1. **[Project Direction](project/PROJECT_DIRECTION.md)** — what MIOIQ is being built toward.
 2. **[Current Status](../CURRENT_STATUS.md)** — what is actually working, proven or still open today.
-3. **[Latest Update](../updates/2026-10-01-public-status.md)** — what changed most recently.
+3. **[Latest Update](../updates/2026-10-03-public-status.md)** — what changed most recently.
 4. **[Evidence Summary](../evidence/EVIDENCE_SUMMARY.md)** — how public evidence is recorded and what its limits are.
 5. **[Roadmap](progress/ROADMAP.md)** — what comes next.
 
