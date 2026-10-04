@@ -15,7 +15,7 @@ Der vorherige Nachtbericht behauptete sinngemäß, es habe heute keinen neuen En
 
 - Im Reparaturlauf wurde ein sichtbarer Neustart erfolgreich durchgeführt.
 - Der Runtime-Supervisor war anschließend als einzelne Supervisor-Instanz vorhanden.
-- Point13 / ACTIVE_PAPER, Research Forward, Research Autopilot, Local ML Autopilot und WebUI wurden nach dem Neustart als laufend gemeldet.
+- Zentrale Paper-/Research-Services und WebUI wurden nach dem Neustart als laufend gemeldet.
 - Der aktuell laufende QUICK verwendet eine neue Runtime-Run-Identity (`run_f6cf…` im Reparaturverlauf). Der vorherige Lauf war unterbrochen worden und die Arbeit wurde unter einer neuen Run-ID fortgesetzt.
 - Weil die Fortsetzung **nicht** dieselbe Run-ID behalten hat, ist `Same-Run-Resume` weiterhin **kein PASS**. Die Wiederherstellung funktioniert, die exakte Fortsetzung desselben Runs bleibt jedoch offen.
 
