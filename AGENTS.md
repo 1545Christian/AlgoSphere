@@ -43,3 +43,16 @@ Do not rewrite historical dated evidence simply to modernize the brand. When cla
 Do not turn source code into runtime proof, focused tests into scientific uplift, operator login into Demo onboarding, Demo into Live, or simulated/paper results into live-capital claims.
 
 No trading-signal or investment-advice framing.
+
+
+## Current-status discipline
+
+When public status is refreshed:
+
+- prefer the latest reviewed master evidence over older handoff wording
+- keep historical dated updates intact unless correcting an objective link/branding error
+- distinguish source/test progress from loaded runtime, browser acceptance and economic evidence
+- do not publish internal paths, private IDs, table/column names, exact test fingerprints or reconstruction-sensitive implementation details
+- do not convert a scoped PASS into a product-wide PASS
+- keep Demo, Paper/Shadow and Live claims explicitly separate
+- keep current MIOIQ branding in new text while preserving AlgoSphere only for historical provenance
