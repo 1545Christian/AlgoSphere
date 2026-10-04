@@ -37,7 +37,7 @@ Runtime health: **PASS**
 
 Fresh Context V2 Shadow decisions are visible, including explicit `NO_TRADE / NO_CURRENT_SETUP` evidence. CURRENT and CONTEXT_V2 remain separated in the runtime projection.
 
-Only Supervisor and Research Forward were minimally reloaded for this activation. Paper Context V2, Point13, OpenAI and Market Data were not interrupted.
+Only Supervisor and Research Forward were minimally reloaded for this activation. Paper Context V2, the broader runtime, OpenAI and Market Data were not interrupted.
 
 ## WebUI and operator usability
 
