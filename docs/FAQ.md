@@ -115,7 +115,7 @@ FAILED_OOS, insufficient evidence, degraded ML results and unresolved limitation
 
 ## What is the Demo / Packaging / Release track?
 
-It is a separate workstream for turning selected parts of MIOIQ into a controlled demo/client experience. Local operator login has passed its reviewed scope, but Demo registration/onboarding and connected Demo end-to-end proof remain open.
+It is a separate workstream for turning selected parts of MIOIQ into a controlled demo/client experience. The reviewed invite/registration path has passed for its scoped flow, but one-session product acceptance and connected Demo end-to-end proof remain open.
 
 Demo does not mean Live.
 
@@ -132,6 +132,6 @@ Please read [CONTRIBUTING.md](../CONTRIBUTING.md) before opening an issue.
 - [README](../README.md)
 - [Project Direction](project/PROJECT_DIRECTION.md)
 - [Current Status](../CURRENT_STATUS.md)
-- [Latest Update](../updates/2026-09-28-public-status.md)
+- [Latest Update](../updates/2026-10-03-public-status.md)
 - [Roadmap](progress/ROADMAP.md)
 - [Evidence Summary](../evidence/EVIDENCE_SUMMARY.md)
