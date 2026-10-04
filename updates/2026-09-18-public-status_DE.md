@@ -31,7 +31,7 @@ Health Check: **PASS**
 
 Frische Context-V2-Shadow-Decisions sind in der WebUI sichtbar, einschließlich expliziter `NO_TRADE / NO_CURRENT_SETUP`-Evidence. CURRENT und CONTEXT_V2 bleiben in der Runtime-Projektion getrennt.
 
-Für die Aktivierung wurden nur Supervisor und Research Forward minimal neu geladen. Paper Context V2, Point13, OpenAI und Market Data liefen weiter.
+Für die Aktivierung wurden nur Supervisor und Research Forward minimal neu geladen. Paper Context V2, die übrige Runtime, OpenAI und Market Data liefen weiter.
 
 ## WebUI und Operator-Nutzbarkeit
 
